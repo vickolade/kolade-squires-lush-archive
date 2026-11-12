@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "Please cite this historical archive using its permanent CERN Zenodo DOI."
+title: "550 Years of Our Family History: Squires, Akerman, Lush, Lawrence, Goulding, Dwyer, Thorne, Kolade & Ojomu Ancestral Archive (c. 1475–2026)"
+authors:
+  - family-names: "Kolade"
+    given-names: "Victor Olutayo"
+version: "2.0"
+doi: "10.5281/zenodo.24173583"
+date-released: 2026-11-12
+url: "https://kolade-squires-lush.netlify.app/"
+license: "CC-BY-4.0"
