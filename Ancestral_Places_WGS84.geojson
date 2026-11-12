@@ -1,0 +1,1146 @@
+{
+  "type": "FeatureCollection",
+  "name": "Kolade_Squires_Lush_Ancestral_Atlas_WGS84",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "bookham-knoll",
+      "properties": {
+        "title": "Bookham Farm & Knoll, Buckland Newton, Dorset",
+        "region": "WDORSET",
+        "lineageCode": "V1",
+        "lineageBranch": "Squires & Akerman",
+        "activeEra": "1524–1678",
+        "cadastralOrGridRef": "OS Grid ST 7066 0417 • DHC PE/BCN/RE 1/1",
+        "description": "Ancestral Dorset farmstead of Gen 16 William Squyer (G 5), Gen 15 Thomas Squier (G 1; billhook 1539; G 1½ 1544), Parish Churchwardens Johannes (1581/82) & Thomas Squire (1621 signature), and Thomas Squire Senr. (buried Feb. 21, 1677/78).",
+        "linkedEventIds": [
+          "ev-1475",
+          "ev-1500",
+          "ev-1523",
+          "ev-1525",
+          "ev-1539",
+          "ev-1545",
+          "ev-1558",
+          "ev-1574",
+          "ev-1598",
+          "ev-1601",
+          "ev-1621",
+          "ev-1642",
+          "ev-1678"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.4184,
+          50.8362
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "alton-pancras",
+      "properties": {
+        "title": "Alton Pancras, Cerne Valley, Dorset",
+        "region": "WDORSET",
+        "lineageCode": "V1",
+        "lineageBranch": "Squires & Akerman",
+        "activeEra": "1524–1740",
+        "cadastralOrGridRef": "1.5 miles south of Bookham • Salisbury Peculiar",
+        "description": "Tudor home of kinsmen Robert & John Squyer (1524–76 wills) and post-Spring 1678 parish of Gen 11 John Squire Senr. (bur. 1703), Roger Squire (bur. 1710/11), and Gen 10 John Junr. & Eleanor [Elnar].",
+        "linkedEventIds": [
+          "ev-1525",
+          "ev-1539",
+          "ev-1545",
+          "ev-1558",
+          "ev-1642",
+          "ev-1678",
+          "ev-1709"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.4262,
+          50.8143
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "piddletrenthide",
+      "properties": {
+        "title": "Piddletrenthide, Piddle Valley, Dorset",
+        "region": "WDORSET",
+        "lineageCode": "V1",
+        "lineageBranch": "Squires & Akerman",
+        "activeEra": "1732–1746",
+        "cadastralOrGridRef": "1.5 miles east across the ridge • 1732/33 Register",
+        "description": "Village where 23-year-old Gen 9 Philip Squire buried infant daughter Margaret (Feb. 23, 1732/33) and wife Mary (Mar. 14, 1732/33), surviving with infant son John Squire.",
+        "linkedEventIds": [
+          "ev-1709",
+          "ev-1802"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.4083,
+          50.8012
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "shipton-gorge",
+      "properties": {
+        "title": "Shipton Gorge, West Dorset",
+        "region": "WDORSET",
+        "lineageCode": "V1",
+        "lineageBranch": "Squires & Akerman",
+        "activeEra": "1525–1542",
+        "cadastralOrGridRef": "TNA E 179/103/122 & E 36/29",
+        "description": "1525 tax roll village of Robert Akerman (G 10) and 1539–42 muster village of Jn, Ste, and Hen Akerman.",
+        "linkedEventIds": [
+          "ev-1525",
+          "ev-1539"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.7192,
+          50.7281
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "bridport",
+      "properties": {
+        "title": "Bothenhampton, Loders & Bridport, Dorset",
+        "region": "WDORSET",
+        "lineageCode": "V1",
+        "lineageBranch": "Squires & Akerman",
+        "activeEra": "1539–1784",
+        "cadastralOrGridRef": "DHC PE/BT & SP 12/56 • Rope & Net District",
+        "description": "1539–69 muster and tax home of archers Hen Akerman (G 4) & Ric Akerman, Loders taxpayer John Akerman (1594 G 3), and 18th-century rope- and fishing-net hub supplying ships to Newfoundland.",
+        "linkedEventIds": [
+          "ev-1539",
+          "ev-1545",
+          "ev-1569",
+          "ev-1594",
+          "ev-1769"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.7583,
+          50.7334
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "broadwindsor",
+      "properties": {
+        "title": "St. John the Baptist Church, Broadwindsor, Dorset",
+        "region": "WDORSET",
+        "lineageCode": "V1",
+        "lineageBranch": "Squires & Akerman",
+        "activeEra": "1740–1745",
+        "cadastralOrGridRef": "6 miles NW of Bridport • 1745 Baptism Register",
+        "description": "Baptism parish of Bonavista lay minister Abraham Akerman Sr. (baptized 1745 to Daniel & Jean [Jane] Akerman, matching his 1822 burial at age 77).",
+        "linkedEventIds": [
+          "ev-1769"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.8012,
+          50.8161
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "chideock",
+      "properties": {
+        "title": "St. Giles Church, Chideock — Cottage \"Lushes\"",
+        "region": "WDORSET",
+        "lineageCode": "V1",
+        "lineageBranch": "Squires & Akerman",
+        "activeEra": "1750–1802+",
+        "cadastralOrGridRef": "1802 Manor Survey (D-WLC) • Plot \"Lushes\"",
+        "description": "Coastal Dorset village where Gen 8 John Squire (aged 72 in 1802 holding a 99-year lease on a churchside cottage coincidentally named \"Lushes\") & Elizabeth baptized pioneer Simon Squire on April 2, 1769.",
+        "linkedEventIds": [
+          "ev-1769",
+          "ev-1802"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.8184,
+          50.7311
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "melbury-abbas",
+      "properties": {
+        "title": "East Melbury & St. Thomas's Church, Melbury Abbas",
+        "region": "NDORSET",
+        "lineageCode": "V2",
+        "lineageBranch": "Lush, Lawrence & Dwyer",
+        "activeEra": "1523–1757",
+        "cadastralOrGridRef": "Sixpenny Handley • Sept. 1544 Arundell Manor",
+        "description": "Ancestral root of Gen 16 Edmond Lusshe (£40 in Oct. 1523 [top 1.7% of Dorset]; G 20 in 1525; steel Almain rivets armour in 1539–42), Gen 15 John Lusshe (1572 £20 will), Gen 12 John Lush (1673 £50 will) & Gen 9 Thomas Lush.",
+        "linkedEventIds": [
+          "ev-1475",
+          "ev-1523",
+          "ev-1525",
+          "ev-1528",
+          "ev-1539",
+          "ev-1542",
+          "ev-1544",
+          "ev-1545",
+          "ev-1572",
+          "ev-1656",
+          "ev-1676",
+          "ev-1775",
+          "ev-1871"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.1643,
+          50.9792
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "compton-abbas",
+      "properties": {
+        "title": "Compton Abbas, Blackmore Vale, Dorset",
+        "region": "NDORSET",
+        "lineageCode": "V2",
+        "lineageBranch": "Lush, Lawrence & Dwyer",
+        "activeEra": "1542–1750",
+        "cadastralOrGridRef": "DHC PE/COA/RE 1/1–2 • Sept. 1544 Sister-Manor",
+        "description": "Bundled with Melbury Abbas in the Sept. 1544 Arundell Manor Grant; home of Gen 12 Nicholas & Mary Lush, Gen 11 Edmund Lush (bapt. Aug. 1676; married Mary Lawrence Apr. 14, 1707), and shared family burials.",
+        "linkedEventIds": [
+          "ev-1542",
+          "ev-1544",
+          "ev-1642",
+          "ev-1656",
+          "ev-1676",
+          "ev-1707"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.1814,
+          50.9681
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "fontmell-magna",
+      "properties": {
+        "title": "Fontmell Magna, Blackmore Vale, Dorset",
+        "region": "NDORSET",
+        "lineageCode": "V2",
+        "lineageBranch": "Lush, Lawrence & Dwyer",
+        "activeEra": "1542–1664",
+        "cadastralOrGridRef": "Sept. 1544 Grant & Arundell 4-Load Farm",
+        "description": "United with Melbury & Compton in Sept. 1544; home of Walt Lusshe (1542), Gen 14 William & Ellen Lushe (1594 G 3; Wylde v Lushe court case; 4-load farm) & 1641/42 oath signers John Lush Sr. & Jr.",
+        "linkedEventIds": [
+          "ev-1542",
+          "ev-1544",
+          "ev-1569",
+          "ev-1594",
+          "ev-1642",
+          "ev-1656"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.1868,
+          50.9554
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "shaftesbury",
+      "properties": {
+        "title": "Shaftesbury Abbey & Holy Trinity Church, Dorset",
+        "region": "NDORSET",
+        "lineageCode": "V2",
+        "lineageBranch": "Lush, Lawrence & Dwyer",
+        "activeEra": "1535–1718",
+        "cadastralOrGridRef": "1535 Abbey Survey & Dec. 24, 1718 Wedding",
+        "description": "Home of Shaftesbury Abbey (landlord of Melbury Abbas until March 1539) and hilltop church where Gen 10 Robert Lush & Elizabeth Andrus married by licence on Christmas Eve, Dec. 24, 1718.",
+        "linkedEventIds": [
+          "ev-1544",
+          "ev-1707"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.1981,
+          51.0056
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "okeford-sturminster",
+      "properties": {
+        "title": "Okeford Fitzpaine & Sturminster Newton, Dorset",
+        "region": "NDORSET",
+        "lineageCode": "V2",
+        "lineageBranch": "Lush, Lawrence & Dwyer",
+        "activeEra": "1707–1720",
+        "cadastralOrGridRef": "DHC PE/LYD/MI 1 • 1719/20 Property Bond",
+        "description": "Blackmore Vale towns linked by the 1719/20 legal property bond between Edmund Lush of Okeford Fitzpaine and his eldest son Robert Lush 'of Sturminster Newton'.",
+        "linkedEventIds": [
+          "ev-1707"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.2882,
+          50.9124
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ashmore",
+      "properties": {
+        "title": "Ashmore, Cranborne Chase, Dorset",
+        "region": "NDORSET",
+        "lineageCode": "V2",
+        "lineageBranch": "Lush, Lawrence & Dwyer",
+        "activeEra": "1523–1725",
+        "cadastralOrGridRef": "1523 Tax Roll & Dec. 30, 1725 Baptism",
+        "description": "Hilltop Dorset village where Gen 10 Robert & Elizabeth Lush baptized Gen 9 Thomas Lush on December 30, 1725.",
+        "linkedEventIds": [
+          "ev-1523",
+          "ev-1707"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.1291,
+          50.9532
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "motcombe",
+      "properties": {
+        "title": "St. Mary's Church, Motcombe, Dorset",
+        "region": "NDORSET",
+        "lineageCode": "V2",
+        "lineageBranch": "Lush, Lawrence & Dwyer",
+        "activeEra": "1775–1878",
+        "cadastralOrGridRef": "Apr. 30, 1775 Departure Parish & 1871 Census",
+        "description": "English departure parish where Newfoundland pioneer John Lush was baptized April 30, 1775 (right below neighbour Ann Blandford), and where 78-year-old cousin George Lush lived in 1871.",
+        "linkedEventIds": [
+          "ev-1775",
+          "ev-1840",
+          "ev-1871"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.2304,
+          51.0283
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "wimborne-minster",
+      "properties": {
+        "title": "Wimborne Minster, East Dorset",
+        "region": "NDORSET",
+        "lineageCode": "V2",
+        "lineageBranch": "Lush, Lawrence & Dwyer",
+        "activeEra": "1773",
+        "cadastralOrGridRef": "Jan. 17, 1773 Goulding Baptism",
+        "description": "Baptism parish of Greenspond pioneer David Goulding (Jan. 17, 1773), maternal grandfather of Mary Goulding Lush.",
+        "linkedEventIds": [
+          "ev-1775",
+          "ev-1840"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.9873,
+          50.7991
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "merriott-crewkerne",
+      "properties": {
+        "title": "All Saints Merriott & Crewkerne, Somerset",
+        "region": "NDORSET",
+        "lineageCode": "V2",
+        "lineageBranch": "Lush, Lawrence & Dwyer",
+        "activeEra": "1569–1690",
+        "cadastralOrGridRef": "Somerset Heritage Centre • DP/MER/2/1/1",
+        "description": "Somerset home of 1569 armour-holder Thomas Lawrens Sr., archer Peter Langdon, Thomas Lawrence Jr. (d. 1637), John Lawrence & Joane Langdon (1656), William Lawrence & Sarah Shore (1657) & Mary Lawrence (1690).",
+        "linkedEventIds": [
+          "ev-1569",
+          "ev-1642",
+          "ev-1656",
+          "ev-1707"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.7891,
+          50.9092
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "bower-chalke",
+      "properties": {
+        "title": "Bower Chalke, South Wiltshire",
+        "region": "NDORSET",
+        "lineageCode": "V2",
+        "lineageBranch": "Lush, Lawrence & Dwyer",
+        "activeEra": "1794–1795",
+        "cadastralOrGridRef": "Jan. 22, 1795 Will of John Newman",
+        "description": "Village of yeoman John Newman, whose 1794/95 will left £120 to 'my sisters son John Lush, now living in the parish of Motcomb'.",
+        "linkedEventIds": [
+          "ev-1775"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.9682,
+          51.0151
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "fethard",
+      "properties": {
+        "title": "Chapel Lane School, Fethard, Co. Tipperary",
+        "region": "IRELAND",
+        "lineageCode": "V2",
+        "lineageBranch": "Lush, Lawrence & Dwyer",
+        "activeEra": "1846",
+        "cadastralOrGridRef": "Cashel & Emly • 1846 Irish Directory",
+        "description": "Parochial schoolhouse of Master Philip Dwyer (1846 working lead), matching Capt. John Alexander Dwyer's Methodism and Philip/Alexander family names.",
+        "linkedEventIds": [
+          "ev-1846"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.6931,
+          52.4672
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "waterford",
+      "properties": {
+        "title": "Port of Waterford, Ireland",
+        "region": "IRELAND",
+        "lineageCode": "V2",
+        "lineageBranch": "Lush, Lawrence & Dwyer",
+        "activeEra": "1845–1856",
+        "cadastralOrGridRef": "Waterford–Twillingate Sea Route",
+        "description": "Main Irish departure port connecting Fethard and South Tipperary to West Country merchant ships sailing to Twillingate, Newfoundland.",
+        "linkedEventIds": [
+          "ev-1846"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.1101,
+          52.2593
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osunkoti",
+      "properties": {
+        "title": "Ilé Ọ̀ṣùnkọ́tì (At Osunkoti), Idamudu I, Emure-Ekiti",
+        "region": "YORUBA",
+        "lineageCode": "V3",
+        "lineageBranch": "Kolade & Ojomu",
+        "activeEra": "c. 1780–1968+",
+        "cadastralOrGridRef": "Ward 07: Idamudu I • Unit 13/06/07/003",
+        "description": "Hereditary Osukoti quarter-chieftaincy seat founded at Emure Ijaloke (c. 1780) and held by Chief Daniel Ogunlusi Kolade (K4) and Chief John Aderibigbe Kolade (1968).",
+        "linkedEventIds": [
+          "ev-1780",
+          "ev-1880",
+          "ev-1886",
+          "ev-1968"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.4582,
+          7.4375
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "kolade-compound",
+      "properties": {
+        "title": "Kolade's Compound & St. Paul's Church, Emure-Ekiti",
+        "region": "YORUBA",
+        "lineageCode": "V3",
+        "lineageBranch": "Kolade & Ojomu",
+        "activeEra": "1886–2010",
+        "cadastralOrGridRef": "Ward 08: Idamudu II • Units 13/06/08/004 & 008",
+        "description": "Ancestral town compound and St. Paul's Anglican parish of Chief Daniel Ogunlusi Kolade, Alice Awawu, Sarah Fafunbo, Pa Joseph Owolabi Kolade & Madam Lydia Olugbe Kolade.",
+        "linkedEventIds": [
+          "ev-1886",
+          "ev-1922",
+          "ev-1947",
+          "ev-1968",
+          "ev-1969",
+          "ev-1973",
+          "ev-1989"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.4604,
+          7.4352
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ojomu-akeregun",
+      "properties": {
+        "title": "Ojomu Akeregun, Odo-Emure IV, Emure-Ekiti",
+        "region": "YORUBA",
+        "lineageCode": "V3",
+        "lineageBranch": "Kolade & Ojomu",
+        "activeEra": "c. 1780–2010",
+        "cadastralOrGridRef": "Ward 04: Odo-Emure IV • Unit 13/06/04/002",
+        "description": "Senior kingmaker (Ìwàrẹ̀fà) seat ('Near Ojumu's House') of High Chief Ojomu Arintokun, High Chief Ojomu Ogedu, and the Late Chief Ojomu (father of Madam Lydia Olugbe Kolade).",
+        "linkedEventIds": [
+          "ev-1780",
+          "ev-1880",
+          "ev-1886",
+          "ev-1944",
+          "ev-1989"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.4538,
+          7.4308
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "oko-ose",
+      "properties": {
+        "title": "Oko Ọ̀sẹ Kọ́ládé — River Ose Farm Estate (#35)",
+        "region": "YORUBA",
+        "lineageCode": "V3",
+        "lineageBranch": "Kolade & Ojomu",
+        "activeEra": "c. 1825–1890",
+        "cadastralOrGridRef": "Emure Municipal Gazetteer Settlement #35",
+        "description": "Hereditary family farm estate ('Kolade's Farmstead on the River Ose') anchoring Generation 5 patriarch Kọ́ládé / [Ògún]kọ́ládé.",
+        "linkedEventIds": [
+          "ev-1880"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.5122,
+          7.3954
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ijebu-owo",
+      "properties": {
+        "title": "Ijebu-Owo Palace (Ojomo Oluda), Owo Kingdom",
+        "region": "YORUBA",
+        "lineageCode": "V3",
+        "lineageBranch": "Kolade & Ojomu",
+        "activeEra": "c. 1815–1930",
+        "cadastralOrGridRef": "22 km east of Emure • c. 1880 Carved Effigy",
+        "description": "Royal palace of High Chief Ojomo Agunloye I (d. c. 1880, dated by his life-sized carved wooden àkó burial effigy), father of Olajenboye, and St. Patrick's school town of Pa Joseph Kolade.",
+        "linkedEventIds": [
+          "ev-1880",
+          "ev-1922"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.5934,
+          7.2021
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "benin-ondo",
+      "properties": {
+        "title": "Benin City & Ago Olumoye, Edo State (CMS Bookshops)",
+        "region": "YORUBA",
+        "lineageCode": "V3",
+        "lineageBranch": "Kolade & Ojomu",
+        "activeEra": "1922–1946",
+        "cadastralOrGridRef": "CMS Bookshops (1922–46) • 1942 Wedding",
+        "description": "Early career hub where Chief John A. Kolade (1922) and Pa Joseph O. Kolade (1933) joined C.M.S. Bookshops, and where Joseph married Madam Lydia Olugbe in 1942 (birth of Victor Olusoji Kolade).",
+        "linkedEventIds": [
+          "ev-1922",
+          "ev-1944"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.6275,
+          6.335
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ondo-ado-ibadan",
+      "properties": {
+        "title": "Ondo, Ado-Ekiti & Ibadan Corridor, Nigeria",
+        "region": "YORUBA",
+        "lineageCode": "V3",
+        "lineageBranch": "Kolade & Ojomu",
+        "activeEra": "1935–1968",
+        "cadastralOrGridRef": "St. Stephen's Ondo, Adeoyo Hospital & Ado-Ekiti",
+        "description": "Regional corridor where Pa Joseph Kolade reorganized C.M.S. Bookshops (1946–58), Mama Dudu ran her Ondo ẹ̀kọ and Ado–Emure wholesale bakery network, Canon Awosika baptized Eric Bamidele (Oct. 1947), and Chief John A. Kolade trained at Adeoyo Hospital.",
+        "linkedEventIds": [
+          "ev-1922",
+          "ev-1947"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8353,
+          7.0932
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "bonavista",
+      "properties": {
+        "title": "Bonavista, Bonavista Bay, Newfoundland",
+        "region": "NL",
+        "lineageCode": "V1",
+        "lineageBranch": "Squires & Akerman",
+        "activeEra": "1785–1851",
+        "cadastralOrGridRef": "Christ Church • USPG Missionary Records",
+        "description": "Home for 30+ years of Anglican lay minister Abraham Akerman Sr. (1745–1822), who signed 'A Ackerman' when officiating the Aug. 18, 1798 wedding of his daughter Jane Akerman to Simon Squires Sr. (1769–1832).",
+        "linkedEventIds": [
+          "ev-1798",
+          "ev-1822"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -53.1124,
+          48.6492
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "greenspond",
+      "properties": {
+        "title": "Greenspond, Bonavista Bay, Newfoundland",
+        "region": "NL",
+        "lineageCode": "V2",
+        "lineageBranch": "Lush, Lawrence & Dwyer",
+        "activeEra": "1795–1869",
+        "cadastralOrGridRef": "Bonavista Bay Island Outport • 1840 PR",
+        "description": "Granite island outport settled by Motcombe pioneer John Lush (1775–1827) & Elizabeth Jane Wood, David Goulding (1773–1826), May 26, 1840 wedding of Thomas Lush & Mary Goulding, and 1857 St. Stephen's timber haul.",
+        "linkedEventIds": [
+          "ev-1840"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -53.5702,
+          49.0684
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "hillview-tb",
+      "properties": {
+        "title": "Hillview, Trinity Bay, Newfoundland",
+        "region": "NL",
+        "lineageCode": "V2",
+        "lineageBranch": "Lush, Lawrence & Dwyer",
+        "activeEra": "c. 1806–1856",
+        "cadastralOrGridRef": "Southwest Arm, Trinity Bay • Thorne Family Root",
+        "description": "Birthplace of matriarch Caroline Bemister Thorne (c. 1837–1906, daughter of Somerset pioneer Richard Thorne & Betsy George), who married Irish pioneer Capt. John Alexander Dwyer c. 1856.",
+        "linkedEventIds": [
+          "ev-1846"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -53.895,
+          48.0558
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "herring-twillingate",
+      "properties": {
+        "title": "Herring Neck & Twillingate, Notre Dame Bay, NL",
+        "region": "NL",
+        "lineageCode": "V1",
+        "lineageBranch": "Squires & Akerman",
+        "activeEra": "1836–1907",
+        "cadastralOrGridRef": "1836 Census & Twillingate Death Register",
+        "description": "Northern harbour of Simon & Julia Squires (1836 census) and c. 1856–1907 home of Irish Methodist pioneer Capt. John Alexander Dwyer & Caroline Bemister Thorne.",
+        "linkedEventIds": [
+          "ev-1846",
+          "ev-1862",
+          "ev-1888"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -54.7642,
+          49.6481
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "tilt-cove",
+      "properties": {
+        "title": "Tilt Cove Copper Mine & Nipper's Harbour, NL",
+        "region": "NL",
+        "lineageCode": "V2",
+        "lineageBranch": "Lush, Lawrence & Dwyer",
+        "activeEra": "1862–1895",
+        "cadastralOrGridRef": "1862 Squires Wedding & 1880s Copper Mine",
+        "description": "Sept. 2, 1862 wedding harbour of Silas Squires & Sarah Jane Noble (Nipper's Harbour) and cliffside copper-mining town of William Lush, Polly Dwyer, Rev. Philip H. Lush (b. 1888) & miner Albert Dwyer (d. 1895).",
+        "linkedEventIds": [
+          "ev-1862",
+          "ev-1888"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -55.6283,
+          49.8861
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "lushes-burlington",
+      "properties": {
+        "title": "Lushes Bight & Burlington / North West Arm, NL",
+        "region": "NL",
+        "lineageCode": "V2",
+        "lineageBranch": "Lush, Lawrence & Dwyer",
+        "activeEra": "1880s–1965",
+        "cadastralOrGridRef": "Notre Dame Bay & Green Bay Coves",
+        "description": "Sheltered inlet that still bears the family name (Lushes Bight on Long Island) and permanent Burlington / North West Arm home of William Lush (1845–1922) & Polly Dwyer (1863–1905).",
+        "linkedEventIds": [
+          "ev-1888",
+          "ev-1913"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -56.0124,
+          49.7542
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "smiths-harbour",
+      "properties": {
+        "title": "Smiths Harbour, Green Bay, Newfoundland",
+        "region": "NL",
+        "lineageCode": "CONV",
+        "lineageBranch": "Where Our Lines Unite",
+        "activeEra": "1865–1980",
+        "cadastralOrGridRef": "Sawmill, Medical Boat & Sept. 6, 1944 Wedding",
+        "description": "Home of Silas & William Squires, sawmill and medical-boat pioneer Albert Lush (1898–1980) & Florence White, Sept. 6, 1944 wedding of Pleman Squires & Ivy Lush, and birthplace of Merle Elizabeth Squires.",
+        "linkedEventIds": [
+          "ev-1862",
+          "ev-1913",
+          "ev-1944",
+          "ev-1969",
+          "ev-1973"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -55.9554,
+          49.7406
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "portland-maine",
+      "properties": {
+        "title": "Portland & Kennebunkport, Maine, USA",
+        "region": "NL",
+        "lineageCode": "V2",
+        "lineageBranch": "Lush, Lawrence & Dwyer",
+        "activeEra": "1910s–1967",
+        "cadastralOrGridRef": "New England Ministry • Rev. Philip H. Lush",
+        "description": "New England ministry home of Tilt Cove-born Rev. Philip Henry Lush (1888–1967, son of William Lush & Polly Dwyer) and his sons Earle, Aubrey, and Herbert Lush.",
+        "linkedEventIds": [
+          "ev-1888"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.2568,
+          43.6591
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sudbury-on",
+      "properties": {
+        "title": "Sudbury, Northern Ontario, Canada",
+        "region": "ONTARIO",
+        "lineageCode": "V1",
+        "lineageBranch": "Squires & Akerman",
+        "activeEra": "1913",
+        "cadastralOrGridRef": "Archives of Ontario • 1913 Marriage Register",
+        "description": "Site of the family's earliest mainland Canadian foothold, where Smiths Harbour cousin William Silas Squires married Ethel Jane Brown in 1913.",
+        "linkedEventIds": [
+          "ev-1913"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.993,
+          46.4917
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "pine-hills",
+      "properties": {
+        "title": "Pine Hills Cemetery (Section A, Lot 2436H), Scarborough",
+        "region": "ONTARIO",
+        "lineageCode": "CONV",
+        "lineageBranch": "Where Our Lines Unite",
+        "activeEra": "2017–2026",
+        "cadastralOrGridRef": "Section A, Lot 2436H • Granite Memorial",
+        "description": "Family memorial site: 2026 charcoal granite monument honoring Victor Olusoji Kolade (1942–2017) of Emure-Ekiti, Nigeria & Merle Elizabeth Kolade, née Squires (1944–2025) of Smith's Harbour, NL.",
+        "linkedEventIds": [
+          "ev-2026"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.2684,
+          43.7261
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "toronto-on",
+      "properties": {
+        "title": "Toronto, Ontario, Canada",
+        "region": "ONTARIO",
+        "lineageCode": "CONV",
+        "lineageBranch": "Where Our Lines Unite",
+        "activeEra": "c. 1969–2026",
+        "cadastralOrGridRef": "Toronto, Ontario • Gen 2 & Gen 1 Home",
+        "description": "Home of Victor Olusoji Kolade & Merle Elizabeth Squires (married 1973) and living Generation 1 household of Victor Olutayo Kolade & Abigail Salole.",
+        "linkedEventIds": [
+          "ev-1969",
+          "ev-1973",
+          "ev-2026"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3832,
+          43.6532
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "arundell-1544-manor-grant",
+      "properties": {
+        "title": "Sept. 1544 Arundell Three-Parish Manor Grant Boundary (Shaftesbury, Melbury Abbas, Compton Abbas & Fontmell Magna)",
+        "lineageCode": "V2",
+        "activeEra": "1544–1750",
+        "linkedEventIds": [
+          "ev-1544"
+        ]
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -2.2035,
+              51.0085
+            ],
+            [
+              -2.192,
+              50.9665
+            ],
+            [
+              -2.182,
+              50.9515
+            ],
+            [
+              -2.156,
+              50.983
+            ],
+            [
+              -2.2035,
+              51.0085
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "route-squires-akerman",
+      "properties": {
+        "title": "Squires & Akerman Migration Route (Dorset to NL & Ontario)"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -2.4184,
+            50.8362
+          ],
+          [
+            -2.4262,
+            50.8143
+          ],
+          [
+            -2.4083,
+            50.8012
+          ],
+          [
+            -2.8184,
+            50.7311
+          ],
+          [
+            -53.1124,
+            48.6492
+          ],
+          [
+            -54.7642,
+            49.6481
+          ],
+          [
+            -55.9554,
+            49.7406
+          ],
+          [
+            -80.993,
+            46.4917
+          ],
+          [
+            -79.3832,
+            43.6532
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "route-lush-lawrence",
+      "properties": {
+        "title": "Lush, Lawrence & Goulding Migration Route (Dorset to NL & Maine)"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -2.1643,
+            50.9792
+          ],
+          [
+            -2.1868,
+            50.9554
+          ],
+          [
+            -2.1814,
+            50.9681
+          ],
+          [
+            -2.1981,
+            51.0056
+          ],
+          [
+            -2.2304,
+            51.0283
+          ],
+          [
+            -53.5702,
+            49.0684
+          ],
+          [
+            -55.6283,
+            49.8861
+          ],
+          [
+            -55.9554,
+            49.7406
+          ],
+          [
+            -70.2568,
+            43.6591
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "route-dwyer-irish",
+      "properties": {
+        "title": "Dwyer Irish Maritime Route (Tipperary & Waterford to NL)"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -7.6931,
+            52.4672
+          ],
+          [
+            -7.1101,
+            52.2593
+          ],
+          [
+            -53.895,
+            48.0558
+          ],
+          [
+            -54.7642,
+            49.6481
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "route-kolade-ojomu",
+      "properties": {
+        "title": "Kolade & Ojomu Transatlantic Route (Yorubaland to Victoria, CFB Shilo & Toronto)"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            5.5934,
+            7.2021
+          ],
+          [
+            5.4604,
+            7.4352
+          ],
+          [
+            5.6275,
+            6.335
+          ],
+          [
+            4.8353,
+            7.0932
+          ],
+          [
+            -123.3656,
+            48.4284
+          ],
+          [
+            -99.6367,
+            49.8108
+          ],
+          [
+            -79.3832,
+            43.6532
+          ],
+          [
+            -79.2684,
+            43.7261
+          ]
+        ]
+      }
+    }
+  ]
+}
