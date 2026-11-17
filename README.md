@@ -1,4 +1,4 @@
-# [UPDATE] Nearly 700 Years of Our Family History: Squires, Akerman, Lush, Lawrence, Goulding, Dwyer, Thorne, Kolade & Ojomu Ancestral Archive (c. 1332–2026)
+# [UPDATED] Nearly 700 Years of Our Family History: Squires, Akerman, Lush, Lawrence, Goulding, Dwyer, Thorne, Kolade & Ojomu Ancestral Archive (c. 1332–2026)
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24173583.svg)](https://doi.org/10.5281/zenodo.24173583)
 
