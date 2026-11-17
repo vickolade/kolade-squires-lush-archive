@@ -20,10 +20,10 @@ Spanning West and North Dorset and Somerset (England), County Tipperary and Wate
 
 - `00_Atlas_World_Map.jpg` — Cartographic overview of the 37 WGS84 ancestral loci and four transatlantic migration corridors.
 - `index.html` — Zero-dependency interactive web atlas with compiled CSS, inlined Leaflet 1.9.4 engine, and Natural Earth 1:50m offline world vector basemap.
-- `Family_History_Archive_1475_2026.xml` — TEI-XML P5 scholarly edition containing diplomatic transcriptions, `<listBibl>` shelfmarks, `<listPlace>` WGS84 coordinates, and three-tier Genealogical Proof Standard certainty attributes (`high` / `medium` / `low`).
-- `Ancestral_Places_WGS84.geojson` — RFC 7946 / Linked Places GIS `FeatureCollection` of 37 ancestral sites, migration corridors, and the September 1544 Arundell three-parish manor grant boundary.
+- `Family_History_Archive_1332_2026.xml` — TEI-XML P5 scholarly edition containing diplomatic transcriptions, `<listBibl>` shelfmarks, `<listPlace>` WGS84 coordinates, and three-tier Genealogical Proof Standard certainty attributes (`high` / `medium` / `low`).
+- `Ancestral_Places_WGS84.geojson` — RFC 7946 / Linked Places GIS `FeatureCollection` of 43 ancestral sites, migration corridors, and the September 1544 Arundell three-parish manor grant boundary.
 - `Kolade_Squires_Lush_1475_2026.ged` — Sourced 16-generation GEDCOM 7.0 UTF-8 pedigree.
-- `Family_History_Timeline_1475_2026.csv` & `Family_History_Data_1475_2026.json` — Tabular CSV and structured JSON datasets.
+- `Family_History_Timeline_1332_2026.csv` & `Family_History_Data_1332_2026.json` — Tabular CSV and structured JSON datasets.
 - `README_ARCHIVAL_MANIFEST.txt` — OAIS / Dublin Core plain-text inventory and evidentiary audit note.
 
 ## License
