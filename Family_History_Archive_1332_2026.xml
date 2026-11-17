@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt><title>Nearly 700 Years of Our Family History: Squires, Akerman, Lush, Lawrence, Goulding, Dwyer, Thorne, Kolade &amp; Ojomu Ancestral Archive (c. 1332–2026)</title></titleStmt>
+      <publicationStmt>
+        <authority>Kolade, Squires &amp; Lush Ancestral Archive</authority>
+        <idno type="DOI">10.5281/zenodo.24173583</idno>
+        <idno type="DOI-v2">10.5281/zenodo.24174537</idno>
+        <idno type="URI">https://archive.org/details/kolade-squires-lush-archive-1475-2026</idno>
+        <idno type="URI">https://github.com/vickolade/kolade-squires-lush-archive</idno>
+        <idno type="SWHID">swh:1:dir:18e3e023eeb544a1e27c2158aea3db8db957584c;origin=https://github.com/vickolade/kolade-squires-lush-archive;visit=swh:1:snp:a544ab86c2e3e2065e414780b1f69b5ad697a258;anchor=swh:1:rev:ac6a1a7ab69f0e14cc19dff08f93719426f691f0</idno>
+        <availability status="free"><p>Public open-standard digital archive edition (verified written records 1332–2026; CC BY 4.0).</p></availability>
+      </publicationStmt>
+      <sourceDesc>
+        <listBibl>
+          <head>Verified across 43 primary archival series spanning Kew, Dorchester, Taunton, Chippenham, Oxford, St. John's, Emure-Ekiti, Ondo, Owo, Sudbury, and Toronto (1332–2026).</head>
+          <bibl xml:id="s00a">TNA E 179/196/8 (Sept. 1332 Tisbury Lay Subsidy, WRS 45:44) &amp; CP 40/636, 656, 664 (1420–1427) — The National Archives (Kew) — 1332 'John le Lusshe 12d' in Tisbury (below Alexander de Ocle) &amp; 1420–27 pleas/executors of John Lussh of Upton</bibl>
+          <bibl xml:id="s00">TNA CP 40/724, 758, 776 &amp; 871 (1442–1480 Plantagenet Common Pleas Rolls) — The National Archives (Kew) / AALT — 5 Latin membranes: John &amp; William Lusshe across Stour Provost, Hinton St Mary &amp; Tisbury/Oakley</bibl>
+          <bibl xml:id="s01">TNA E 36/17 (Spring 1539 Melbury Abbas Muster, p. 95) — The National Archives (Kew) — Edm Lushe (NA, aged 60+, owns steel Almain rivets armour)</bibl>
+          <bibl xml:id="s02">TNA E 179/103/116 &amp; 128 (Oct. 1523 Sixpenny Handley Tax Roll) — The National Archives (Kew) — Edmond Lushe £40 (top 1.7% of all 8,369 Dorset taxpayers)</bibl>
+          <bibl xml:id="s03">TNA E 179/103/119–120 (1524–1525 Buckland Newton / Knoll Tax Roll) — The National Archives (Kew) — William Squyer G 5 &amp; adult son Thomas Squyer G 1</bibl>
+          <bibl xml:id="s04">TNA E 179/103/121 (Jan. 6, 1525 East Melbury &amp; Compton Tax Roll) — The National Archives (Kew) — Edmond Lusshe G 20, Thomas Rydoutte &amp; John Burden</bibl>
+          <bibl xml:id="s05">TNA E 179/103/122 (1525 Shipton Gorge Akerman Tax Roll) — The National Archives (Kew) — Robert Akerman G 10 in Godderthorn Hundred</bibl>
+          <bibl xml:id="s06">WSHC Ref: 2667/13/403 (1528–1529 Melbury Abbas Manor Court Roll) — Wiltshire &amp; Swindon History Centre — Lush &amp; Chyckeford Tudor farm tenancies</bibl>
+          <bibl xml:id="s07">TNA E 36/29 (Apr. 10 &amp; May 15, 1539 Knoll &amp; Godderthorn Musters) — The National Archives (Kew) — B Tho Squyer (billhook), Roberds, Farvell &amp; Akerman archers</bibl>
+          <bibl xml:id="s08">TNA SP 2/S (May 15, 1539 Alton Pancras &amp; Cerne Abbas Musters) — The National Archives (Kew) — Rob Squyer (armour &amp; bow) &amp; B Jn Squyer in Alton Pancras</bibl>
+          <bibl xml:id="s09">TNA E 101/61/36 (1542 Melbury, Compton &amp; Fontmell Muster Roll) — The National Archives (Kew) — Edm Lushe, newly adult Jn Lusshe (16+) &amp; Walt Lusshe</bibl>
+          <bibl xml:id="s10">Valor Ecclesiasticus Vol. I (1535) &amp; L&amp;P Hen. VIII Vols. 17, 19.2 (Sept. 1544) — Record Commission &amp; HMSO — Shaftesbury Abbey (£1,166 8s. 9d. net) &amp; Sept. 1544 Arundell Manor Grant (£2,609 11s. 1d.; £58/yr rent)</bibl>
+          <bibl xml:id="s11">TNA E 179/104/151–152 (1543–1544 Knoll G 1½ &amp; Alton Tax Roll) — The National Archives (Kew) — Thomas Squyer G 1½ (halfpenny 4s. 7½d. tally) &amp; Robert/John Squyer</bibl>
+          <bibl xml:id="s12">TNA E 179/104/154, 156 &amp; 157 (1545 Melbury, Cann &amp; Bothenhampton) — The National Archives (Kew) — Edmond Lusshe G 13, John Lusshe G 1 &amp; Henry Akerman G 4</bibl>
+          <bibl xml:id="s13">Dean of Salisbury Will Registers, Series I, Vols. 1 &amp; 3 (1558–1576) — WSHC Chippenham / BRS Vol. 53 — Alton Pancras wills of Locke (1558), John (1565) &amp; Robert Squire (1576)</bibl>
+          <bibl xml:id="s14">Somerset Record Society Vol. XX &amp; TNA PROB 11/51/267 (1569 Merriott) — SRS &amp; Kew — Thomas Lawrens Sr. armour group, archer Peter Langdon &amp; Florence Pytt will</bibl>
+          <bibl xml:id="s15">TNA SP 12/56 (1569 Dorset Muster Roll: Bridport &amp; Fontmell) — The National Archives (Kew) — Bridport archer A Ric Akerman, B Jn Akerman &amp; Fontmell quota</bibl>
+          <bibl xml:id="s16">Melbury Abbas Probate / Bristol Cathedral Calendar (Apr. 1572 Will) — Dorset / Bristol Dean &amp; Chapter (SDNQ 24:173) — Will of John Lusshe (£20 legacy to son William)</bibl>
+          <bibl xml:id="s17">DHC PE/BCN/RE 1/1 Frames 1–32 (1568/69–1584/85 Bookham Church Register) — Dorset History Centre — Thomas &amp; Juliana Squier, 1578 Locke–Squier wedding &amp; 1581/82 Churchwarden Johannes Squier</bibl>
+          <bibl xml:id="s18">TNA E 179/105/253, REQ 2/128/60 &amp; SDNQ 34.351:353 (1594 Fontmell) — Kew &amp; Arundell Archive — William &amp; Ellen Lushe (G 3 tax, Wylde v Lushe lawsuit &amp; 4-load farm)</bibl>
+          <bibl xml:id="s19">TNA E 179/105/271 (Sept. 20, 1598 Knoll Copyhold L 1 Tax Roll) — The National Archives (Kew) — Thomas S[quire] explicitly recorded holding 'in copy' (L 1) in Knoll</bibl>
+          <bibl xml:id="s20">DHC PE/BCN/RE 1/1 Frames 68v–121r (1598–1620/21 Bookham Register) — Dorset History Centre — Mar. 7, 1600/01 Thomas Squier baptism, Rogerus Squier &amp; Maria Squier burial</bibl>
+          <bibl xml:id="s21">DHC PE/BCN/RE 1/1 Frames 123r–124r (Sept. 2, 1621 Thomas Squire Signature) — Dorset History Centre — Churchwarden Thomas Squire's handwritten signature introducing '-ire' spelling</bibl>
+          <bibl xml:id="s22">SHC DD\SP/1637/22, 1670/55 &amp; 1673/28 (Merriott Estate Inventories) — Somerset Heritage Centre (Taunton) — Estate inventories of Thomas Lawrence Jr. (1637) &amp; John Lawrence</bibl>
+          <bibl xml:id="s23">Dorset Protestation Loyalty Oaths (Feb.–Mar. 1641/42 Fontmell &amp; Brockhampton) — Parliamentary Archives / Fry 1912 — John Lush Sr./Jr. &amp; Thomas Squire (0 in Compton &amp; Alton)</bibl>
+          <bibl xml:id="s24">SHC DP/MER/2/1/1 &amp; Crewkerne Register (1656–1690 Lawrence, Langdon &amp; Shore) — Somerset Heritage Centre — 1656–57 weddings &amp; Oct. 22, 1690 Mary Lawrence baptism</bibl>
+          <bibl xml:id="s25">1664 Hearth Tax &amp; WSHC Ref: 413/162 (1664–1667 Fontmell &amp; Melbury–Compton) — Meekings 1951 &amp; Chippenham — 4-fireplace farmhouse &amp; 1667 Melbury–Compton manor court roll</bibl>
+          <bibl xml:id="s26">DHC AD/DT/W/1673/30 &amp; Dec. 1707/09 Will (Melbury Abbas Yeoman Wills) — Dorset History Centre — 1672/73 £50 will (Burt &amp; Burden) &amp; 1707/09 Phillis/Philadelphia Lush will</bibl>
+          <bibl xml:id="s27">DHC PE/COA/RE 1/1–2 (1668–1749 Compton Abbas Church Registers) — Dorset History Centre — Aug. 1676 Edmund Lush baptism, Apr. 14, 1707 wedding &amp; shared double baptisms</bibl>
+          <bibl xml:id="s28">DHC PE/BCN/RE 1/1 Frames 152v–162 &amp; PE/BCN/OV 7/1/2 (1672–1678 Bookham Move) — Dorset History Centre — Dec. 10, 1677 Anniver Roberts wedding, Feb. 21, 1677/78 Thomas Senr. burial &amp; move</bibl>
+          <bibl xml:id="s29">Holy Trinity Shaftesbury PR, DHC PE/LYD/MI 1 &amp; Ashmore PR (1718–1725) — Dorset History Centre — Dec. 24, 1718 marriage licence, 1719/20 property bond &amp; 1725 Thomas Lush baptism</bibl>
+          <bibl xml:id="s30">Alton Pancras PR (1702–1739/40) &amp; Piddletrenthide PR (1732/33 Squire Family) — Dorset History Centre — John–Philip–Eleanor name trio, 1729/30 Elnar burial &amp; 1732/33 Mary/Margaret burials</bibl>
+          <bibl xml:id="s31">Broadwindsor (1745), Bridport PE/BT &amp; Whitchurch Canonicorum (1750) PRs — Dorset History Centre — 1745 Abraham Akerman baptism, Bridport rope/net makers &amp; 1750 Eleanor Squire wedding</bibl>
+          <bibl xml:id="s32">St. Giles Chideock PR (PE-CDK/RE/1/2, 1751–1777) &amp; DHC D-WLC (1802 Survey) — Dorset History Centre — Apr. 2, 1769 Simon Squire baptism &amp; 1802 'Lushes' cottage lease (John Squire aged 72)</bibl>
+          <bibl xml:id="s33">Wimborne PR (1773), Motcombe PR (1775), 1795 Will &amp; 1871 UK Census — DHC, WSHC &amp; Kew — David Goulding, John Lush (below Ann Blandford), £120 Newman will &amp; 1871 Motcombe census (George Lush)</bibl>
+          <bibl xml:id="s34">INEC 13/06/07/003, 08/004, 08/008, 04/002 &amp; Emure Gazetteer #35 — Emure-Ekiti Land Directory — Ilé Ọ̀ṣùnkọ́tì, Kolade's Compound, Ojomu Akeregun &amp; Oko Ọ̀sẹ Kọ́ládé</bibl>
+          <bibl xml:id="s35">USPG C/CAN/NFL: 2 (1792) &amp; PANL Bonavista PRs / NL Will Books Vol. 1:455 — Bodleian Oxford &amp; The Rooms (PANL) — Lay minister 'A Ackerman' (1798–1817), 1822–51 burials &amp; 1843/44 blue jacket will</bibl>
+          <bibl xml:id="s36">PANL 1836 Census, Greenspond, Nipper's Hbr, Sudbury (1913) &amp; Smiths Hbr — PANL &amp; Archives of Ontario — Herring Neck, Lush–Goulding, Squires–Noble, 1913 Sudbury m., 1921–45 censuses &amp; Sept. 6, 1944 m.</bibl>
+          <bibl xml:id="s37">PANL Vital Stats Vols. 89–91, Twillingate Death Bks 4–5, NDB Civil Regs &amp; Twillingate Sun — The Rooms (PANL) &amp; Maine — Sept. 20, 1871 Dwyer twins (Albert &amp; Philip Henry), 1880 Phillip George, 1883–90 Lush births, 1905–08 deaths &amp; 1906 Caroline Lush–Edwin Martin m.</bibl>
+          <bibl xml:id="s37b">Trinity St. Paul's &amp; Hants Hbr PRs (1753–1855), Hillview TB &amp; 1846 Slater's Fethard Screen — PANL &amp; Ireland — Pre-established Trinity Bay Protestant Dwyer cluster (Benjamin Lester &amp; Co.), Thorne root &amp; 1846 Fethard National School negative screen</bibl>
+          <bibl xml:id="s38">Owo Carved Wooden Àkó Effigy (Abiodun 1976, Africa 46.1) &amp; Emure Chronicles — Owo &amp; Emure History — c. 1880 death of High Chief Ojomo Agunloye I &amp; Ojomu Ogedu–Olajenboye marriage</bibl>
+          <bibl xml:id="s39">St. Paul's Emure Memorials (1989, 1996, 2010, J.A., E.B.) &amp; St. Stephen's Ondo PR — Nigerian Anglican Archives — Post-1886 Christian founders, CMS Bookshops, 1947 Ondo PR, 1968 Osukoti &amp; Primate Olufosoye</bibl>
+          <bibl xml:id="s40">Canadian Service/Civil Records (1966–2025) &amp; Pine Hills Lot 2436H Granite (2026) — Canada &amp; Toronto — Dec. 1966 arrival, CAF service, 1973 Kolade–Squires marriage, Pine Hills monument &amp; Gen 1</bibl>
+        </listBibl>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text><body>
+    <div type="archive" xml:id="Kolade-Squires-Lush-Corpus">
+      <listPlace xml:id="Ancestral-Places-WGS84">
+          <place xml:id="upton-donhead"><placeName>Upton (East Knoyle) &amp; Donhead St Mary, Shaftesbury Border, Wilts</placeName><location><geo>51.0789 -2.1647</geo></location></place>
+          <place xml:id="stour-provost"><placeName>Stour Provost (Stoure Prewes), Blackmore Vale, Dorset</placeName><location><geo>50.9856 -2.2811</geo></location></place>
+          <place xml:id="hinton-st-mary"><placeName>Hinton St Mary (Henton Abbatis), Blackmore Vale, Dorset</placeName><location><geo>50.9419 -2.3089</geo></location></place>
+          <place xml:id="tisbury-manor"><placeName>Tisbury (Tessebury / Tyssebury), Shaftesbury Abbey Manor, Wilts</placeName><location><geo>51.065 -2.0839</geo></location></place>
+          <place xml:id="oakley-tisbury"><placeName>Oakley Farm (Ocle / Okeley) in Tisbury, Shaftesbury Abbey Estate, Wilts</placeName><location><geo>51.0531 -2.1044</geo></location></place>
+          <place xml:id="trinity-hants-tb"><placeName>St. Paul's Trinity &amp; Hants Harbour, Trinity Bay, NL</placeName><location><geo>48.3664 -53.3644</geo></location></place>
+          <place xml:id="bookham-knoll"><placeName>Bookham Farm &amp; Knoll, Buckland Newton, Dorset</placeName><location><geo>50.8362 -2.4184</geo></location></place>
+          <place xml:id="alton-pancras"><placeName>Alton Pancras, Cerne Valley, Dorset</placeName><location><geo>50.8143 -2.4262</geo></location></place>
+          <place xml:id="piddletrenthide"><placeName>Piddletrenthide, Piddle Valley, Dorset</placeName><location><geo>50.8012 -2.4083</geo></location></place>
+          <place xml:id="shipton-gorge"><placeName>Shipton Gorge, West Dorset</placeName><location><geo>50.7281 -2.7192</geo></location></place>
+          <place xml:id="bridport"><placeName>Bothenhampton, Loders &amp; Bridport, Dorset</placeName><location><geo>50.7334 -2.7583</geo></location></place>
+          <place xml:id="broadwindsor"><placeName>St. John the Baptist Church, Broadwindsor, Dorset</placeName><location><geo>50.8161 -2.8012</geo></location></place>
+          <place xml:id="chideock"><placeName>St. Giles Church, Chideock — Cottage &quot;Lushes&quot;</placeName><location><geo>50.7311 -2.8184</geo></location></place>
+          <place xml:id="melbury-abbas"><placeName>East Melbury &amp; St. Thomas's Church, Melbury Abbas</placeName><location><geo>50.9792 -2.1643</geo></location></place>
+          <place xml:id="compton-abbas"><placeName>Compton Abbas, Blackmore Vale, Dorset</placeName><location><geo>50.9681 -2.1814</geo></location></place>
+          <place xml:id="fontmell-magna"><placeName>Fontmell Magna, Blackmore Vale, Dorset</placeName><location><geo>50.9554 -2.1868</geo></location></place>
+          <place xml:id="shaftesbury"><placeName>Shaftesbury Abbey &amp; Holy Trinity Church, Dorset</placeName><location><geo>51.0056 -2.1981</geo></location></place>
+          <place xml:id="okeford-sturminster"><placeName>Okeford Fitzpaine &amp; Sturminster Newton, Dorset</placeName><location><geo>50.9124 -2.2882</geo></location></place>
+          <place xml:id="ashmore"><placeName>Ashmore, Cranborne Chase, Dorset</placeName><location><geo>50.9532 -2.1291</geo></location></place>
+          <place xml:id="motcombe"><placeName>St. Mary's Church, Motcombe, Dorset</placeName><location><geo>51.0283 -2.2304</geo></location></place>
+          <place xml:id="wimborne-minster"><placeName>Wimborne Minster, East Dorset</placeName><location><geo>50.7991 -1.9873</geo></location></place>
+          <place xml:id="merriott-crewkerne"><placeName>All Saints Merriott &amp; Crewkerne, Somerset</placeName><location><geo>50.9092 -2.7891</geo></location></place>
+          <place xml:id="bower-chalke"><placeName>Bower Chalke, South Wiltshire</placeName><location><geo>51.0151 -1.9682</geo></location></place>
+          <place xml:id="fethard"><placeName>Chapel Lane National School, Fethard (Retired Screen)</placeName><location><geo>52.4672 -7.6931</geo></location></place>
+          <place xml:id="waterford"><placeName>Port of Waterford, Ireland</placeName><location><geo>52.2593 -7.1101</geo></location></place>
+          <place xml:id="osunkoti"><placeName>Ilé Ọ̀ṣùnkọ́tì (At Osunkoti), Idamudu I, Emure-Ekiti</placeName><location><geo>7.4375 5.4582</geo></location></place>
+          <place xml:id="kolade-compound"><placeName>Kolade's Compound &amp; St. Paul's Church, Emure-Ekiti</placeName><location><geo>7.4352 5.4604</geo></location></place>
+          <place xml:id="ojomu-akeregun"><placeName>Ojomu Akeregun, Odo-Emure IV, Emure-Ekiti</placeName><location><geo>7.4308 5.4538</geo></location></place>
+          <place xml:id="oko-ose"><placeName>Oko Ọ̀sẹ Kọ́ládé — River Ose Farm Estate (#35)</placeName><location><geo>7.3954 5.5122</geo></location></place>
+          <place xml:id="ijebu-owo"><placeName>Ijebu-Owo Palace (Ojomo Oluda), Owo Kingdom</placeName><location><geo>7.2021 5.5934</geo></location></place>
+          <place xml:id="benin-ondo"><placeName>Benin City &amp; Ago Olumoye, Edo State (CMS Bookshops)</placeName><location><geo>6.335 5.6275</geo></location></place>
+          <place xml:id="ondo-ado-ibadan"><placeName>Ondo, Ado-Ekiti &amp; Ibadan Corridor, Nigeria</placeName><location><geo>7.0932 4.8353</geo></location></place>
+          <place xml:id="bonavista"><placeName>Bonavista, Bonavista Bay, Newfoundland</placeName><location><geo>48.6492 -53.1124</geo></location></place>
+          <place xml:id="greenspond"><placeName>Greenspond, Bonavista Bay, Newfoundland</placeName><location><geo>49.0684 -53.5702</geo></location></place>
+          <place xml:id="hillview-tb"><placeName>Hillview, Trinity Bay, Newfoundland</placeName><location><geo>48.0558 -53.895</geo></location></place>
+          <place xml:id="herring-twillingate"><placeName>Herring Neck &amp; Twillingate, Notre Dame Bay, NL</placeName><location><geo>49.6481 -54.7642</geo></location></place>
+          <place xml:id="tilt-cove"><placeName>Tilt Cove Copper Mine &amp; Nipper's Harbour, NL</placeName><location><geo>49.8861 -55.6283</geo></location></place>
+          <place xml:id="lushes-burlington"><placeName>Lushes Bight &amp; Burlington / North West Arm, NL</placeName><location><geo>49.7542 -56.0124</geo></location></place>
+          <place xml:id="smiths-harbour"><placeName>Smiths Harbour, Green Bay, Newfoundland</placeName><location><geo>49.7406 -55.9554</geo></location></place>
+          <place xml:id="portland-maine"><placeName>Portland &amp; Kennebunkport, Maine, USA</placeName><location><geo>43.6591 -70.2568</geo></location></place>
+          <place xml:id="sudbury-on"><placeName>Sudbury, Northern Ontario, Canada</placeName><location><geo>46.4917 -80.993</geo></location></place>
+          <place xml:id="pine-hills"><placeName>Pine Hills Cemetery (Section A, Lot 2436H), Scarborough</placeName><location><geo>43.7261 -79.2684</geo></location></place>
+          <place xml:id="toronto-on"><placeName>Toronto, Ontario, Canada</placeName><location><geo>43.6532 -79.3832</geo></location></place>
+      </listPlace>
+      <listEvent xml:id="Family-History-Timeline-1332-2026">
+        <event xml:id="ev-1332" when="1332-09" type="V2" where="#oakley-tisbury #tisbury-manor #shaftesbury #melbury-abbas" source="#s00a">
+          <label>September 1332 (6 Edward III) — Oldest Ancestral Estate Record (694 Years Ago): &quot;John le Lusshe — 12d&quot; Taxed at Tisbury / Oakley Before the Black Death</label>
+          <desc>Pushes the documented Lusshe estate and surname horizon back 694 years into the early reign of King Edward III—sixteen years before the Black Death of 1348! Enrolled under Shaftesbury Abbey's manor of Tisbury just two lines below Alexander de Ocle (Oakley in Tisbury) and four lines above David de Seghulle (Sedgehill), taxpayer John le Lusshe (assessed 12d. on 15s. of surplus livestock/grain) captures both the Anglo-Norman 'le Lusshe' origin of the Lush surname and the exact Oakley-in-Tisbury farmstead strip still held by John Lusshe 148 years later in 1480.</desc>
+          <note type="diplomatic">[TNA E 179/196/8, Sept. 1332 Wiltshire Lay Subsidy (15th), Dunworth Hundred — Tisbury (Tysseburye), WRS Vol. 45, p. 44, col. 2] Alexander de Ocle — 20d | Walter Warner — 3s | John le Lusshe — 12d | Thomas de Toteredehulle — 4s | Edward le Wyke — 8s 10d | John Boterstake — 4s | David de Seghulle — 8s.</note>
+          <note type="verification" cert="medium">Verified verbatim on p. 44 of Crowley's Wiltshire Tax List of 1332 (the sole Lusshe household in all of 1332 Wiltshire); graded conservatively as Pre-Tudor Monastic Estate &amp; Surname Continuity.</note>
+        </event>
+      </listEvent>
+    </div>
+  </body></text>
+</TEI>
