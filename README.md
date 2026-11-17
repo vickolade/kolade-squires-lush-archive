@@ -1,10 +1,10 @@
-# 550 Years of Our Family History: Squires, Akerman, Lush, Lawrence, Goulding, Dwyer, Thorne, Kolade & Ojomu Ancestral Archive (c. 1475–2026)
+# [UPDATE] Nearly 700 Years of Our Family History: Squires, Akerman, Lush, Lawrence, Goulding, Dwyer, Thorne, Kolade & Ojomu Ancestral Archive (c. 1332–2026)
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24173583.svg)](https://doi.org/10.5281/zenodo.24173583)
 
 ![Cartographic Overview of 37 WGS84 Ancestral Loci](00_Atlas_World_Map.jpg)
 
-Self-contained digital historical atlas and UTF-8 text-encoded dataset tracing sixteen documented and reconstructed generations of the **Squires**, **Akerman**, **Lush**, **Lawrence**, **Langdon**, **Shore**, **Goulding**, **Dwyer**, and **Thorne** lineages alongside six generations of the Yorùbá **Kolade** (*Ilé Ọ̀ṣùnkọ́tì*) and **Ojomu / Ojomo** lineages (c. 1475–2026; verified written records 1523–2026).
+Self-contained digital historical atlas and UTF-8 text-encoded dataset tracing sixteen documented and reconstructed generations of the Squires, Akerman, Lush, Lawrence, Langdon, Shore, Goulding, Dwyer, and Thorne lineages alongside six generations of the Yorùbá Kolade (Ilé Ọ̀ṣùnkọ́tì) and Ojomu / Ojomo lineages (c. 1332–2026; verified written records 1332–2026).
 
 Spanning West and North Dorset and Somerset (England), County Tipperary and Waterford (Ireland), Emure-Ekiti, Ijebu-Owo, Benin City, Ondo, and Ibadan (Nigeria), Bonavista Bay, Trinity Bay, Notre Dame Bay, and Green Bay outports (Newfoundland), Maine (USA), and Sudbury and Toronto (Ontario, Canada), this archive unites **45 dated primary milestones**, **40 archival series**, and **37 WGS84-mapped ancestral loci**. Transatlantic convergence is anchored in Toronto by **Victor Olusoji Kolade** (1942–2017) of Emure-Ekiti, Nigeria, and **Merle Elizabeth Kolade, née Squires** (1944–2025) of Smith's Harbour, Newfoundland, commemorated at Pine Hills Cemetery, Scarborough (Section A, Lot 2436H). Living Generation 1 birth dates are withheld in this public archival edition.
 
