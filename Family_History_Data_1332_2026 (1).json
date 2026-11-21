@@ -1,0 +1,2206 @@
+{
+  "title": "Nearly 700 Years of Our Family History: Squires, Akerman, Lush, Lawrence, Goulding, Dwyer, Thorne, Kolade & Ojomu Ancestral Archive (c. 1332–2026)",
+  "identifiers": {
+    "zenodoConceptDoi": "https://doi.org/10.5281/zenodo.24173583",
+    "internetArchive": "https://archive.org/details/kolade-squires-lush-archive-1475-2026",
+    "githubOrigin": "https://github.com/vickolade/kolade-squires-lush-archive",
+    "swhid": "swh:1:dir:c9d765081a630afc6ad548d867e56eff95d81e62;origin=https://github.com/vickolade/kolade-squires-lush-archive;visit=swh:1:snp:87d83d4021470a7254af363c92507c73387c5d12;anchor=swh:1:rev:6ced81115bad70158507905c989ef53864b52910",
+    "liveMirror": "https://kolade-squires-lush.netlify.app/"
+  },
+  "count": 54,
+  "sources": [
+    {
+      "id": "s00a",
+      "call": "TNA E 179/196/8 (Sept. 1332 Tisbury Lay Subsidy, WRS 45:44) & CP 40/636, 656, 664 (1420–1427)",
+      "repo": "The National Archives (Kew) — 1332 'John le Lusshe 12d' in Tisbury (below Alexander de Ocle) & 1420–27 pleas/executors of John Lussh of Upton"
+    },
+    {
+      "id": "s00",
+      "call": "TNA CP 40/724, 758, 776 & 871 (1442–1480 Plantagenet Common Pleas Rolls)",
+      "repo": "The National Archives (Kew) / AALT — 5 Latin membranes: John & William Lusshe across Stour Provost, Hinton St Mary & Tisbury/Oakley"
+    },
+    {
+      "id": "s01a",
+      "call": "TNA KB 27/930, rot. 14d (Hilary Term 1494, 9 Henry VII King's Bench Plea Roll)",
+      "repo": "The National Archives (Kew) / AALT — John Armiger alias Squire & John Dunnyng of Pulham, husbandmen (pushes West Dorset Squire horizon back to 1494)"
+    },
+    {
+      "id": "s01",
+      "call": "TNA E 36/17 (Spring 1539 Melbury Abbas Muster, p. 95)",
+      "repo": "The National Archives (Kew) — Edm Lushe (NA, aged 60+, owns steel Almain rivets armour)"
+    },
+    {
+      "id": "s02",
+      "call": "TNA E 179/103/116 & 128 (Oct. 1523 Sixpenny Handley Tax Roll)",
+      "repo": "The National Archives (Kew) — Edmond Lushe £40 (top 1.7% of all 8,369 Dorset taxpayers)"
+    },
+    {
+      "id": "s03",
+      "call": "TNA E 179/103/119–120 (1524–1525 Buckland Newton / Knoll Tax Roll)",
+      "repo": "The National Archives (Kew) — William Squyer G 5 & adult son Thomas Squyer G 1"
+    },
+    {
+      "id": "s04",
+      "call": "TNA E 179/103/121 (Jan. 6, 1525 East Melbury & Compton Tax Roll)",
+      "repo": "The National Archives (Kew) — Edmond Lusshe G 20, Thomas Rydoutte & John Burden"
+    },
+    {
+      "id": "s05",
+      "call": "TNA E 179/103/122 (1525 Shipton Gorge Akerman Tax Roll)",
+      "repo": "The National Archives (Kew) — Robert Akerman G 10 in Godderthorn Hundred"
+    },
+    {
+      "id": "s06",
+      "call": "WSHC Ref: 2667/13/403 (1528–1529 Melbury Abbas Manor Court Roll)",
+      "repo": "Wiltshire & Swindon History Centre — Lush & Chyckeford Tudor farm tenancies"
+    },
+    {
+      "id": "s07",
+      "call": "TNA E 36/29 (Apr. 10 & May 15, 1539 Knoll & Godderthorn Musters)",
+      "repo": "The National Archives (Kew) — B Tho Squyer (billhook), Roberds, Farvell & Akerman archers"
+    },
+    {
+      "id": "s08",
+      "call": "TNA SP 2/S (May 15, 1539 Alton Pancras & Cerne Abbas Musters)",
+      "repo": "The National Archives (Kew) — Rob Squyer (armour & bow) & B Jn Squyer in Alton Pancras"
+    },
+    {
+      "id": "s09",
+      "call": "TNA E 101/61/36 (1542 Melbury, Compton & Fontmell Muster Roll)",
+      "repo": "The National Archives (Kew) — Edm Lushe, newly adult Jn Lusshe (16+) & Walt Lusshe"
+    },
+    {
+      "id": "s10",
+      "call": "Valor Ecclesiasticus Vol. I (1535) & L&P Hen. VIII Vols. 17, 19.2 (Sept. 1544)",
+      "repo": "Record Commission & HMSO — Shaftesbury Abbey (£1,166 8s. 9d. net) & Sept. 1544 Arundell Manor Grant (£2,609 11s. 1d.; £58/yr rent)",
+      "featured": true
+    },
+    {
+      "id": "s11",
+      "call": "TNA E 179/104/151–152 (1543–1544 Knoll G 1½ & Alton Tax Roll)",
+      "repo": "The National Archives (Kew) — Thomas Squyer G 1½ (halfpenny 4s. 7½d. tally) & Robert/John Squyer"
+    },
+    {
+      "id": "s12",
+      "call": "TNA E 179/104/154, 156 & 157 (1545 Melbury, Cann & Bothenhampton)",
+      "repo": "The National Archives (Kew) — Edmond Lusshe G 13, John Lusshe G 1 & Henry Akerman G 4"
+    },
+    {
+      "id": "s13",
+      "call": "Dean of Salisbury Will Registers, Series I, Vols. 1 & 3 (1558–1576) & TNA CP 40/1317b (1573)",
+      "repo": "WSHC Chippenham, BRS Vol. 53 & Kew / WAALT — Alton Pancras wills of Locke (1558), John (1565) & Robert Squire (1576), plus Trinity 1573 debt plea naming John Squyer of Alton Pancras, husbandman (rot. 274f)"
+    },
+    {
+      "id": "s14",
+      "call": "Somerset Record Society Vol. XX & TNA PROB 11/51/267 (1569 Merriott)",
+      "repo": "SRS & Kew — Thomas Lawrens Sr. armour group, archer Peter Langdon & Florence Pytt will"
+    },
+    {
+      "id": "s15",
+      "call": "TNA SP 12/56 (1569 Dorset Muster Roll: Bridport & Fontmell)",
+      "repo": "The National Archives (Kew) — Bridport archer A Ric Akerman, B Jn Akerman & Fontmell quota"
+    },
+    {
+      "id": "s16",
+      "call": "Melbury Abbas Probate / Bristol Cathedral Calendar (Apr. 1572 Will)",
+      "repo": "Dorset / Bristol Dean & Chapter (SDNQ 24:173) — Will of John Lusshe (£20 legacy to son William)"
+    },
+    {
+      "id": "s17",
+      "call": "DHC PE/BCN/RE 1/1 Frames 1–32 (1568/69–1584/85 Bookham Church Register)",
+      "repo": "Dorset History Centre — Thomas & Juliana Squier, 1578 Locke–Squier wedding & 1581/82 Churchwarden Johannes Squier"
+    },
+    {
+      "id": "s18",
+      "call": "TNA E 179/105/253, REQ 2/128/60 & SDNQ 34.351:353 (1594 Fontmell)",
+      "repo": "Kew & Arundell Archive — William & Ellen Lushe (G 3 tax, Wylde v Lushe lawsuit & 4-load farm)"
+    },
+    {
+      "id": "s19",
+      "call": "TNA E 179/105/271 (Sept. 20, 1598 Knoll Copyhold L 1 Tax Roll)",
+      "repo": "The National Archives (Kew) — Thomas S[quire] explicitly recorded holding 'in copy' (L 1) in Knoll"
+    },
+    {
+      "id": "s20",
+      "call": "DHC PE/BCN/RE 1/1 Frames 68v–121r (1598–1620/21 Bookham Register)",
+      "repo": "Dorset History Centre — Mar. 7, 1600/01 Thomas Squier baptism, Rogerus Squier & Maria Squier burial"
+    },
+    {
+      "id": "s21",
+      "call": "DHC PE/BCN/RE 1/1 Frames 123r–124r (Sept. 2, 1621 Thomas Squire Signature)",
+      "repo": "Dorset History Centre — Churchwarden Thomas Squire's handwritten signature introducing '-ire' spelling"
+    },
+    {
+      "id": "s22",
+      "call": "SHC DD\\SP/1637/22, 1670/55 & 1673/28 (Merriott Estate Inventories)",
+      "repo": "Somerset Heritage Centre (Taunton) — Estate inventories of Thomas Lawrence Jr. (1637) & John Lawrence"
+    },
+    {
+      "id": "s23",
+      "call": "Dorset Protestation Loyalty Oaths (Feb.–Mar. 1641/42 Fontmell & Brockhampton)",
+      "repo": "Parliamentary Archives / Fry 1912 — John Lush Sr./Jr. & Thomas Squire (0 in Compton & Alton)"
+    },
+    {
+      "id": "s24",
+      "call": "SHC DP/MER/2/1/1 & Crewkerne Register (1656–1690 Lawrence, Langdon & Shore)",
+      "repo": "Somerset Heritage Centre — 1656–57 weddings & Oct. 22, 1690 Mary Lawrence baptism"
+    },
+    {
+      "id": "s25",
+      "call": "1664 Hearth Tax & WSHC Ref: 413/162 (1664–1667 Fontmell & Melbury–Compton)",
+      "repo": "Meekings 1951 & Chippenham — 4-fireplace farmhouse & 1667 Melbury–Compton manor court roll"
+    },
+    {
+      "id": "s26",
+      "call": "DHC AD/DT/W/1673/30 & Dec. 1707/09 Will (Melbury Abbas Yeoman Wills)",
+      "repo": "Dorset History Centre — 1672/73 £50 will (Burt & Burden) & 1707/09 Phillis/Philadelphia Lush will"
+    },
+    {
+      "id": "s27",
+      "call": "DHC PE/COA/RE 1/1–2 (1668–1749 Compton Abbas PRs) & BRS Vol. 53 (1706/07 Nicholas Lush Will)",
+      "repo": "Dorset History Centre & Consistory Court Probate — Proved Will of Nicholas Lush (1706, No. 12), Aug. 1676 Edmund Lush bap., Apr. 14, 1707 wedding & 1689/1694 Symondsbury/Whitchurch Lush admons."
+    },
+    {
+      "id": "s28",
+      "call": "DHC PE/BCN/RE 1/1 Frames 152v–162 & PE/BCN/OV 7/1/2 (1672–1678 Bookham Move)",
+      "repo": "Dorset History Centre — Dec. 10, 1677 Anniver Roberts wedding, Feb. 21, 1677/78 Thomas Senr. burial & move"
+    },
+    {
+      "id": "s29",
+      "call": "Shaftesbury PR, DHC PE/LYD/MI 1, Ashmore PR, DHC D/GLY/B/1–4 (Sixpenny Court) & 1791 Mill Lease",
+      "repo": "Dorset History Centre — Dec. 24, 1718 marriage licence, 1719/20 bond, 1725 Thomas Lush bap., East Compton Tythingman Edmund Lush (Sixpenny Handley Court Book D/GLY/B/1–4 alongside John Toomer) & 1791 West Melbury grist mill lease ('a Mr Lush')"
+    },
+    {
+      "id": "s30",
+      "call": "Alton Pancras PR (1702–1739/40) & Piddletrenthide PR (1732/33 Squire Family)",
+      "repo": "Dorset History Centre — John–Philip–Eleanor name trio, 1729/30 Elnar burial & 1732/33 Mary/Margaret burials"
+    },
+    {
+      "id": "s31",
+      "call": "TNA KB 27/1669 (1641), BRS Vols. 22/53 (1680–1722 Chideock/Walditch Wills), Broadwindsor (1745) & Bridport PRs",
+      "repo": "Kew & DHC — 1641 Walditch plea, wills of Stephen Akerman of Frogmore in Chideock, Joseph (Bridport 1698), Moses & Robert Akerman (Walditch 1699–1722), 1745 Abraham Akerman bap. & 1750 Eleanor Squire m."
+    },
+    {
+      "id": "s32",
+      "call": "St. Giles Chideock PR (PE-CDK/RE/1/2, 1751–77), Chideock Land Tax (1780–1817) & DHC D-WLC (1802 Survey)",
+      "repo": "Dorset History Centre — Apr. 2, 1769 Simon Squire bap. & 1780–1802 'Lushes' tenement chain (Champ 1780, Gundry 1790, John Squire aged 72 in 1802 adjoining Webber's George Inn)"
+    },
+    {
+      "id": "s33",
+      "call": "Wimborne PR (1773), Motcombe PR (1775), 1794/95 Newman & 1809/10 Sarah Habgood Wills & 1871 Census",
+      "repo": "DHC, WSHC & Kew — David Goulding, John Lush (below Ann Blandford), £120 John Newman will (wit. Isaac Habgood), 1810 Sarah Habgood will (wit. Thos, Betty & Mary Lush) & 1871 census"
+    },
+    {
+      "id": "s34",
+      "call": "INEC 13/06/07/003, 08/004, 08/008, 04/002, 2022 Ekiti Ward Compendium & Emure Gazetteer #35",
+      "repo": "Emure-Ekiti Land Directory — Ilé Ọ̀ṣùnkọ́tì, Kolade's Compound, Ojomu Akeregun / Ojomu-Odo (No. 10 Odo-Emure; Ogboile festival) & Oko Ọ̀sẹ Kọ́ládé"
+    },
+    {
+      "id": "s35",
+      "call": "USPG C/CAN/NFL: 2 (1792) & PANL Bonavista PRs / NL Will Books Vol. 1:455",
+      "repo": "Bodleian Oxford & The Rooms (PANL) — Lay minister 'A Ackerman' (1798–1817), 1822–51 burials & 1843/44 blue jacket will"
+    },
+    {
+      "id": "s36",
+      "call": "PANL 1836 Census, Vol. 91, Twillingate Death Bks 3–4, Nipper's Hbr, Sudbury (1913) & Smiths Hbr",
+      "repo": "PANL & Ontario — Herring Neck, Lush–Goulding, Silas Squires (d. Jan. 15, 1903, b. Herring Neck) & Sarah Noble (d. May 2, 1901), Wm. Squires (b. Mar. 2, 1867 Stocking Hbr), Philemon/Pleman Squires (b. Nov. 1910), 1913 Sudbury m. & Sept. 6, 1944 m."
+    },
+    {
+      "id": "s37",
+      "call": "PANL Vols. 89–91, Nipper's Hbr Meth. Regs, Twillingate Death Bks 4–5, 1904 McAlpine & Twillingate Sun",
+      "repo": "PANL & Maine — 1881–82 burial of Wm. Lush's 1st wife Jane Amelia (age 35) & 10-mo. son; 1871 Dwyer twins, Thomas R. Dwyer (b. Twillingate), 1889 schooner 'The Albert' (Wm. Dwyer), 1904 McAlpine Dir., 1883–90 Lush births & 1905–08 deaths"
+    },
+    {
+      "id": "s37b",
+      "call": "1753 Trinity Bay Census, St. Paul's Trinity PRs (1753–1855), FHSNL Dwyer Chart (p. 93) & MUN Mannion Collection",
+      "repo": "PANL, FHSNL & Ireland — 1753 Census & John/Mary Dwyer bap., Oct. 29, 1806 John Dwyer–Catherine White m. (Rev. John Clinch, p. 45), FHSNL Dwyer Chart (p. 93), Hillview Thorne root & Waterford–Twillingate Mannion Cards (#2291, #2308)"
+    },
+    {
+      "id": "s38",
+      "call": "Owo Carved Wooden Àkó Effigy (Abiodun 1976, Africa 46.1) & Emure Royal Chronicles (Oba Ogunleye II)",
+      "repo": "Owo & Emure History — c. 1880 death of High Chief Ojomo Agunloye I, explicit father-to-son pedigree High Chief Ojomu Arintokun → High Chief Ojomu Ogedu & Ojomu Ogedu–Olajenboye marriage"
+    },
+    {
+      "id": "s39",
+      "call": "St. Paul's Emure Memorials (1989–2010), Omotoye (2015, p. 20), NAI Phillips 3/7 & St. Stephen's Ondo PR",
+      "repo": "Nigerian Anglican & University of Ilorin Archives — Omotoye 2015 ('Daniel Kolade of Emure'), Bishop Charles Phillips Diaries (NAI Phillips 3/7), CMS Bookshops, 1947 Ondo PR & Primate Olufosoye"
+    },
+    {
+      "id": "s40",
+      "call": "Canadian Service/Civil Records (1966–2025) & Pine Hills Lot 2436H Granite (2026)",
+      "repo": "Canada & Toronto — Dec. 1966 arrival, CAF service, 1973 Kolade–Squires marriage, Pine Hills monument & Gen 1"
+    }
+  ],
+  "places": [
+    {
+      "id": "pulham-dorset",
+      "name": "Pulham (2 mi NE of Bookham), West Dorset",
+      "region": "WDORSET",
+      "house": "V1",
+      "era": "1494",
+      "lat": 50.8586,
+      "lng": -2.3889,
+      "grid": "Adjoining Buckland Newton • TNA KB 27/930 rot. 14d",
+      "desc": "Contiguous parish 2 miles NE of Bookham Farm where John Armiger alias Squire of Pulham, husbandman, was recorded in Hilary Term 1494 (9 Henry VII) alongside John Dunnyng of Pulham, husbandman—pushing the West Dorset Squire and allied Duning churchwarden network back into the 15th century."
+    },
+    {
+      "id": "upton-donhead",
+      "name": "Upton (East Knoyle) & Donhead St Mary, Shaftesbury Border, Wilts",
+      "region": "NDORSET",
+      "house": "V2",
+      "era": "1420–1427",
+      "lat": 51.0789,
+      "lng": -2.1647,
+      "grid": "5 mi N of Shaftesbury • TNA CP 40/636, 656 & 664",
+      "desc": "Shaftesbury Abbey border corridor where commercial grazier John Lussh of Upton sued Gylbert Brytt of Donhead St Mary (adjoining Melbury Abbas) in 1420, traded with Salisbury butchers in 1425, and died 1425–26 (executors proved 1427)."
+    },
+    {
+      "id": "stour-provost",
+      "name": "Stour Provost (Stoure Prewes), Blackmore Vale, Dorset",
+      "region": "NDORSET",
+      "house": "V2",
+      "era": "1442",
+      "lat": 50.9856,
+      "lng": -2.2811,
+      "grid": "4.5 mi NW of Melbury Abbas • TNA CP 40/724 rot. 388f",
+      "desc": "Blackmore Vale parish where plaintiff John Lusshe sued husbandman Thomas Fraunceys in Hilary Term 1442 (20 Henry VI) for a locked chest containing £40—matching Edmond Lushe's £40 capital assessment 81 years later."
+    },
+    {
+      "id": "hinton-st-mary",
+      "name": "Hinton St Mary (Henton Abbatis), Blackmore Vale, Dorset",
+      "region": "NDORSET",
+      "house": "V2",
+      "era": "1450",
+      "lat": 50.9419,
+      "lng": -2.3089,
+      "grid": "Adjoining Sturminster Newton • TNA CP 40/758 rot. 1195d",
+      "desc": "Stour valley parish where surviving executor John Lusshe sued husbandman John Gervays in Trinity Term 1450 (28 Henry VI) for 8 marks, 6s. 4d. (£5 13s. 0d.), right beside Sturminster Newton."
+    },
+    {
+      "id": "tisbury-manor",
+      "name": "Tisbury (Tessebury / Tyssebury), Shaftesbury Abbey Manor, Wilts",
+      "region": "NDORSET",
+      "house": "V2",
+      "era": "1332–1455",
+      "lat": 51.065,
+      "lng": -2.0839,
+      "grid": "6.5 mi NE of Shaftesbury • WRS 45:44, CP 40/724 & 776",
+      "desc": "Cross-border Shaftesbury Abbey manor where John le Lusshe was taxed 12d. in Sept. 1332, husbandman John Lusshe stood bonded with Tisbury miller John Stephenys for 40s. (1442), and William Lusshe was sued for 10 marks by Henry Leye (1455)."
+    },
+    {
+      "id": "oakley-tisbury",
+      "name": "Oakley Farm (Ocle / Okeley) in Tisbury, Shaftesbury Abbey Estate, Wilts",
+      "region": "NDORSET",
+      "house": "V2",
+      "era": "1332–1480",
+      "lat": 51.0531,
+      "lng": -2.1044,
+      "grid": "WRS 45:44 (1332) & TNA CP 40/871 rot. 1041d (1480)",
+      "desc": "Ancient Shaftesbury Abbey border farmstead: in Sept. 1332 John le Lusshe was taxed 12d. two lines below Alexander de Ocle (Oakley), and 148 years later husbandman John Lusshe of Oakley in Tisbury was sued alongside Sedgehill and Dorset farmers in Hilary Term 1480."
+    },
+    {
+      "id": "trinity-hants-tb",
+      "name": "St. Paul's Trinity & Hants Harbour, Trinity Bay, NL",
+      "region": "NL",
+      "house": "V2",
+      "era": "1753–1855",
+      "lat": 48.3664,
+      "lng": -53.3644,
+      "grid": "St. Paul's Anglican PRs • Benjamin Lester & Co.",
+      "desc": "Pre-established Protestant Dwyer fishing cluster in Trinity Bay (including John Dwyer, servant to Poole merchants Benjamin Lester & Co., 1806 marriages of John & James Dwyer, and John Dwyer d. 1855 age 26)—testing Model B for Capt. John Alexander Dwyer's origin in the same bay as bride Caroline Bemister Thorne."
+    },
+    {
+      "id": "bookham-knoll",
+      "name": "Bookham Farm & Knoll, Buckland Newton, Dorset",
+      "region": "WDORSET",
+      "house": "V1",
+      "era": "1524–1678",
+      "lat": 50.8362,
+      "lng": -2.4184,
+      "grid": "OS Grid ST 7066 0417 • DHC PE/BCN/RE 1/1",
+      "desc": "Ancestral Dorset farmstead of Gen 16 William Squyer (G 5), Gen 15 Thomas Squier (G 1; billhook 1539; G 1½ 1544), Parish Churchwardens Johannes (1581/82) & Thomas Squire (1621 signature), and Thomas Squire Senr. (buried Feb. 21, 1677/78)."
+    },
+    {
+      "id": "alton-pancras",
+      "name": "Alton Pancras, Cerne Valley, Dorset",
+      "region": "WDORSET",
+      "house": "V1",
+      "era": "1524–1740",
+      "lat": 50.8143,
+      "lng": -2.4262,
+      "grid": "1.5 miles south of Bookham • Salisbury Peculiar",
+      "desc": "Tudor home of kinsmen Robert & John Squyer (1524–76 wills) and post-Spring 1678 parish of Gen 11 John Squire Senr. (bur. 1703), Roger Squire (bur. 1710/11), and Gen 10 John Junr. & Eleanor [Elnar]."
+    },
+    {
+      "id": "piddletrenthide",
+      "name": "Piddletrenthide, Piddle Valley, Dorset",
+      "region": "WDORSET",
+      "house": "V1",
+      "era": "1732–1746",
+      "lat": 50.8012,
+      "lng": -2.4083,
+      "grid": "1.5 miles east across the ridge • 1732/33 Register",
+      "desc": "Village where 23-year-old Gen 9 Philip Squire buried infant daughter Margaret (Feb. 23, 1732/33) and wife Mary (Mar. 14, 1732/33), surviving with infant son John Squire."
+    },
+    {
+      "id": "shipton-gorge",
+      "name": "Shipton Gorge, West Dorset",
+      "region": "WDORSET",
+      "house": "V1",
+      "era": "1525–1542",
+      "lat": 50.7281,
+      "lng": -2.7192,
+      "grid": "TNA E 179/103/122 & E 36/29",
+      "desc": "1525 tax roll village of Robert Akerman (G 10) and 1539–42 muster village of Jn, Ste, and Hen Akerman."
+    },
+    {
+      "id": "bridport",
+      "name": "Bothenhampton, Loders & Bridport, Dorset",
+      "region": "WDORSET",
+      "house": "V1",
+      "era": "1539–1784",
+      "lat": 50.7334,
+      "lng": -2.7583,
+      "grid": "DHC PE/BT & SP 12/56 • Rope & Net District",
+      "desc": "1539–69 muster and tax home of archers Hen Akerman (G 4) & Ric Akerman, Loders taxpayer John Akerman (1594 G 3), and 18th-century rope- and fishing-net hub supplying ships to Newfoundland."
+    },
+    {
+      "id": "broadwindsor",
+      "name": "St. John the Baptist Church, Broadwindsor & Walditch, Dorset",
+      "region": "WDORSET",
+      "house": "V1",
+      "era": "1641–1745",
+      "lat": 50.8161,
+      "lng": -2.8012,
+      "grid": "6 miles NW of Bridport • 1641–1722 Wills & 1745 PR",
+      "desc": "Baptism parish of Bonavista lay minister Abraham Akerman Sr. (baptized 1745 to Daniel & Jean [Jane] Akerman, matching his 1822 burial at age 77), anchored upstream by 1641–1722 Akerman wills and pleas across Frogmore in Chideock, Walditch, Bradpole, and Bridport."
+    },
+    {
+      "id": "chideock",
+      "name": "St. Giles Church, Chideock — Cottage \"Lushes\"",
+      "region": "WDORSET",
+      "house": "V1",
+      "era": "1680–1802+",
+      "lat": 50.7311,
+      "lng": -2.8184,
+      "grid": "1780–1802 Land Tax & Manor Survey (D-WLC) • Plot \"Lushes\"",
+      "desc": "Coastal Dorset village (home earlier to Stephen Akerman of Frogmore in Chideock and bordering 1594–1694 Symondsbury/Whitchurch Lush tenements) where Gen 8 John Squire & Elizabeth baptized pioneer Simon Squire (Apr. 2, 1769) and 72-year-old John Squire held a 99-year, three-lives lease in 1802 on the churchside plot \"Lushes\" adjoining George Webber's George Inn."
+    },
+    {
+      "id": "melbury-abbas",
+      "name": "East Melbury & St. Thomas's Church, Melbury Abbas",
+      "region": "NDORSET",
+      "house": "V2",
+      "era": "1523–1757",
+      "lat": 50.9792,
+      "lng": -2.1643,
+      "grid": "Sixpenny Handley • Sept. 1544 Arundell Manor",
+      "desc": "Ancestral root of Gen 16 Edmond Lusshe (£40 in Oct. 1523 [top 1.7% of Dorset]; G 20 in 1525; steel Almain rivets armour in 1539–42), Gen 15 John Lusshe (1572 £20 will), Gen 12 John Lush (1673 £50 will) & Gen 9 Thomas Lush."
+    },
+    {
+      "id": "compton-abbas",
+      "name": "Compton Abbas, Blackmore Vale, Dorset",
+      "region": "NDORSET",
+      "house": "V2",
+      "era": "1542–1750",
+      "lat": 50.9681,
+      "lng": -2.1814,
+      "grid": "DHC PE/COA/RE 1/1–2 • Sept. 1544 Sister-Manor",
+      "desc": "Bundled with Melbury Abbas in the Sept. 1544 Arundell Manor Grant; home of Gen 12 Nicholas & Mary Lush, Gen 11 Edmund Lush (bapt. Aug. 1676; married Mary Lawrence Apr. 14, 1707), and shared family burials."
+    },
+    {
+      "id": "fontmell-magna",
+      "name": "Fontmell Magna, Blackmore Vale, Dorset",
+      "region": "NDORSET",
+      "house": "V2",
+      "era": "1542–1664",
+      "lat": 50.9554,
+      "lng": -2.1868,
+      "grid": "Sept. 1544 Grant & Arundell 4-Load Farm",
+      "desc": "United with Melbury & Compton in Sept. 1544; home of Walt Lusshe (1542), Gen 14 William & Ellen Lushe (1594 G 3; Wylde v Lushe court case; 4-load farm) & 1641/42 oath signers John Lush Sr. & Jr."
+    },
+    {
+      "id": "shaftesbury",
+      "name": "Shaftesbury Abbey & Holy Trinity Church, Dorset",
+      "region": "NDORSET",
+      "house": "V2",
+      "era": "1535–1718",
+      "lat": 51.0056,
+      "lng": -2.1981,
+      "grid": "1535 Abbey Survey & Dec. 24, 1718 Wedding",
+      "desc": "Home of Shaftesbury Abbey (landlord of Melbury Abbas until March 1539) and hilltop church where Gen 10 Robert Lush & Elizabeth Andrus married by licence on Christmas Eve, Dec. 24, 1718."
+    },
+    {
+      "id": "okeford-sturminster",
+      "name": "Okeford Fitzpaine & Sturminster Newton, Dorset",
+      "region": "NDORSET",
+      "house": "V2",
+      "era": "1707–1720",
+      "lat": 50.9124,
+      "lng": -2.2882,
+      "grid": "DHC PE/LYD/MI 1 • 1719/20 Property Bond",
+      "desc": "Blackmore Vale towns linked by the 1719/20 legal property bond between Edmund Lush of Okeford Fitzpaine and his eldest son Robert Lush 'of Sturminster Newton'."
+    },
+    {
+      "id": "ashmore",
+      "name": "Ashmore, Cranborne Chase, Dorset",
+      "region": "NDORSET",
+      "house": "V2",
+      "era": "1523–1725",
+      "lat": 50.9532,
+      "lng": -2.1291,
+      "grid": "1523 Tax Roll & Dec. 30, 1725 Baptism",
+      "desc": "Hilltop Dorset village where Gen 10 Robert & Elizabeth Lush baptized Gen 9 Thomas Lush on December 30, 1725."
+    },
+    {
+      "id": "motcombe",
+      "name": "St. Mary's Church, Motcombe, Dorset",
+      "region": "NDORSET",
+      "house": "V2",
+      "era": "1775–1878",
+      "lat": 51.0283,
+      "lng": -2.2304,
+      "grid": "Apr. 30, 1775 Departure Parish & 1871 Census",
+      "desc": "English departure parish where Newfoundland pioneer John Lush was baptized April 30, 1775 (right below neighbour Ann Blandford), and where 78-year-old cousin George Lush lived in 1871."
+    },
+    {
+      "id": "wimborne-minster",
+      "name": "Wimborne Minster, East Dorset",
+      "region": "NDORSET",
+      "house": "V2",
+      "era": "1773",
+      "lat": 50.7991,
+      "lng": -1.9873,
+      "grid": "Jan. 17, 1773 Goulding Baptism",
+      "desc": "Baptism parish of Greenspond pioneer David Goulding (Jan. 17, 1773), maternal grandfather of Mary Goulding Lush."
+    },
+    {
+      "id": "merriott-crewkerne",
+      "name": "All Saints Merriott & Crewkerne, Somerset",
+      "region": "NDORSET",
+      "house": "V2",
+      "era": "1569–1690",
+      "lat": 50.9092,
+      "lng": -2.7891,
+      "grid": "Somerset Heritage Centre • DP/MER/2/1/1",
+      "desc": "Somerset home of 1569 armour-holder Thomas Lawrens Sr., archer Peter Langdon, Thomas Lawrence Jr. (d. 1637), John Lawrence & Joane Langdon (1656), William Lawrence & Sarah Shore (1657) & Mary Lawrence (1690)."
+    },
+    {
+      "id": "bower-chalke",
+      "name": "Bower Chalke, South Wiltshire",
+      "region": "NDORSET",
+      "house": "V2",
+      "era": "1794–1810",
+      "lat": 51.0151,
+      "lng": -1.9682,
+      "grid": "1794/95 John Newman & 1809/10 Sarah Habgood Wills",
+      "desc": "Wiltshire border parish of yeoman John Newman (whose 1794/95 will, witnessed by Isaac Habgood, left £120 to 'my sisters son John Lush, now living in the parish of Motcomb') and his widow Mrs. Sarah Habgood, whose 1809/10 will and codicil were witnessed by Thos Lush, Betty Lush, and Mary Lush."
+    },
+    {
+      "id": "waterford",
+      "name": "Port of Waterford, Ireland",
+      "region": "IRELAND",
+      "house": "V2",
+      "era": "1845–1856",
+      "lat": 52.2593,
+      "lng": -7.1101,
+      "grid": "Waterford–Twillingate Sea Route",
+      "desc": "Main southeastern Irish departure port connecting County Waterford and South Tipperary to West Country merchant ships sailing to Twillingate, Newfoundland (MUN Mannion Corridor)."
+    },
+    {
+      "id": "osunkoti",
+      "name": "Ilé Ọ̀ṣùnkọ́tì (At Osunkoti), Idamudu I, Emure-Ekiti",
+      "region": "YORUBA",
+      "house": "V3",
+      "era": "c. 1780–1968+",
+      "lat": 7.4375,
+      "lng": 5.4582,
+      "grid": "Ward 07: Idamudu I • Unit 13/06/07/003",
+      "desc": "Hereditary Osukoti quarter-chieftaincy seat founded at Emure Ijaloke (c. 1780) and held by Chief Daniel Ogunlusi Kolade (K4) and Chief John Aderibigbe Kolade (1968)."
+    },
+    {
+      "id": "kolade-compound",
+      "name": "Kolade's Compound & St. Paul's Church, Emure-Ekiti",
+      "region": "YORUBA",
+      "house": "V3",
+      "era": "1886–2010",
+      "lat": 7.4352,
+      "lng": 5.4604,
+      "grid": "Ward 08: Idamudu II • Units 13/06/08/004 & 008",
+      "desc": "Ancestral town compound and St. Paul's Anglican parish of Chief Daniel Ogunlusi Kolade, Alice Awawu, Sarah Fafunbo, Pa Joseph Owolabi Kolade & Madam Lydia Olugbe Kolade."
+    },
+    {
+      "id": "ojomu-akeregun",
+      "name": "Ojomu Akeregun / Ojomu-Odo, Odo-Emure IV, Emure-Ekiti",
+      "region": "YORUBA",
+      "house": "V3",
+      "era": "c. 1780–2010",
+      "lat": 7.4308,
+      "lng": 5.4538,
+      "grid": "Ward 04: Odo-Emure IV • Unit 13/06/04/002 • No. 10 Odo-Emure",
+      "desc": "Senior kingmaker (Ìwàrẹ̀fà) seat ('Near Ojumu's House' / Ojomu-Odo, celebrating the annual Ogboile festival) of High Chief Ojomu Arintokun, his son High Chief Ojomu Ogedu, and the Late Chief Ojomu (father of Madam Lydia Olugbe Kolade)."
+    },
+    {
+      "id": "oko-ose",
+      "name": "Oko Ọ̀sẹ Kọ́ládé — River Ose Farm Estate (#35)",
+      "region": "YORUBA",
+      "house": "V3",
+      "era": "c. 1825–1890",
+      "lat": 7.3954,
+      "lng": 5.5122,
+      "grid": "Emure Municipal Gazetteer Settlement #35",
+      "desc": "Hereditary family farm estate ('Kolade's Farmstead on the River Ose') anchoring Generation 5 patriarch Kọ́ládé / [Ògún]kọ́ládé."
+    },
+    {
+      "id": "ijebu-owo",
+      "name": "Ijebu-Owo Palace (Ojomo Oluda), Owo Kingdom",
+      "region": "YORUBA",
+      "house": "V3",
+      "era": "c. 1815–1930",
+      "lat": 7.2021,
+      "lng": 5.5934,
+      "grid": "22 km east of Emure • c. 1880 Carved Effigy",
+      "desc": "Royal palace of High Chief Ojomo Agunloye I (d. c. 1880, dated by his life-sized carved wooden àkó burial effigy), father of Olajenboye, and St. Patrick's school town of Pa Joseph Kolade."
+    },
+    {
+      "id": "benin-ondo",
+      "name": "Benin City & Ago Olumoye, Edo State (CMS Bookshops)",
+      "region": "YORUBA",
+      "house": "V3",
+      "era": "1922–1946",
+      "lat": 6.335,
+      "lng": 5.6275,
+      "grid": "CMS Bookshops (1922–46) • 1942 Wedding",
+      "desc": "Early career hub where Chief John A. Kolade (1922) and Pa Joseph O. Kolade (1933) joined C.M.S. Bookshops, and where Joseph married Madam Lydia Olugbe in 1942 (birth of Victor Olusoji Kolade)."
+    },
+    {
+      "id": "ondo-ado-ibadan",
+      "name": "Ondo, Ado-Ekiti & Ibadan Corridor, Nigeria",
+      "region": "YORUBA",
+      "house": "V3",
+      "era": "1935–1968",
+      "lat": 7.0932,
+      "lng": 4.8353,
+      "grid": "St. Stephen's Ondo, Adeoyo Hospital & Ado-Ekiti",
+      "desc": "Regional corridor where Pa Joseph Kolade reorganized C.M.S. Bookshops (1946–58), Mama Dudu ran her Ondo ẹ̀kọ and Ado–Emure wholesale bakery network, Canon Awosika baptized Eric Bamidele (Oct. 1947), and Chief John A. Kolade trained at Adeoyo Hospital."
+    },
+    {
+      "id": "bonavista",
+      "name": "Bonavista, Bonavista Bay, Newfoundland",
+      "region": "NL",
+      "house": "V1",
+      "era": "1785–1851",
+      "lat": 48.6492,
+      "lng": -53.1124,
+      "grid": "Christ Church • USPG Missionary Records",
+      "desc": "Home for 30+ years of Anglican lay minister Abraham Akerman Sr. (1745–1822), who signed 'A Ackerman' when officiating the Aug. 18, 1798 wedding of his daughter Jane Akerman to Simon Squires Sr. (1769–1832)."
+    },
+    {
+      "id": "greenspond",
+      "name": "Greenspond, Bonavista Bay, Newfoundland",
+      "region": "NL",
+      "house": "V2",
+      "era": "1795–1869",
+      "lat": 49.0684,
+      "lng": -53.5702,
+      "grid": "Bonavista Bay Island Outport • 1840 PR",
+      "desc": "Granite island outport settled by Motcombe pioneer John Lush (1775–1827) & Elizabeth Jane Wood, David Goulding (1773–1826), May 26, 1840 wedding of Thomas Lush & Mary Goulding, and 1857 St. Stephen's timber haul."
+    },
+    {
+      "id": "hillview-tb",
+      "name": "Hillview, Trinity Bay, Newfoundland",
+      "region": "NL",
+      "house": "V2",
+      "era": "c. 1806–1856",
+      "lat": 48.0558,
+      "lng": -53.895,
+      "grid": "Southwest Arm, Trinity Bay • Thorne Family Root",
+      "desc": "Birthplace of matriarch Caroline Bemister Thorne (c. 1837–1906, daughter of Somerset pioneer Richard Thorne & Betsy George), who married Irish pioneer Capt. John Alexander Dwyer c. 1856."
+    },
+    {
+      "id": "herring-twillingate",
+      "name": "Herring Neck & Twillingate, Notre Dame Bay, NL",
+      "region": "NL",
+      "house": "V1",
+      "era": "1836–1907",
+      "lat": 49.6481,
+      "lng": -54.7642,
+      "grid": "1836 Census & Twillingate Death Register",
+      "desc": "Northern harbour of Simon & Julia Squires (1836 census) and c. 1856–1907 home of Irish Methodist pioneer Capt. John Alexander Dwyer & Caroline Bemister Thorne."
+    },
+    {
+      "id": "tilt-cove",
+      "name": "Tilt Cove Copper Mine & Nipper's Harbour, NL",
+      "region": "NL",
+      "house": "V2",
+      "era": "1862–1895",
+      "lat": 49.8861,
+      "lng": -55.6283,
+      "grid": "1862 Squires Wedding & 1880s Copper Mine",
+      "desc": "Sept. 2, 1862 wedding harbour of Silas Squires & Sarah Jane Noble (Nipper's Harbour) and cliffside copper-mining town of William Lush, Polly Dwyer, Rev. Philip H. Lush (b. 1888) & miner Albert Dwyer (d. 1895)."
+    },
+    {
+      "id": "lushes-burlington",
+      "name": "Lushes Bight & Burlington / North West Arm, NL",
+      "region": "NL",
+      "house": "V2",
+      "era": "1871–1965",
+      "lat": 49.7542,
+      "lng": -56.0124,
+      "grid": "Notre Dame Bay & Green Bay Coves • 1904 McAlpine Dir.",
+      "desc": "Sheltered inlet bearing the family name (Lushes Bight) and North West Arm / Burlington home of William Lush (1845–1922; 1st wife Jane Amelia d. Jan. 1882; 2nd wife Polly Dwyer d. 1905), Capt. William Dwyer's schooner 'The Albert' (1889), and Riverside Cemetery burials of Silas Squires (1903) & Sarah Jane Noble (1901)."
+    },
+    {
+      "id": "smiths-harbour",
+      "name": "Smiths Harbour, Green Bay, Newfoundland",
+      "region": "NL",
+      "house": "CONV",
+      "era": "1862–1980",
+      "lat": 49.7406,
+      "lng": -55.9554,
+      "grid": "Sawmill, Medical Boat & Sept. 6, 1944 Wedding",
+      "desc": "Home of Silas & William Squires, sawmill and medical-boat pioneer Albert Lush (1898–1980) & Florence White, Sept. 6, 1944 wedding of Pleman Squires & Ivy Lush, and birthplace of Merle Elizabeth Squires."
+    },
+    {
+      "id": "portland-maine",
+      "name": "Portland & Kennebunkport, Maine, USA",
+      "region": "NL",
+      "house": "V2",
+      "era": "1910s–1967",
+      "lat": 43.6591,
+      "lng": -70.2568,
+      "grid": "New England Ministry • Rev. Philip H. Lush",
+      "desc": "New England ministry home of Tilt Cove-born Rev. Philip Henry Lush (1888–1967, son of William Lush & Polly Dwyer) and his sons Earle, Aubrey, and Herbert Lush."
+    },
+    {
+      "id": "sudbury-on",
+      "name": "Sudbury, Northern Ontario, Canada",
+      "region": "ONTARIO",
+      "house": "V1",
+      "era": "1913",
+      "lat": 46.4917,
+      "lng": -80.993,
+      "grid": "Archives of Ontario • 1913 Marriage Register",
+      "desc": "Site of the family's earliest mainland Canadian foothold, where Smiths Harbour cousin William Silas Squires married Ethel Jane Brown in 1913."
+    },
+    {
+      "id": "victoria-bc",
+      "name": "Victoria, British Columbia, Canada",
+      "region": "ONTARIO",
+      "house": "V3",
+      "era": "Dec. 1966",
+      "lat": 48.4284,
+      "lng": -123.3656,
+      "grid": "Canadian Immigration Arrival • Dec. 1966",
+      "desc": "Pacific port of entry where Victor Olusoji Kolade immigrated to Canada from Nigeria in December 1966 prior to enlisting in the Canadian Armed Forces."
+    },
+    {
+      "id": "cfb-shilo-mb",
+      "name": "CFB Shilo, Manitoba, Canada",
+      "region": "ONTARIO",
+      "house": "V3",
+      "era": "1967–c. 1969",
+      "lat": 49.8108,
+      "lng": -99.6367,
+      "grid": "Canadian Armed Forces Base • Pen-Pals Courtship",
+      "desc": "Canadian Armed Forces base where Victor Olusoji Kolade served beginning in 1967 and first connected through a local newspaper pen-pals column with Merle Elizabeth Squires of Smiths Harbour, Newfoundland."
+    },
+    {
+      "id": "pine-hills",
+      "name": "Pine Hills Cemetery (Section A, Lot 2436H), Scarborough",
+      "region": "ONTARIO",
+      "house": "CONV",
+      "era": "2017–2026",
+      "lat": 43.7261,
+      "lng": -79.2684,
+      "grid": "Section A, Lot 2436H • Granite Memorial",
+      "desc": "Family memorial site: 2026 charcoal granite monument honoring Victor Olusoji Kolade (1942–2017) of Emure-Ekiti, Nigeria & Merle Elizabeth Kolade, née Squires (1944–2025) of Smith's Harbour, NL."
+    },
+    {
+      "id": "toronto-on",
+      "name": "Toronto, Ontario, Canada",
+      "region": "ONTARIO",
+      "house": "CONV",
+      "era": "c. 1969–2026",
+      "lat": 43.6532,
+      "lng": -79.3832,
+      "grid": "Toronto, Ontario • Gen 2 & Gen 1 Home",
+      "desc": "Home of Victor Olusoji Kolade & Merle Elizabeth Squires (married 1973) and living Generation 1 household of Victor Olutayo Kolade & Abigail Salole."
+    }
+  ],
+  "events": [
+    {
+      "id": "ev-1332",
+      "date": "September 1332 (6 Edward III)",
+      "iso": "1332-09",
+      "sort": 1332,
+      "gen": "Gen 18–21",
+      "epoch": "E1",
+      "house": "V2",
+      "region": "NDORSET",
+      "gpsGroup": "INDIRECT",
+      "gpsLabel": "Primary Exchequer Roll (694-Yr Pre-Black-Death Root)",
+      "title": "Oldest Ancestral Estate Record (694 Years Ago): \"John le Lusshe — 12d\" Taxed at Tisbury / Oakley Before the Black Death",
+      "shelves": [
+        "s00a"
+      ],
+      "loci": [
+        "oakley-tisbury",
+        "tisbury-manor",
+        "shaftesbury",
+        "melbury-abbas"
+      ],
+      "diplomatic": "[TNA E 179/196/8, Sept. 1332 Wiltshire Lay Subsidy (15th), Dunworth Hundred — Tisbury (Tysseburye), WRS Vol. 45, p. 44, col. 2] Alexander de Ocle — 20d | Walter Warner — 3s | John le Lusshe — 12d | Thomas de Toteredehulle — 4s | Edward le Wyke — 8s 10d | John Boterstake — 4s | David de Seghulle — 8s.",
+      "synthesis": "Pushes the documented Lusshe estate and surname horizon back 694 years into the early reign of King Edward III—sixteen years before the Black Death of 1348! Enrolled under Shaftesbury Abbey's manor of Tisbury just two lines below Alexander de Ocle (Oakley in Tisbury) and four lines above David de Seghulle (Sedgehill), taxpayer John le Lusshe (assessed 12d. on 15s. of surplus livestock/grain) captures both the Anglo-Norman 'le Lusshe' origin of the Lush surname and the exact Oakley-in-Tisbury farmstead strip still held by John Lusshe 148 years later in 1480.",
+      "immunity": "Verified verbatim on p. 44 of Crowley's Wiltshire Tax List of 1332 (the sole Lusshe household in all of 1332 Wiltshire); graded conservatively as Pre-Tudor Monastic Estate & Surname Continuity."
+    },
+    {
+      "id": "ev-1420",
+      "date": "Hilary Term 1420 (7 Henry V)",
+      "iso": "1420-01",
+      "sort": 1420,
+      "gen": "Gen 18–21",
+      "epoch": "E1",
+      "house": "V2",
+      "region": "NDORSET",
+      "gpsGroup": "INDIRECT",
+      "gpsLabel": "Primary CP 40 Roll (606-Yr Plantagenet Horizon)",
+      "title": "Agincourt Era: John Lussh of Upton Sues Donhead St Mary Husbandmen (Including Allied Surname \"Brytt\")",
+      "shelves": [
+        "s00a"
+      ],
+      "loci": [
+        "upton-donhead",
+        "tisbury-manor",
+        "melbury-abbas",
+        "shaftesbury"
+      ],
+      "diplomatic": "[TNA CP 40/636, Hilary 7 Hen. V (1420), rot. 1802 & 1802d, Wiltes'] Lussh, John vs. Bode, John, of Upton juxta Berwyk, husbandman (trespass) | rot. 1802d (debt): Lussh, John, of Upton vs. Brytt, Gylbert, of Dunhyde St Mary [Donhead St Mary], husbandman; Whete, John, of Charlton [in Donhead], husbandman; Vanner, John, of Dunhyde, husbandman.",
+      "synthesis": "Four years after King Henry V's victory at Agincourt, plaintiff John Lussh of Upton (adjoining Tisbury and Sedgehill) sued husbandmen in Shaftesbury Abbey's border manor of Donhead St Mary and Charlton—immediately touching Melbury Abbas across the Dorset hedge—including Gylbert Brytt, bearing the exact allied Burt/Byrte surname later paired with the Fontmell and Melbury Lushes.",
+      "immunity": "Indexed from TNA CP 40/636 rot. 1802 & 1802d (Waalt)."
+    },
+    {
+      "id": "ev-1425",
+      "date": "Hilary 1425 – Hilary 1427 (3–5 Henry VI)",
+      "iso": "1425/1427",
+      "sort": 1425,
+      "gen": "Gen 18–21",
+      "epoch": "E1",
+      "house": "V2",
+      "region": "NDORSET",
+      "gpsGroup": "INDIRECT",
+      "gpsLabel": "Primary CP 40 Executor Proof (Death Fixed to 1425–26)",
+      "title": "Livestock Credit to Salisbury Butchers (1425) & Testamentary Executors of John Lussh of Upton (1427)",
+      "shelves": [
+        "s00a"
+      ],
+      "loci": [
+        "upton-donhead",
+        "tisbury-manor",
+        "shaftesbury"
+      ],
+      "diplomatic": "[TNA CP 40/656, Hilary 3 Hen. VI (1425), rot. 135f, Wiltes'] Lussh, John vs. Dynton, Ralph, of Old Sarum, butcher; Scotte, Robert, of Salisbury, butcher. [TNA CP 40/664, Hilary 5 Hen. VI (1427), Wiltes'] Lussh, John, of Upton, executors of (Whitehorn, John; Pakyn, William, and Joan his wife) vs. Bartour, Robert, of Soutton [Sutton Mandeville], gent; Flynt, Nicholas & John, of Old Sarum, masons.",
+      "synthesis": "Fixes both the commercial grazier livelihood and the exact 1425–1426 death window of elder patriarch John Lussh of Upton: after suing Old Sarum and Salisbury butchers for livestock credit in January 1425, his testamentary executors (John Whitehorn and William & Joan Pakyn) sued in January 1427—cleanly separating his generation from the John Lusshe active in 1442–1450 at Stour Provost and Tisbury!",
+      "immunity": "Executor styling in CP 40/664 provides hard chronological separation between the 1420–26 and 1442–50 John Lusshes."
+    },
+    {
+      "id": "ev-1442",
+      "date": "Hilary Term 1442 (20 Henry VI)",
+      "iso": "1442-01",
+      "sort": 1442,
+      "gen": "Gen 17–18",
+      "epoch": "E1",
+      "house": "V2",
+      "region": "NDORSET",
+      "gpsGroup": "INDIRECT",
+      "gpsLabel": "Primary CP 40 Parchment (Pre-Tudor Estate Cluster)",
+      "title": "1442 Lusshe Parchments: £40 Strongbox Suit at Stour Provost (Dorset) & Shaftesbury Abbey Bond at Tisbury",
+      "shelves": [
+        "s00"
+      ],
+      "loci": [
+        "stour-provost",
+        "tisbury-manor",
+        "shaftesbury",
+        "melbury-abbas"
+      ],
+      "diplomatic": "[TNA CP 40/724, rot. 388f, IMG_0388, Dors'] Joh[ann]es Lusshe ... v[er]sus Thomam ffraunceys de Stoure Prewes ... husbondman de pl[ac]ito q[uo]d reddat ei quandam cistam cum quadraginta libris [£40] in eadem cista contentis. [rot. 698f, IMG_0698, Wiltes'] Joh[ann]es Norreys Armig[er] & Joh[ann]es Vffenham ... v[er]sus Joh[ann]em Stephenys de Tessebury ... myller & Joh[ann]em Lusshe de Tessebury ... husbondman [40s. each].",
+      "synthesis": "Continues the Plantagenet Luſſhe archive into the reign of King Henry VI: in January–February 1442, plaintiff John Lusshe sued at Westminster inside a Shaftesbury docket to recover a chest holding £40 at Stour Provost (4.5 miles NW of Melbury Abbas—matching Edmond Lushe's £40 rating in 1523), while John Lusshe of Tisbury farmed on Shaftesbury Abbey's contiguous cross-border manor.",
+      "immunity": "Original Latin membranes verify active residency ('de Tessebury') and identical double long-s ('Luſſhe') spelling while screening out Somerset Prior William Lusshe of Woodspring (rot. 1210d)."
+    },
+    {
+      "id": "ev-1450",
+      "date": "Trinity Term 1450 (28 Henry VI)",
+      "iso": "1450-06",
+      "sort": 1450,
+      "gen": "Gen 17–18",
+      "epoch": "E1",
+      "house": "V2",
+      "region": "NDORSET",
+      "gpsGroup": "INDIRECT",
+      "gpsLabel": "Primary CP 40 Parchment (Dorset Executor Suit)",
+      "title": "John Lusshe Sues as Surviving Dorset Executor Against John Gervays of Hinton St Mary (£5 13s. 0d.)",
+      "shelves": [
+        "s00"
+      ],
+      "loci": [
+        "hinton-st-mary",
+        "okeford-sturminster"
+      ],
+      "diplomatic": "[TNA CP 40/758, rot. 1195d, Entry 3, IMG_1195, Dors'] Joh[ann]es Lusshe executor testamenti Joh[ann]is Pylle executoris testamenti Will[elm]i Doune nup[er] de Oppylhill in Com[itatu] p[re]d[i]c[t]o husbondman ... v[er]sus Joh[ann]em Geruays de Henton Abb[at]is ... husbondman ... octo marcas sex solidos & quatuor denar[ios] [8 marks, 6s. 4d. = £5 13s. 0d.].",
+      "synthesis": "Inspecting the original sheepskin reverses an ambiguous index summary: nominative Latin endings prove John Lusshe was alive in summer 1450 and serving as trusted testamentary executor in the Blackmore Vale right beside Sturminster Newton—where Edmund and Robert Lush signed their property bond 270 years later.",
+      "immunity": "Direct grammatical verification of 'Joh[ann]es Lusshe executor' (nominative living plaintiff) versus genitive deceased testators 'Joh[ann]is Pylle' and 'Will[elm]i Doune'."
+    },
+    {
+      "id": "ev-1455",
+      "date": "Hilary Term 1455 (33 Henry VI)",
+      "iso": "1455-01",
+      "sort": 1455,
+      "gen": "Gen 17–18",
+      "epoch": "E1",
+      "house": "V2",
+      "region": "NDORSET",
+      "gpsGroup": "INDIRECT",
+      "gpsLabel": "Primary CP 40 Parchment (10-Mark Tisbury Plea)",
+      "title": "William Lusshe of Tisbury Sued for 10 Marks (£6 13s. 4d.) — Pairing \"John & William\" on Shaftesbury Abbey Land",
+      "shelves": [
+        "s00"
+      ],
+      "loci": [
+        "tisbury-manor",
+        "melbury-abbas"
+      ],
+      "diplomatic": "[TNA CP 40/776, rot. 183f, Entry 5, IMG_0183, Wiltes'] Henr[icus] Leye p[er] attorn[atum] suu[m] op[tulit] se iiij^to die v[er]sus Will[elmu]m Lusshe de Tyssebury in Com[itatu] p[re]d[i]c[t]o husbondman de pl[ac]ito q[uo]d reddat ei decem marcas [10 marks = £6 13s. 4d.] ... Et sicut pluries ... J[de]o exigat[ur].",
+      "synthesis": "Enrolled on the eve of the Wars of the Roses (with four prior court stages pushing the 10-mark bond back to c. 1452–1453), active tenant William Lusshe of Tisbury ('de Tyssebury') pairs the exact two forenames—John and William Lusshe—carried a century later in Melbury Abbas and Fontmell Magna by Gen 15 John and Gen 14 William Lusshe.",
+      "immunity": "Contrasting 'de Tyssebury' in Entry 5 with 'nup[er] de Bratton' in Entry 7 on the same membrane confirms William Lusshe's active Tisbury residency in 1455."
+    },
+    {
+      "id": "ev-1475",
+      "date": "c. 1475–1480 (Reign of Edward IV)",
+      "iso": "1475/1480",
+      "sort": 1475,
+      "gen": "Gen 16",
+      "epoch": "E1",
+      "house": "V2",
+      "region": "NDORSET",
+      "gpsGroup": "DIRECT",
+      "gpsLabel": "Direct Proof (Age 60+ on 1539 Armour Roll)",
+      "title": "Earliest Proven Lineal Patriarchs Born: Edmond Lushe (Melbury Abbas) & William Squyer (Buckland Newton)",
+      "shelves": [
+        "s01",
+        "s03"
+      ],
+      "loci": [
+        "melbury-abbas",
+        "bookham-knoll"
+      ],
+      "diplomatic": "[TNA E 36/17, Spring 1539, p. 95, Melbary] Edm Lushe — NA [is no able man, aged 60+], has pr al.rivets. [TNA E 179/103/119–120, 1524, Knolle] William Squyer — G 5; Thomas Squyer [aged 16+] — G 1.",
+      "synthesis": "Opens our unbroken 16-generation father-to-child paper trail (~551 years ago, immediately following the 1332–1480 Shaftesbury Abbey Lusshe cluster): by Spring 1539, Edmond Lushe was already past the age-60 active-marching limit while owning a full suit of steel armour in East Melbury, alongside William Squyer (born c. 1475–1495), who already had a tax-paying son over age 16 in 1524.",
+      "immunity": "King Henry VIII's February 1539 muster enrolled able-bodied men aged 16 to 60; being marked 'NA' while owning expensive German plate armour proves Edmond was over age 60 rather than poor."
+    },
+    {
+      "id": "ev-1480",
+      "date": "Hilary Term 1480 (19 Edward IV)",
+      "iso": "1480-01",
+      "sort": 1480,
+      "gen": "Gen 17–18",
+      "epoch": "E1",
+      "house": "V2",
+      "region": "NDORSET",
+      "gpsGroup": "INDIRECT",
+      "gpsLabel": "Primary CP 40 Parchment (Edward IV Border Cluster)",
+      "title": "John Lusshe of Oakley in Tisbury Recorded Inside Edmond Lusshe's Exact c. 1475–1480 Birth Window",
+      "shelves": [
+        "s00"
+      ],
+      "loci": [
+        "oakley-tisbury",
+        "tisbury-manor",
+        "melbury-abbas",
+        "shaftesbury"
+      ],
+      "diplomatic": "[TNA CP 40/871, rot. 1041d, Entry 3, IMG_1041, Wiltes'] Rob[er]tus Wotton de Hyndon ... v[er]sus Ric[ardu]m Prentes de Gissege s[an]c[t]i Mich[ael]is in Com[itatu] Dors' ... Joh[ann]em Davy nup[er] de Longekyrchyll in Com[itatu] Dors' ... Joh[ann]em Couherd de Seggehill ... Et v[er]sus Joh[ann]em Lusshe de Okeley in p[ar]ochia de Tysbury ... husbondman ... quadraginta solidos [40s.].",
+      "synthesis": "Under King Edward IV—right inside Gen 16 founder Edmond Lusshe's c. 1475–1480 birth window—John Lusshe farmed at Shaftesbury Abbey's hamlet of Oakley in Tisbury in a cross-border credit sweep alongside Sedgehill and Dorset husbandmen. Direct father-to-son proof awaits tactile inspection of the 1528–1529 Melbury Abbas court roll (WSHC 2667/13/403).",
+      "immunity": "Alias capias ('sicut prius') dates the underlying credit to c. 1478–1479 under unified Shaftesbury Abbey lordship four years before the Arundells consolidated Wardour and Tisbury."
+    },
+    {
+      "id": "ev-1494",
+      "date": "Hilary Term 1494 (9 Henry VII)",
+      "iso": "1494-01",
+      "sort": 1494,
+      "gen": "Gen 17–18",
+      "epoch": "E1",
+      "house": "V1",
+      "region": "WDORSET",
+      "gpsGroup": "INDIRECT",
+      "gpsLabel": "Primary King's Bench Plea Roll (Bilingual Surname & Allied Duning Proof)",
+      "title": "1494 West Dorset Squire Discovery: \"John Armiger alias Squire\" & \"John Dunnyng\" of Pulham (2 Miles NE of Bookham)",
+      "shelves": [
+        "s01a",
+        "s03",
+        "s17"
+      ],
+      "loci": [
+        "pulham-dorset",
+        "bookham-knoll"
+      ],
+      "diplomatic": "[TNA KB 27/930, rot. 14d, Hilary Term 9 Henry VII (Jan.–Feb. 1494), Dors'] Johannes Armiger alias Squire de Pulham, husbondman, & Johannes Dunnyng de Pulham, husbondman [impleaded alongside William Warde, John Sayer, William Wyght & Robert Fraunceys]. Compare [DHC PE/BCN/RE 1/1, Frame 23r, March 1581/82] Gilberto Duning, Johanne Squier } Gar[dianis].",
+      "synthesis": "Pushes the West Dorset Squire documentary horizon back 30 years into the 1400s (from 1524 to 1494) during the reign of King Henry VII! Recorded in immediately adjacent Pulham (just 2 miles northeast of Bookham Farm across the Buckland Newton parish boundary), husbandman 'John Armiger alias Squire' stands side-by-side with husbandman 'John Dunnyng'—the exact allied Duning family whose descendant Gilbert Duning co-signed the Buckland Newton parish register as fellow Churchwarden with Gen 14 Johannes Squier de Bewcombe in March 1581/82.",
+      "immunity": "Provides explicit Westminster plea-roll proof of early Tudor clerks translating Anglo-Norman 'Squire' into Latin 'Armiger' ('Armiger alias Squire') even for a working Dorset husbandman."
+    },
+    {
+      "id": "ev-1500",
+      "date": "c. 1500–1508 (Reign of Henry VII)",
+      "iso": "1500/1508",
+      "sort": 1500,
+      "gen": "Gen 15",
+      "epoch": "E1",
+      "house": "V1",
+      "region": "WDORSET",
+      "gpsGroup": "DIRECT",
+      "gpsLabel": "Direct Proof (Age 16+ on 1524 Tax Roll)",
+      "title": "Birth of Thomas Squyer / Squier of Bookham Farm (Buckland Newton)",
+      "shelves": [
+        "s03",
+        "s17"
+      ],
+      "loci": [
+        "bookham-knoll"
+      ],
+      "diplomatic": "[TNA E 179/103/119, 1524, Hundredum de Bucklond — Knolle] William Squyer — G 5 | Thomas Squyer — G 1 [statutory 16+ threshold]. [PE/BCN/RE 1/1 f. 19r, 15 Feb 1579/80] sepultus fuit Thomas Squier de Bewcombe.",
+      "synthesis": "Because Thomas Squyer had reached the age-16+ tax threshold in 1524 right beneath his father William Squyer, we know he was born c. 1500–1508 under King Henry VII. He farmed at Bookham into his seventies and was buried there on February 15, 1579/80.",
+      "immunity": "Under the 1523 tax law, young unmarried sons aged 16+ earning wages were listed at the £1 entry rate directly beneath their fathers."
+    },
+    {
+      "id": "ev-1523",
+      "date": "October 1523",
+      "iso": "1523-10",
+      "sort": 1523,
+      "gen": "Gen 16",
+      "epoch": "E1",
+      "house": "V2",
+      "region": "NDORSET",
+      "gpsGroup": "DIRECT",
+      "gpsLabel": "Direct Proof (King Henry VIII Parchment Roll)",
+      "title": "Edmond Lushe Taxed on £40 by King Henry VIII — Richest 1.7% of All Dorset",
+      "shelves": [
+        "s02"
+      ],
+      "loci": [
+        "melbury-abbas",
+        "ashmore",
+        "bookham-knoll"
+      ],
+      "diplomatic": "[TNA E 179/103/116 & 128, Oct. 1523 Anticipation, Sixpenny Handley Hundred, Stoate 1982 p. 222] Walter Kyng £60; Henry Kyng £50; Robert Pulvertoft sen. £50; Thomas Pety £50; Edmond Lushe £40 (tax 40s.); William Were £40; Alice Ridoute wid. £40. [Ashmore] Richard Burdon £60. [Brockhampton] Thomas Lock G 50.",
+      "synthesis": "Our earliest Tudor tax record on the unbroken lineal chain (503 years ago, continuing the 1442 £40 Stour Provost Lusshe benchmark). When King Henry VIII demanded an advance war loan from only the wealthiest households worth £40 or more, Edmond Lushe was one of just 7 farmers in Sixpenny Handley Hundred—and in the richest 1.7% (143 out of 8,369) of all taxpayers in Dorset.",
+      "immunity": "Tudor tax assessors valued livestock and grain conservatively, meaning a £40 tax rating reflected roughly £120–£160 in real sheep flocks, oxen, harvested grain, and silver coin."
+    },
+    {
+      "id": "ev-1525",
+      "date": "1524 & January 6, 1525",
+      "iso": "1525-01-06",
+      "sort": 1525,
+      "gen": "Gen 16",
+      "epoch": "E1",
+      "house": "V1",
+      "region": "WDORSET",
+      "gpsGroup": "DIRECT",
+      "gpsLabel": "Direct Proof (Father-and-Son Tax Rolls)",
+      "title": "William & Thomas Squyer Taxed Together in Knoll; Edmond Lusshe in East Melbury & Robert Akerman on Coast",
+      "shelves": [
+        "s03",
+        "s04",
+        "s05"
+      ],
+      "loci": [
+        "bookham-knoll",
+        "alton-pancras",
+        "shipton-gorge",
+        "melbury-abbas"
+      ],
+      "diplomatic": "[E 179/103/119–120, Knoll, p. 162] William Squyer G 5; Thomas Squyer G 1; John Robertes G 2; Robert Roberdes G 5. [Alton Pancras, p. 199] Robert Squyer G 2. [E 179/103/122, Shipton Gorge, p. 55] Robert Akerman G 10. [E 179/103/121, Est Melbury, Jan. 6, 1525, p. 139] Robert Kyng G 30; Edmond Lusshe G 20; West Melbury: Thomas Rydoutte G 1; Est Compton: John Burden G 10.",
+      "synthesis": "More than a decade before English church registers even began in 1538, King Henry VIII's village tax rolls capture all three of our English ancestral lines at once: father and son William & Thomas Squyer at Knoll/Bookham, Edmond Lusshe as second-richest farmer in East Melbury, and Robert Akerman near Bridport.",
+      "immunity": "Checking the entire county tax roll separates our ancestors from unrelated look-alike names in distant Dorset towns like Wareham and Maiden Newton."
+    },
+    {
+      "id": "ev-1528",
+      "date": "1528–1529",
+      "iso": "1528/1529",
+      "sort": 1528,
+      "gen": "Gen 16",
+      "epoch": "E1",
+      "house": "V2",
+      "region": "NDORSET",
+      "gpsGroup": "DIRECT",
+      "gpsLabel": "Direct Proof (Manor Court Roll)",
+      "title": "Melbury Abbas Manor Court Roll Lists Lush & Chyckeford Farm Holdings",
+      "shelves": [
+        "s06"
+      ],
+      "loci": [
+        "melbury-abbas"
+      ],
+      "diplomatic": "[Wiltshire & Swindon History Centre Ref: 2667/13/403, 20 Hen. VIII, 1528–1529] Curia Manerii de Melbury Abbatisse — Lush & Chyckeford customary copyhold tenements.",
+      "synthesis": "Records the Lush family's leased farm in Melbury Abbas right beside the Chyckeford family—the exact in-laws later named in John Lusshe's 1572 will—while the 1523–1545 tax rolls confirm Edmond Lusshe as the head of that farm.",
+      "immunity": "Surrounding 1523, 1525, 1539, 1542, and 1545 Crown rolls confirm Edmond Lusshe's first name without needing to handle the fragile 1528 parchment."
+    },
+    {
+      "id": "ev-1539",
+      "date": "April 10 & May 15, 1539",
+      "iso": "1539-05-15",
+      "sort": 1539,
+      "gen": "Gen 15",
+      "epoch": "E1",
+      "house": "V1",
+      "region": "WDORSET",
+      "gpsGroup": "DIRECT",
+      "gpsLabel": "Direct Proof (King Henry VIII Military Musters)",
+      "title": "1539 Invasion Musters: Thomas Squyer (Billhook), Akerman Longbowmen & Edmond Lushe (Steel Plate Armour)",
+      "shelves": [
+        "s01",
+        "s07",
+        "s08"
+      ],
+      "loci": [
+        "bookham-knoll",
+        "alton-pancras",
+        "shipton-gorge",
+        "bridport",
+        "melbury-abbas"
+      ],
+      "diplomatic": "[E 36/29, May 15, 1539, Knowlle, p. 36] B Tho Squyer — bill; Rob Roberds — bill, splints; Rob Farvell — poleaxe. [SP 2/S, Liberty of Alton, p. 50] Rob Squyer — harness for man, bow, sh.arr; B Jn Squyer — bow, 4 arr. [E 36/29, Apr. 10, 1539, p. 8] Jn Akerman — bow, sh.arr; Ste Akerman — bill; A Hen Akerman — AA, bow, sh.arr. [E 36/17, Melbary, p. 95] Edm Lushe — NA, has pr al.rivets.",
+      "synthesis": "When King Henry VIII called out every village to prepare against a French invasion, Thomas Squyer marched in Knoll carrying his own billhook beside neighbours Roberds and Farvell, Akerman archers mustered with longbows near Bridport, and elder Edmond Lushe supplied riveted German steel plate armour in Melbury Abbas.",
+      "immunity": "Tudor muster codes ('A' for archer, 'B' for billman, and 'NA' for men past age 60) give us exact age brackets before birth certificates existed."
+    },
+    {
+      "id": "ev-1542",
+      "date": "1542",
+      "iso": "1542",
+      "sort": 1542,
+      "gen": "Gen 15",
+      "epoch": "E1",
+      "house": "V2",
+      "region": "NDORSET",
+      "gpsGroup": "DIRECT",
+      "gpsLabel": "Direct Proof (Father & Son on Muster Roll)",
+      "title": "Teenage John Lusshe Turns 16+ and Joins His Father Edmond Lushe on the 1542 Muster Roll",
+      "shelves": [
+        "s09"
+      ],
+      "loci": [
+        "melbury-abbas",
+        "compton-abbas",
+        "fontmell-magna"
+      ],
+      "diplomatic": "[TNA E 101/61/36, 1542 King's Remembrancer Muster, Comton Abbas & West Melberys, Stoate 1978 p. 96] Edm Lushe — NA, has pr al.rivets ... Jn Lusshe [ableman, newly aged 16+]. [Fonntmell, p. 94] Walt Lusshe.",
+      "synthesis": "Too young (under 16) to appear in 1539, John Lusshe (Gen 15) steps onto the 1542 military roll alongside his elderly father Edmond Lushe—pinpointing John's birth to c. 1523–1526—while relative Walter Lusshe appears next door in Fontmell.",
+      "immunity": "Seeing elder Edm Lushe and newly adult Jn Lusshe together on the 1542 roll cleanly links Generation 16 to Generation 15."
+    },
+    {
+      "id": "ev-1544",
+      "date": "1535 – September 1544",
+      "iso": "1544-09",
+      "sort": 1544,
+      "gen": "Gen 16",
+      "epoch": "E1",
+      "house": "V2",
+      "region": "NDORSET",
+      "featured": true,
+      "gpsGroup": "DIRECT",
+      "gpsLabel": "Direct Proof (Royal Charter & Abbey Accounts)",
+      "title": "King Henry VIII Closes Shaftesbury Abbey & Sells Melbury, Compton & Fontmell Together to Sir Thomas Arundell",
+      "shelves": [
+        "s10"
+      ],
+      "loci": [
+        "melbury-abbas",
+        "compton-abbas",
+        "fontmell-magna",
+        "shaftesbury"
+      ],
+      "diplomatic": "[Valor Ecclesiasticus, 1535, Vol. I] Shaftesbury Abbey: gross £1,329 1s. 3d.; clear net £1,166 8s. 9d. [L&P Hen. VIII, Vol. 17, 1541–42, pp. 690–705] Core grain-rent manors: Melbury, Fountmell, Hanleigh, Iwern. [Letters Patent, Sept. 1544, 36 Hen. VIII; L&P Vol. 19 Pt. 2, pp. 158–197] Crown sale (£2,609 11s. 1d.; Dorset clear yearly rent £58) to Sir Thomas Arundell: Manors of Melbury Abbatisse & Compton Abbatisse, with advowson of Fontmell.",
+      "synthesis": "Solves a 200-year puzzle in our Lush tree: before March 1539, Edmond Lusshe leased his farm from England's richest nunnery, Shaftesbury Abbey (with no local squire living in the village, Edmond's personal farming wealth rivaled the entire manor's fixed rent roll!). In September 1544, King Henry VIII sold Melbury Abbas, Compton Abbas, and Fontmell in one bundle to Sir Thomas Arundell of Wardour—explaining why Edmond's descendants moved freely across those exact three villages for the next two centuries.",
+      "immunity": "Matching the 1535 abbey valuation, 1541–42 Crown accounts, and September 1544 royal charter proves all three Lush parishes belonged to one unified estate."
+    },
+    {
+      "id": "ev-1545",
+      "date": "1543–1545",
+      "iso": "1545-06",
+      "sort": 1545,
+      "gen": "Gen 15",
+      "epoch": "E1",
+      "house": "V1",
+      "region": "WDORSET",
+      "gpsGroup": "DIRECT",
+      "gpsLabel": "Direct Proof (Crown Tax Rolls)",
+      "title": "Thomas Squyer Heads the Knoll Farm Alone (1543–44); Edmond & Young John Lusshe Both Taxed in 1545",
+      "shelves": [
+        "s11",
+        "s12"
+      ],
+      "loci": [
+        "bookham-knoll",
+        "alton-pancras",
+        "melbury-abbas",
+        "bridport"
+      ],
+      "diplomatic": "[E 179/104/151–152, Knoll, 1543–44, p. 162] Thomas Squyer — G 1½ (30s.; tithing sum 4s. 7½d.); William Locke G 4; Robert Roberdes G 3. [Alton, p. 199] Robert Squyer G 5; John Squyer G 1. [E 179/104/156, June 1545 Melbury Anticipation, p. 141] Edmond Lusshe — G 13. [E 179/104/154, Cann/Melbury, p. 142] John Lusshe — G 1; Thomas Rideoute G 4. [Bothenhampton, p. 54] Henry Akerman — G 4.",
+      "synthesis": "By 1543–44, Thomas Squyer had taken over his father William's farm in Knoll, while in 1545 elderly Edmond Lusshe (still one of the four richest men in Melbury Abbas) appears in the same year his young son John Lusshe pays his first tax.",
+      "immunity": "Adding up the exact pennies and halfpennies of the 1544 Knoll village total (4s. 7½d.) proves Thomas Squyer's 30-shilling ('G 1½') assessment to the halfpenny."
+    },
+    {
+      "id": "ev-1558",
+      "date": "1558–1576",
+      "iso": "1565/1576",
+      "sort": 1565,
+      "gen": "Gen 15",
+      "epoch": "E2",
+      "house": "V1",
+      "region": "WDORSET",
+      "gpsGroup": "DIRECT",
+      "gpsLabel": "Direct Proof (Salisbury Will Index & 1573 Common Pleas Roll)",
+      "title": "Alton Pancras Tudor Wills (1558, 1565, 1576) & 1573 Debt Plea of \"John Squyer of Alton Pancras, Husbandman\"",
+      "shelves": [
+        "s13"
+      ],
+      "loci": [
+        "alton-pancras",
+        "bookham-knoll"
+      ],
+      "diplomatic": "[Dean of Salisbury Peculiar Will Registers, Series I, BRS Vol. 53] 1558: Nicholas Locke, Alton Pancras (Vol. 1, p. 89) | 1565: John Squire, Alton Pancras, A. & W. (Vol. 1, pp. 65, 68) | 1576: Robert Squire / Squier, Alton Pancras (Vol. 3, p. 83). [TNA CP 40/1317b, rot. 274f, Trinity Term 1573, Dorset; WAALT] John Sticklande of Alton Pancras, yeoman v. Edward Walton of Horton, yeoman & John Squyer of Alton Pancras, husbandman (debt).",
+      "synthesis": "Proves continuous Elizabethan Squire residency across the 1.5-mile hedge in Alton Pancras: alongside the registered wills of John Squire (1565) and Robert Squire (1576), a newly indexed Trinity 1573 Westminster plea roll proves a younger John Squyer of Alton Pancras, husbandman, was active eight years after the 1565 will—right beside Johannes Squier of Bookham.",
+      "immunity": "Combines the surviving Dean of Salisbury peculiar will registers with the newly indexed Trinity 1573 Court of Common Pleas roll (CP 40/1317b, rot. 274f)."
+    },
+    {
+      "id": "ev-1569",
+      "date": "March–August 1569",
+      "iso": "1569-06-28",
+      "sort": 1569,
+      "gen": "Gen 15",
+      "epoch": "E2",
+      "house": "V2",
+      "region": "NDORSET",
+      "gpsGroup": "DIRECT",
+      "gpsLabel": "Direct Proof (Queen Elizabeth I Musters)",
+      "title": "Thomas Lawrens Sr. Supplies Armour in Merriott (Somerset) & Richard Akerman Musters as Bridport Archer",
+      "shelves": [
+        "s14",
+        "s15"
+      ],
+      "loci": [
+        "merriott-crewkerne",
+        "bridport",
+        "fontmell-magna"
+      ],
+      "diplomatic": "[SRS Vol. XX, 1569 Merriott Tithing, pp. 28–30] Armour: Florence Pytt wid. [PCC PROB 11/51/267, June 28, 1569], Thomas Lawrens Sr. ... furnish 1 almain rivet; Archer: Peter Langdon. [TNA SP 12/56, Birteporte, p. 143] A Ric Akerman; [Bovehinton & Lodres, p. 148] B Jn Akerman.",
+      "synthesis": "Introduces our Somerset ancestors—prosperous farmer Thomas Lawrens Sr. (supplying steel plate armour) and archer Peter Langdon in Merriott—alongside archer Richard Akerman in Bridport.",
+      "immunity": "Only a small quota of fit men aged 16–60 were picked in 1569, explaining why ailing John Lusshe (who died in 1572) and his young son William were not required to march."
+    },
+    {
+      "id": "ev-1572",
+      "date": "April 14 or 22, 1572",
+      "iso": "1572-04-22",
+      "sort": 1572,
+      "gen": "Gen 15",
+      "epoch": "E2",
+      "house": "V2",
+      "region": "NDORSET",
+      "gpsGroup": "DIRECT",
+      "gpsLabel": "Direct Proof (Surviving 1572 Will)",
+      "title": "1572 Will of John Lusshe of Melbury Abbas Leaves £20 Cash to His Young Son William",
+      "shelves": [
+        "s16"
+      ],
+      "loci": [
+        "melbury-abbas"
+      ],
+      "diplomatic": "[Melbury Abbas Will, Apr. 14/22, 1572; calendared SDNQ 24:173, Dean & Chapter of Bristol] I John Lusshe of y^e p[ar]ishe of melbory ... geve and Bequeathe vnto my sonne william Lusshe xx^li [£20] of curra[n]t money of England ... when he is of lawfull age / Residue to Alice my wyffe executrixe / my twoe Brothers Rob[er]t Lusshe & John Chyckeford my overseers.",
+      "synthesis": "Proves directly that Gen 15 John Lusshe and his wife Alice were the parents of Gen 14 William Lusshe, leaving young William £20 in cash (a substantial Elizabethan fortune) safeguarded by uncles Robert Lusshe and John Chyckeford.",
+      "immunity": "Careful reading of the old handwriting ('xx^li') confirms 20 pounds rather than 20 shillings, and filing at Bristol Cathedral saved this will from the 1731 Blandford fire."
+    },
+    {
+      "id": "ev-1574",
+      "date": "Aug. 30, 1574 – Feb. 4, 1584/85",
+      "iso": "1582-03",
+      "sort": 1578,
+      "gen": "Gen 14",
+      "epoch": "E2",
+      "house": "V1",
+      "region": "WDORSET",
+      "gpsGroup": "DIRECT",
+      "gpsLabel": "Direct Proof (Buckland Newton Church Book)",
+      "title": "Bookham Church Records: Johannes Squier Serves as Parish Churchwarden (1581–82) & Locke Marriage",
+      "shelves": [
+        "s17"
+      ],
+      "loci": [
+        "bookham-knoll"
+      ],
+      "diplomatic": "[DHC PE/BCN/RE 1/1] f. 10r (30 Aug 1574): baptizatus fuit Thomas Squier filius Johannis Squier de Bewcombe | f. 12v (18 Jan 1575/76): sepulta fuit Iuliana Squier | f. 16r (31 Jul 1578): matrimonium inter Hugonem Locke de Sharnhull et Editham Squier filiam Thome Squier de Bewcombe | f. 19r (15 Feb 1579/80): sepultus fuit Thomas Squier de Bewcombe | f. 23r (Mar 1581/82): Gilberto Duning, Johanne Squier } Gar[dianis] | f. 32 (4 Feb 1584/85): sepultus fuit Johannes Squier de Bewcombe.",
+      "synthesis": "A page-by-page reading of Buckland Newton's surviving 1500s register captures three generations at Bookham ('Bewcombe'), records Edith Squier marrying neighbour Hugh Locke in 1578, and shows Gen 14 Johannes Squier elected Parish Churchwarden in 1581–82.",
+      "immunity": "Comparing letters side-by-side on the original page cleanly separates our surname Squier (hooked 'q') from a different village family named Spicer (closed 'p')."
+    },
+    {
+      "id": "ev-1594",
+      "date": "1594",
+      "iso": "1594",
+      "sort": 1594,
+      "gen": "Gen 14",
+      "epoch": "E2",
+      "house": "V2",
+      "region": "NDORSET",
+      "gpsGroup": "DIRECT",
+      "gpsLabel": "Direct Proof (Tax Roll, Lawsuit & Manor List)",
+      "title": "William & Ellen Lushe Farm a 4-Load Estate in Fontmell Magna (Tax Roll, Court Suit & Arundell Roll)",
+      "shelves": [
+        "s18"
+      ],
+      "loci": [
+        "fontmell-magna",
+        "bridport"
+      ],
+      "diplomatic": "[TNA E 179/105/253, 1594 Fontmell Tithing, p. 143] William Lushe — G 3; Robert Rydoute — G 4; Thomas Rydoute sen. — G 3. [TNA REQ 2/128/60, Wylde v Lushe] William Lushe and Ellen Lushe his wife, Manor of Fontmell. [Arundell Carriage Roll, SDNQ 34.351:353] William Lushe, 4 loads; Wylde, widow, 2 loads; Robert Rydowt, 6 loads. [Loders, p. 53] John Akerman — G 3.",
+      "synthesis": "Twenty-two years after inheriting £20 in his father's 1572 will, grown-up William Lushe and his wife Ellen appear across three independent records holding a 4-load farm in Fontmell Magna right inside the Arundell estate.",
+      "immunity": "Having a royal tax roll, a London court case (Wylde v Lushe), and the landlord's carriage list all name William Lushe beside widow Wylde and the Ridoutes leaves zero doubt."
+    },
+    {
+      "id": "ev-1598",
+      "date": "September 20, 1598",
+      "iso": "1598-09-20",
+      "sort": 1598,
+      "gen": "Gen 13",
+      "epoch": "E2",
+      "house": "V1",
+      "region": "WDORSET",
+      "gpsGroup": "DIRECT",
+      "gpsLabel": "Direct Proof (1598 Copyhold Tax Roll)",
+      "title": "24-Year-Old Thomas Squire Recorded Holding His Knoll Farm \"By Copy\" of the Manor Roll",
+      "shelves": [
+        "s19"
+      ],
+      "loci": [
+        "bookham-knoll"
+      ],
+      "diplomatic": "[TNA E 179/105/271, Sept. 20, 1598, Buckland Newton Hundred — Knoll Tithing, Stoate 1982 p. 162] Thomas S[quire] — in copy L 1; William Lock — G 4; William Robertes — in copy L 1.",
+      "synthesis": "Four weeks before baptizing his first child at Bookham in October 1598, 24-year-old Thomas Squire is officially taxed as a copyhold landowner ('in copy L 1') beside lifelong neighbours William Lock and William Robertes.",
+      "immunity": "Even though the parchment edge is worn after 'Thomas S...', his Bookham baptisms starting 25 days later confirm no other 'Thomas S-' farmed in Knoll."
+    },
+    {
+      "id": "ev-1601",
+      "date": "Mar. 7, 1600/01 – May 9, 1613",
+      "iso": "1601-03-07",
+      "sort": 1601,
+      "gen": "Gen 12",
+      "epoch": "E3",
+      "house": "V1",
+      "region": "WDORSET",
+      "gpsGroup": "DIRECT",
+      "gpsLabel": "Direct Proof (Baptism & Burial Entries)",
+      "title": "Baptism of Thomas Squire Senior (March 1601), Kinsman Roger Squier & Burial of Mother Maria Squier",
+      "shelves": [
+        "s20"
+      ],
+      "loci": [
+        "bookham-knoll"
+      ],
+      "diplomatic": "[DHC PE/BCN/RE 1/1] f. 73v (10 Aug 1600): Aliciam Squier filiam Rogeri Squier defunct[i] de Bewcombe | f. 73r (7 Mar 1600/01): baptizatus fuit Thomas Squier filius Thome Squier de Bewcombe | f. 99 (9 May 1613): sepulta fuit Maria Squier uxor Thome Squier de Bewcombe.",
+      "synthesis": "Pinpoints Gen 12 Thomas Squire senior's baptism to March 7, 1600/01 (making him 41 when he signed the 1642 Loyalty Oath and nearly 77 when he died in 1678), names his mother Maria, and confirms the family name Roger Squier at Bookham.",
+      "immunity": "Before 1752 England started the new year on March 25, so 'March 7, 1600/01' is March 7, 1601 in our modern calendar."
+    },
+    {
+      "id": "ev-1621",
+      "date": "Sept. 2, 1621 & Mar. 1621/22",
+      "iso": "1621-09-02",
+      "sort": 1621,
+      "gen": "Gen 13",
+      "epoch": "E3",
+      "house": "V1",
+      "region": "WDORSET",
+      "gpsGroup": "DIRECT",
+      "gpsLabel": "Direct Proof (Ancestor's Own Handwritten Signature)",
+      "title": "Churchwarden Thomas Squire Signs His Own Name in the Parish Book (Introducing Modern \"Squire\" Spelling)",
+      "shelves": [
+        "s21"
+      ],
+      "loci": [
+        "bookham-knoll"
+      ],
+      "diplomatic": "[DHC PE/BCN/RE 1/1, f. 123r, Sept. 2, 1621, Reading-in of Henricus Allane, B.D.] Subscribed: Thomas Squire [confident autograph] & Robert [X] Witt } Churchwardens; John Roberts [witness]. [f. 124r, Mar. 1621/22] Thoma Squire et Roberto Witt } Gard.",
+      "synthesis": "Forty years after his father served as Parish Churchwarden, 47-year-old Thomas Squire held the same respected office and signed his own name clearly—introducing the modern '-ire' spelling—while his co-warden could only sign with an 'X'.",
+      "immunity": "Seeing his actual handwritten signature proves the Bookham Squires were literate yeoman farmers before the English Civil War."
+    },
+    {
+      "id": "ev-1642",
+      "date": "1637 & Feb.–Mar. 1641/42",
+      "iso": "1642-03-06",
+      "sort": 1642,
+      "gen": "Gen 13",
+      "epoch": "E3",
+      "house": "V2",
+      "region": "NDORSET",
+      "gpsGroup": "INDIRECT",
+      "gpsLabel": "Direct Oath + 3-Lives Farm Lease Continuity",
+      "title": "1641/42 Civil War Loyalty Oaths: John Lush Sr. & Jr. (Fontmell) and Thomas Squire (Buckland Newton)",
+      "shelves": [
+        "s22",
+        "s23"
+      ],
+      "loci": [
+        "fontmell-magna",
+        "compton-abbas",
+        "bookham-knoll",
+        "alton-pancras",
+        "merriott-crewkerne"
+      ],
+      "diplomatic": "[SHC DD\\SP/1637/22] Inventory of Thomas Lawrence Jr., Merriott. [Dorset Protestation Returns, Feb.–Mar. 1641/42, Fry 1912] Funtmill Tything (p. 137): John Lush, se.; John Lush, ju.; Robert Burte; James Burte [Compton Abbas: 0 Lush males]. Brockhampton Tithing (Mar. 6, 1641/42): Richard Lock; Thomas Squire; William Roberts; Willi. Lock; Tho. Roberts [Alton Pancras: 0 Squire males].",
+      "synthesis": "Right before the English Civil War broke out, every adult man over 18 had to sign a loyalty oath: John Lush Sr. and Jr. signed on William Lushe's Fontmell land beside their Burte in-laws, while Thomas Squire signed at Bookham beside his childhood Lock and Roberts neighbours.",
+      "immunity": "Because three-lives manor farms could not pass to strangers without court records—and zero Lush men lived in Compton Abbas and zero Squires lived in Alton Pancras in 1642—this bridges the Civil War gap."
+    },
+    {
+      "id": "ev-1656",
+      "date": "1656–1667",
+      "iso": "1664-09-29",
+      "sort": 1664,
+      "gen": "Gen 12",
+      "epoch": "E3",
+      "house": "V2",
+      "region": "NDORSET",
+      "gpsGroup": "DIRECT",
+      "gpsLabel": "Direct Proof (Marriage Books, Hearth Tax & Manor Roll)",
+      "title": "Somerset Lawrence–Langdon–Shore Weddings, 4-Fireplace Lush Farmhouse & 1667 Melbury–Compton Roll",
+      "shelves": [
+        "s24",
+        "s25"
+      ],
+      "loci": [
+        "merriott-crewkerne",
+        "fontmell-magna",
+        "melbury-abbas",
+        "compton-abbas"
+      ],
+      "diplomatic": "[SHC DP/MER/2/1/1, Sept. 16, 1656] Civil marriage: John Lawrence & Joane Langdon (dau. of John Langdon). [Crewkerne PR, Aug. 19, 1657] William Lawrence ['Lareme'] & Sarah Shore. [1664 Hearth Tax, Meekings p. 24] William Lush — iiij [4 hearths]; James Burt — ij. [WSHC Ref: 413/162, 1667] Melbury Abbas & Compton manorial court roll.",
+      "synthesis": "Unites our Somerset Lawrence, Langdon, and Shore families, shows a substantial 4-fireplace Lush farmhouse next to James Burt in 1664, and documents Melbury Abbas land expanding into neighbouring Compton Abbas in 1667.",
+      "immunity": "Reading the original parish pages restores 'Joane Langdon' (cut off as 'Lang' in old indexes) and 'Lawrence' (spelled phonetically as 'Lareme')."
+    },
+    {
+      "id": "ev-1676",
+      "date": "Feb. 25, 1672/73 – Feb. 1706/07",
+      "iso": "1676-08",
+      "sort": 1676,
+      "gen": "Gen 12",
+      "epoch": "E3",
+      "house": "V2",
+      "region": "NDORSET",
+      "gpsGroup": "INDIRECT",
+      "gpsLabel": "Direct Baptism, 1706/07 Nicholas Lush Will & Shared Double Baptisms",
+      "title": "1673 Melbury Will (£50 Dowry), Aug. 1676 Baptism of Edmund Lush & 1706/07 Proved Will of Nicholas Lush",
+      "shelves": [
+        "s26",
+        "s27"
+      ],
+      "loci": [
+        "compton-abbas",
+        "melbury-abbas"
+      ],
+      "diplomatic": "[DHC AD/DT/W/1673/30, Feb. 25, 1672/73] Will of John Lush of Melbury Abbas, yoman: £50 to dau. Elizabeth; £5 to son John [1707/09 testator]; residue to son Robert; overseers Robert Burt & John Burden. [DHC PE/COA/RE 1/1, Aug. 1676] Edmund LUSH, son of Nicholas & Mary [May 13, 1679 same-day double baptism with John & Martha Lush]. [Consistory Court of Dorset Probate Calendar, BRS Vol. 53] Lush, Nicholas, Compton Abbas — Will — 1706, No. 12 [proved following his Feb. 7, 1706/07 burial, weeks before son Edmund's Apr. 14, 1707 marriage; alongside Archdeaconry admons. Lush, Robert, Symondsbury, 1689 No. 92 & Lush, William (?Stephen), Whitchurch Canonicorum, 1694 No. 101].",
+      "synthesis": "Nicholas and Mary Lush baptize Gen 11 Edmund Lush in Compton Abbas in August 1676 (reviving the forename of Gen 16 founder Edmond Lusshe), and upon Nicholas's burial on Feb. 7, 1706/07 his estate was proved in the Consistory Court of Dorset (Will 1706, No. 12) just weeks before Edmund married Mary Lawrence on Apr. 14, 1707.",
+      "immunity": "Same-day double baptisms (1679 & 1714/15), Nicholas Lush's 1706/07 Consistory Court will, and Compton Abbas interments of the 1707/09 Melbury Abbas family prove one undivided kin group."
+    },
+    {
+      "id": "ev-1678",
+      "date": "Dec. 10, 1677 – Nov. 16, 1703",
+      "iso": "1678-02-21",
+      "sort": 1678,
+      "gen": "Gen 11",
+      "epoch": "E3",
+      "house": "V1",
+      "region": "WDORSET",
+      "gpsGroup": "INDIRECT",
+      "gpsLabel": "Land & Family Network Proof (1.5-Mile Move)",
+      "title": "John Squire Marries Widow Anniver Roberts (1677), Elder Thomas Dies & Family Steps Into Alton Pancras (1678)",
+      "shelves": [
+        "s28",
+        "s30"
+      ],
+      "loci": [
+        "bookham-knoll",
+        "alton-pancras"
+      ],
+      "diplomatic": "[DHC PE/BCN/RE 1/1, f. 157r] 10 Dec 1677: Joannes Squire de Sharnhull et Anniver Roberts vidua [widow of Guil. Roberts de Bockham senior, bur. 27 Sept 1672, f. 152v] — Nup | 21 Feb 1677/78: sepultus erat Thomas Squire de Bookham Senr — Sep | 15 Mar 1677/78: Rogerus filius Rogeri Ffarwell de [Bookham] eadem — Sep | f. 158v (3 Apr 1678): Gulielmus Holland — sep. [Alton Pancras PR] 16 Nov 1703: John Squire Senr — Buryed; 19 Feb 1710/11: Roger Squire — Buryed.",
+      "synthesis": "Ten weeks after John Squire married Bookham neighbour widow Anniver Roberts, 76-year-old patriarch Thomas Squire senior died at Bookham (Feb. 1678). With the old three-lives lease ending on his death, John and Roger Squire moved 1.5 miles south across the hedge into Alton Pancras.",
+      "immunity": "Reading the original ink on Frame 157r corrects an old index typo ('Anamer') back to 'Anniver Roberts', and confirms every Squire left Buckland Newton in Spring 1678."
+    },
+    {
+      "id": "ev-1707",
+      "date": "Apr. 14, 1707 – 1755 & 1791",
+      "iso": "1718-12-24",
+      "sort": 1718,
+      "gen": "Gen 10",
+      "epoch": "E4",
+      "house": "V2",
+      "region": "NDORSET",
+      "gpsGroup": "DIRECT",
+      "gpsLabel": "Direct Proof (Licence, Bond, Sixpenny Court Book & Mill Lease)",
+      "title": "Edmund Lush (Sworn East Compton Tythingman), Robert Lush's 1718 Licence, 1719/20 Bond & 1791 West Melbury Mill",
+      "shelves": [
+        "s24",
+        "s27",
+        "s29"
+      ],
+      "loci": [
+        "compton-abbas",
+        "merriott-crewkerne",
+        "shaftesbury",
+        "okeford-sturminster",
+        "ashmore",
+        "melbury-abbas"
+      ],
+      "diplomatic": "[PE/COA/RE 1/1, Apr. 14, 1707] Edmund Lush & Mary Lawrence. [Shaftesbury PR, Dec. 24, 1718] Robrt Lush Elizabeth Andrus dec 24 Licans. [DHC PE/LYD/MI 1, 1719/20] Covenant bond: Edmund Lush (Okeford Fitzpaine) & eldest son Robert Lush 'of Sturminster Newton'. [Ashmore PR, Dec. 30, 1725] Thomas Lush bap. [DHC D/GLY/B/1–4, Sixpenny Handley Hundred & Fontmell Court Book, 1737–55] Sworn Tythingman: 'East Compton – Edmund Lush' [alongside 'West Orchard – John Toomer' & Oct. 1737 John Lawrence copyhold citing 1713 roll]. [Shaftesbury Corp., 1791] Water grist mill at West Melbury leased to 'a Mr Lush'.",
+      "synthesis": "After Edmund Lush remarried Mary Lawrence (1707), eldest son Robert Lush married Elizabeth Andrus by licence in Shaftesbury (1718), executed the 1719/20 property bond, and baptized Thomas Lush in Ashmore (1725). Surviving Sixpenny Handley court books (D/GLY/B/1–4) also place Edmund Lush in formal civic office as sworn Tythingman of East Compton alongside allied John Toomer, while a 1791 Shaftesbury Corporation lease confirms ongoing Lush milling tenure in West Melbury.",
+      "immunity": "Direct paleographical check resolves 'Andrus' (Andrews) over 'divrys', while DHC D/GLY/B/1–4 adds a primary Dorchester manorial court anchor for Edmund Lush."
+    },
+    {
+      "id": "ev-1709",
+      "date": "Dec. 24, 1709 – Mar. 14, 1732/33",
+      "iso": "1733-03-14",
+      "sort": 1733,
+      "gen": "Gen 9",
+      "epoch": "E4",
+      "house": "V1",
+      "region": "WDORSET",
+      "gpsGroup": "DIRECT",
+      "gpsLabel": "Direct Proof (Alton Pancras & Piddletrenthide Books)",
+      "title": "The Signature \"John–Philip–Eleanor\" Name Trio in Alton Pancras & Young Widower Philip Squire in Piddletrenthide",
+      "shelves": [
+        "s30"
+      ],
+      "loci": [
+        "alton-pancras",
+        "piddletrenthide"
+      ],
+      "diplomatic": "[Alton Pancras PR, p. 18, Dec. 24, 1709] Philip ye son of John Squire & of Elea- / nor his wife — Bapt [Vicar John Wilcock] | [Feb. 8, 1729/30] Elnar the Wife [of John] Squier was bered | [Apr. 29, 1730] Squires John Holland bap. [Piddletrenthide PR, 1732/33, Vicar Jenkin Williams] Febry ye 23: Margaret Daughter of Philip Squire bury[ed]; March ye 14: Mary Wife of Phillip Squire was bury[ed].",
+      "synthesis": "John Squire Junr. and wife Eleanor introduce the distinctive name trio John, Philip, and Eleanor. Moving 1.5 miles east to Piddletrenthide, 23-year-old Philip Squire tragically lost his baby daughter Margaret and wife Mary within three weeks in early 1733, surviving with his young son John Squire.",
+      "immunity": "We checked every 1700s Dorset record for 'Philip Squire' and ruled out a 1794 Royal Navy will that turned out to belong to a sailor named Philip Sparks."
+    },
+    {
+      "id": "ev-1769",
+      "date": "1641–1745 & April 2, 1769",
+      "iso": "1769-04-02",
+      "sort": 1769,
+      "gen": "Gen 8",
+      "epoch": "E4",
+      "house": "V1",
+      "region": "WDORSET",
+      "gpsGroup": "INDIRECT",
+      "gpsLabel": "Direct Baptisms, Akerman Chideock/Walditch Wills + Name Trio Proof",
+      "title": "Akerman Chideock & Walditch Wills (1641–1722), Abraham Akerman (1745) & Simon Squire Baptized in Chideock (1769)",
+      "shelves": [
+        "s31",
+        "s32"
+      ],
+      "loci": [
+        "broadwindsor",
+        "bridport",
+        "chideock"
+      ],
+      "diplomatic": "[TNA KB 27/1669 rot. 730, Trinity 1641] Henry Waddon v. Stephen Akerman (land in Walditch). [BRS Vols. 22 & 53 Probate] Stephen Akerman of Frogmore in Chideock; Richard Akerman of Bradpole; Joseph Akerman of Bridport (1698 No. 12); Moses Akerman of Walditch (Wills 1699 No. 45 & 1722 No. 27); Robert Akerman of Walditch (Will 1704 No. 50). [Broadwindsor PR, 1745] Abraham, son of Daniel & Jean Akerman. [Chideock PR, Apr. 2, 1769] Simon, son of John & Elisabeth Squire [with Philip 1757, John 1759, Eleanor 1767].",
+      "synthesis": "Locks both Volume I lines into the same coastal cordage ring: 1641–1722 pleas and wills prove the Akerman clan lived at Frogmore inside Chideock itself as well as Walditch, Bradpole, and Bridport before Daniel & Jean Akerman baptized Abraham Akerman at Broadwindsor (1745) and John & Elizabeth Squire baptized pioneer Simon Squire at Chideock (Apr. 2, 1769).",
+      "immunity": "Original Chideock pages (ff. 36v–37r) prove the Nov. 2, 1777 'John Squire' burial was a 6-day-old infant grandson—confirming elder John Squire survived past 1802."
+    },
+    {
+      "id": "ev-1775",
+      "date": "Jan. 17, 1773 – 1810",
+      "iso": "1775-04-30",
+      "sort": 1775,
+      "gen": "Gen 8",
+      "epoch": "E4",
+      "house": "V2",
+      "region": "NDORSET",
+      "gpsGroup": "INDIRECT",
+      "gpsLabel": "Direct Baptism, 1795 Newman Will & 1810 Sarah Habgood Will",
+      "title": "David Goulding (1773), Motcombe Baptism of John Lush (1775) & 1794–1810 Newman / Habgood Wills",
+      "shelves": [
+        "s33"
+      ],
+      "loci": [
+        "wimborne-minster",
+        "motcombe",
+        "melbury-abbas",
+        "bower-chalke"
+      ],
+      "diplomatic": "[Wimborne PR, Jan. 17, 1773] David Goulding bap. [St. Mary's Motcombe PR] 19-Mar 1775: Ann Blandford dau. of William Blandford | 30-Apr 1775: John Lush son of John Lush bap. [Bower Chalke Will of John Newman, signed Oct. 3, 1794, proved Jan. 22, 1795, wit. Isaac Habgood & John Golden] £120 to 'my sisters son John Lush, now living in the parish of Motcomb'. [Will & Oct. 27, 1809 Codicil of widow Mrs. Sarah Habgood, proved 1810] Witnesses: Thos Lush, Betty Lush, Mary Lush.",
+      "synthesis": "Pinpoints the Dorset baptisms of Greenspond pioneers David Goulding (1773) and John Lush (Motcombe, Apr. 30, 1775), while the full 1794/95 and 1809/10 Bower Chalke wills of John Newman and his widow Mrs. Sarah Habgood (witnessed by Isaac Habgood and personally attested by Thos Lush, Betty Lush, and Mary Lush) document the Motcombe Lush–Newman–Habgood circle.",
+      "immunity": "Exposes the online 'Blandford Forum' birthplace myth as a misreading of adjacent entry 'Ann Blandford' (Mar. 19, 1775), and preserves the two-candidate Motcombe paternity fork."
+    },
+    {
+      "id": "ev-1780",
+      "date": "c. 1780–1815",
+      "iso": "1780/1815",
+      "sort": 1785,
+      "gen": "Gen 8",
+      "epoch": "E4",
+      "house": "V3",
+      "region": "YORUBA",
+      "gpsGroup": "INDIRECT",
+      "gpsLabel": "Land, Ritual & Hereditary Chieftaincy Proof",
+      "title": "Founding of Emure Ijaloke: Osukoti Seat (Idamudu) & High Chief Ojomu Arintokun (Ojomu-Odo & Ogboile Festival)",
+      "shelves": [
+        "s34"
+      ],
+      "loci": [
+        "osunkoti",
+        "ojomu-akeregun"
+      ],
+      "diplomatic": "[Emure Royal Chronicles, r. Oba Adumori Ogunragaboja c. 1780–1845; INEC Directory; 2022 Ekiti State Ward Compendium & No. 10 Odo-Emure Field Interviews] Ward 07 Idamudu I (13/06/07/003): At Osunkoti [Ilé Ọ̀ṣùnkọ́tì]. Ward 04 Odo-Emure IV (13/06/04/002): Ojumu Akeregun / Ojomu-Odo [High Chief Ojomu Arintokun, senior Ìwàrẹ̀fà kingmaker; annual chieftaincy festival: 'Ojomu celebrates Ogboile'].",
+      "synthesis": "When the Yorùbá kingdom of Emure moved from Igbo-Owa to its permanent capital at Emure Ijaloke around 1780, our paternal ancestors established the hereditary Osukoti quarter-chieftaincy in Idamudu while maternal ancestors under High Chief Ojomu Arintokun anchored the senior kingmaker house of Ojomu-Odo (preserving its distinctive annual Ogboile ritual festival).",
+      "immunity": "Official INEC polling units, the 2022 Ekiti State Ward Compendium (Ojomu-Odo), and No. 10 Odo-Emure oral histories keep Odo-Emure's senior kingmaker title 'Ojomu / Ojumu' strictly separate from 'Ojimo' in Oke-Emure."
+    },
+    {
+      "id": "ev-1798",
+      "date": "1792 – August 18, 1798",
+      "iso": "1798-08-18",
+      "sort": 1798,
+      "gen": "Gen 7",
+      "epoch": "E4",
+      "house": "V1",
+      "region": "NL",
+      "gpsGroup": "DIRECT",
+      "gpsLabel": "Direct Proof (Bonavista Church Register & Letters)",
+      "title": "Lay Minister \"A Ackerman\" Officiates His Daughter Jane's 1798 Wedding to Simon Squires in Bonavista, NL",
+      "shelves": [
+        "s35"
+      ],
+      "loci": [
+        "bonavista"
+      ],
+      "diplomatic": "[USPG C/CAN/NFL: 2, Nov. 20, 1792] Magistrate John Bland recommends stipend for 'Abraham Akerman for officiating as minister, or catechist'. [PANL Bonavista C of E Marriage PR, Feb. 17 & Aug. 18, 1798] Andrew Pearce & Hannah Ackerman; Simon Squires & Jane Akerman — By Whom Married: A Ackerman.",
+      "synthesis": "Unites the Chideock Squire and Broadwindsor Akerman families in Newfoundland: because Bonavista had no ordained priest, Jane's educated father Abraham Akerman Sr. served for 30+ years as lay minister and personally married Jane to Simon Squires Sr. on August 18, 1798.",
+      "immunity": "Original missionary letters at Oxford (USPG C/CAN/NFL: 2) and Bonavista marriage entries independently verify Abraham Akerman Sr.'s clerical role and handwritten signature."
+    },
+    {
+      "id": "ev-1802",
+      "date": "1780 – 1802",
+      "iso": "1802",
+      "sort": 1802,
+      "gen": "Gen 8",
+      "epoch": "E4",
+      "house": "V1",
+      "region": "WDORSET",
+      "gpsGroup": "DIRECT",
+      "gpsLabel": "Direct Proof (1780–1817 Land Tax & 1802 Manor Survey)",
+      "title": "72-Year-Old John Squire Leases Cottage \"Lushes\" Adjoining The George Inn & St. Giles Church in Chideock",
+      "shelves": [
+        "s32",
+        "s27"
+      ],
+      "loci": [
+        "chideock",
+        "piddletrenthide"
+      ],
+      "diplomatic": "[Chideock Land Tax 1780–1817 & DHC D-WLC 1802 Manor of Chideock Sale Particulars, Arundell to Thomas Weld] Tenement 'Lushes' next to St. Giles Church (named after 1594–1694 Symondsbury/Whitchurch Lush copyholders; held 1780 by John Champ / Henry Waskett, 1790 by Bridport merchant Samuel Gundry): in 1802 leased for 99 years determinable on 3 lives at 2s. 6d./yr by John Squire, aged 72 [b. c. 1729/30], immediately adjoining George & Sarah Webber's George Inn (later Castle Inn).",
+      "synthesis": "Traces the complete history of Gen 8 John Squire's Chideock home: four years after his youngest son Simon Squire married in Bonavista, 72-year-old John Squire held a 99-year, three-lives lease next to St. Giles Church on his portion of the tenement called 'Lushes' (adjoining George Webber's George Inn)—fixing John's birth to c. 1729/30 inside Philip & Mary Squire's Piddletrenthide marriage window!",
+      "immunity": "Combines the 1780–1817 Chideock Land Tax assessments, the 1802 Arundell-to-Weld Manor Map & Survey (D-WLC), and the 1594–1694 Symondsbury/Whitchurch Lush administrations."
+    },
+    {
+      "id": "ev-1822",
+      "date": "Jan. 14, 1817 – April 19, 1851",
+      "iso": "1843-12-26",
+      "sort": 1822,
+      "gen": "Gen 7",
+      "epoch": "E4",
+      "house": "V1",
+      "region": "NL",
+      "gpsGroup": "DIRECT",
+      "gpsLabel": "Direct Proof (Burial Registers & 1844 Will)",
+      "title": "Bonavista Pioneers Laid to Rest & Abraham Akerman Jr.'s \"Blue Cloth Jacket\" Will (1843/44)",
+      "shelves": [
+        "s35"
+      ],
+      "loci": [
+        "bonavista"
+      ],
+      "diplomatic": "[PANL Bonavista PRs] Jan. 14, 1817: Jane dau. of Simon & Jane Squire — Bapt. by A. Ackerman | 1822 Burial: ABRAHAM AKERMAN, age 77 | 1832 Burial: Simon Squires, age 63 | Apr. 19, 1851 Burial: Jane Squires, age 78. [NL Will Books Vol. 1, p. 455, Dec. 26, 1843 / 1844] Will of Abraham Akerman Jr.: bequeaths blue cloth jacket to '...... Squires, son of John Squires'.",
+      "synthesis": "Captures the full arc of our first Newfoundland generation in Bonavista: lay minister Abraham Akerman Sr. baptizing his grandchildren into his seventies before dying in 1822 (aged 77), pioneer Simon Squires Sr. dying in 1832 (aged 63), uncle Abraham Akerman Jr. leaving his prized blue cloth jacket to his Squires great-nephew in 1843/44, and matriarch Jane Akerman Squires living to 1851 (aged 78).",
+      "immunity": "Every Bonavista burial age (77 in 1822 = 1745; 63 in 1832 = 1769) matches the family's English parish baptisms in Broadwindsor and Chideock to the exact year."
+    },
+    {
+      "id": "ev-1840",
+      "date": "1826 – May 26, 1840 & 1857",
+      "iso": "1840-05-26",
+      "sort": 1840,
+      "gen": "Gen 6",
+      "epoch": "E5",
+      "house": "V2",
+      "region": "NL",
+      "gpsGroup": "DIRECT",
+      "gpsLabel": "Direct Proof (Greenspond Church & Community Records)",
+      "title": "Greenspond Granite Island Pioneers, Thomas Lush & Mary Goulding Wedding (1840) & Church Timber Haul",
+      "shelves": [
+        "s36"
+      ],
+      "loci": [
+        "greenspond",
+        "motcombe",
+        "wimborne-minster"
+      ],
+      "diplomatic": "[Greenspond Community & Parish Records] Dorset pioneers David Goulding (1773–1826, Fryer & Fryer recruit) & John Lush (1775–1827; widow Elizabeth Jane Wood, 1777–1847) | May 26, 1840 Marriage: Thomas Lush (c. 1812–1887) & Mary Goulding (1821–1869, dau. of Jacob Goulding, who hauled timber in 1857 for St. Stephen's Church).",
+      "synthesis": "On rocky, windswept Greenspond Island—so barren of soil that families hauled boatloads of earth from the mainland just to plant a vegetable garden—Thomas Lush married Mary Goulding on May 26, 1840, uniting two Dorset pioneer families in Bonavista Bay.",
+      "immunity": "Verified directly through Greenspond parish registers and St. Stephen's parish building records."
+    },
+    {
+      "id": "ev-1846",
+      "date": "1753–1856 (Two-Model Dwyer Horizon)",
+      "iso": "1856",
+      "sort": 1856,
+      "gen": "Gen 6",
+      "epoch": "E5",
+      "house": "V2",
+      "region": "NL",
+      "gpsGroup": "CANDIDATE",
+      "gpsLabel": "Direct NL Anchor + Two Testable Origin Models",
+      "title": "Dwyer–Thorne Origins: Trinity Bay Protestant Dwyer Cluster vs. Waterford–Twillingate Corridor",
+      "shelves": [
+        "s37",
+        "s37b"
+      ],
+      "loci": [
+        "trinity-hants-tb",
+        "hillview-tb",
+        "herring-twillingate",
+        "waterford"
+      ],
+      "diplomatic": "[1753 Trinity Bay Census, St. Paul's Trinity & Hants Hbr PRs (1753–1855) & FHSNL Ash–Dwyer–Hurst–Meech–Piercey–Pike–Warren Pedigree Chart, Holdings Guide p. 93] John & Mary Dwyer bap. (1753+); John Dwyer (Servt to Bengn Lester & Co.); Oct. 29, 1806 Trinity: John Dwyer m. Catherine White (Rev. John Clinch, p. 45) & James Dwyer m. Patience Ivamy (1806); John Dwyer d. Dec. 1, 1855, age 26 [b. c. 1829]; MUN Mannion Collection (Waterford–Twillingate corridor, Cards #2291 & #2308). [c. 1856] Capt. John Alexander Dwyer (c. 1830–1907) m. Caroline Bemister Thorne (c. 1837–1906, dau. of Richard Thorne of Exford, Somerset & Betsy George of Hillview, Trinity Bay).",
+      "synthesis": "Primary Newfoundland registers frame two testable models for Capt. John Alexander Dwyer: pre-Famine Waterford–Twillingate emigration versus the pre-established Protestant Dwyer fishing family settled since 1753 right inside Trinity Bay where bride Caroline Bemister Thorne was born!",
+      "immunity": "Auditing Twillingate Death Books 4 & 5 proves the local registrar defaulted 'Place of Birth' to 'North West Arm' for both John and Caroline—making PANL Vol. 89 (Twillingate Methodist marriages from 1853) and Trinity Bay circuits the decisive target."
+    },
+    {
+      "id": "ev-1862",
+      "date": "1836 – Jan. 15, 1903",
+      "iso": "1862-09-02",
+      "sort": 1862,
+      "gen": "Gen 5",
+      "epoch": "E5",
+      "house": "V1",
+      "region": "NL",
+      "gpsGroup": "DIRECT",
+      "gpsLabel": "Direct Proof (1836 Census, Nipper's Hbr PR & Twillingate Death Bks 3–4)",
+      "title": "Herring Neck Foothold (1836), Silas Squires & Sarah Noble (m. 1862; d. 1901 & Jan. 15, 1903) & Birthplace Proof",
+      "shelves": [
+        "s36"
+      ],
+      "loci": [
+        "herring-twillingate",
+        "tilt-cove",
+        "lushes-burlington",
+        "smiths-harbour"
+      ],
+      "diplomatic": "[1836 NL Census, Herring Neck] Simon Squires [Jr.] & Julia. [Nipper's Harbour PR, Sept. 2, 1862] Silas Squires m. Sarah Jane Noble [brother John Squires explicitly styled 'son of Silas SQUIRES & Sarah NOBLE' in 1882–88 marriage reg.]. [Burlington Riverside Cemetery & Death Bk 3] SARAH SQUIRES, d. May 2, 1901, age 56, Wife of Silas Squires. [PANL Twillingate Death Bk 4] Silas SQUIRES, d. Jan. 15, 1903, Smiths Harbour, age 61, Methodist; Birthplace: Herring Neck; Buried: North West Arm.",
+      "synthesis": "Seals the generational bridge from Herring Neck to Smiths Harbour: after Simon and Julia Squires settled Herring Neck by 1836, their son Silas Squires married Sarah Jane Noble at Nipper's Harbour in 1862, and his January 15, 1903 death registration explicitly confirms Herring Neck as his birthplace (just 20 months after Sarah died on May 2, 1901, aged 56).",
+      "immunity": "Direct vital proof across the 1836 census, 1862 marriage register, Burlington Riverside gravestone, and Twillingate Death Books 3 & 4."
+    },
+    {
+      "id": "ev-1871",
+      "date": "1871 – 1878",
+      "iso": "1871-04-02",
+      "sort": 1871,
+      "gen": "Gen 7",
+      "epoch": "E5",
+      "house": "V2",
+      "region": "NDORSET",
+      "gpsGroup": "DIRECT",
+      "gpsLabel": "Direct Proof (1871 Census of England & Wales)",
+      "title": "Why Our Pioneers Left England: 78-Year-Old Cousin George Lush Listed as a \"Pauper\" in Motcombe (1871)",
+      "shelves": [
+        "s33"
+      ],
+      "loci": [
+        "motcombe",
+        "melbury-abbas"
+      ],
+      "diplomatic": "[1871 UK Census, Motcombe, Dorset — 'North End'] George Lush (1793–1878, aged 78, stay-behind Dorset collateral branch, brother of Hannah & Mary Doggrell) — Occupation/Condition: 'Pauper'.",
+      "synthesis": "Provides a vivid human window into why John Lush and Simon Squire braved the North Atlantic: back in Motcombe, Dorset, after the Enclosure Acts fenced off common pastures and wiped out small yeoman copyholders, 78-year-old cousin George Lush ended his days listed as a parish 'Pauper' in 1871.",
+      "immunity": "Cross-checked against Motcombe burial records (d. 1878) and Blackmore Vale Doggrell marriage registers."
+    },
+    {
+      "id": "ev-1871-dwyer",
+      "date": "Sept. 20, 1871 – 1904",
+      "iso": "1871-09-20",
+      "sort": 1872,
+      "gen": "Gen 6",
+      "epoch": "E5",
+      "house": "V2",
+      "region": "NL",
+      "gpsGroup": "DIRECT",
+      "gpsLabel": "Direct Proof (PANL Vols. 90–91, Twillingate Sun & 1904 McAlpine)",
+      "title": "North West Arm Dwyer Twins (1871), Capt. Wm. Dwyer's Schooner \"The Albert\" (1889) & 1904 Directory",
+      "shelves": [
+        "s37"
+      ],
+      "loci": [
+        "lushes-burlington",
+        "tilt-cove",
+        "herring-twillingate"
+      ],
+      "diplomatic": "[PANL Vol. 91] Twins Albert Edward Dwyer & Philip Henry Dwyer, b. Sept. 20, 1871 at North West Arm to John & Caroline Dwyer (bapt. Aug. 31, 1872); brother Thomas R. Dwyer explicitly recorded as born in Twillingate (m. Susannah Mills Nov. 5, 1895). [Twillingate Sun, Sept.–Oct. 1889] 'The \"Albert\", Wm. DWYER, also arrived at North West Arm with 140 quintals [of fish].' [1904 McAlpine Dir., North West Arm] Fishermen: DWYER, John; DWYER, Thomas; DWYER, William. [PANL Vol. 90 & NDB Regs] Lenora Isabella (b. 1878; m. Lot Oake 1901); Phillip George (b. Feb. 8, 1880 to John & Caroline [Thorne] Dwyer); Constable Alexander Dwyer m. Louisa Hodder (1895).",
+      "synthesis": "Recovers the full North West Arm Dwyer sibling network: proving copper miner Albert Edward had twin brother Philip Henry Dwyer (1871, namesake of Rev. Philip Henry Lush), confirming brother Thomas R. Dwyer was born in Twillingate like Polly before the North West Arm move, and catching brother Capt. William Dwyer bringing 140 quintals of fish into North West Arm aboard his schooner 'The Albert' in 1889.",
+      "immunity": "Cross-verified across PANL Vols. 90–91 (explicitly naming Caroline [THORNE] DWYER), the 1889 Twillingate Sun marine arrivals, and the 1904 McAlpine Directory."
+    },
+    {
+      "id": "ev-1880",
+      "date": "c. 1850 – c. 1880",
+      "iso": "1880",
+      "sort": 1880,
+      "gen": "Gen 7",
+      "epoch": "E5",
+      "house": "V3",
+      "region": "YORUBA",
+      "gpsGroup": "INDIRECT",
+      "gpsLabel": "Yorùbá Name Proof, Royal Father-to-Son Pedigree & Carved Effigy Date",
+      "title": "Patriarch Kọ́ládé, Direct Pedigree Ojomu Arintokun → Ojomu Ogedu & Owo Àkó Effigy (c. 1880)",
+      "shelves": [
+        "s34",
+        "s38"
+      ],
+      "loci": [
+        "oko-ose",
+        "osunkoti",
+        "ojomu-akeregun",
+        "ijebu-owo"
+      ],
+      "diplomatic": "[Yorùbá Name History & Gazetteer #35] [Ògún]kọ́ládé ('He who gathers honour and arrives') + son Ògúnlúsì ('Ogun possesses renown') at Oko Ọ̀sẹ Kọ́ládé. [Official Emure Royal Pedigree of 9th Elemure Oba Emmanuel Taiwo Ogunleye II (r. 1965–74) & Abiodun 1976, Africa 46.1] Great-Grandparents: High Chief Ojomu Arintokun (explicitly recorded as father of High Chief Ojomu Ogedu) & High Chief Ojomo Agunloye I of Ijebu-Owo (d. c. 1880, carved àkó effigy; father of Madam Olajenboye) → Grandparents: High Chief Ojomu Ogedu & Madam Olajenboye (parents of Olori Bolangbe).",
+      "synthesis": "Shows how Generation 5 patriarch Kọ́ládé's personal given name became our permanent family surname Kolade, while the official royal pedigree of the 9th Elemure (Oba Emmanuel Taiwo Ogunleye II) explicitly confirms father-to-son descent from High Chief Ojomu Arintokun to High Chief Ojomu Ogedu, who wed Madam Olajenboye, daughter of Owo paramount ruler High Chief Ojomo Agunloye I (d. c. 1880).",
+      "immunity": "Upgrades Ojomu Arintokun → Ojomu Ogedu to an explicit father-to-son link in the Emure royal chronicle while preserving the three constitutional models linking Ojomu Ogedu to Lydia Olugbe's father."
+    },
+    {
+      "id": "ev-1886",
+      "date": "1874 – September 1886",
+      "iso": "1886-09",
+      "sort": 1886,
+      "gen": "Gen 6",
+      "epoch": "E5",
+      "house": "V3",
+      "region": "YORUBA",
+      "gpsGroup": "DIRECT",
+      "gpsLabel": "Direct Proof (5 St. Paul's Biographies + Omotoye 2015 Academic History)",
+      "title": "Kiriji Peace Treaty (Sept. 1886): Chief Daniel Ogunlusi Kolade (\"Daniel Kolade of Emure\") & Alice Awawu Plant Christianity",
+      "shelves": [
+        "s34",
+        "s39"
+      ],
+      "loci": [
+        "kolade-compound",
+        "osunkoti",
+        "ojomu-akeregun"
+      ],
+      "diplomatic": "[St. Paul's Emure Memorials 1989, 1996 p. 10 & J.A. p. 15; Prof. R. W. Omotoye, 159th Inaugural Lecture, Univ. of Ilorin, June 25, 2015, p. 20; NAI Phillips 3/7] Following the Kiriji Peace Treaty (Sept. 1886, ni kete ti ogun Kiriji pari): Chief Daniel Ogunlusi Kolade ('Daniel Kolade of Emure', The Osukoti, named alongside Isaac Babamuboni of Ado & Helena Doherty Fatoregun of Ijero under Bishop Charles Phillips), Madam Alice Awawu Kolade & Madam Sarah Fafunbo Kolade ('onisowo ekini'). Proverb: 'Èmi kò ní dá ẹlẹ́ṣinrin (gbèsè) Àwáwù, kí n di ẹrú Marian!'",
+      "synthesis": "Immediately after the September 1886 Kiriji Peace Treaty, quarter-chief Daniel Ogunlusi Kolade (The Osukoti) and merchant-banker Alice Awawu Kolade returned to Idamudu Quarter to plant Christianity in Emure-Ekiti—a founding historical role independently verified by Church Historian Prof. Rotimi Williams Omotoye (2015, p. 20, 'Daniel Kolade of Emure') under CMS superintendent Rev. (later Bishop) Charles Phillips.",
+      "immunity": "Cross-verified by five St. Paul's liturgical biographies, Prof. Omotoye's 2015 University of Ilorin Inaugural Lecture (p. 20), Bishop Phillips's Ibadan papers (NAI Phillips 3/7), and INEC compound unit 13/06/08/004."
+    },
+    {
+      "id": "ev-1888",
+      "date": "Dec. 29, 1881 – Oct. 4, 1908",
+      "iso": "1888-10-11",
+      "sort": 1888,
+      "gen": "Gen 5",
+      "epoch": "E5",
+      "house": "V2",
+      "region": "NL",
+      "gpsGroup": "DIRECT",
+      "gpsLabel": "Direct Proof (Nipper's Hbr Meth. Regs, PANL Vol. 90 & Death Bks 4–5)",
+      "title": "William Lush's 1881–82 First-Wife Tragedy (Jane Amelia), Remarriage to Polly Dwyer, Tilt Cove Boom & 1906 Resolution",
+      "shelves": [
+        "s37"
+      ],
+      "loci": [
+        "tilt-cove",
+        "lushes-burlington",
+        "herring-twillingate",
+        "portland-maine"
+      ],
+      "diplomatic": "[Nipper's Hbr / Tilt Cove Meth. Burials & Marriages] Dec. 29, 1881: 10-mo.-old son of William & Jane Amelia Lush, North West Arm | Jan. 4, 1882: Jane Amelia LUSH, age 35 [b. c. 1846/47], 'Wife of William Lush', North West Arm | 1882–83: William LUSH (b. Greenspond) m. Mary 'Polly' DWYER (b. Twillingate, c. 1863–Aug. 27, 1905). [PANL Vol. 90 & NDB Regs] Issue: Caroline Lush (Feb. 23, 1883–Oct. 4, 1908, m. Edwin Martin 1906), William George (1885–1965), Alexander Dwyer (b. Jan. 11, 1887), Rev. Philip Henry (Oct. 11, 1888, Tilt Cove–1967, ME), James Edward (1890–1961), Stanley (WWI #5557) & Albert (1898–1980). [Death Bks 4–5] Dec. 4, 1895 mine death of Albert Edward Dwyer; 1906–07 deaths of Caroline (69) & Capt. John Dwyer (77).",
+      "synthesis": "Solves the long-standing mystery of why William Lush was 37–38 when he married 19-year-old Polly Dwyer: Nipper's Harbour Methodist burial registers reveal that William lost his 10-month-old infant son on Dec. 29, 1881 and his first wife, 35-year-old Jane Amelia Lush, just six days later on Jan. 4, 1882 before remarrying Polly Dwyer and raising seven children across North West Arm, Tilt Cove, and Lushes Bight.",
+      "immunity": "Verified across Nipper's Harbour/Tilt Cove Methodist circuit registers, PANL Vol. 90, 1906 NDB civil marriages, and Twillingate Death Books 4 & 5."
+    },
+    {
+      "id": "ev-1913",
+      "date": "Mar. 2, 1867 – 1935",
+      "iso": "1913",
+      "sort": 1913,
+      "gen": "Gen 4",
+      "epoch": "E5",
+      "house": "V1",
+      "region": "ONTARIO",
+      "gpsGroup": "DIRECT",
+      "gpsLabel": "Direct Proof (PANL Vol. 91, Ontario Marriage Reg. & NL Censuses)",
+      "title": "William Squires (b. Mar. 2, 1867 Stocking Hbr), Sudbury Ontario Foothold (1913) & Smiths Harbour Pioneers",
+      "shelves": [
+        "s36"
+      ],
+      "loci": [
+        "sudbury-on",
+        "smiths-harbour",
+        "lushes-burlington"
+      ],
+      "diplomatic": "[PANL Vol. 91, Little Bay Islands Meth. Baptisms] William SQUIRES, son of Silas & Sarah (NOBLE), born March 2, 1867, Stocking Harbour, baptized Jan. 13, 1874. [Archives of Ontario Marriage Reg., 1913, Sudbury] William Silas Squires & Ethel Jane Brown. [1921–1945 NL Censuses, Smiths Harbour] William Squires & Mary-Jane Budgell (b. 1879; sons Silas Squires, b. Oct. 1901, & Philemon [Pleman] Squires, b. Nov. 1910); Albert Lush (1898–1980) & Florence White (sawmill & medical boat; Ivy Lush, bapt. Nov. 7, 1921, & Daisy Evelyn Lush, 1922–2007, m. Rubert Rideout).",
+      "synthesis": "Locks in exact primary birth records for Generation 4 & 3—William Squires born March 2, 1867 at Stocking Harbour and son Pleman enumerated under his formal biblical spelling Philemon Squires (born Nov. 1910) in the 1921 census—alongside cousin William Silas Squires's 1913 Sudbury, Ontario foothold and Albert & Florence Lush's Smiths Harbour sawmill and medical boat.",
+      "immunity": "Verified across PANL Vol. 91 Methodist baptisms, Archives of Ontario marriages, three Newfoundland censuses (1921–1945), and Smiths Harbour gravestones."
+    },
+    {
+      "id": "ev-1922",
+      "date": "1919 – 1933",
+      "iso": "1922/1933",
+      "sort": 1925,
+      "gen": "Gen 4",
+      "epoch": "E5",
+      "house": "V3",
+      "region": "YORUBA",
+      "gpsGroup": "DIRECT",
+      "gpsLabel": "Direct Proof (St. Paul's & CMS Bookshops Records)",
+      "title": "Prime Minister (Olisa) Alliance, St. Paul's School (1919) & Kolade Brothers Enter C.M.S. Bookshops (1922 & 1933)",
+      "shelves": [
+        "s39"
+      ],
+      "loci": [
+        "kolade-compound",
+        "benin-ondo",
+        "ijebu-owo",
+        "ondo-ado-ibadan"
+      ],
+      "diplomatic": "[Oke Memorial 1996 p. 10, J.A. Kolade p. 15 & J.O. Kolade 1989] Serra-Ann Marian Kolade (c. 1891–1996) m. Chief Benjamin Oke Apata, The Olisa [Prime Minister] of Emure-Ekiti | 1919: St. Paul's C.M.S. School founded | Chief John Aderibigbe Kolade (b. May 13, 1905; fostered by Chief Adefemi, The Sasere; CMS Bookshops Benin City 1922; Adeoyo Hospital nursing, Ibadan) | Pa Joseph Owolabi Kolade ('Baba Bookseller', b. Oct. 27, 1907; St. Paul's Emure & St. Patrick's Owo; joined CMS Bookshops Benin City 1933).",
+      "synthesis": "Shows Generation 3 turning merchant capital into educational and civic leadership across colonial Nigeria: eldest sister Serra-Ann Marian married Emure's Prime Minister (The Olisa), elder half-brother John Aderibigbe joined C.M.S. Bookshops in Benin City in 1922 and trained as a nurse in Ibadan, and Pa Joseph Owolabi Kolade ('Baba Bookseller') launched his 25-year C.M.S. Bookshops career in 1933.",
+      "immunity": "Cross-verified across three independent St. Paul's Emure funeral biographies and colonial mission school milestones."
+    },
+    {
+      "id": "ev-1944",
+      "date": "1942 – September 6, 1944",
+      "iso": "1944-09-06",
+      "sort": 1944,
+      "gen": "Gen 3",
+      "epoch": "E6",
+      "house": "CONV",
+      "region": "NL",
+      "gpsGroup": "DIRECT",
+      "gpsLabel": "Direct Proof (Marriage & Baptism Registers)",
+      "title": "Two Wartime Weddings: Joseph Kolade & Lydia Olugbe (1942 Nigeria) and Pleman Squires & Ivy Lush (Sept. 6, 1944 NL)",
+      "shelves": [
+        "s36",
+        "s39"
+      ],
+      "loci": [
+        "benin-ondo",
+        "smiths-harbour",
+        "ojomu-akeregun"
+      ],
+      "diplomatic": "[L. O. Kolade Memorial 2010] 1942 Benin City marriage: Pa Joseph Owolabi Kolade & Madam Lydia Olugbe Kolade ('Mama Dudu', c. 1918–May 28, 2010, dau. of Late Chief Ojomu of Odo-Emure); birth of Victor Olusoji Kolade (July 30, 1942). [Smiths Harbour Register, Sept. 6, 1944] Marriage of Pleman [Philemon] Squires (b. Nov. 1910, 1921 NL Census) & Ivy Lush (bapt. Nov. 7, 1921); birth of Merle Elizabeth Squires (Dec. 31, 1944).",
+      "synthesis": "Just two years apart during World War II, Pa Joseph Kolade and Madam Lydia Olugbe united the Osukoti and Ojomu houses in Benin City (welcoming Victor Olusoji Kolade in 1942), while Pleman Squires and Ivy Lush united the Squires–Akerman and Lush–Lawrence–Goulding–Dwyer lines in Smiths Harbour (welcoming Merle Elizabeth Squires in December 1944).",
+      "immunity": "Verified directly from Newfoundland United Church and civil records alongside Nigerian Anglican memorials."
+    },
+    {
+      "id": "ev-1947",
+      "date": "October 1947 – 1958",
+      "iso": "1947-10",
+      "sort": 1947,
+      "gen": "Gen 3",
+      "epoch": "E6",
+      "house": "V3",
+      "region": "YORUBA",
+      "gpsGroup": "DIRECT",
+      "gpsLabel": "Direct Proof (St. Stephen's Ondo PR & Biographies)",
+      "title": "Ondo & Ado-Ekiti Years: Canon Awosika's 1947 Baptism, \"Mama Dudu's\" Wholesale Bakery & CMS Conferences",
+      "shelves": [
+        "s39"
+      ],
+      "loci": [
+        "ondo-ado-ibadan",
+        "kolade-compound"
+      ],
+      "diplomatic": "[St. Stephen's Oke-Aluko, Ondo PR, Oct. 1947 & E.B. Kolade p. 14] Canon S. O. Awosika baptizes Eric [Edward] Christian Jones Bamidele Kolade (son of Pa Joseph & senior wife Victoria Wuraola; Ibadan Grammar School, Headmaster & Ibadan YMCA co-founder). [J.O. & L.O. Kolade Memorials] Ondo (1946–54) & Ado-Ekiti (1954–58) CMS Bookshops reorganization; Mama Dudu supplies ẹ̀kọ to Ondo Teacher Training College & runs Ado–Emure wholesale bread/cake network while raising Victor Olusoji, Theophilus Olaniran & Henry Olatunji Kolade.",
+      "synthesis": "Chronicles a vibrant decade of entrepreneurship and education across Ondo, Ado-Ekiti, and Ibadan: while 'Baba Bookseller' reorganized C.M.S. Bookshops branches and addressed conferences in Lagos and Ibadan, 'Mama Dudu' built an independent catering and wholesale baking distribution network between Ado-Ekiti and Emure-Ekiti.",
+      "immunity": "Anchored by the October 1947 St. Stephen's Ondo baptism entry and three independent family memorial biographies."
+    },
+    {
+      "id": "ev-1968",
+      "date": "1960 – 1968",
+      "iso": "1968",
+      "sort": 1968,
+      "gen": "Gen 4",
+      "epoch": "E6",
+      "house": "V3",
+      "region": "YORUBA",
+      "gpsGroup": "DIRECT",
+      "gpsLabel": "Direct Proof (Chieftaincy & Judicial Biography)",
+      "title": "Emure Customary Court Presidency (1960–63) & Installation of Chief John A. Kolade as The Osukoti (1968)",
+      "shelves": [
+        "s34",
+        "s39"
+      ],
+      "loci": [
+        "osunkoti",
+        "kolade-compound"
+      ],
+      "diplomatic": "[J. A. Kolade Memorial, p. 15 & INEC 13/06/07/003] Chief John Aderibigbe Kolade (b. May 13, 1905): President of Emure-Ekiti Customary Court (1960–1963) at Nigerian Independence; formally installed in 1968 in the hereditary Idamudu chieftaincy title of The Osukoti of Emure-Ekiti previously held by his father Chief Daniel Ogunlusi Kolade.",
+      "synthesis": "Marks the modern civic restoration of our paternal Idamudu chieftaincy seat: at Nigerian Independence in 1960, elder uncle Chief John Aderibigbe Kolade presided over the Emure-Ekiti Customary Court before being formally installed in 1968 as The Osukoti of Emure-Ekiti.",
+      "immunity": "Cross-checked between the post-1968 Osukoti biography and Idamudu I Ward cadastral unit 13/06/07/003 ('At Osunkoti')."
+    },
+    {
+      "id": "ev-1969",
+      "date": "December 1966 – c. 1970",
+      "iso": "1966-12",
+      "sort": 1969,
+      "gen": "Gen 2",
+      "epoch": "E6",
+      "house": "CONV",
+      "region": "ONTARIO",
+      "gpsGroup": "DIRECT",
+      "gpsLabel": "Direct Proof (Canadian Immigration, Military & Family Records)",
+      "title": "Victor Olusoji Kolade Arrives in Canada (Dec. 1966), Serves in the Canadian Armed Forces & Settles in Toronto",
+      "shelves": [
+        "s40"
+      ],
+      "loci": [
+        "victoria-bc",
+        "cfb-shilo-mb",
+        "toronto-on",
+        "smiths-harbour",
+        "kolade-compound"
+      ],
+      "diplomatic": "[Canadian Service & Family Biographical Archive] Dec. 1966: Victor Olusoji Kolade (b. July 30, 1942, eldest son of Pa Joseph & Madam Lydia Kolade) immigrates to Victoria, B.C.; 1967: enlists in the Canadian Armed Forces (stationed at CFB Shilo, Manitoba), meeting Merle Elizabeth Squires of Smiths Harbour, NL via a newspaper pen-pals column; c. 1969–1970: moves to Toronto, Ontario following his honourable discharge to further his education.",
+      "synthesis": "Traces the remarkable transatlantic journey that brought our Nigerian and Newfoundland worlds together: arriving in Victoria, B.C. in December 1966 and serving in the Canadian Armed Forces out of CFB Shilo, Manitoba, Victor Olusoji Kolade first connected with Merle Elizabeth Squires in Newfoundland as pen pals before moving to Toronto around 1969–1970 after his honourable discharge.",
+      "immunity": "Preserved directly in Victor Olusoji Kolade's family eulogy and Canadian civil/service records."
+    },
+    {
+      "id": "ev-1973",
+      "date": "1973",
+      "iso": "1973",
+      "sort": 1973,
+      "gen": "Gen 2",
+      "epoch": "E6",
+      "house": "CONV",
+      "region": "ONTARIO",
+      "gpsGroup": "DIRECT",
+      "gpsLabel": "Direct Proof (Marriage, Civil & Family Archive)",
+      "title": "1973 Marriage of Victor Olusoji Kolade & Merle Elizabeth Squires — Uniting Nigeria & Newfoundland in Toronto",
+      "shelves": [
+        "s40"
+      ],
+      "loci": [
+        "toronto-on",
+        "smiths-harbour",
+        "kolade-compound"
+      ],
+      "diplomatic": "[Canadian Civil & Family Records, 1973] Marriage of Victor Olusoji Kolade (July 30, 1942 – Aug. 31, 2017; brothers Theophilus Olaniran, Henry Olatunji & half-brother Eric Bamidele Kolade) and Merle Elizabeth Squires (Dec. 31, 1944 – Aug. 17, 2025; first cousins Palma Squires, Paul Knight, and Jerry, Shirley, Bernice & Dereck Rideout), building their 36-year working life and musical home in Toronto, Ontario.",
+      "synthesis": "Dedicated Generation 2 milestone: in 1973, Victor Olusoji Kolade and Merle Elizabeth Squires married—uniting 15 generations of Dorset, Somerset, Irish, and Newfoundland outport pioneers with 5 generations of Emure-Ekiti and Owo chieftaincy and C.M.S. leaders, and establishing our modern family home in Toronto, Ontario.",
+      "immunity": "Anchored by Canadian marriage and death certificates, Nigerian memorial programmes, and the Pine Hills Cemetery family monument."
+    },
+    {
+      "id": "ev-1989",
+      "date": "November 1989 – May 28, 2010",
+      "iso": "1989-11",
+      "sort": 1989,
+      "gen": "Gen 4",
+      "epoch": "E6",
+      "house": "V3",
+      "region": "YORUBA",
+      "gpsGroup": "DIRECT",
+      "gpsLabel": "Direct Proof (Printed St. Paul's Funeral Programmes)",
+      "title": "Primate Dr. T. O. Olufosoye Preaches Pa Joseph Kolade's 1989 Funeral & Passing of Emure Matriarchs (1996 & 2010)",
+      "shelves": [
+        "s39"
+      ],
+      "loci": [
+        "kolade-compound",
+        "ojomu-akeregun"
+      ],
+      "diplomatic": "[St. Paul's Anglican Church, Emure-Ekiti Memorials] Nov. 1989: Funeral of Pa Joseph Owolabi Kolade ('Baba Bookseller', Oct. 27, 1907 – Oct. 10, 1989), sermon preached by The Most Revd. Dr. Timothy Omotayo Olufosoye (Rtd.), First Archbishop & Primate of the Church of Nigeria | Feb. 3, 1996: Passing of eldest sister Madam Serra-Ann Marian Oke (c. 1891–1996) | May 28, 2010: Passing of matriarch Madam Lydia Olugbe Kolade ('Mama Dudu', c. 1918–2010).",
+      "synthesis": "Honours the closing chapter of Generation 3 in Emure-Ekiti: when 'Baba Bookseller' died at age 81 in 1989, the retired First Archbishop and Primate of All Nigeria personally traveled to St. Paul's Emure-Ekiti to preach his funeral sermon, followed by the centenarian life of Aunt Serra-Ann Oke (1996) and grandmother 'Mama Dudu' (2010).",
+      "immunity": "Documented verbatim on the printed 1989, 1996, and 2010 St. Paul's Anglican liturgical programmes."
+    },
+    {
+      "id": "ev-2026",
+      "date": "August 2017 – 2026",
+      "iso": "2026",
+      "sort": 2026,
+      "gen": "Gen 1",
+      "epoch": "E6",
+      "house": "CONV",
+      "region": "ONTARIO",
+      "gpsGroup": "DIRECT",
+      "gpsLabel": "Direct Proof (Civil Records & Granite Monument)",
+      "title": "Scarborough Charcoal Granite Monument (Pine Hills Lot 2436H) & Living Generation 1 Synthesis in Toronto",
+      "shelves": [
+        "s40"
+      ],
+      "loci": [
+        "pine-hills",
+        "toronto-on"
+      ],
+      "diplomatic": "[Pine Hills Cemetery, Scarborough, Section A, Lot 2436H, 2026 Charcoal Granite Monument] KOLADE — Victor Olusoji of Emure-Ekiti, Nigeria (1942–2017) & Merle Elizabeth (née Squires) of Smith's Harbour, NL (1944–2025). [Toronto, ON] Victor Olutayo Kolade & Abigail Salole [Living — Generation 1].",
+      "synthesis": "Inscribes our transatlantic convergence in permanent stone at Pine Hills Cemetery in Scarborough—explicitly naming both Emure-Ekiti, Nigeria and Smith's Harbour, Newfoundland—while Victor Olutayo Kolade and Abigail Salole carry 694 years of verified family history forward in Toronto.",
+      "immunity": "Living birth dates and neighbourhood details are kept private in this public-safe edition."
+    }
+  ],
+  "generations": [
+    {
+      "gen": "Gen 18–21",
+      "era": "1332 – 1427 (Pre-Black Death & Henry V)",
+      "anchorEvent": "ev-1332",
+      "v1": "<em>Medieval Glastonbury Abbey halmote tenantry at Buckland Newton / Bookham</em>",
+      "v2": "<strong>694-Year Shaftesbury Abbey Horizon:</strong> <strong>John le Lusshe</strong> (Sept. 1332 Tisbury/Oakley subsidy, <em>12d.</em>, 2 lines below <em>Alexander de Ocle</em>) &amp; grazier <strong>John Lussh of Upton</strong> (fl. 1420–25; d. 1425–26; Donhead St Mary &amp; Salisbury butcher pleas; 1427 executors <em>Whitehorn</em> &amp; <em>Pakyn</em>)",
+      "v3": "Early Ekiti &amp; Owo kingdoms (ironworking &amp; royal foundations)",
+      "gps": "1332 Subsidy (<em>E 179/196/8</em>, WRS 45:44) &amp; <em>CP 40/636, 656, 664</em>; <strong>Verified Pre-Tudor Estate Continuity</strong>"
+    },
+    {
+      "gen": "Gen 17–18",
+      "era": "1442–1494 (Pre-Tudor)",
+      "anchorEvent": "ev-1442",
+      "v1": "<strong>1494 Pulham / Buckland Newton Horizon:</strong> <strong>John Armiger alias Squire of Pulham, husbandman</strong> &amp; allied <strong>John Dunnyng</strong> (Hilary 1494, <em>TNA KB 27/930 rot. 14d</em>, 2 mi NE of Bookham; Glastonbury Abbey halmote horizon)",
+      "v2": "<strong>Plantagenet <em>Luſſhe</em> Cluster:</strong> <strong>John Lusshe</strong> (1442 £40 Stour Provost chest &amp; 1450 Hinton St Mary executor) &amp; Shaftesbury Abbey tenants <strong>John Lusshe</strong> (1442 Tisbury; 1480 Oakley) and <strong>William Lusshe</strong> (1455 Tisbury, 10 marks)",
+      "v3": "Early Ekiti &amp; Owo kingdoms (pre-colonial ironworking &amp; royal foundations)",
+      "gps": "5 original Latin <em>TNA CP 40</em> membranes (1442–1480) &amp; Hilary 1494 King's Bench roll (<em>TNA KB 27/930</em>); <strong>Verified Pre-Tudor Estate Cluster</strong>"
+    },
+    {
+      "gen": "Gen 16",
+      "era": "c. 1475–1545",
+      "anchorEvent": "ev-1475",
+      "v1": "<strong>William Squyer</strong> (b. c. 1475–95; taxed 1524–25, <em>G 5</em>), Knoll / Bookham, Buckland Newton <em>(Rob. Squyer in Alton Pancras; Rob. Akerman G 10 in Shipton Gorge, 1525)</em>",
+      "v2": "<strong>Edmond Lusshe / Lushe</strong> (b. c. 1475–80; active 1523–45, £40 [richest 1.7% of Dorset] / <em>G 20</em> / <em>G 13</em>; steel plate armour; Shaftesbury Abbey to Sept. 1544 Arundell Manor Grant), Melbury Abbas",
+      "v3": "Early Ekiti &amp; Owo city-state era (ironworking &amp; oral history)",
+      "gps": "King Henry VIII tax &amp; muster rolls, 1535 Abbey survey &amp; Sept. 1544 Royal Charter; <strong>Direct Proof</strong>"
+    },
+    {
+      "gen": "Gen 15",
+      "era": "c. 1500–1580",
+      "anchorEvent": "ev-1539",
+      "v1": "<strong>Thomas Squier of Bookham</strong> (c. 1500/08–1579/80; <em>G 1</em> 1524, billhook 1539, <em>G 1½</em> 1544) &amp; <strong>Juliana</strong> (bur. 1575/76) <em>(John [d. 1565] &amp; Rob. Squire [d. 1576] wills &amp; 1573 John Squyer plea CP 40/1317b in Alton)</em>",
+      "v2": "<strong>John Lusshe</strong> (c. 1523/26–Apr. 1572; 1542 muster, <em>G 1</em> 1545, £20 will) &amp; <strong>Alice</strong>, Melbury Abbas <em>(Thomas Lawrens Sr., 1569 Merriott armour roll)</em>",
+      "v3": "Sovereign Ekiti &amp; Owo kingdoms (<em>Elemure</em> &amp; <em>Olowo</em> councils)",
+      "gps": "1539–42 muster rolls, 1572 will &amp; early church books; <strong>Direct Proof</strong>"
+    },
+    {
+      "gen": "Gen 14",
+      "era": "c. 1530–1603",
+      "anchorEvent": "ev-1594",
+      "v1": "<strong>Churchwarden Johannes Squier of Bookham</strong> (b. c. 1530–35; 1581/82 Warden; bur. Feb. 4, 1584/85) <em>(Kinsman: Rogerus Squier)</em>",
+      "v2": "<strong>William Lusshe</strong> (b. c. 1560s; active 1572–94+, <em>G 3</em>, <em>4-load farm</em>) &amp; <strong>Ellen Lushe</strong>, Melbury Abbas &amp; Fontmell Magna",
+      "v3": "Pre-colonial Ekiti &amp; Owo kingdoms",
+      "gps": "1598 parish register copy, 1594 tax roll &amp; London court case; <strong>Land &amp; Direct Proof</strong>"
+    },
+    {
+      "gen": "Gen 13",
+      "era": "1574–1642",
+      "anchorEvent": "ev-1621",
+      "v1": "<strong>Churchwarden Thomas Squire of Bookham</strong> (bapt. Aug. 30, 1574; copyhold 1598; 1621 handwritten signature) &amp; <strong>Maria</strong> (bur. 1613)",
+      "v2": "<strong>John Lush Sr.</strong> (signed 1641/42 Fontmell Loyalty Oath) <em>(Thomas Lawrence Jr., d. 1637, Merriott)</em>",
+      "v3": "Pre-colonial Ekiti &amp; Owo kingdoms",
+      "gps": "1621 handwritten signature, copyhold tax roll &amp; 1642 Loyalty Oaths; <strong>Direct &amp; Land Proof</strong>"
+    },
+    {
+      "gen": "Gen 12",
+      "era": "1600–1707",
+      "anchorEvent": "ev-1676",
+      "v1": "<strong>Thomas Squire senior of Bookham</strong> (bapt. Mar. 7, 1600/01; 1641/42 Oath; bur. Feb. 21, 1677/78) <em>(Neighbours: Locke, Roberts, Farwell, Holland)</em>",
+      "v2": "<strong>Nicholas Lush</strong> (bur. Feb. 7, 1706/07; <strong>Consistory Court Will 1706, No. 12</strong>, <em>BRS Vol. 53</em>) &amp; <strong>Mary</strong>, Compton Abbas <em>(Uncle: John Lush, 1673 £50 will; John Lawrence &amp; Joane Langdon, m. 1656)</em>",
+      "v3": "Pre-colonial Ekiti &amp; Owo kingdoms (settlement at <em>Igbo-Owa</em>)",
+      "gps": "Church registers, 1664 Hearth Tax, 1673 will &amp; 1667 manor roll; <strong>Direct &amp; Family Proof</strong>"
+    },
+    {
+      "gen": "Gen 11",
+      "era": "1645–1720",
+      "anchorEvent": "ev-1678",
+      "v1": "<strong>John Squire Senr.</strong> (bur. Nov. 16, 1703, Alton Pancras) &amp; <strong>Anniver Roberts, wid.</strong> (m. Dec. 10, 1677, Sharnhill; moved Spring 1678)",
+      "v2": "<strong>Edmund Lush</strong> (bapt. Aug. 1676; 2nd m. Apr. 14, 1707 <strong>Mary Lawrence</strong>; 1719/20 bond; East Compton Tythingman, <em>DHC D/GLY/B/1–4</em>)",
+      "v3": "Move toward <em>Emure Ijaloke</em> (settled c. 1780 under Oba Adumori Ogunragaboja)",
+      "gps": "Parish registers &amp; sealed 1719/20 property bond; <strong>Migration &amp; Direct Proof</strong>"
+    },
+    {
+      "gen": "Gen 10",
+      "era": "1693–1782",
+      "anchorEvent": "ev-1707",
+      "v1": "<strong>John Squire Junr.</strong> (bur. Mar. 30, 1739/40) &amp; <strong>Eleanor [Elnar]</strong> (bur. Feb. 8, 1729/30), Alton Pancras <em>(John–Philip–Eleanor trio)</em>",
+      "v2": "<strong>Robert Lush</strong> (c. 1693–1782) &amp; <strong>Elizabeth Andrus [Andrews]</strong> (m. Dec. 24, 1718 by Licence, Shaftesbury; Sturminster &amp; Ashmore)",
+      "v3": "Early growth of <em>Idamudu</em> &amp; <em>Odo-Emure</em> quarters, Emure-Ekiti",
+      "gps": "Parish burial books &amp; 1718 marriage licence entry; <strong>Direct Proof</strong>"
+    },
+    {
+      "gen": "Gen 9",
+      "era": "1709–1792",
+      "anchorEvent": "ev-1709",
+      "v1": "<strong>Philip Squire</strong> (bapt. Dec. 24, 1709; active 1733+) &amp; <strong>Mary</strong> (bur. Mar. 14, 1732/33, Piddletrenthide) <em>(Daniel &amp; Jean Akerman, 1745 Broadwindsor)</em>",
+      "v2": "<strong>Thomas Lush</strong> (bapt. Dec. 30, 1725, Ashmore – 1792) &amp; <strong>Mary Toomer</strong> (1722–1761), Melbury Abbas &amp; Motcombe",
+      "v3": "<strong>[K6 Opens c. 1780–90]</strong> Founding of <em>Emure Ijaloke</em> capital",
+      "gps": "1700s Dorset parish registers (Piddletrenthide, Broadwindsor, Ashmore, Melbury); <strong>Direct Proof</strong>"
+    },
+    {
+      "gen": "Gen 8",
+      "era": "1729–1822 (K6)",
+      "anchorEvent": "ev-1802",
+      "v1": "<strong>John Squire</strong> (c. 1729/30–1802+, aged 72 at cottage <em>\"Lushes\"</em>, Chideock) &amp; <strong>Elizabeth</strong>; <strong>Abraham Akerman Sr.</strong> (1745–1822, Bonavista Lay Minister) &amp; <strong>Mary</strong>",
+      "v2": "<strong>John Lush of Motcombe</strong> (active 1775–1795; two-candidate fork: 1757 Melbury Abbas baptism or older Newman-linked kinsman) <em>(David Goulding, bapt. Jan. 17, 1773, Wimborne Minster)</em>",
+      "v3": "<strong>K6: Founder of Ilé Ọ̀ṣùnkọ́tì</strong> (Idamudu); <strong>High Chief Ojomu Arintokun</strong> (Odo-Emure / <em>Ojomu-Odo</em>; <em>Ogboile</em> festival); Allied <strong>Ojomo Agunloye I</strong> (d. c. 1880, Owo)",
+      "gps": "1802 Chideock manor survey, missionary letters, c. 1880 Owo carved effigy &amp; ward maps; <strong>Direct &amp; Land Proof</strong>"
+    },
+    {
+      "gen": "Gen 7",
+      "era": "1769–1885 (K5)",
+      "anchorEvent": "ev-1798",
+      "v1": "<strong>Simon Squires Sr.</strong> (bapt. Apr. 2, 1769, Chideock – 1832) &amp; <strong>Jane Akerman</strong> (c. 1773–1851; m. Aug. 18, 1798, Bonavista by her father <em>\"A Ackerman\"</em>)",
+      "v2": "<strong>John Lush</strong> (bapt. Apr. 30, 1775, Motcombe – 1827) &amp; <strong>Elizabeth Jane Wood</strong> (1777–1847), Greenspond, NL <em>(Allied Dwyer: 1753 Trinity Bay Census, FHSNL Dwyer Pedigree Chart p. 93 &amp; Waterford corridor)</em>",
+      "v3": "<strong>K5: Patriarch Kọ́ládé / [Ògún]kọ́ládé</strong> of Idamudu &amp; River Ose; <strong>High Chief Ojomu Ogedu</strong> (son of Ojomu Arintokun) &amp; <strong>Olajenboye</strong> (Owo–Emure alliance)",
+      "gps": "Newfoundland church books, MUN Mannion Collection &amp; Yorùbá patronymic/royal records; <strong>Direct &amp; Name Proof</strong>"
+    },
+    {
+      "gen": "Gen 6",
+      "era": "1812–1920s (K4)",
+      "anchorEvent": "ev-1840",
+      "v1": "<strong>Simon Squires Jr.</strong> (b. c. 1814/15) &amp; <strong>Julia</strong>, Bonavista to Herring Neck (1836 NL Census)",
+      "v2": "<strong>Thomas Lush</strong> (c. 1812–1887) &amp; <strong>Mary Goulding</strong> (1821–1869; m. 1840, Greenspond); <strong>Capt. John Alexander Dwyer</strong> (c. 1830–1907) &amp; <strong>Caroline B. Thorne</strong>",
+      "v3": "<strong>K4: Chief Daniel Ogunlusi Kolade</strong> (<em>The Osukoti</em>, 1886 Christian pioneer; <strong>Omotoye 2015, p. 20</strong>), <strong>Alice Awawu</strong> &amp; <strong>Sarah Fafunbo</strong>; <strong>Late Chief Ojomu</strong>",
+      "gps": "1836 NL Census, Greenspond/Twillingate PRs, Emure memorials &amp; Omotoye (2015, p. 20); <strong>Direct Proof</strong>"
+    },
+    {
+      "gen": "Gen 5",
+      "era": "1841–1922",
+      "anchorEvent": "ev-1888",
+      "v1": "<strong>Silas Squires</strong> (b. Herring Neck, d. Jan. 15, 1903, age 61) &amp; <strong>Sarah Jane Noble</strong> (d. May 2, 1901, age 56; m. Sept. 2, 1862, Nipper's Hbr)",
+      "v2": "<strong>William Lush</strong> (1845–1922; 1st m. Jane Amelia, d. Jan. 4, 1882) &amp; 2nd m. <strong>Mary Ann \"Polly\" Dwyer</strong> (1863–1905; Tilt Cove, Lushes Bight &amp; Burlington)",
+      "v3": "<em>(Same era as K4 post-1886 Emure-Ekiti merchant banking &amp; 1919 St. Paul's mission school)</em>",
+      "gps": "Outport church registers, 1895 <em>Twillingate Sun</em> &amp; mining records; <strong>Direct Proof</strong>"
+    },
+    {
+      "gen": "Gen 4",
+      "era": "1867–2010 (K3)",
+      "anchorEvent": "ev-1913",
+      "v1": "<strong>William Squires</strong> (b. Mar. 2, 1867, Stocking Harbour; bapt. 1874) &amp; <strong>Mary-Jane Budgell</strong> (b. 1879), Smiths Harbour, NL <em>(nephew Wm. Silas Squires m. 1913 in Sudbury, ON)</em>",
+      "v2": "<strong>Albert Lush</strong> (1898–1980) &amp; <strong>Florence White</strong>, Smiths Harbour sawmill &amp; medical boat <em>(brother Rev. Philip H. Lush in Maine)</em>",
+      "v3": "<strong>K3: Pa Joseph Owolabi Kolade</strong> (\"Baba Bookseller\", 1907–1989) &amp; <strong>Madam Lydia Olugbe Kolade</strong> (c. 1918–2010; m. 1942) <em>(plus Chief John A. Kolade, 1968 Osukoti)</em>",
+      "gps": "1913 ON marriage, 1921–45 NL censuses, gravestones &amp; St. Paul's biographies; <strong>Direct Proof</strong>"
+    },
+    {
+      "gen": "Gen 3",
+      "era": "1910–1968",
+      "anchorEvent": "ev-1944",
+      "v1": "<strong>Pleman [Philemon] Squires</strong> (b. Nov. 1910) — married <strong>Ivy Lush</strong> on <strong>September 6, 1944</strong>, uniting Squires &amp; Lush in Smiths Harbour",
+      "v2": "<strong>Ivy Lush</strong> (bapt. Nov. 7, 1921) — married <strong>Pleman Squires</strong> on <strong>September 6, 1944</strong> <em>(sister Daisy Evelyn Lush m. Rubert Rideout)</em>",
+      "v3": "<em>(1942 Benin City wedding; 1946–58 Ondo &amp; Ado-Ekiti CMS Bookshops, 1947 Ondo baptism &amp; Mama Dudu's wholesale bakery network)</em>",
+      "gps": "Newfoundland &amp; Nigerian marriage and baptism registers; <strong>Direct Proof</strong>"
+    },
+    {
+      "gen": "Gen 2",
+      "era": "1942–2025 (K2)",
+      "anchorEvent": "ev-1973",
+      "v1": "<strong>Merle Elizabeth Squires</strong> (Dec. 31, 1944 – Aug. 17, 2025) — married <strong>Victor Olusoji Kolade</strong> in <strong>1973</strong>; settled in Toronto, ON",
+      "v2": "<em>(United in Merle Elizabeth Squires, carrying Lush, Lawrence, Goulding, Dwyer &amp; Thorne heritage)</em>",
+      "v3": "<strong>K2: Victor Olusoji Kolade</strong> (July 30, 1942 – Aug. 31, 2017) — arrived Canada <strong>Dec. 1966</strong> (CAF), moved to Toronto <strong>c. 1969–70</strong>, m. <strong>1973</strong>",
+      "gps": "Canadian service/civil records &amp; Pine Hills Cemetery granite monument (Scarborough); <strong>Direct Proof</strong>"
+    },
+    {
+      "gen": "Gen 1",
+      "era": "Present (K1)",
+      "anchorEvent": "ev-2026",
+      "v1": "<strong>Victor Olutayo Kolade</strong> &amp; <strong>Abigail Salole</strong> <em>[Living]</em>, Toronto, Ontario",
+      "v2": "<strong>Victor Olutayo Kolade</strong> &amp; <strong>Abigail Salole</strong> <em>[Living]</em>, Toronto, Ontario",
+      "v3": "<strong>K1: Victor Olutayo Kolade &amp; Abigail Salole</strong>, Toronto, Ontario, Canada",
+      "gps": "Modern civil &amp; family archive; <strong>Living Generation</strong>"
+    }
+  ]
+}
