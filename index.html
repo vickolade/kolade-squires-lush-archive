@@ -1241,6 +1241,265 @@ window.__WORLD_TOPO_50M = {"type":"Topology","objects":{"countries":{"type":"Geo
         max-width: none !important;
       }
     }
+
+    /* Contextual Archival Media Plates & Lightbox */
+    .archival-media-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(195px, 1fr));
+      gap: 0.65rem;
+    }
+    .archival-plate-card {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      border-radius: 0.75rem;
+      border: 1px solid #2a3140;
+      background: #0d0f12;
+      transition: border-color 0.18s ease, transform 0.18s ease, box-shadow 0.18s ease;
+      cursor: pointer;
+      text-align: left;
+    }
+    .archival-plate-card:hover {
+      border-color: #d4af37;
+      transform: translateY(-1px);
+      box-shadow: 0 8px 22px rgba(0, 0, 0, 0.45);
+    }
+    .archival-plate-frame {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16 / 10;
+      overflow: hidden;
+      background: #080a0d;
+      border-bottom: 1px solid #1e2430;
+    }
+    .archival-plate-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.25s ease;
+      display: block;
+    }
+    .archival-plate-card:hover .archival-plate-frame img {
+      transform: scale(1.035);
+    }
+    .archival-plate-frame.fit-contain img {
+      object-fit: contain;
+      padding: 4px;
+      background: #12151b;
+    }
+    .archival-plate-badge {
+      position: absolute;
+      top: 6px;
+      left: 6px;
+      font-size: 9.5px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      padding: 2px 6px;
+      border-radius: 4px;
+      background: rgba(13, 15, 18, 0.86);
+      border: 1px solid rgba(212, 175, 55, 0.55);
+      color: #fde68a;
+      backdrop-filter: blur(4px);
+    }
+    .archival-plate-zoomhint {
+      position: absolute;
+      bottom: 6px;
+      right: 6px;
+      font-size: 10px;
+      padding: 2px 6px;
+      border-radius: 4px;
+      background: rgba(13, 15, 18, 0.84);
+      border: 1px solid rgba(45, 212, 191, 0.45);
+      color: #99f6e4;
+      opacity: 0.9;
+    }
+    .archival-card-thumb {
+      width: 74px;
+      height: 52px;
+      border-radius: 0.5rem;
+      overflow: hidden;
+      border: 1px solid rgba(212, 175, 55, 0.45);
+      background: #080a0d;
+      flex-shrink: 0;
+    }
+    .archival-card-thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .map-popup-thumb {
+      width: 100%;
+      max-width: 210px;
+      height: 112px;
+      object-fit: cover;
+      border-radius: 6px;
+      border: 1px solid rgba(212, 175, 55, 0.45);
+      margin-top: 6px;
+      display: block;
+      cursor: pointer;
+    }
+    #archival-lightbox {
+      z-index: 70;
+      background-color: rgba(5, 7, 10, 0.90);
+    }
+    .lb-dialog {
+      max-width: 68rem;
+      margin: 0.5rem auto;
+      border-radius: 1rem;
+      border: 1px solid rgba(212, 175, 55, 0.78);
+      background-color: #12161d;
+      padding: 1rem 1.25rem;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.75);
+    }
+    .lb-badge-pill {
+      display: inline-block;
+      border-radius: 0.25rem;
+      border: 1px solid rgba(212, 175, 55, 0.55);
+      background-color: rgba(212, 175, 55, 0.14);
+      padding: 0.125rem 0.5rem;
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: #fde68a;
+    }
+    .lb-zoom-group {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.25rem;
+      border-radius: 0.5rem;
+      border: 1px solid #262c38;
+      background-color: #0d0f12;
+      padding: 0.15rem 0.2rem;
+    }
+    .lb-zoom-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 0.375rem;
+      border: 1px solid transparent;
+      background: transparent;
+      padding: 0.24rem 0.52rem;
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: #f3efe6;
+      transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+    }
+    .lb-zoom-btn:hover:not(:disabled) {
+      background-color: #1b2230;
+      border-color: rgba(212, 175, 55, 0.6);
+      color: #fde68a;
+    }
+    .lb-zoom-btn:disabled {
+      opacity: 0.38;
+      cursor: not-allowed;
+    }
+    .lb-zoom-btn-native { color: #2dd4bf; }
+    .lb-zoom-btn-fit {
+      border-color: rgba(45, 212, 191, 0.5);
+      background-color: rgba(45, 212, 191, 0.14);
+      color: #99f6e4;
+    }
+    .lb-zoom-btn-fit:hover:not(:disabled) {
+      border-color: #2dd4bf;
+      background-color: rgba(45, 212, 191, 0.24);
+      color: #ffffff;
+    }
+    .lb-zoom-readout {
+      min-width: 3.1rem;
+      text-align: center;
+      font-size: 11px;
+      font-weight: 600;
+      color: #fde68a;
+    }
+    .lb-close-btn {
+      border-radius: 0.5rem;
+      border: 1px solid #262c38;
+      background-color: #0d0f12;
+      padding: 0.35rem 0.75rem;
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: #e2e8f0;
+      transition: border-color 0.15s ease, color 0.15s ease;
+    }
+    .lb-close-btn:hover {
+      border-color: #fb7185;
+      color: #fecdd3;
+    }
+    .lb-source-btn {
+      border-radius: 0.5rem;
+      border: 1px solid #262c38;
+      background-color: #0d0f12;
+      padding: 0.35rem 0.65rem;
+      font-size: 11px;
+      font-weight: 500;
+      color: #fde68a;
+      white-space: nowrap;
+      transition: border-color 0.15s ease;
+    }
+    .lb-source-btn:hover { border-color: #d4af37; }
+    #lb-stage {
+      position: relative;
+      width: 100%;
+      height: 66vh;
+      min-height: 340px;
+      overflow: hidden;
+      background: #07090c;
+      border-radius: 0.75rem;
+      border: 1px solid #262c38;
+      touch-action: none;
+      user-select: none;
+      -webkit-user-select: none;
+      cursor: zoom-in;
+    }
+    #lb-stage.lb-can-pan {
+      cursor: grab;
+    }
+    #lb-stage.lb-dragging {
+      cursor: grabbing;
+    }
+    #lb-img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      max-width: none !important;
+      max-height: none !important;
+      width: auto;
+      height: auto;
+      transform-origin: 0 0;
+      will-change: transform;
+      display: block;
+      user-select: none;
+      -webkit-user-drag: none;
+      pointer-events: none;
+    }
+    #lb-img.lb-smooth {
+      transition: transform 0.16s cubic-bezier(0.2, 0.8, 0.2, 1);
+    }
+    .lb-hud-pill {
+      position: absolute;
+      bottom: 10px;
+      z-index: 5;
+      pointer-events: none;
+      font-size: 10.5px;
+      line-height: 1.3;
+      padding: 4px 9px;
+      border-radius: 9999px;
+      background: rgba(10, 12, 16, 0.82);
+      border: 1px solid rgba(38, 44, 56, 0.95);
+      color: #cbd5e1;
+      backdrop-filter: blur(6px);
+    }
+    #lb-hud-hint { left: 10px; }
+    #lb-hud-res { right: 10px; color: #fde68a; border-color: rgba(212, 175, 55, 0.45); }
+    #lb-hud-res.lb-upscaled { color: #fda4af; border-color: rgba(244, 63, 94, 0.55); }
+    @media print {
+      #archival-lightbox, .archival-plate-zoomhint { display: none !important; }
+      .archival-plate-card { border-color: #cbd5e1 !important; background: #ffffff !important; break-inside: avoid; }
+    }
   </style>
 </head>
 <body class="min-h-screen font-sans antialiased selection:bg-[#d4af37]/30 selection:text-amber-100">
@@ -1250,6 +1509,48 @@ window.__WORLD_TOPO_50M = {"type":"Topology","objects":{"countries":{"type":"Geo
     <div class="flex items-center gap-2.5 rounded-xl border border-[#d4af37] bg-[#151921]/95 px-4 py-3 text-xs font-medium text-amber-100 shadow-2xl backdrop-blur-md">
       <span class="h-2.5 w-2.5 rounded-full bg-[#2dd4bf]"></span>
       <span id="toast-msg">Updated view.</span>
+    </div>
+  </div>
+
+  <!-- Archival Plate Lightbox Modal -->
+  <div id="archival-lightbox" role="dialog" aria-modal="true" aria-labelledby="lb-title" class="fixed inset-0 hidden overflow-y-auto p-3 sm:p-6 backdrop-blur-md">
+    <div id="lb-backdrop" class="fixed inset-0"></div>
+    <div class="lb-dialog relative z-10">
+      <div class="mb-3 flex flex-wrap items-center justify-between gap-2 border-b border-[#262c38] pb-2.5">
+        <div style="min-width:0;flex:1 1 260px;">
+          <div class="flex flex-wrap items-center gap-2">
+            <span id="lb-badge" class="lb-badge-pill font-mono">Archival Plate</span>
+            <span id="lb-counter" class="font-mono text-[11px] text-slate-400">1 / 1</span>
+          </div>
+          <h3 id="lb-title" class="mt-1 font-serif text-lg font-bold text-white"></h3>
+        </div>
+        <div class="flex flex-wrap items-center gap-1.5">
+          <button id="lb-prev" type="button" class="insp-nav-btn" title="Previous Plate (Left Arrow)">&larr; Prev</button>
+          <button id="lb-next" type="button" class="insp-nav-btn" title="Next Plate (Right Arrow)">Next &rarr;</button>
+          <div class="lb-zoom-group">
+            <button id="lb-zoom-out" type="button" class="lb-zoom-btn" title="Zoom Out (-)">&minus;</button>
+            <span id="lb-zoom-readout" class="lb-zoom-readout font-mono">Fit</span>
+            <button id="lb-zoom-in" type="button" class="lb-zoom-btn" title="Zoom In (+)">+</button>
+            <button id="lb-zoom-native" type="button" class="lb-zoom-btn lb-zoom-btn-native" title="Crisp 1:1 Native Pixels (Key: 1)">1:1</button>
+            <button id="lb-zoom-fit" type="button" class="lb-zoom-btn lb-zoom-btn-fit" title="Fit Whole Image (Key: 0)">Fit</button>
+          </div>
+          <button id="lb-close" type="button" class="lb-close-btn">&times; Close</button>
+        </div>
+      </div>
+      <div id="lb-stage">
+        <img id="lb-img" src="" alt="" draggable="false" />
+        <div id="lb-hud-hint" class="lb-hud-pill">Click any spot to zoom &bull; Scroll wheel to fine-tune &bull; Drag to pan</div>
+        <div id="lb-hud-res" class="lb-hud-pill font-mono"></div>
+      </div>
+      <div class="mt-3 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+        <div class="space-y-1.5">
+          <p id="lb-caption" class="text-xs leading-relaxed text-slate-200 sm:text-sm"></p>
+          <div id="lb-credit" class="font-mono text-[11px] text-[#2dd4bf]"></div>
+        </div>
+        <div class="flex items-center gap-2" style="flex-shrink:0;">
+          <a id="lb-source-link" href="#" target="_blank" rel="noopener noreferrer" class="lb-source-btn hidden">Open Original Repository &nearr;</a>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -1273,7 +1574,7 @@ window.__WORLD_TOPO_50M = {"type":"Topology","objects":{"countries":{"type":"Geo
         <div class="grid grid-cols-1 gap-2 sm:grid-cols-2 lg:grid-cols-3">
           <button type="button" data-tour="SQUIRES" class="rounded-xl border border-[#2dd4bf]/40 bg-[#0d0f12] p-3 text-left hover:border-[#2dd4bf] transition">
             <div class="text-xs font-semibold text-[#2dd4bf]">Squires Line</div>
-            <div class="mt-0.5 text-xs text-slate-300">1494 &amp; 1524 Dorset farms &rarr; 1798 Bonavista &rarr; Smiths Harbour</div>
+            <div class="mt-0.5 text-xs text-slate-300">1524 Dorset farms &rarr; 1798 Bonavista &rarr; Smiths Harbour</div>
           </button>
           <button type="button" data-tour="LUSH" class="rounded-xl border border-[#f59e0b]/40 bg-[#0d0f12] p-3 text-left hover:border-[#f59e0b] transition">
             <div class="text-xs font-semibold text-[#f59e0b]">Lush Line</div>
@@ -1292,7 +1593,7 @@ window.__WORLD_TOPO_50M = {"type":"Topology","objects":{"countries":{"type":"Geo
             <div class="mt-0.5 text-xs text-slate-300">Every generation lined up side-by-side from Gen 21 to Gen 1</div>
           </button>
           <button type="button" data-tour="MAP" class="rounded-xl border border-sky-400/40 bg-[#0d0f12] p-3 text-left hover:border-sky-400 transition">
-            <div class="text-xs font-semibold text-sky-300">Interactive World Map (45 Places)</div>
+            <div class="text-xs font-semibold text-sky-300">Interactive World Map (44 Places)</div>
             <div class="mt-0.5 text-xs text-slate-300">Zoom into ancestral farms, churches, compounds &amp; harbours</div>
           </button>
         </div>
@@ -1303,19 +1604,19 @@ window.__WORLD_TOPO_50M = {"type":"Topology","objects":{"countries":{"type":"Geo
         <div class="grid grid-cols-1 gap-2.5 sm:grid-cols-2 text-xs">
           <div class="rounded-xl border border-[#262c38] bg-[#0d0f12] p-3.5">
             <div class="font-semibold text-amber-100">1. Family Timeline &amp; Record Viewer</div>
-            <p class="mt-1 leading-relaxed text-slate-300">54 dated family events from c. 1332 to 2026. <strong>Tap any event card</strong> to read the plain-English story, see the exact wording from the old record, and tap map links.</p>
+            <p class="mt-1 leading-relaxed text-slate-300">53 dated family events from c. 1332 to 2026. <strong>Tap any event card</strong> to read the plain-English story, see the exact wording from the old record, and tap map links.</p>
           </div>
           <div class="rounded-xl border border-[#262c38] bg-[#0d0f12] p-3.5">
             <div class="font-semibold text-amber-100">2. 21-Generation Family Chart</div>
             <p class="mt-1 leading-relaxed text-slate-300">Shows all 21 generations side-by-side across England, Ireland, Newfoundland, Nigeria, and Canada. <strong>Tap any row</strong> to filter the timeline to that generation.</p>
           </div>
           <div class="rounded-xl border border-[#262c38] bg-[#0d0f12] p-3.5">
-            <div class="font-semibold text-amber-100">3. Interactive World Map (45 Places)</div>
+            <div class="font-semibold text-amber-100">3. Interactive World Map (44 Places)</div>
             <p class="mt-1 leading-relaxed text-slate-300">Pins every ancestral village, church, compound, mine, and outport. Use the region buttons to zoom in, or tap the <strong>layers icon in the top-right corner of the map</strong> for Satellite View.</p>
           </div>
           <div class="rounded-xl border border-[#262c38] bg-[#0d0f12] p-3.5">
             <div class="font-semibold text-amber-100">4. Archive Source List &amp; Downloads</div>
-            <p class="mt-1 leading-relaxed text-slate-300">Lists all 45 official archive sources (wills, parish books, tax rolls, censuses, and memorials) plus one-click spreadsheet (.csv) and offline website downloads.</p>
+            <p class="mt-1 leading-relaxed text-slate-300">Lists all 44 official archive sources (wills, parish books, tax rolls, censuses, and memorials) plus one-click spreadsheet (.csv) and offline website downloads.</p>
           </div>
         </div>
       </div>
@@ -1351,7 +1652,7 @@ window.__WORLD_TOPO_50M = {"type":"Topology","objects":{"countries":{"type":"Geo
       </div>
 
       <div class="mt-5 flex flex-wrap items-center justify-between gap-3 border-t border-[#262c38] pt-4">
-        <span class="text-xs text-slate-400">Tip: Tap <strong>Show All</strong> beside the search bar anytime to clear filters and view all 54 events.</span>
+        <span class="text-xs text-slate-400">Tip: Tap <strong>Show All</strong> beside the search bar anytime to clear filters and view all 53 events.</span>
         <button id="btn-close-guide-footer" type="button" class="rounded-xl border border-[#d4af37] bg-[#d4af37]/25 px-4 py-2 text-xs font-semibold text-white hover:bg-[#d4af37]/35 transition">Back to Family History &rarr;</button>
       </div>
     </div>
@@ -1369,7 +1670,7 @@ window.__WORLD_TOPO_50M = {"type":"Topology","objects":{"countries":{"type":"Geo
             Nearly 700 Years of Our Family History: Interactive Timeline &amp; World Map
           </h1>
           <p class="mt-2 text-sm leading-relaxed text-[#f3efe6]/85 sm:text-base">
-            Tracing twenty-one generations of <span class="font-semibold text-[#f59e0b]">Lush</span> <span class="text-slate-400">(with Dwyer, Lawrence &amp; Goulding)</span>, eighteen generations of <span class="font-semibold text-[#2dd4bf]">Squires</span> <span class="text-slate-400">(with Akerman)</span>, and six generations of <span class="font-semibold text-[#f43f5e]">Kolade &amp; Ojomu</span> (c. 1332–2026) &mdash; from England, Ireland, and Nigeria to <span class="font-semibold text-[#a855f7]">Newfoundland and Toronto</span>.
+            Tracing twenty-one generations of <span class="font-semibold text-[#f59e0b]">Lush</span> <span class="text-slate-400">(with Dwyer, Lawrence &amp; Goulding)</span>, sixteen generations of <span class="font-semibold text-[#2dd4bf]">Squires</span> <span class="text-slate-400">(with Akerman)</span>, and six generations of <span class="font-semibold text-[#f43f5e]">Kolade &amp; Ojomu</span> (c. 1332–2026) &mdash; from England, Ireland, and Nigeria to <span class="font-semibold text-[#a855f7]">Newfoundland and Toronto</span>.
           </p>
         </div>
 
@@ -1397,17 +1698,17 @@ window.__WORLD_TOPO_50M = {"type":"Topology","objects":{"countries":{"type":"Geo
             </div>
             <div class="vellum-card rounded-xl px-3.5 py-2">
               <div class="text-[11px] font-semibold uppercase tracking-wider text-slate-400">KEY FAMILY EVENTS</div>
-              <div class="mt-0.5 font-serif text-2xl font-bold text-[#2dd4bf]"><span id="kpi-filtered">54</span> <span class="font-sans text-xs font-normal text-slate-400">of <span id="kpi-total">54</span></span></div>
+              <div class="mt-0.5 font-serif text-2xl font-bold text-[#2dd4bf]"><span id="kpi-filtered">53</span> <span class="font-sans text-xs font-normal text-slate-400">of <span id="kpi-total">53</span></span></div>
               <div class="text-[11px] text-slate-400">Dated timeline milestones</div>
             </div>
             <div class="vellum-card rounded-xl px-3.5 py-2">
               <div class="text-[11px] font-semibold uppercase tracking-wider text-slate-400">ARCHIVE SOURCES</div>
-              <div class="mt-0.5 font-serif text-2xl font-bold text-[#f59e0b]" id="kpi-shelves">45</div>
+              <div class="mt-0.5 font-serif text-2xl font-bold text-[#f59e0b]" id="kpi-shelves">44</div>
               <div class="text-[11px] text-slate-400">Wills, church books &amp; tax rolls</div>
             </div>
             <div class="vellum-card rounded-xl px-3.5 py-2">
               <div class="text-[11px] font-semibold uppercase tracking-wider text-slate-400">MAPPED PLACES</div>
-              <div class="mt-0.5 font-serif text-2xl font-bold text-[#a855f7]" id="kpi-loci">45</div>
+              <div class="mt-0.5 font-serif text-2xl font-bold text-[#a855f7]" id="kpi-loci">44</div>
               <div class="text-[11px] text-slate-400">UK &bull; IE &bull; NG &bull; NL &bull; ME &bull; CA</div>
             </div>
           </div>
@@ -1443,7 +1744,7 @@ window.__WORLD_TOPO_50M = {"type":"Topology","objects":{"countries":{"type":"Geo
             </div>
             <div class="rounded-xl border border-[#262c38] bg-[#0d0f12] p-3">
               <div class="font-semibold text-[#a855f7]">Step 4 &bull; Fly the World Map (Tab 3)</div>
-              <p class="mt-1 leading-relaxed text-slate-300">Open <strong>3. Interactive World Map</strong> to zoom into all 45 farms, churches, compounds, mines, and Newfoundland harbours.</p>
+              <p class="mt-1 leading-relaxed text-slate-300">Open <strong>3. Interactive World Map</strong> to zoom into all 44 farms, churches, compounds, mines, and Newfoundland harbours.</p>
             </div>
           </div>
 
@@ -1526,7 +1827,7 @@ window.__WORLD_TOPO_50M = {"type":"Topology","objects":{"countries":{"type":"Geo
           </select>
 
           <select id="sel-shelf" aria-label="Filter by Archive Source" class="w-full rounded-lg border border-[#262c38] bg-[#151921] px-2.5 py-1.5 text-xs text-[#f3efe6] focus:border-[#d4af37] focus:outline-none">
-            <option value="ALL">All 45 Archive Sources (Wills, Censuses &amp; Registers)</option>
+            <option value="ALL">All 44 Archive Sources (Wills, Censuses &amp; Registers)</option>
           </select>
 
           <select id="sel-gps" aria-label="Filter by How Each Link Is Proven" class="w-full rounded-lg border border-[#262c38] bg-[#151921] px-2.5 py-1.5 text-xs text-[#f3efe6] focus:border-[#d4af37] focus:outline-none">
@@ -1541,7 +1842,7 @@ window.__WORLD_TOPO_50M = {"type":"Topology","objects":{"countries":{"type":"Geo
       <div id="main-tabs-row" class="mt-2 flex flex-wrap items-center gap-1.5 border-t border-[#262c38] pt-2">
         <button type="button" data-tab="stream" class="tab-btn rounded-lg border border-[#d4af37] bg-[#d4af37]/20 px-3.5 py-1.5 text-xs font-semibold text-amber-100 transition">1. Family Timeline &amp; Record Viewer</button>
         <button type="button" data-tab="matrix" class="tab-btn rounded-lg border border-transparent px-3.5 py-1.5 text-xs font-medium text-slate-300 hover:bg-[#151921] hover:text-white transition">2. 21-Generation Family Chart</button>
-        <button type="button" data-tab="map" class="tab-btn rounded-lg border border-transparent px-3.5 py-1.5 text-xs font-medium text-slate-300 hover:bg-[#151921] hover:text-white transition">3. Interactive World Map (45 Places)</button>
+        <button type="button" data-tab="map" class="tab-btn rounded-lg border border-transparent px-3.5 py-1.5 text-xs font-medium text-slate-300 hover:bg-[#151921] hover:text-white transition">3. Interactive World Map (44 Places)</button>
         <button type="button" data-tab="tei" class="tab-btn rounded-lg border border-transparent px-3.5 py-1.5 text-xs font-medium text-slate-300 hover:bg-[#151921] hover:text-white transition">4. Archive Source List &amp; Downloads</button>
       </div>
     </div>
@@ -1559,7 +1860,7 @@ window.__WORLD_TOPO_50M = {"type":"Topology","objects":{"countries":{"type":"Geo
               <h2 class="font-serif text-2xl font-bold text-white">Step-by-Step Family Timeline (c. 1332–2026)</h2>
               <p class="text-xs text-slate-400">Tap any event card below to read its full story, original record quote, and map pins. On desktop, use <span class="font-mono text-slate-300">&larr; / &rarr;</span> keys to step through events.</p>
             </div>
-            <span id="stream-badge" class="rounded-lg border border-[#d4af37]/40 bg-[#151921] px-3 py-1 text-xs font-medium text-[#d4af37]">54 of 54 Events</span>
+            <span id="stream-badge" class="rounded-lg border border-[#d4af37]/40 bg-[#151921] px-3 py-1 text-xs font-medium text-[#d4af37]">53 of 53 Events</span>
           </div>
           <div id="stream-list" class="timeline-rail space-y-2.5"></div>
         </div>
@@ -1604,16 +1905,16 @@ window.__WORLD_TOPO_50M = {"type":"Topology","objects":{"countries":{"type":"Geo
       <div id="matrix-cards-mobile" class="space-y-3"></div>
     </section>
 
-    <!-- TAB 3: INTERACTIVE WORLD MAP (45 PLACES) -->
+    <!-- TAB 3: INTERACTIVE WORLD MAP (44 PLACES) -->
     <section id="panel-map" class="tab-panel hidden">
       <div class="mb-4 flex flex-col gap-3 xl:flex-row xl:items-center xl:justify-between">
         <div>
-          <h2 class="font-serif text-2xl font-bold text-white">Interactive Family World Map (45 Ancestral Places)</h2>
+          <h2 class="font-serif text-2xl font-bold text-white">Interactive Family World Map (44 Ancestral Places)</h2>
           <p class="text-xs text-slate-400">Tap any coloured pin, pick a region, or use the Place Finder dropdown to fly directly to any ancestral village, church, compound, mine, or harbour.</p>
         </div>
         <div class="flex flex-wrap items-center gap-1.5">
-          <select id="map-place-select" aria-label="Jump to any of the 45 ancestral places" class="rounded-lg border border-[#2dd4bf]/50 bg-[#151921] px-2.5 py-1.5 text-xs font-medium text-[#faf7f0] focus:border-[#d4af37] focus:outline-none">
-            <option value="">&#128269; Find Any Place (45)...</option>
+          <select id="map-place-select" aria-label="Jump to any of the 44 ancestral places" class="rounded-lg border border-[#2dd4bf]/50 bg-[#151921] px-2.5 py-1.5 text-xs font-medium text-[#faf7f0] focus:border-[#d4af37] focus:outline-none">
+            <option value="">&#128269; Find Any Place (44)...</option>
           </select>
           <button type="button" data-fly="ALL" class="fly-btn rounded-lg border border-[#d4af37] bg-[#d4af37]/20 px-2.5 py-1.5 text-xs font-semibold text-amber-100">Full World View</button>
           <button type="button" data-fly="DORSET" class="fly-btn rounded-lg border border-[#262c38] bg-[#151921] px-2.5 py-1.5 text-xs text-[#2dd4bf] hover:border-[#2dd4bf]">Dorset &amp; Somerset</button>
@@ -1664,11 +1965,13 @@ window.__WORLD_TOPO_50M = {"type":"Topology","objects":{"countries":{"type":"Geo
       <div class="vellum-card mb-5 flex flex-col gap-3 rounded-2xl p-4 sm:flex-row sm:items-center sm:justify-between">
         <div>
           <div class="text-xs font-semibold uppercase tracking-wider text-[#d4af37]">Download Family Data &amp; Offline Backup</div>
-          <p class="mt-0.5 text-xs text-slate-300">Download the timeline as a spreadsheet (.csv) for Excel or Google Sheets, save a complete offline copy of this website (.html), or export digital archive files (.xml / .json).</p>
+          <p class="mt-0.5 text-xs text-slate-300">Download the timeline as a spreadsheet (.csv), save a complete single-file offline copy (.html) with all available archival plates embedded directly inside, or pack a local <code class="text-amber-200">media/</code> folder into a portable time capsule.</p>
         </div>
         <div class="flex flex-wrap items-center gap-2">
           <button id="btn-export-csv" type="button" class="rounded-lg border border-[#2dd4bf]/50 bg-[#2dd4bf]/15 px-3 py-2 text-xs font-semibold text-[#2dd4bf] hover:bg-[#2dd4bf]/25 transition">Download Spreadsheet (.csv)</button>
           <button id="btn-dl-standalone" type="button" class="rounded-lg border border-[#d4af37] bg-[#d4af37]/30 px-3.5 py-2 text-xs font-semibold text-white hover:bg-[#d4af37]/40 transition">&#11015; Save Offline Website (.html)</button>
+          <button id="btn-pack-local-media" type="button" title="Select images from your local media/ folder to embed them directly inside a single downloadable offline .html time capsule" class="rounded-lg border border-[#d4af37]/60 bg-[#0d0f12] px-3 py-2 text-xs font-semibold text-amber-200 hover:border-[#d4af37] hover:bg-[#d4af37]/15 transition">&#128230; Pack Local media/ into Offline .html</button>
+          <input id="pack-media-input" type="file" multiple accept="image/*" class="hidden" />
           <button id="btn-export-xml" type="button" class="rounded-lg border border-[#262c38] bg-[#0d0f12] px-3 py-2 text-xs text-amber-100 hover:border-[#d4af37] transition">Export Archive XML (.xml)</button>
           <button id="btn-export-json" type="button" class="rounded-lg border border-[#262c38] bg-[#0d0f12] px-3 py-2 text-xs text-slate-200 hover:border-[#d4af37] transition">Export Data (.json)</button>
           <button id="btn-copy-tei" type="button" class="rounded-lg border border-[#262c38] bg-[#0d0f12] px-3 py-2 text-xs text-slate-200 hover:border-[#2dd4bf] transition">Copy XML</button>
@@ -1679,10 +1982,10 @@ window.__WORLD_TOPO_50M = {"type":"Topology","objects":{"countries":{"type":"Geo
         <div class="lg:col-span-7">
           <div class="mb-2.5 flex flex-wrap items-center justify-between gap-2">
             <div>
-              <h2 class="font-serif text-2xl font-bold text-white">Complete List of 45 Official Archive Sources</h2>
+              <h2 class="font-serif text-2xl font-bold text-white">Complete List of 44 Official Archive Sources</h2>
               <p class="text-xs text-slate-400">Every parish register, will, tax roll, census, and monument used to verify our family tree. Tap any row to filter the timeline.</p>
             </div>
-            <input id="shelf-search" type="text" placeholder="Search 45 sources..." class="rounded-lg border border-[#262c38] bg-[#151921] px-2.5 py-1 text-xs text-[#f3efe6] placeholder-slate-400 focus:border-[#d4af37] focus:outline-none">
+            <input id="shelf-search" type="text" placeholder="Search 44 sources..." class="rounded-lg border border-[#262c38] bg-[#151921] px-2.5 py-1 text-xs text-[#f3efe6] placeholder-slate-400 focus:border-[#d4af37] focus:outline-none">
           </div>
           <div class="max-h-[650px] overflow-y-auto rounded-2xl border border-[#262c38] bg-[#151921] shadow-2xl">
             <table class="w-full border-collapse text-left text-xs">
@@ -1700,7 +2003,7 @@ window.__WORLD_TOPO_50M = {"type":"Topology","objects":{"countries":{"type":"Geo
         <div class="lg:col-span-5">
           <div class="mb-2.5">
             <h2 class="font-serif text-2xl font-bold text-white">Digital Preservation Backup (TEI-XML)</h2>
-            <p class="text-xs text-slate-400">Standard university/museum XML format preserving <span id="tei-count" class="font-semibold text-[#d4af37]">54</span> active family events for long-term digital archiving.</p>
+            <p class="text-xs text-slate-400">Standard university/museum XML format preserving <span id="tei-count" class="font-semibold text-[#d4af37]">53</span> active family events for long-term digital archiving.</p>
           </div>
           <div class="vellum-card rounded-2xl p-3.5 shadow-2xl">
             <pre id="tei-preview" class="max-h-[620px] overflow-auto rounded-xl bg-[#0d0f12] p-4 font-mono text-[11px] leading-relaxed text-[#2dd4bf]"></pre>
@@ -1720,7 +2023,7 @@ window.__WORLD_TOPO_50M = {"type":"Topology","objects":{"countries":{"type":"Geo
           Nearly 700 Years of Our Family History: Squires, Akerman, Lush, Lawrence, Goulding, Dwyer, Thorne, Kolade &amp; Ojomu Ancestral Archive (c. 1332–2026)
         </h2>
         <p class="ksl-vault-desc">
-          Uniting 54 dated primary milestones, 45 archival series, and 45 WGS84-mapped ancestral places across England, Ireland, Nigeria (<em>Ilé Ọ̀ṣùnkọ́tì</em> &amp; <em>Ojomu Akeregun</em>), Newfoundland, Maine, and Ontario. Monumental anchor at Pine Hills Cemetery, Scarborough, Toronto (Section A, Lot 2436H): <em>&ldquo;KOLADE &mdash; Victor Olusoji of Emure-Ekiti, Nigeria 1942–2017 | Merle Elizabeth (née Squires) of Smith&rsquo;s Harbour, NL 1944–2025&rdquo;</em>.
+          Uniting 53 dated primary milestones, 44 archival series, and 44 WGS84-mapped ancestral places across England, Ireland, Nigeria (<em>Ilé Ọ̀ṣùnkọ́tì</em> &amp; <em>Ojomu Akeregun</em>), Newfoundland, Maine, and Ontario. Monumental anchor at Pine Hills Cemetery, Scarborough, Toronto (Section A, Lot 2436H): <em>&ldquo;KOLADE &mdash; Victor Olusoji of Emure-Ekiti, Nigeria 1943–2017 | Merle Elizabeth (née Squires) of Smith&rsquo;s Harbour, NL 1944–2025&rdquo;</em>.
         </p>
 
         <div class="ksl-vault-badges">
@@ -1756,12 +2059,12 @@ window.__WORLD_TOPO_50M = {"type":"Topology","objects":{"countries":{"type":"Geo
     </div>
   </footer>
 
+  <script id="inlined-media-cache">window.__INLINED_MEDIA = window.__INLINED_MEDIA || {};</script>
   <script>
-   // 1. 45 OFFICIAL ARCHIVE SOURCES
+   // 1. 44 OFFICIAL ARCHIVE SOURCES
     const SHELFMARKS = [
-      { id: "s00a", call: "TNA E 179/196/8 (Sept. 1332 Tisbury Lay Subsidy, WRS 45:44) & CP 40/636, 656, 664 (1420–1427)", repo: "The National Archives (Kew) — 1332 'John le Lusshe 12d' in Tisbury (below Alexander de Ocle) & 1420–27 pleas/executors of John Lussh of Upton" },
-      { id: "s00", call: "TNA CP 40/724, 758, 776 & 871 (1442–1480 Plantagenet Common Pleas Rolls)", repo: "The National Archives (Kew) / AALT — 5 Latin membranes: John & William Lusshe across Stour Provost, Hinton St Mary & Tisbury/Oakley" },
-      { id: "s01a", call: "TNA KB 27/930, rot. 14d (Hilary Term 1494, 9 Henry VII King's Bench Plea Roll)", repo: "The National Archives (Kew) / AALT — John Armiger alias Squire & John Dunnyng of Pulham, husbandmen (pushes West Dorset Squire horizon back to 1494)" },
+      { id: "s00a", call: "TNA E 179/196/8 (Sept. 1332 Tisbury Lay Subsidy, WRS 45:44) & CP 40/636, 656, 664 (1420–1427)", repo: "The National Archives (Kew) / AALT & Glyph Machina — 1332 'John le Lusshe 12d' in Tisbury (below Alexander de Ocle) & 1420–27 pleas/executors of John Lussh of Upton" },
+      { id: "s00", call: "TNA CP 40/724, 758, 776 & 871 (1442–1480 Plantagenet Common Pleas Rolls)", repo: "The National Archives (Kew) / AALT & Glyph Machina — 5 Latin membranes: John & William Lusshe across Stour Provost, Hinton St Mary & Tisbury/Oakley" },
       { id: "s01", call: "TNA E 36/17 (Spring 1539 Melbury Abbas Muster, p. 95)", repo: "The National Archives (Kew) — Edm Lushe (NA, aged 60+, owns steel Almain rivets armour)" },
       { id: "s02", call: "TNA E 179/103/116 & 128 (Oct. 1523 Sixpenny Handley Tax Roll)", repo: "The National Archives (Kew) — Edmond Lushe £40 (top 1.7% of all 8,369 Dorset taxpayers)" },
       { id: "s03", call: "TNA E 179/103/119–120 (1524–1525 Buckland Newton / Knoll Tax Roll)", repo: "The National Archives (Kew) — William Squyer G 5 & adult son Thomas Squyer G 1" },
@@ -1774,7 +2077,7 @@ window.__WORLD_TOPO_50M = {"type":"Topology","objects":{"countries":{"type":"Geo
       { id: "s10", call: "Valor Ecclesiasticus Vol. I (1535) & L&P Hen. VIII Vols. 17, 19.2 (Sept. 1544)", repo: "Record Commission & HMSO — Shaftesbury Abbey (£1,166 8s. 9d. net) & Sept. 1544 Arundell Manor Grant (£2,609 11s. 1d.; £58/yr rent)", featured: true },
       { id: "s11", call: "TNA E 179/104/151–152 (1543–1544 Knoll G 1½ & Alton Tax Roll)", repo: "The National Archives (Kew) — Thomas Squyer G 1½ (halfpenny 4s. 7½d. tally) & Robert/John Squyer" },
       { id: "s12", call: "TNA E 179/104/154, 156 & 157 (1545 Melbury, Cann & Bothenhampton)", repo: "The National Archives (Kew) — Edmond Lusshe G 13, John Lusshe G 1 & Henry Akerman G 4" },
-      { id: "s13", call: "Dean of Salisbury Will Registers, Series I, Vols. 1 & 3 (1558–1576) & TNA CP 40/1317b (1573)", repo: "WSHC Chippenham, BRS Vol. 53 & Kew / WAALT — Alton Pancras wills of Locke (1558), John (1565) & Robert Squire (1576), plus Trinity 1573 debt plea naming John Squyer of Alton Pancras, husbandman (rot. 274f)" },
+      { id: "s13", call: "Dean of Salisbury Will Registers, Series I, Vols. 1 & 3 (1558–1576) & TNA CP 40/1318 (1573)", repo: "WSHC Chippenham, BRS Vol. 53 & Kew / AALT & Glyph Machina — Alton Pancras wills of Locke (1558), John (1565) & Robert Squire (1576), plus Trinity 1573 trespass plea naming John Squyer of Alton Pancras, husbandman (dorse IMG_0065)" },
       { id: "s14", call: "Somerset Record Society Vol. XX & TNA PROB 11/51/267 (1569 Merriott)", repo: "SRS & Kew — Thomas Lawrens Sr. armour group, archer Peter Langdon & Florence Pytt will" },
       { id: "s15", call: "TNA SP 12/56 (1569 Dorset Muster Roll: Bridport & Fontmell)", repo: "The National Archives (Kew) — Bridport archer A Ric Akerman, B Jn Akerman & Fontmell quota" },
       { id: "s16", call: "Melbury Abbas Probate / Bristol Cathedral Calendar (Apr. 1572 Will)", repo: "Dorset / Bristol Dean & Chapter (SDNQ 24:173) — Will of John Lusshe (£20 legacy to son William)" },
@@ -1798,17 +2101,16 @@ window.__WORLD_TOPO_50M = {"type":"Topology","objects":{"countries":{"type":"Geo
       { id: "s33b", call: "1871 UK Census (Motcombe, Dorset) & Motcombe Burial Register (1878)", repo: "The National Archives (Kew) & DHC — George Lush (1793–1878, aged 78, 'North End', Motcombe, 'Pauper'), stay-behind Dorset collateral branch (brother of Hannah & Mary Doggrell)" },
       { id: "s34", call: "INEC 13/06/07/003, 08/004, 08/008, 04/002, 2022 Ekiti Ward Compendium & Emure Gazetteer #35", repo: "Emure-Ekiti Land Directory — Ilé Ọ̀ṣùnkọ́tì, Kolade's Compound, Ojomu Akeregun / Ojomu-Odo (No. 10 Odo-Emure; Ogboile festival) & Oko Ọ̀sẹ Kọ́ládé" },
       { id: "s35", call: "USPG C/CAN/NFL: 2 (1792) & PANL Bonavista PRs / NL Will Books Vol. 1:455", repo: "Bodleian Oxford & The Rooms (PANL) — Lay minister 'A Ackerman' (1798–1817), 1822–51 burials & 1843/44 blue jacket will" },
-      { id: "s36", call: "PANL 1836 Census, Vol. 91, Twillingate Death Bks 3–4, Nipper's Hbr, Sudbury (1913) & Smiths Hbr", repo: "PANL & Ontario — Herring Neck, Lush–Goulding, Silas Squires (d. Jan. 15, 1903, b. Herring Neck) & Sarah Noble (d. May 2, 1901), Wm. Squires (b. Mar. 2, 1867 Stocking Hbr), Philemon/Pleman Squires (b. Nov. 1910), 1913 Sudbury m. & Sept. 6, 1944 m." },
-      { id: "s37", call: "PANL Vols. 89–91, Nipper's Hbr Meth. Regs, Twillingate Death Bks 4–5, 1904 McAlpine & Twillingate Sun", repo: "PANL & Maine — 1881–82 burial of Wm. Lush's 1st wife Jane Amelia (age 35) & 10-mo. son; 1871 Dwyer twins, Thomas R. Dwyer (b. Twillingate), 1889 schooner 'The Albert' (Wm. Dwyer), 1904 McAlpine Dir., 1883–90 Lush births & 1905–08 deaths" },
+      { id: "s36", call: "PANL 1836 Census, Vol. 91, GN 5/2/B/1, Death Bks 3–4, Greenspond Letter (1809–2008), MUN DAI 13.11.001 & Lewisporte Pilot (1968)", repo: "PANL, Priest's House Museum (Wimborne), MUN DAI & Ontario — 1809 David Goulding Greenspond letters to Fryer; 1827 Batterton Is. stone/jury & 1830 Pew 19 audit; pre-1901 Holloway Herring Neck plate; Silas Squires (d. 1903) & Sarah Noble (d. 1901); 1913 Sudbury m.; Sept. 1944 Smiths Hbr Eveleigh oral history & Feb. 16, 1968 Lewisporte Pilot" },
+      { id: "s37", call: "PANL Pre-1891 Vol. 28, Vols. 89–91, Nipper's Hbr/Tilt Cove PRs, Death Bks 4–5, 1904 McAlpine, Twillingate Sun & Lewisporte Pilot (1967)", repo: "PANL, Greenspond Letter & Maine — 1875 St. John's bap. of Mary Elizabeth Lush (m. George Cheater 1891 Tilt Cove; dau. Clara Starks 1998 interview) & John Thomas Lush (m. Cornelia Squires Jan. 21, 1899 NWA); 1881–82 Jane Amelia burials; Apr. 10, 1883 Wm. Lush–Polly Dwyer NWA m.; 1871 Dwyer twins; 1889 'The Albert'; Mar. 10, 1967 Lewisporte Pilot" },
       { id: "s37b", call: "1753 Trinity Bay Census, St. Paul's Trinity PRs (1753–1855), FHSNL Dwyer Chart (p. 93) & MUN Mannion Collection", repo: "PANL, FHSNL & Ireland — 1753 Census & John/Mary Dwyer bap., Oct. 29, 1806 John Dwyer–Catherine White m. (Rev. John Clinch, p. 45), FHSNL Dwyer Chart (p. 93), Hillview Thorne root & Waterford–Twillingate Mannion Cards (#2291, #2308)" },
       { id: "s38", call: "Owo Carved Wooden Àkó Effigy (Abiodun 1976, Africa 46.1) & Emure Royal Chronicles (Oba Ogunleye II)", repo: "Owo & Emure History — c. 1880 death of High Chief Ojomo Agunloye I, explicit father-to-son pedigree High Chief Ojomu Arintokun → High Chief Ojomu Ogedu & Ojomu Ogedu–Olajenboye marriage" },
       { id: "s39", call: "St. Paul's Emure Memorials (1989–2010), Omotoye (2015, p. 20), NAI Phillips 3/7 & St. Stephen's Ondo PR", repo: "Nigerian Anglican & University of Ilorin Archives — Omotoye 2015 ('Daniel Kolade of Emure'), Bishop Charles Phillips Diaries (NAI Phillips 3/7), CMS Bookshops, 1947 Ondo PR & Primate Olufosoye" },
       { id: "s40", call: "Canadian Service/Civil Records (1966–2025) & Pine Hills Lot 2436H Granite (2026)", repo: "Canada & Toronto — Dec. 1966 arrival, CAF service, 1973 Kolade–Squires marriage, Pine Hills monument & Gen 1" }
     ];
 
-    // 2. 45 MAPPED ANCESTRAL PLACES (WGS84)
+    // 2. 44 MAPPED ANCESTRAL PLACES (WGS84)
     const LOCI = [
-      { id: "pulham-dorset", name: "Pulham (2 mi NE of Bookham), West Dorset", region: "WDORSET", house: "V1", era: "1494", lat: 50.8586, lng: -2.3889, grid: "Adjoining Buckland Newton • TNA KB 27/930 rot. 14d", desc: "Contiguous parish 2 miles NE of Bookham Farm where John Armiger alias Squire of Pulham, husbandman, was recorded in Hilary Term 1494 (9 Henry VII) alongside John Dunnyng of Pulham, husbandman—pushing the West Dorset Squire and allied Duning churchwarden network back into the 15th century." },
       { id: "upton-donhead", name: "Upton (East Knoyle) & Donhead St Mary, Shaftesbury Border, Wilts", region: "NDORSET", house: "V2", era: "1420–1427", lat: 51.0789, lng: -2.1647, grid: "5 mi N of Shaftesbury • TNA CP 40/636, 656 & 664", desc: "Shaftesbury Abbey border corridor where commercial grazier John Lussh of Upton sued Gylbert Brytt of Donhead St Mary (adjoining Melbury Abbas) in 1420, traded with Salisbury butchers in 1425, and died 1425–26 (executors proved 1427)." },
       { id: "stour-provost", name: "Stour Provost (Stoure Prewes), Blackmore Vale, Dorset", region: "NDORSET", house: "V2", era: "1442", lat: 50.9856, lng: -2.2811, grid: "4.5 mi NW of Melbury Abbas • TNA CP 40/724 rot. 388f", desc: "Blackmore Vale parish where plaintiff John Lusshe sued husbandman Thomas Fraunceys in Hilary Term 1442 (20 Henry VI) for a locked chest containing £40—matching Edmond Lushe's £40 capital assessment 81 years later." },
       { id: "hinton-st-mary", name: "Hinton St Mary (Henton Abbatis), Blackmore Vale, Dorset", region: "NDORSET", house: "V2", era: "1450", lat: 50.9419, lng: -2.3089, grid: "Adjoining Sturminster Newton • TNA CP 40/758 rot. 1195d", desc: "Stour valley parish where surviving executor John Lusshe sued husbandman John Gervays in Trinity Term 1450 (28 Henry VI) for 8 marks, 6s. 4d. (£5 13s. 0d.), right beside Sturminster Newton." },
@@ -1838,33 +2140,32 @@ window.__WORLD_TOPO_50M = {"type":"Topology","objects":{"countries":{"type":"Geo
       { id: "ojomu-akeregun", name: "Ojomu Akeregun / Ojomu-Odo, Odo-Emure IV, Emure-Ekiti", region: "YORUBA", house: "V3", era: "c. 1780–2010", lat: 7.4308, lng: 5.4538, grid: "Ward 04: Odo-Emure IV • Unit 13/06/04/002 • No. 10 Odo-Emure", desc: "Senior kingmaker (Ìwàrẹ̀fà) seat ('Near Ojumu's House' / Ojomu-Odo, celebrating the annual Ogboile festival) of High Chief Ojomu Arintokun, his son High Chief Ojomu Ogedu, and the Late Chief Ojomu (father of Madam Lydia Olugbe Kolade)." },
       { id: "oko-ose", name: "Oko Ọ̀sẹ Kọ́ládé — River Ose Farm Estate (#35)", region: "YORUBA", house: "V3", era: "c. 1825–1890", lat: 7.3954, lng: 5.5122, grid: "Emure Municipal Gazetteer Settlement #35", desc: "Hereditary family farm estate ('Kolade's Farmstead on the River Ose') anchoring Generation 5 patriarch Kọ́ládé / [Ògún]kọ́ládé." },
       { id: "ijebu-owo", name: "Ijebu-Owo Palace (Ojomo Oluda), Owo Kingdom", region: "YORUBA", house: "V3", era: "c. 1815–1930", lat: 7.2021, lng: 5.5934, grid: "22 km east of Emure • c. 1880 Carved Effigy", desc: "Royal palace of High Chief Ojomo Agunloye I (d. c. 1880, dated by his life-sized carved wooden àkó burial effigy), father of Olajenboye, and St. Patrick's school town of Pa Joseph Kolade." },
-      { id: "benin-ondo", name: "Benin City & Ago Olumoye, Edo State (CMS Bookshops)", region: "YORUBA", house: "V3", era: "1922–1946", lat: 6.3350, lng: 5.6275, grid: "CMS Bookshops (1922–46) • 1942 Wedding", desc: "Early career hub where Chief John A. Kolade (1922) and Pa Joseph O. Kolade (1933) joined C.M.S. Bookshops, and where Joseph married Madam Lydia Olugbe in 1942 (birth of Victor Olusoji Kolade)." },
+      { id: "benin-ondo", name: "Benin City & Ago Olumoye, Edo State (CMS Bookshops)", region: "YORUBA", house: "V3", era: "1922–1946", lat: 6.3350, lng: 5.6275, grid: "CMS Bookshops (1922–46) • 1942 Wedding", desc: "Early career hub where Chief John A. Kolade (1922) and Pa Joseph O. Kolade (1933) joined C.M.S. Bookshops, and where Joseph married Madam Lydia Olugbe in 1942 (followed by the birth of Victor Olusoji Kolade in 1943)." },
       { id: "ondo-ado-ibadan", name: "Ondo, Ado-Ekiti & Ibadan Corridor, Nigeria", region: "YORUBA", house: "V3", era: "1935–1968", lat: 7.0932, lng: 4.8353, grid: "St. Stephen's Ondo, Adeoyo Hospital & Ado-Ekiti", desc: "Regional corridor where Pa Joseph Kolade reorganized C.M.S. Bookshops (1946–58), Mama Dudu ran her Ondo ẹ̀kọ and Ado–Emure wholesale bakery network, Canon Awosika baptized Eric Bamidele (Oct. 1947), and Chief John A. Kolade trained at Adeoyo Hospital." },
       { id: "bonavista", name: "Bonavista, Bonavista Bay, Newfoundland", region: "NL", house: "V1", era: "1785–1851", lat: 48.6492, lng: -53.1124, grid: "Christ Church • USPG Missionary Records", desc: "Home for 30+ years of Anglican lay minister Abraham Akerman Sr. (1745–1822), who signed 'A Ackerman' when officiating the Aug. 18, 1798 wedding of his daughter Jane Akerman to Simon Squires Sr. (1769–1832)." },
       { id: "greenspond", name: "Greenspond, Bonavista Bay, Newfoundland", region: "NL", house: "V2", era: "1795–1869", lat: 49.0684, lng: -53.5702, grid: "Bonavista Bay Island Outport • 1840 PR", desc: "Granite island outport settled by Motcombe pioneer John Lush (1775–1827) & Elizabeth Jane Wood, David Goulding (1773–1826), May 26, 1840 wedding of Thomas Lush & Mary Goulding, and 1857 St. Stephen's timber haul." },
       { id: "hillview-tb", name: "Hillview, Trinity Bay, Newfoundland", region: "NL", house: "V2", era: "c. 1806–1856", lat: 48.0558, lng: -53.8950, grid: "Southwest Arm, Trinity Bay • Thorne Family Root", desc: "Birthplace of matriarch Caroline Bemister Thorne (c. 1837–1906, daughter of Somerset pioneer Richard Thorne & Betsy George), who married Irish pioneer Capt. John Alexander Dwyer c. 1856." },
       { id: "herring-twillingate", name: "Herring Neck & Twillingate, Notre Dame Bay, NL", region: "NL", house: "V1", era: "1836–1907", lat: 49.6481, lng: -54.7642, grid: "1836 Census & Twillingate Death Register", desc: "Northern harbour of Simon & Julia Squires (1836 census) and c. 1856–1907 home of Irish Methodist pioneer Capt. John Alexander Dwyer & Caroline Bemister Thorne." },
       { id: "tilt-cove", name: "Tilt Cove Copper Mine & Nipper's Harbour, NL", region: "NL", house: "V2", era: "1862–1895", lat: 49.8861, lng: -55.6283, grid: "1862 Squires Wedding & 1880s Copper Mine", desc: "Sept. 2, 1862 wedding harbour of Silas Squires & Sarah Jane Noble (Nipper's Harbour) and cliffside copper-mining town of William Lush, Polly Dwyer, Rev. Philip H. Lush (b. 1888) & miner Albert Dwyer (d. 1895)." },
-      { id: "lushes-burlington", name: "Lushes Bight & Burlington / North West Arm, NL", region: "NL", house: "V2", era: "1871–1965", lat: 49.7542, lng: -56.0124, grid: "Notre Dame Bay & Green Bay Coves • 1904 McAlpine Dir.", desc: "Sheltered inlet bearing the family name (Lushes Bight) and North West Arm / Burlington home of William Lush (1845–1922; 1st wife Jane Amelia d. Jan. 1882; 2nd wife Polly Dwyer d. 1905), Capt. William Dwyer's schooner 'The Albert' (1889), and Riverside Cemetery burials of Silas Squires (1903) & Sarah Jane Noble (1901)." },
+      { id: "lushes-burlington", name: "Lushes Bight & Burlington / North West Arm, NL", region: "NL", house: "V2", era: "1871–1965", lat: 49.7542, lng: -56.0124, grid: "Notre Dame Bay & Green Bay Coves • 1904 McAlpine Dir.", desc: "Sheltered inlet bearing the family name (Lushes Bight) and North West Arm / Burlington home of William Lush (1845–1922; 1st wife Jane Amelia d. Jan. 1882; 2nd wife Polly Dwyer d. June 13, 1927), Capt. William Dwyer's schooner 'The Albert' (1889), and Riverside Cemetery burials of Silas Squires (1903) & Sarah Jane Noble (1901)." },
       { id: "smiths-harbour", name: "Smiths Harbour, Green Bay, Newfoundland", region: "NL", house: "CONV", era: "1862–1980", lat: 49.7406, lng: -55.9554, grid: "Sawmill, Medical Boat & Sept. 6, 1944 Wedding", desc: "Home of Silas & William Squires, sawmill and medical-boat pioneer Albert Lush (1898–1980) & Florence White, Sept. 6, 1944 wedding of Pleman Squires & Ivy Lush, and birthplace of Merle Elizabeth Squires." },
       { id: "portland-maine", name: "Portland & Kennebunkport, Maine, USA", region: "NL", house: "V2", era: "1910s–1967", lat: 43.6591, lng: -70.2568, grid: "New England Ministry • Rev. Philip H. Lush", desc: "New England ministry home of Tilt Cove-born Rev. Philip Henry Lush (1888–1967, son of William Lush & Polly Dwyer) and his sons Earle, Aubrey, and Herbert Lush." },
       { id: "sudbury-on", name: "Sudbury, Northern Ontario, Canada", region: "ONTARIO", house: "V1", era: "1913", lat: 46.4917, lng: -80.9930, grid: "Archives of Ontario • 1913 Marriage Register", desc: "Site of the family's earliest mainland Canadian foothold, where Smiths Harbour cousin William Silas Squires married Ethel Jane Brown in 1913." },
       { id: "victoria-bc", name: "Victoria, British Columbia, Canada", region: "ONTARIO", house: "V3", era: "Dec. 1966", lat: 48.4284, lng: -123.3656, grid: "Canadian Immigration Arrival \u2022 Dec. 1966", desc: "Pacific port of entry where Victor Olusoji Kolade immigrated to Canada from Nigeria in December 1966 prior to enlisting in the Canadian Armed Forces." },
       { id: "cfb-shilo-mb", name: "CFB Shilo, Manitoba, Canada", region: "ONTARIO", house: "V3", era: "1967\u2013c. 1969", lat: 49.8108, lng: -99.6367, grid: "Canadian Armed Forces Base \u2022 Pen-Pals Courtship", desc: "Canadian Armed Forces base where Victor Olusoji Kolade served beginning in 1967 and first connected through a local newspaper pen-pals column with Merle Elizabeth Squires of Smiths Harbour, Newfoundland." },
-      { id: "pine-hills", name: "Pine Hills Cemetery (Section A, Lot 2436H), Scarborough", region: "ONTARIO", house: "CONV", era: "2017–2026", lat: 43.7261, lng: -79.2684, grid: "Section A, Lot 2436H • Granite Memorial", desc: "Family memorial site: 2026 charcoal granite monument honoring Victor Olusoji Kolade (1942–2017) of Emure-Ekiti, Nigeria & Merle Elizabeth Kolade, née Squires (1944–2025) of Smith's Harbour, NL." },
+      { id: "pine-hills", name: "Pine Hills Cemetery (Section A, Lot 2436H), Scarborough", region: "ONTARIO", house: "CONV", era: "2017–2026", lat: 43.7261, lng: -79.2684, grid: "Section A, Lot 2436H • Granite Memorial", desc: "Family memorial site: 2026 charcoal granite monument honoring Victor Olusoji Kolade (1943–2017) of Emure-Ekiti, Nigeria & Merle Elizabeth Kolade, née Squires (1944–2025) of Smith's Harbour, NL." },
       { id: "toronto-on", name: "Toronto, Ontario, Canada", region: "ONTARIO", house: "CONV", era: "c. 1969–2026", lat: 43.6532, lng: -79.3832, grid: "Toronto, Ontario • Gen 2 & Gen 1 Home", desc: "Home of Victor Olusoji Kolade & Merle Elizabeth Squires (married 1973) and living Generation 1 household of Victor Olutayo Kolade & Abigail Salole." }
     ];
 
-    // 3. ALL 54 DATED FAMILY TIMELINE EVENTS (1332–2026)
+    // 3. ALL 53 DATED FAMILY TIMELINE EVENTS (1332–2026)
     const EVENTS = [
       { id: "ev-1332", date: "September 1332 (6 Edward III)", iso: "1332-09", sort: 1332, gen: "Gen 18–21", epoch: "E1", house: "V2", region: "NDORSET", gpsGroup: "INDIRECT", gpsLabel: "Primary Exchequer Roll (694-Yr Pre-Black-Death Root)", title: "Oldest Ancestral Estate Record (694 Years Ago): \"John le Lusshe — 12d\" Taxed at Tisbury / Oakley Before the Black Death", shelves: ["s00a"], loci: ["oakley-tisbury", "tisbury-manor", "shaftesbury", "melbury-abbas"], diplomatic: "[TNA E 179/196/8, Sept. 1332 Wiltshire Lay Subsidy (15th), Dunworth Hundred — Tisbury (Tysseburye), WRS Vol. 45, p. 44, col. 2] Alexander de Ocle — 20d | Walter Warner — 3s | John le Lusshe — 12d | Thomas de Toteredehulle — 4s | Edward le Wyke — 8s 10d | John Boterstake — 4s | David de Seghulle — 8s.", synthesis: "Pushes the documented Lusshe estate and surname horizon back 694 years into the early reign of King Edward III—sixteen years before the Black Death of 1348! Enrolled under Shaftesbury Abbey's manor of Tisbury just two lines below Alexander de Ocle (Oakley in Tisbury) and four lines above David de Seghulle (Sedgehill), taxpayer John le Lusshe (assessed 12d. on 15s. of surplus livestock/grain) captures both the Anglo-Norman 'le Lusshe' origin of the Lush surname and the exact Oakley-in-Tisbury farmstead strip still held by John Lusshe 148 years later in 1480.", immunity: "Verified verbatim on p. 44 of Crowley's Wiltshire Tax List of 1332 (the sole Lusshe household in all of 1332 Wiltshire); graded conservatively as Pre-Tudor Monastic Estate & Surname Continuity." },
-      { id: "ev-1420", date: "Hilary Term 1420 (7 Henry V)", iso: "1420-01", sort: 1420, gen: "Gen 18–21", epoch: "E1", house: "V2", region: "NDORSET", gpsGroup: "INDIRECT", gpsLabel: "Primary CP 40 Roll (606-Yr Plantagenet Horizon)", title: "Agincourt Era: John Lussh of Upton Sues Donhead St Mary Husbandmen (Including Allied Surname \"Brytt\")", shelves: ["s00a"], loci: ["upton-donhead", "tisbury-manor", "melbury-abbas", "shaftesbury"], diplomatic: "[TNA CP 40/636, Hilary 7 Hen. V (1420), rot. 1802 & 1802d, Wiltes'] Lussh, John vs. Bode, John, of Upton juxta Berwyk, husbandman (trespass) | rot. 1802d (debt): Lussh, John, of Upton vs. Brytt, Gylbert, of Dunhyde St Mary [Donhead St Mary], husbandman; Whete, John, of Charlton [in Donhead], husbandman; Vanner, John, of Dunhyde, husbandman.", synthesis: "Four years after King Henry V's victory at Agincourt, plaintiff John Lussh of Upton (adjoining Tisbury and Sedgehill) sued husbandmen in Shaftesbury Abbey's border manor of Donhead St Mary and Charlton—immediately touching Melbury Abbas across the Dorset hedge—including Gylbert Brytt, bearing the exact allied Burt/Byrte surname later paired with the Fontmell and Melbury Lushes.", immunity: "Indexed from TNA CP 40/636 rot. 1802 & 1802d (Waalt)." },
+      { id: "ev-1420", date: "Hilary Term 1420 (7 Henry V)", iso: "1420-01", sort: 1420, gen: "Gen 18–21", epoch: "E1", house: "V2", region: "NDORSET", gpsGroup: "INDIRECT", gpsLabel: "Primary CP 40 Roll (606-Yr Plantagenet Horizon)", title: "Agincourt Era: John Lussh of Upton Sues Donhead St Mary Husbandmen (Including Allied Surname \"Brytt\")", shelves: ["s00a"], loci: ["upton-donhead", "tisbury-manor", "melbury-abbas", "shaftesbury"], diplomatic: "[TNA CP 40/636, Hilary 7 Hen. V (1420), dorse IMG_1802, Wiltes'] Lussh, John vs. Bode, John, of Upton juxta Berwyk, husbandman (trespass: taking) | Lussh, John, of Upton vs. Brytt, Gylbert, of Dunhyde St Mary [Donhead St Mary], husbandman; Whete, John, of Charlton [in Donhead], husbandman; Vanner, John, of Dunhyde, husbandman; Cokkys, John, of Salisbury, butcher (debt).", synthesis: "Four years after King Henry V's victory at Agincourt, plaintiff John Lussh of Upton (adjoining Tisbury and Sedgehill) sued husbandmen in Shaftesbury Abbey's border manor of Donhead St Mary and Charlton—immediately touching Melbury Abbas across the Dorset hedge—including Gylbert Brytt (bearing the exact allied Burt/Byrte surname later paired with the Fontmell and Melbury Lushes) and Salisbury butcher John Cokkys.", immunity: "Directly verified on original Latin sheepskin membrane TNA CP 40/636 dorse IMG_1802 (WAALT, AALT & Glyph Machina)." },
       { id: "ev-1425", date: "Hilary 1425 – Hilary 1427 (3–5 Henry VI)", iso: "1425/1427", sort: 1425, gen: "Gen 18–21", epoch: "E1", house: "V2", region: "NDORSET", gpsGroup: "INDIRECT", gpsLabel: "Primary CP 40 Executor Proof (Death Fixed to 1425–26)", title: "Livestock Credit to Salisbury Butchers (1425) & Testamentary Executors of John Lussh of Upton (1427)", shelves: ["s00a"], loci: ["upton-donhead", "tisbury-manor", "shaftesbury"], diplomatic: "[TNA CP 40/656, Hilary 3 Hen. VI (1425), rot. 135f, Wiltes'] Lussh, John vs. Dynton, Ralph, of Old Sarum, butcher; Scotte, Robert, of Salisbury, butcher. [TNA CP 40/664, Hilary 5 Hen. VI (1427), Wiltes'] Lussh, John, of Upton, executors of (Whitehorn, John; Pakyn, William, and Joan his wife) vs. Bartour, Robert, of Soutton [Sutton Mandeville], gent; Flynt, Nicholas & John, of Old Sarum, masons.", synthesis: "Fixes both the commercial grazier livelihood and the exact 1425–1426 death window of elder patriarch John Lussh of Upton: after suing Old Sarum and Salisbury butchers for livestock credit in January 1425, his testamentary executors (John Whitehorn and William & Joan Pakyn) sued in January 1427—cleanly separating his generation from the John Lusshe active in 1442–1450 at Stour Provost and Tisbury!", immunity: "Executor styling in CP 40/664 provides hard chronological separation between the 1420–26 and 1442–50 John Lusshes." },
       { id: "ev-1442", date: "Hilary Term 1442 (20 Henry VI)", iso: "1442-01", sort: 1442, gen: "Gen 17–18", epoch: "E1", house: "V2", region: "NDORSET", gpsGroup: "INDIRECT", gpsLabel: "Primary CP 40 Parchment (Pre-Tudor Estate Cluster)", title: "1442 Lusshe Parchments: £40 Strongbox Suit at Stour Provost (Dorset) & Shaftesbury Abbey Bond at Tisbury", shelves: ["s00"], loci: ["stour-provost", "tisbury-manor", "shaftesbury", "melbury-abbas"], diplomatic: "[TNA CP 40/724, rot. 388f, IMG_0388, Dors'] Joh[ann]es Lusshe ... v[er]sus Thomam ffraunceys de Stoure Prewes ... husbondman de pl[ac]ito q[uo]d reddat ei quandam cistam cum quadraginta libris [£40] in eadem cista contentis. [rot. 698f, IMG_0698, Wiltes'] Joh[ann]es Norreys Armig[er] & Joh[ann]es Vffenham ... v[er]sus Joh[ann]em Stephenys de Tessebury ... myller & Joh[ann]em Lusshe de Tessebury ... husbondman [40s. each].", synthesis: "Continues the Plantagenet Luſſhe archive into the reign of King Henry VI: in January–February 1442, plaintiff John Lusshe sued at Westminster inside a Shaftesbury docket to recover a chest holding £40 at Stour Provost (4.5 miles NW of Melbury Abbas—matching Edmond Lushe's £40 rating in 1523), while John Lusshe of Tisbury farmed on Shaftesbury Abbey's contiguous cross-border manor.", immunity: "Original Latin membranes verify active residency ('de Tessebury') and identical double long-s ('Luſſhe') spelling while screening out Somerset Prior William Lusshe of Woodspring (rot. 1210d)." },
       { id: "ev-1450", date: "Trinity Term 1450 (28 Henry VI)", iso: "1450-06", sort: 1450, gen: "Gen 17–18", epoch: "E1", house: "V2", region: "NDORSET", gpsGroup: "INDIRECT", gpsLabel: "Primary CP 40 Parchment (Dorset Executor Suit)", title: "John Lusshe Sues as Surviving Dorset Executor Against John Gervays of Hinton St Mary (£5 13s. 0d.)", shelves: ["s00"], loci: ["hinton-st-mary", "okeford-sturminster"], diplomatic: "[TNA CP 40/758, rot. 1195d, Entry 3, IMG_1195, Dors'] Joh[ann]es Lusshe executor testamenti Joh[ann]is Pylle executoris testamenti Will[elm]i Doune nup[er] de Oppylhill in Com[itatu] p[re]d[i]c[t]o husbondman ... v[er]sus Joh[ann]em Geruays de Henton Abb[at]is ... husbondman ... octo marcas sex solidos & quatuor denar[ios] [8 marks, 6s. 4d. = £5 13s. 0d.].", synthesis: "Inspecting the original sheepskin reverses an ambiguous index summary: nominative Latin endings prove John Lusshe was alive in summer 1450 and serving as trusted testamentary executor in the Blackmore Vale right beside Sturminster Newton—where Edmund and Robert Lush signed their property bond 270 years later.", immunity: "Direct grammatical verification of 'Joh[ann]es Lusshe executor' (nominative living plaintiff) versus genitive deceased testators 'Joh[ann]is Pylle' and 'Will[elm]i Doune'." },
       { id: "ev-1455", date: "Hilary Term 1455 (33 Henry VI)", iso: "1455-01", sort: 1455, gen: "Gen 17–18", epoch: "E1", house: "V2", region: "NDORSET", gpsGroup: "INDIRECT", gpsLabel: "Primary CP 40 Parchment (10-Mark Tisbury Plea)", title: "William Lusshe of Tisbury Sued for 10 Marks (£6 13s. 4d.) — Pairing \"John & William\" on Shaftesbury Abbey Land", shelves: ["s00"], loci: ["tisbury-manor", "melbury-abbas"], diplomatic: "[TNA CP 40/776, rot. 183f, Entry 5, IMG_0183, Wiltes'] Henr[icus] Leye p[er] attorn[atum] suu[m] op[tulit] se iiij^to die v[er]sus Will[elmu]m Lusshe de Tyssebury in Com[itatu] p[re]d[i]c[t]o husbondman de pl[ac]ito q[uo]d reddat ei decem marcas [10 marks = £6 13s. 4d.] ... Et sicut pluries ... J[de]o exigat[ur].", synthesis: "Enrolled on the eve of the Wars of the Roses (with four prior court stages pushing the 10-mark bond back to c. 1452–1453), active tenant William Lusshe of Tisbury ('de Tyssebury') pairs the exact two forenames—John and William Lusshe—carried a century later in Melbury Abbas and Fontmell Magna by Gen 15 John and Gen 14 William Lusshe.", immunity: "Contrasting 'de Tyssebury' in Entry 5 with 'nup[er] de Bratton' in Entry 7 on the same membrane confirms William Lusshe's active Tisbury residency in 1455." },
       { id: "ev-1480", date: "Hilary Term 1480 (19 Edward IV)", iso: "1480-01", sort: 1480, gen: "Gen 17–18", epoch: "E1", house: "V2", region: "NDORSET", gpsGroup: "INDIRECT", gpsLabel: "Primary CP 40 Parchment (Edward IV Border Cluster)", title: "John Lusshe of Oakley in Tisbury Recorded Inside Edmond Lusshe's Exact c. 1475–1480 Birth Window", shelves: ["s00"], loci: ["oakley-tisbury", "tisbury-manor", "melbury-abbas", "shaftesbury"], diplomatic: "[TNA CP 40/871, rot. 1041d, Entry 3, IMG_1041, Wiltes'] Rob[er]tus Wotton de Hyndon ... v[er]sus Ric[ardu]m Prentes de Gissege s[an]c[t]i Mich[ael]is in Com[itatu] Dors' ... Joh[ann]em Davy nup[er] de Longekyrchyll in Com[itatu] Dors' ... Joh[ann]em Couherd de Seggehill ... Et v[er]sus Joh[ann]em Lusshe de Okeley in p[ar]ochia de Tysbury ... husbondman ... quadraginta solidos [40s.].", synthesis: "Under King Edward IV—right inside Gen 16 founder Edmond Lusshe's c. 1475–1480 birth window—John Lusshe farmed at Shaftesbury Abbey's hamlet of Oakley in Tisbury in a cross-border credit sweep alongside Sedgehill and Dorset husbandmen. Direct father-to-son proof awaits tactile inspection of the 1528–1529 Melbury Abbas court roll (WSHC 2667/13/403).", immunity: "Alias capias ('sicut prius') dates the underlying credit to c. 1478–1479 under unified Shaftesbury Abbey lordship four years before the Arundells consolidated Wardour and Tisbury." },
-      { id: "ev-1494", date: "Hilary Term 1494 (9 Henry VII)", iso: "1494-01", sort: 1494, gen: "Gen 17–18", epoch: "E1", house: "V1", region: "WDORSET", gpsGroup: "INDIRECT", gpsLabel: "Primary King's Bench Plea Roll (Bilingual Surname & Allied Duning Proof)", title: "1494 West Dorset Squire Discovery: \"John Armiger alias Squire\" & \"John Dunnyng\" of Pulham (2 Miles NE of Bookham)", shelves: ["s01a", "s03", "s17"], loci: ["pulham-dorset", "bookham-knoll"], diplomatic: "[TNA KB 27/930, rot. 14d, Hilary Term 9 Henry VII (Jan.–Feb. 1494), Dors'] Johannes Armiger alias Squire de Pulham, husbondman, & Johannes Dunnyng de Pulham, husbondman [impleaded alongside William Warde, John Sayer, William Wyght & Robert Fraunceys]. Compare [DHC PE/BCN/RE 1/1, Frame 23r, March 1581/82] Gilberto Duning, Johanne Squier } Gar[dianis].", synthesis: "Pushes the West Dorset Squire documentary horizon back 30 years into the 1400s (from 1524 to 1494) during the reign of King Henry VII! Recorded in immediately adjacent Pulham (just 2 miles northeast of Bookham Farm across the Buckland Newton parish boundary), husbandman 'John Armiger alias Squire' stands side-by-side with husbandman 'John Dunnyng'—the exact allied Duning family whose descendant Gilbert Duning co-signed the Buckland Newton parish register as fellow Churchwarden with Gen 14 Johannes Squier de Bewcombe in March 1581/82.", immunity: "Provides explicit Westminster plea-roll proof of early Tudor clerks translating Anglo-Norman 'Squire' into Latin 'Armiger' ('Armiger alias Squire') even for a working Dorset husbandman." },
       { id: "ev-1475", date: "c. 1480 (Est. 1475–1480 · Reign of Edward IV)", iso: "1475/1480", sort: 1481, gen: "Gen 16", epoch: "E1", house: "V2", region: "NDORSET", gpsGroup: "DIRECT", gpsLabel: "Direct Proof (Age 60+ on 1539 Armour Roll)", title: "Earliest Proven Lineal Patriarchs Born: Edmond Lushe (Melbury Abbas) & William Squyer (Buckland Newton)", shelves: ["s01", "s03"], loci: ["melbury-abbas", "bookham-knoll"], diplomatic: "[TNA E 36/17, Spring 1539, p. 95, Melbary] Edm Lushe — NA [is no able man, aged 60+], has pr al.rivets. [TNA E 179/103/119–120, 1524, Knolle] William Squyer — G 5; Thomas Squyer [aged 16+] — G 1.", synthesis: "Opens our unbroken 16-generation father-to-child paper trail (~551 years ago, immediately following the 1332–1480 Shaftesbury Abbey Lusshe cluster): by Spring 1539, Edmond Lushe was already past the age-60 active-marching limit while owning a full suit of steel armour in East Melbury, alongside William Squyer (born c. 1475–1495), who already had a tax-paying son over age 16 in 1524.", immunity: "King Henry VIII's February 1539 muster enrolled able-bodied men aged 16 to 60; being marked 'NA' while owning expensive German plate armour proves Edmond was over age 60 rather than poor." },
       { id: "ev-1523", date: "October 1523", iso: "1523-10", sort: 1523, gen: "Gen 16", epoch: "E1", house: "V2", region: "NDORSET", gpsGroup: "DIRECT", gpsLabel: "Direct Proof (King Henry VIII Parchment Roll)", title: "Edmond Lushe Taxed on £40 by King Henry VIII — Richest 1.7% of All Dorset", shelves: ["s02"], loci: ["melbury-abbas", "ashmore", "bookham-knoll"], diplomatic: "[TNA E 179/103/116 & 128, Oct. 1523 Anticipation, Sixpenny Handley Hundred, Stoate 1982 p. 222] Walter Kyng £60; Henry Kyng £50; Robert Pulvertoft sen. £50; Thomas Pety £50; Edmond Lushe £40 (tax 40s.); William Were £40; Alice Ridoute wid. £40. [Ashmore] Richard Burdon £60. [Brockhampton] Thomas Lock G 50.", synthesis: "Our earliest Tudor tax record on the unbroken lineal chain (503 years ago, continuing the 1442 £40 Stour Provost Lusshe benchmark). When King Henry VIII demanded an advance war loan from only the wealthiest households worth £40 or more, Edmond Lushe was one of just 7 farmers in Sixpenny Handley Hundred—and in the richest 1.7% (143 out of 8,369) of all taxpayers in Dorset.", immunity: "Tudor tax assessors valued livestock and grain conservatively, meaning a £40 tax rating reflected roughly £120–£160 in real sheep flocks, oxen, harvested grain, and silver coin." },
       { id: "ev-1525", date: "1524 & January 6, 1525", iso: "1525-01-06", sort: 1525, gen: "Gen 16–15", epoch: "E1", house: "V1", region: "WDORSET", gpsGroup: "DIRECT", gpsLabel: "Direct Proof (Father-and-Son Tax Rolls)", title: "William & Thomas Squyer Taxed Together in Knoll; Edmond Lusshe in East Melbury & Robert Akerman on Coast", shelves: ["s03", "s04", "s05"], loci: ["bookham-knoll", "alton-pancras", "shipton-gorge", "melbury-abbas"], diplomatic: "[E 179/103/119–120, Knoll, p. 162] William Squyer G 5; Thomas Squyer G 1; John Robertes G 2; Robert Roberdes G 5. [Alton Pancras, p. 199] Robert Squyer G 2. [E 179/103/122, Shipton Gorge, p. 55] Robert Akerman G 10. [E 179/103/121, Est Melbury, Jan. 6, 1525, p. 139] Robert Kyng G 30; Edmond Lusshe G 20; West Melbury: Thomas Rydoutte G 1; Est Compton: John Burden G 10.", synthesis: "More than a decade before English church registers even began in 1538, King Henry VIII's village tax rolls capture all three of our English ancestral lines at once: father and son William & Thomas Squyer at Knoll/Bookham, Edmond Lusshe as second-richest farmer in East Melbury, and Robert Akerman near Bridport.", immunity: "Checking the entire county tax roll separates our ancestors from unrelated look-alike names in distant Dorset towns like Wareham and Maiden Newton." },
@@ -1874,7 +2175,7 @@ window.__WORLD_TOPO_50M = {"type":"Topology","objects":{"countries":{"type":"Geo
       { id: "ev-1539", date: "April 10 & May 15, 1539", iso: "1539-05-15", sort: 1539, gen: "Gen 15", epoch: "E1", house: "V1", region: "WDORSET", gpsGroup: "DIRECT", gpsLabel: "Direct Proof (King Henry VIII Military Musters)", title: "1539 Invasion Musters: Thomas Squyer (Billhook), Akerman Longbowmen & Edmond Lushe (Steel Plate Armour)", shelves: ["s01", "s07", "s08"], loci: ["bookham-knoll", "alton-pancras", "shipton-gorge", "bridport", "melbury-abbas"], diplomatic: "[E 36/29, May 15, 1539, Knowlle, p. 36] B Tho Squyer — bill; Rob Roberds — bill, splints; Rob Farvell — poleaxe. [SP 2/S, Liberty of Alton, p. 50] Rob Squyer — harness for man, bow, sh.arr; B Jn Squyer — bow, 4 arr. [E 36/29, Apr. 10, 1539, p. 8] Jn Akerman — bow, sh.arr; Ste Akerman — bill; A Hen Akerman — AA, bow, sh.arr. [E 36/17, Melbary, p. 95] Edm Lushe — NA, has pr al.rivets.", synthesis: "When King Henry VIII called out every village to prepare against a French invasion, Thomas Squyer marched in Knoll carrying his own billhook beside neighbours Roberds and Farvell, Akerman archers mustered with longbows near Bridport, and elder Edmond Lushe supplied riveted German steel plate armour in Melbury Abbas.", immunity: "Tudor muster codes ('A' for archer, 'B' for billman, and 'NA' for men past age 60) give us exact age brackets before birth certificates existed." },
       { id: "ev-1542", date: "1542", iso: "1542", sort: 1542, gen: "Gen 16–15", epoch: "E1", house: "V2", region: "NDORSET", gpsGroup: "DIRECT", gpsLabel: "Direct Proof (Father & Son on Muster Roll)", title: "Teenage John Lusshe Turns 16+ and Joins His Father Edmond Lushe on the 1542 Muster Roll", shelves: ["s09"], loci: ["melbury-abbas", "compton-abbas", "fontmell-magna"], diplomatic: "[TNA E 101/61/36, 1542 King's Remembrancer Muster, Comton Abbas & West Melberys, Stoate 1978 p. 96] Edm Lushe — NA, has pr al.rivets ... Jn Lusshe [ableman, newly aged 16+]. [Fonntmell, p. 94] Walt Lusshe.", synthesis: "Too young (under 16) to appear in 1539, John Lusshe (Gen 15) steps onto the 1542 military roll alongside his elderly father Edmond Lushe—pinpointing John's birth to c. 1523–1526—while relative Walter Lusshe appears next door in Fontmell.", immunity: "Seeing elder Edm Lushe and newly adult Jn Lusshe together on the 1542 roll cleanly links Generation 16 to Generation 15." },
       { id: "ev-1545", date: "1543–1545", iso: "1545-06", sort: 1545, gen: "Gen 15", epoch: "E1", house: "V1", region: "WDORSET", gpsGroup: "DIRECT", gpsLabel: "Direct Proof (Crown Tax Rolls)", title: "Thomas Squyer Heads the Knoll Farm Alone (1543–44); Edmond & Young John Lusshe Both Taxed in 1545", shelves: ["s11", "s12"], loci: ["bookham-knoll", "alton-pancras", "melbury-abbas", "bridport"], diplomatic: "[E 179/104/151–152, Knoll, 1543–44, p. 162] Thomas Squyer — G 1½ (30s.; tithing sum 4s. 7½d.); William Locke G 4; Robert Roberdes G 3. [Alton, p. 199] Robert Squyer G 5; John Squyer G 1. [E 179/104/156, June 1545 Melbury Anticipation, p. 141] Edmond Lusshe — G 13. [E 179/104/154, Cann/Melbury, p. 142] John Lusshe — G 1; Thomas Rideoute G 4. [Bothenhampton, p. 54] Henry Akerman — G 4.", synthesis: "By 1543–44, Thomas Squyer had taken over his father William's farm in Knoll, while in 1545 elderly Edmond Lusshe (still one of the four richest men in Melbury Abbas) appears in the same year his young son John Lusshe pays his first tax.", immunity: "Adding up the exact pennies and halfpennies of the 1544 Knoll village total (4s. 7½d.) proves Thomas Squyer's 30-shilling ('G 1½') assessment to the halfpenny." },
-      { id: "ev-1558", date: "1558–1576", iso: "1565/1576", sort: 1565, gen: "Gen 15", epoch: "E2", house: "V1", region: "WDORSET", gpsGroup: "DIRECT", gpsLabel: "Direct Proof (Salisbury Will Index & 1573 Common Pleas Roll)", title: "Alton Pancras Tudor Wills (1558, 1565, 1576) & 1573 Debt Plea of \"John Squyer of Alton Pancras, Husbandman\"", shelves: ["s13"], loci: ["alton-pancras", "bookham-knoll"], diplomatic: "[Dean of Salisbury Peculiar Will Registers, Series I, BRS Vol. 53] 1558: Nicholas Locke, Alton Pancras (Vol. 1, p. 89) | 1565: John Squire, Alton Pancras, A. & W. (Vol. 1, pp. 65, 68) | 1576: Robert Squire / Squier, Alton Pancras (Vol. 3, p. 83). [TNA CP 40/1317b, rot. 274f, Trinity Term 1573, Dorset; WAALT] John Sticklande of Alton Pancras, yeoman v. Edward Walton of Horton, yeoman & John Squyer of Alton Pancras, husbandman (debt).", synthesis: "Proves continuous Elizabethan Squire residency across the 1.5-mile hedge in Alton Pancras: alongside the registered wills of John Squire (1565) and Robert Squire (1576), a newly indexed Trinity 1573 Westminster plea roll proves a younger John Squyer of Alton Pancras, husbandman, was active eight years after the 1565 will—right beside Johannes Squier of Bookham.", immunity: "Combines the surviving Dean of Salisbury peculiar will registers with the newly indexed Trinity 1573 Court of Common Pleas roll (CP 40/1317b, rot. 274f)." },
+      { id: "ev-1558", date: "1558–1576", iso: "1565/1576", sort: 1565, gen: "Gen 15", epoch: "E2", house: "V1", region: "WDORSET", gpsGroup: "DIRECT", gpsLabel: "Direct Proof (Salisbury Will Index & 1573 Common Pleas Roll)", title: "Alton Pancras Tudor Wills (1558, 1565, 1576) & 1573 Trespass Plea of \"John Squyer of Alton Pancras, Husbandman\"", shelves: ["s13"], loci: ["alton-pancras", "bookham-knoll"], diplomatic: "[Dean of Salisbury Peculiar Will Registers, Series I, BRS Vol. 53] 1558: Nicholas Locke, Alton Pancras (Vol. 1, p. 89) | 1565: John Squire, Alton Pancras, A. & W. (Vol. 1, pp. 65, 68) | 1576: Robert Squire / Squier, Alton Pancras (Vol. 3, p. 83). [TNA CP 40/1318, dorse IMG_0065, Entry 1, Trinity Term 1573, Dorset; AALT & Glyph Machina] Johannes Stiklande v. Johannem Squyer nuper de Alton Pancras in comitatu predicto, husbandman — trespass vi et armis breaking close at 'Alton Pancras alias Alton Australis' and depasturing grass (£20) with livestock.", synthesis: "Proves continuous Elizabethan Squire farming across the 1.5-mile hedge in Alton Pancras: alongside the registered wills of John Squire (1565) and Robert Squire (1576), the original Trinity 1573 Court of Common Pleas membrane (CP 40/1318, dorse IMG_0065, Entry 1) records a younger John Squyer of Alton Pancras, husbandman, sued by John Stickland for £20 livestock-grazing trespass at 'Alton Pancras alias Alton Australis'—confirming active Squire pasture tenure eight years after the 1565 will, right beside Johannes Squier of Bookham.", immunity: "Combines the surviving Dean of Salisbury peculiar will registers with the directly audited Trinity 1573 Court of Common Pleas membrane (TNA CP 40/1318, dorse IMG_0065, Entry 1; via AALT & Glyph Machina)." },
       { id: "ev-1569", date: "March–August 1569", iso: "1569-06-28", sort: 1569, gen: "Gen 15", epoch: "E2", house: "V2", region: "NDORSET", gpsGroup: "DIRECT", gpsLabel: "Direct Proof (Queen Elizabeth I Musters)", title: "Thomas Lawrens Sr. Supplies Armour in Merriott (Somerset) & Richard Akerman Musters as Bridport Archer", shelves: ["s14", "s15"], loci: ["merriott-crewkerne", "bridport", "fontmell-magna"], diplomatic: "[SRS Vol. XX, 1569 Merriott Tithing, pp. 28–30] Armour: Florence Pytt wid. [PCC PROB 11/51/267, June 28, 1569], Thomas Lawrens Sr. ... furnish 1 almain rivet; Archer: Peter Langdon. [TNA SP 12/56, Birteporte, p. 143] A Ric Akerman; [Bovehinton & Lodres, p. 148] B Jn Akerman.", synthesis: "Introduces our Somerset ancestors—prosperous farmer Thomas Lawrens Sr. (supplying steel plate armour) and archer Peter Langdon in Merriott—alongside archer Richard Akerman in Bridport.", immunity: "Only a small quota of fit men aged 16–60 were picked in 1569, explaining why ailing John Lusshe (who died in 1572) and his young son William were not required to march." },
       { id: "ev-1572", date: "April 14 or 22, 1572", iso: "1572-04-22", sort: 1572, gen: "Gen 15", epoch: "E2", house: "V2", region: "NDORSET", gpsGroup: "DIRECT", gpsLabel: "Direct Proof (Surviving 1572 Will)", title: "1572 Will of John Lusshe of Melbury Abbas Leaves £20 Cash to His Young Son William", shelves: ["s16"], loci: ["melbury-abbas"], diplomatic: "[Melbury Abbas Will, Apr. 14/22, 1572; calendared SDNQ 24:173, Dean & Chapter of Bristol] I John Lusshe of y^e p[ar]ishe of melbory ... geve and Bequeathe vnto my sonne william Lusshe xx^li [£20] of curra[n]t money of England ... when he is of lawfull age / Residue to Alice my wyffe executrixe / my twoe Brothers Rob[er]t Lusshe & John Chyckeford my overseers.", synthesis: "Proves directly that Gen 15 John Lusshe and his wife Alice were the parents of Gen 14 William Lusshe, leaving young William £20 in cash (a substantial Elizabethan fortune) safeguarded by uncles Robert Lusshe and John Chyckeford.", immunity: "Careful reading of the old handwriting ('xx^li') confirms 20 pounds rather than 20 shillings, and filing at Bristol Cathedral saved this will from the 1731 Blandford fire." },
       { id: "ev-1574", date: "Aug. 30, 1574 – Feb. 4, 1584/85", iso: "1582-03", sort: 1578, gen: "Gen 14", epoch: "E2", house: "V1", region: "WDORSET", gpsGroup: "DIRECT", gpsLabel: "Direct Proof (Buckland Newton Church Book)", title: "Bookham Church Records: Johannes Squier Serves as Parish Churchwarden (1581–82) & Locke Marriage", shelves: ["s17"], loci: ["bookham-knoll"], diplomatic: "[DHC PE/BCN/RE 1/1] f. 10r (30 Aug 1574): baptizatus fuit Thomas Squier filius Johannis Squier de Bewcombe | f. 12v (18 Jan 1575/76): sepulta fuit Iuliana Squier | f. 16r (31 Jul 1578): matrimonium inter Hugonem Locke de Sharnhull et Editham Squier filiam Thome Squier de Bewcombe | f. 19r (15 Feb 1579/80): sepultus fuit Thomas Squier de Bewcombe | f. 23r (Mar 1581/82): Gilberto Duning, Johanne Squier } Gar[dianis] | f. 32 (4 Feb 1584/85): sepultus fuit Johannes Squier de Bewcombe.", synthesis: "A page-by-page reading of Buckland Newton's surviving 1500s register captures three generations at Bookham ('Bewcombe'), records Edith Squier marrying neighbour Hugh Locke in 1578, and shows Gen 14 Johannes Squier elected Parish Churchwarden in 1581–82.", immunity: "Comparing letters side-by-side on the original page cleanly separates our surname Squier (hooked 'q') from a different village family named Spicer (closed 'p')." },
@@ -1896,29 +2197,29 @@ window.__WORLD_TOPO_50M = {"type":"Topology","objects":{"countries":{"type":"Geo
       { id: "ev-1822", date: "Jan. 14, 1817 – April 19, 1851", iso: "1843-12-26", sort: 1822, gen: "Gen 7", epoch: "E4", house: "V1", region: "NL", gpsGroup: "DIRECT", gpsLabel: "Direct Proof (Burial Registers & 1844 Will)", title: "Bonavista Pioneers Laid to Rest & Abraham Akerman Jr.'s \"Blue Cloth Jacket\" Will (1843/44)", shelves: ["s35"], loci: ["bonavista"], diplomatic: "[PANL Bonavista PRs] Jan. 14, 1817: Jane dau. of Simon & Jane Squire — Bapt. by A. Ackerman | 1822 Burial: ABRAHAM AKERMAN, age 77 | 1832 Burial: Simon Squires, age 63 | Apr. 19, 1851 Burial: Jane Squires, age 78. [NL Will Books Vol. 1, p. 455, Dec. 26, 1843 / 1844] Will of Abraham Akerman Jr.: bequeaths blue cloth jacket to '...... Squires, son of John Squires'.", synthesis: "Captures the full arc of our first Newfoundland generation in Bonavista: lay minister Abraham Akerman Sr. baptizing his grandchildren into his seventies before dying in 1822 (aged 77), pioneer Simon Squires Sr. dying in 1832 (aged 63), uncle Abraham Akerman Jr. leaving his prized blue cloth jacket to his Squires great-nephew in 1843/44, and matriarch Jane Akerman Squires living to 1851 (aged 78).", immunity: "Every Bonavista burial age (77 in 1822 = 1745; 63 in 1832 = 1769) matches the family's English parish baptisms in Broadwindsor and Chideock to the exact year." },
       { id: "ev-1871", date: "Dorset Epilogue (1871–1878) · Why They Left", iso: "1871-04-02", sort: 1811, gen: "Gen 7", epoch: "E5", house: "V2", region: "NDORSET", gpsGroup: "DIRECT", gpsLabel: "Direct Proof (1871 Census of England & Wales)", title: "Why Our Pioneers Left England: 78-Year-Old Cousin George Lush Listed as a \"Pauper\" in Motcombe (1871)", shelves: ["s33b"], loci: ["motcombe", "melbury-abbas"], diplomatic: "[1871 UK Census, Motcombe, Dorset — 'North End'] George Lush (1793–1878, aged 78, stay-behind Dorset collateral branch, brother of Hannah & Mary Doggrell) — Occupation/Condition: 'Pauper'.", synthesis: "Provides a vivid human window into why John Lush and Simon Squire braved the North Atlantic: back in Motcombe, Dorset, after the Enclosure Acts fenced off common pastures and wiped out small yeoman copyholders, 78-year-old cousin George Lush ended his days listed as a parish 'Pauper' in 1871.", immunity: "Cross-checked against Motcombe burial records (d. 1878) and Blackmore Vale Doggrell marriage registers." },
       { id: "ev-1880", date: "c. 1850 – c. 1880", iso: "1880", sort: 1880, gen: "Gen 7", epoch: "E5", house: "V3", region: "YORUBA", gpsGroup: "INDIRECT", gpsLabel: "Yorùbá Name Proof, Royal Father-to-Son Pedigree & Carved Effigy Date", title: "Patriarch Kọ́ládé, Direct Pedigree Ojomu Arintokun → Ojomu Ogedu & Owo Àkó Effigy (c. 1880)", shelves: ["s34", "s38"], loci: ["oko-ose", "osunkoti", "ojomu-akeregun", "ijebu-owo"], diplomatic: "[Yorùbá Name History & Gazetteer #35] [Ògún]kọ́ládé ('He who gathers honour and arrives') + son Ògúnlúsì ('Ogun possesses renown') at Oko Ọ̀sẹ Kọ́ládé. [Official Emure Royal Pedigree of 9th Elemure Oba Emmanuel Taiwo Ogunleye II (r. 1965–74) & Abiodun 1976, Africa 46.1] Great-Grandparents: High Chief Ojomu Arintokun (explicitly recorded as father of High Chief Ojomu Ogedu) & High Chief Ojomo Agunloye I of Ijebu-Owo (d. c. 1880, carved àkó effigy; father of Madam Olajenboye) → Grandparents: High Chief Ojomu Ogedu & Madam Olajenboye (parents of Olori Bolangbe).", synthesis: "Shows how Generation 5 patriarch Kọ́ládé's personal given name became our permanent family surname Kolade, while the official royal pedigree of the 9th Elemure (Oba Emmanuel Taiwo Ogunleye II) explicitly confirms father-to-son descent from High Chief Ojomu Arintokun to High Chief Ojomu Ogedu, who wed Madam Olajenboye, daughter of Owo paramount ruler High Chief Ojomo Agunloye I (d. c. 1880).", immunity: "Upgrades Ojomu Arintokun → Ojomu Ogedu to an explicit father-to-son link in the Emure royal chronicle while preserving the three constitutional models linking Ojomu Ogedu to Lydia Olugbe's father." },
-      { id: "ev-1840", date: "1826 – May 26, 1840 & 1857", iso: "1840-05-26", sort: 1840, gen: "Gen 7–6", epoch: "E5", house: "V2", region: "NL", gpsGroup: "DIRECT", gpsLabel: "Direct Proof (Greenspond Church & Community Records)", title: "Greenspond Granite Island Pioneers, Thomas Lush & Mary Goulding Wedding (1840) & Church Timber Haul", shelves: ["s36"], loci: ["greenspond", "motcombe", "wimborne-minster"], diplomatic: "[Greenspond Community & Parish Records] Dorset pioneers David Goulding (1773–1826, Fryer & Fryer recruit) & John Lush (1775–1827; widow Elizabeth Jane Wood, 1777–1847) | May 26, 1840 Marriage: Thomas Lush (c. 1812–1887) & Mary Goulding (1821–1869, dau. of Jacob Goulding, who hauled timber in 1857 for St. Stephen's Church).", synthesis: "On rocky, windswept Greenspond Island—so barren of soil that families hauled boatloads of earth from the mainland just to plant a vegetable garden—Thomas Lush married Mary Goulding on May 26, 1840, uniting two Dorset pioneer families in Bonavista Bay.", immunity: "Verified directly through Greenspond parish registers and St. Stephen's parish building records." },
+      { id: "ev-1840", date: "June 1809 – May 26, 1840 & 1857", iso: "1840-05-26", sort: 1840, gen: "Gen 7–6", epoch: "E5", house: "V2", region: "NL", gpsGroup: "DIRECT", gpsLabel: "Direct Proof (1809 Goulding Letters, Greenspond PRs & Court Audit)", title: "David Goulding's 1809 Greenspond Letters, John Lush (1775–1827) Audit & 1840 Lush–Goulding Wedding", shelves: ["s36"], loci: ["greenspond", "motcombe", "wimborne-minster"], diplomatic: "[Priest's House Museum, Wimborne; Greenspond Letter Vol. 1, Nos. 2–3] Original letters of David Goulding (1773–1826) from Greenspond to John & William Fryer (June 17 & July 17, 1809): 'there Never Whas such fishing in Pond & all Bonavista Bay as this summer. Pond boats to sea but three Weekes & have now 370 Quintles fish on Shore for a boat.' [Greenspond Audit] John Lush (1775–1827; widow Elizabeth Jane Wood, 1777–1847): Batterton Is. stone ('1827 aged 61'), Oct. 8, 1827 petty jury (PANL GN 5/2/B/1) & 1830 St. Stephen's Pew 19 ('John Lush, senior'). [May 26, 1840 PR] Thomas Lush (c. 1812–1887) m. Mary Goulding (1821–1869, dau. of planter Jacob Goulding, 1857 St. Stephen's timber haul & 1864–65 Dir.); Mar. 30, 1852 rescue of James Goulding & John Lush of Pinchard's Island (Journal of Robert Dyer).", synthesis: "Two surviving 1809 letters written from Greenspond by Dorset pioneer David Goulding to Wimborne merchants John & William Fryer preserve our family's own firsthand voice from Bonavista Bay's cod fishery, setting the stage for the May 26, 1840 wedding of Thomas Lush and Mary Goulding on rocky Greenspond Island.", immunity: "Reconciles the weathered Batterton Island headstone ('1827 aged 61' — probable weathering of 51/52 or posthumous age inflation), Oct. 8, 1827 jury roll, and 1830 Pew 19 cleanly with eldest son John Jonas Lush (b. c. 1802; son John bapt. Aug. 14, 1830)." },
       { id: "ev-1846", date: "c. 1830–1856 (Origins Horizon from 1753)", iso: "1856", sort: 1856, gen: "Gen 6", epoch: "E5", house: "V2", region: "NL", gpsGroup: "CANDIDATE", gpsLabel: "Direct NL Anchor + Two Testable Origin Models", title: "Dwyer–Thorne Origins: Trinity Bay Protestant Dwyer Cluster vs. Waterford–Twillingate Corridor", shelves: ["s37", "s37b"], loci: ["trinity-hants-tb", "hillview-tb", "herring-twillingate", "waterford"], diplomatic: "[1753 Trinity Bay Census, St. Paul's Trinity & Hants Hbr PRs (1753–1855) & FHSNL Ash–Dwyer–Hurst–Meech–Piercey–Pike–Warren Pedigree Chart, Holdings Guide p. 93] John & Mary Dwyer bap. (1753+); John Dwyer (Servt to Bengn Lester & Co.); Oct. 29, 1806 Trinity: John Dwyer m. Catherine White (Rev. John Clinch, p. 45) & James Dwyer m. Patience Ivamy (1806); John Dwyer d. Dec. 1, 1855, age 26 [b. c. 1829]; MUN Mannion Collection (Waterford–Twillingate corridor, Cards #2291 & #2308). [c. 1856] Capt. John Alexander Dwyer (c. 1830–1907) m. Caroline Bemister Thorne (c. 1837–1906, dau. of Richard Thorne of Exford, Somerset & Betsy George of Hillview, Trinity Bay).", synthesis: "Primary Newfoundland registers frame two testable models for Capt. John Alexander Dwyer: pre-Famine Waterford–Twillingate emigration versus the pre-established Protestant Dwyer fishing family settled since 1753 right inside Trinity Bay where bride Caroline Bemister Thorne was born!", immunity: "Auditing Twillingate Death Books 4 & 5 proves the local registrar defaulted 'Place of Birth' to 'North West Arm' for both John and Caroline—making PANL Vol. 89 (Twillingate Methodist marriages from 1853) and Trinity Bay circuits the decisive target." },
-      { id: "ev-1871-dwyer", date: "Sept. 20, 1871 – 1904", iso: "1871-09-20", sort: 1872, gen: "Gen 5", epoch: "E5", house: "V2", region: "NL", gpsGroup: "DIRECT", gpsLabel: "Direct Proof (PANL Vols. 90–91, Twillingate Sun & 1904 McAlpine)", title: "North West Arm Dwyer Twins (1871), Capt. Wm. Dwyer's Schooner \"The Albert\" (1889) & 1904 Directory", shelves: ["s37"], loci: ["lushes-burlington", "tilt-cove", "herring-twillingate"], diplomatic: "[PANL Vol. 91] Twins Albert Edward Dwyer & Philip Henry Dwyer, b. Sept. 20, 1871 at North West Arm to John & Caroline Dwyer (bapt. Aug. 31, 1872); brother Thomas R. Dwyer explicitly recorded as born in Twillingate (m. Susannah Mills Nov. 5, 1895). [Twillingate Sun, Sept.–Oct. 1889] 'The \"Albert\", Wm. DWYER, also arrived at North West Arm with 140 quintals [of fish].' [1904 McAlpine Dir., North West Arm] Fishermen: DWYER, John; DWYER, Thomas; DWYER, William. [PANL Vol. 90 & NDB Regs] Lenora Isabella (b. 1878; m. Lot Oake 1901); Phillip George (b. Feb. 8, 1880 to John & Caroline [Thorne] Dwyer); Constable Alexander Dwyer m. Louisa Hodder (1895).", synthesis: "Recovers the full North West Arm Dwyer sibling network: proving copper miner Albert Edward had twin brother Philip Henry Dwyer (1871, namesake of Rev. Philip Henry Lush), confirming brother Thomas R. Dwyer was born in Twillingate like Polly before the North West Arm move, and catching brother Capt. William Dwyer bringing 140 quintals of fish into North West Arm aboard his schooner 'The Albert' in 1889.", immunity: "Cross-verified across PANL Vols. 90–91 (explicitly naming Caroline [THORNE] DWYER), the 1889 Twillingate Sun marine arrivals, and the 1904 McAlpine Directory." },
+      { id: "ev-1871-dwyer", date: "Sept. 20, 1871 – 1904", iso: "1871-09-20", sort: 1872, gen: "Gen 5", epoch: "E5", house: "V2", region: "NL", gpsGroup: "DIRECT", gpsLabel: "Direct Proof (PANL Vols. 90–91, Twillingate Sun & 1904 McAlpine)", title: "North West Arm Dwyer Twins (1871), Capt. Wm. Dwyer's Schooner \"The Albert\" (1889) & 1904 Directory", shelves: ["s37"], loci: ["lushes-burlington", "tilt-cove", "herring-twillingate"], diplomatic: "[PANL Vol. 91] Twins Albert Edward Dwyer & Philip Henry Dwyer, b. Sept. 20, 1871 at North West Arm to John & Caroline Dwyer (bapt. Aug. 31, 1872); brother Thomas R. Dwyer explicitly recorded as born in Twillingate (m. Susannah Mills Nov. 5, 1895). [Twillingate Sun, Sept. 21 & Sept. 28, 1889] Terra Nova Mutual Insurance Club (Sept. 21, Nipper's Harbor, No. 91): schooner Albert, William Dwyer, 33 tons, insured for $1,278 (paired with No. 87 Discovery, Eli Starks, 35 tons, $980). Arrival column (Sept. 28, p. 2): 'The Albert, Wm. Dwyer, also arrived at North West Arm, with 140 quintals.' [1904 McAlpine Dir., North West Arm] Fishermen: DWYER, John; DWYER, Thomas; DWYER, William. [PANL Vol. 90 & NDB Regs] Lenora Isabella (b. 1878; m. Lot Oake 1901); Phillip George (b. Feb. 8, 1880 to John & Caroline [Thorne] Dwyer); Constable Alexander Dwyer m. Louisa Hodder (1895).", synthesis: "Recovers the full North West Arm Dwyer sibling network: proving copper miner Albert Edward had twin brother Philip Henry Dwyer (1871, namesake of Rev. Philip Henry Lush), confirming brother Thomas R. Dwyer was born in Twillingate like Polly before the North West Arm move, and catching brother Capt. William Dwyer bringing 140 quintals of fish into North West Arm aboard his schooner 'The Albert' in 1889.", immunity: "Cross-verified across PANL Vols. 90–91 (explicitly naming Caroline [THORNE] DWYER), the 1889 Twillingate Sun marine arrivals, and the 1904 McAlpine Directory." },
       { id: "ev-1886", date: "1874 – September 1886", iso: "1886-09", sort: 1886, gen: "Gen 6", epoch: "E5", house: "V3", region: "YORUBA", gpsGroup: "DIRECT", gpsLabel: "Direct Proof (5 St. Paul's Biographies + Omotoye 2015 Academic History)", title: "Kiriji Peace Treaty (Sept. 1886): Chief Daniel Ogunlusi Kolade (\"Daniel Kolade of Emure\") & Alice Awawu Plant Christianity", shelves: ["s34", "s39"], loci: ["kolade-compound", "osunkoti", "ojomu-akeregun"], diplomatic: "[St. Paul's Emure Memorials 1989, 1996 p. 10 & J.A. p. 15; Prof. R. W. Omotoye, 159th Inaugural Lecture, Univ. of Ilorin, June 25, 2015, p. 20; NAI Phillips 3/7] Following the Kiriji Peace Treaty (Sept. 1886, ni kete ti ogun Kiriji pari): Chief Daniel Ogunlusi Kolade ('Daniel Kolade of Emure', The Osukoti, named alongside Isaac Babamuboni of Ado & Helena Doherty Fatoregun of Ijero under Bishop Charles Phillips), Madam Alice Awawu Kolade & Madam Sarah Fafunbo Kolade ('onisowo ekini'). Proverb: 'Èmi kò ní dá ẹlẹ́ṣinrin (gbèsè) Àwáwù, kí n di ẹrú Marian!'", synthesis: "Immediately after the September 1886 Kiriji Peace Treaty, quarter-chief Daniel Ogunlusi Kolade (The Osukoti) and merchant-banker Alice Awawu Kolade returned to Idamudu Quarter to plant Christianity in Emure-Ekiti—a founding historical role independently verified by Church Historian Prof. Rotimi Williams Omotoye (2015, p. 20, 'Daniel Kolade of Emure') under CMS superintendent Rev. (later Bishop) Charles Phillips.", immunity: "Cross-verified by five St. Paul's liturgical biographies, Prof. Omotoye's 2015 University of Ilorin Inaugural Lecture (p. 20), Bishop Phillips's Ibadan papers (NAI Phillips 3/7), and INEC compound unit 13/06/08/004." },
-      { id: "ev-1862", date: "1836 – Jan. 15, 1903", iso: "1862-09-02", sort: 1862, gen: "Gen 6–5", epoch: "E5", house: "V1", region: "NL", gpsGroup: "DIRECT", gpsLabel: "Direct Proof (1836 Census, Nipper's Hbr PR & Twillingate Death Bks 3–4)", title: "Herring Neck Foothold (1836), Silas Squires & Sarah Noble (m. 1862; d. 1901 & Jan. 15, 1903) & Birthplace Proof", shelves: ["s36"], loci: ["herring-twillingate", "tilt-cove", "lushes-burlington", "smiths-harbour"], diplomatic: "[1836 NL Census, Herring Neck] Simon Squires [Jr.] & Julia. [Nipper's Harbour PR, Sept. 2, 1862] Silas Squires m. Sarah Jane Noble [brother John Squires explicitly styled 'son of Silas SQUIRES & Sarah NOBLE' in 1882–88 marriage reg.]. [Burlington Riverside Cemetery & Death Bk 3] SARAH SQUIRES, d. May 2, 1901, age 56, Wife of Silas Squires. [PANL Twillingate Death Bk 4] Silas SQUIRES, d. Jan. 15, 1903, Smiths Harbour, age 61, Methodist; Birthplace: Herring Neck; Buried: North West Arm.", synthesis: "Seals the generational bridge from Herring Neck to Smiths Harbour: after Simon and Julia Squires settled Herring Neck by 1836, their son Silas Squires married Sarah Jane Noble at Nipper's Harbour in 1862, and his January 15, 1903 death registration explicitly confirms Herring Neck as his birthplace (just 20 months after Sarah died on May 2, 1901, aged 56).", immunity: "Direct vital proof across the 1836 census, 1862 marriage register, Burlington Riverside gravestone, and Twillingate Death Books 3 & 4." },
-      { id: "ev-1888", date: "Dec. 29, 1881 – Oct. 4, 1908", iso: "1888-10-11", sort: 1888, gen: "Gen 5", epoch: "E5", house: "V2", region: "NL", gpsGroup: "DIRECT", gpsLabel: "Direct Proof (Nipper's Hbr Meth. Regs, PANL Vol. 90 & Death Bks 4–5)", title: "William Lush's 1881–82 First-Wife Tragedy (Jane Amelia), Remarriage to Polly Dwyer, Tilt Cove Boom & 1906 Resolution", shelves: ["s37"], loci: ["tilt-cove", "lushes-burlington", "herring-twillingate", "portland-maine"], diplomatic: "[Nipper's Hbr / Tilt Cove Meth. Burials & Marriages] Dec. 29, 1881: 10-mo.-old son of William & Jane Amelia Lush, North West Arm | Jan. 4, 1882: Jane Amelia LUSH, age 35 [b. c. 1846/47], 'Wife of William Lush', North West Arm | 1882–83: William LUSH (b. Greenspond) m. Mary 'Polly' DWYER (b. Twillingate, c. 1863–Aug. 27, 1905). [PANL Vol. 90 & NDB Regs] Issue: Caroline Lush (Feb. 23, 1883–Oct. 4, 1908, m. Edwin Martin 1906), William George (1885–1965), Alexander Dwyer (b. Jan. 11, 1887), Rev. Philip Henry (Oct. 11, 1888, Tilt Cove–1967, ME), James Edward (1890–1961), Stanley (WWI #5557) & Albert (1898–1980). [Death Bks 4–5] Dec. 4, 1895 mine death of Albert Edward Dwyer; 1906–07 deaths of Caroline (69) & Capt. John Dwyer (77).", synthesis: "Solves the long-standing mystery of why William Lush was 37–38 when he married 19-year-old Polly Dwyer: Nipper's Harbour Methodist burial registers reveal that William lost his 10-month-old infant son on Dec. 29, 1881 and his first wife, 35-year-old Jane Amelia Lush, just six days later on Jan. 4, 1882 before remarrying Polly Dwyer and raising seven children across North West Arm, Tilt Cove, and Lushes Bight.", immunity: "Verified across Nipper's Harbour/Tilt Cove Methodist circuit registers, PANL Vol. 90, 1906 NDB civil marriages, and Twillingate Death Books 4 & 5." },
+      { id: "ev-1862", date: "1836 – Jan. 15, 1903", iso: "1862-09-02", sort: 1862, gen: "Gen 6–5", epoch: "E5", house: "V1", region: "NL", gpsGroup: "DIRECT", gpsLabel: "Direct Proof (1836 Census, Nipper's Hbr PR & Twillingate Death Bks 3–4)", title: "Herring Neck Foothold (1836), Silas Squires & Sarah Noble (m. 1862; d. 1901 & Jan. 15, 1903) & Birthplace Proof", shelves: ["s36"], loci: ["herring-twillingate", "tilt-cove", "lushes-burlington", "smiths-harbour"], diplomatic: "[1836 NL Census, Herring Neck] Simon Squires [Jr.] & Julia. [Nipper's Harbour PR, Sept. 2, 1862] Silas Squires m. Sarah Jane Noble [brother John Squires explicitly styled 'son of Silas SQUIRES & Sarah NOBLE' in 1882–88 marriage reg.]. [Burlington Riverside Cemetery & Death Bk 3] SARAH SQUIRES, d. May 2, 1901, age 56, Wife of Silas Squires. [PANL Twillingate Death Bk 4] Silas SQUIRES, d. Jan. 15, 1903, Smiths Harbour, age 61, Methodist; Birthplace: Herring Neck; Buried: North West Arm.", synthesis: "Seals the generational bridge from Herring Neck to Smiths Harbour: after Simon and Julia Squires settled Herring Neck by 1836, their son Silas Squires married Sarah Jane Noble at Nipper's Harbour in 1862, and his January 15, 1903 death registration explicitly confirms Herring Neck as his birthplace (just 20 months after Sarah died on May 2, 1901, aged 56).", immunity: "Direct vital proof across the 1836 census, 1862 marriage register, Burlington Riverside gravestone, Twillingate Death Books 3 & 4, and Robert Edwards Holloway's pre-1901 Herring Neck archival plate (MUN DAI 13.11.001)." },
+      { id: "ev-1888", date: "Aug. 27, 1875 – Oct. 4, 1908", iso: "1888-10-11", sort: 1888, gen: "Gen 5", epoch: "E5", house: "V2", region: "NL", gpsGroup: "DIRECT", gpsLabel: "Direct Proof (PANL Pre-1891 Vol. 28, Nipper's Hbr/Tilt Cove PRs & Death Bks)", title: "William Lush's First-Marriage Children (1875–99), Apr. 10, 1883 Remarriage to Polly Dwyer & Tilt Cove Boom", shelves: ["s37"], loci: ["tilt-cove", "lushes-burlington", "herring-twillingate", "portland-maine"], diplomatic: "[PANL Pre-1891 Vol. 28 p. 28 & NDB Marriages] Surviving 1st-marriage issue of William & Jane Amelia Lush (d. Jan. 4, 1882, age 35, 6 days after 10-mo. son): (1) Mary Elizabeth ('Elizabeth') Lush, b. Aug. 27, 1875 St. John's, m. George Cheater Nov. 20, 1891 at Christ's Church, Tilt Cove (mother of 1998 centenarian interviewee Clara Jane [Cheater] Starks, Greenspond Letter 5.3:17,24); (2) John Thomas Lush (b. St. John's), m. Cornelia Squires Jan. 21, 1899, North West Arm. [Nipper's Hbr/Tilt Cove Orig. Marriage Reg.] Apr. 10, 1883, NWA: William LUSH m. Mary Ann 'Polly' DWYER (c. 1863–June 13, 1927, Burlington, Twillingate Death Book 10, Reg. #289888; retired Aug. 27, 1905 Book 4 entry belonged to Edwin Martin's 2nd wife Rebecca [Morey] Martin). [PANL Vol. 90] Issue: Caroline (1883–1908), Wm. George (1885–1965), Alexander Dwyer (1887), Rev. Philip Henry (Oct. 11, 1888 Tilt Cove–1967 ME), James Edward (1890–1961), Stanley (WWI #5557) & Albert (1898–1980). [Death Bks 4–5] Dec. 4, 1895 mine death of Albert Edward Dwyer; Lewisporte Pilot (Mar. 10, 1967, p. 6).", synthesis: "Recovers William Lush's two surviving first-marriage half-siblings to Albert Lush—Mary Elizabeth Lush (born in St. John's in 1875, married at Tilt Cove in 1891) and John Thomas Lush (whose Jan. 21, 1899 North West Arm wedding to Cornelia Squires forged an earlier Lush–Squires tie 45 years before 1944)—alongside William's exact April 10, 1883 North West Arm remarriage to Polly Dwyer.", immunity: "Cross-verified across PANL Pre-1891 Vol. 28, Nipper's Harbour/Tilt Cove original marriage & burial registers, NDB civil registrations, Clara (Cheater) Starks's July 1, 1998 Greenspond Letter interview, and Lewisporte Pilot (1967)." },
       { id: "ev-1913", date: "Mar. 2, 1867 – 1935", iso: "1913", sort: 1913, gen: "Gen 4", epoch: "E5", house: "V1", region: "ONTARIO", gpsGroup: "DIRECT", gpsLabel: "Direct Proof (PANL Vol. 91, Ontario Marriage Reg. & NL Censuses)", title: "William Squires (b. Mar. 2, 1867 Stocking Hbr), Sudbury Ontario Foothold (1913) & Smiths Harbour Pioneers", shelves: ["s36"], loci: ["sudbury-on", "smiths-harbour", "lushes-burlington"], diplomatic: "[PANL Vol. 91, Little Bay Islands Meth. Baptisms] William SQUIRES, son of Silas & Sarah (NOBLE), born March 2, 1867, Stocking Harbour, baptized Jan. 13, 1874. [Archives of Ontario Marriage Reg., 1913, Sudbury] William Silas Squires & Ethel Jane Brown. [1921–1945 NL Censuses, Smiths Harbour] William Squires & Mary-Jane Budgell (b. 1879; sons Silas Squires, b. Oct. 1901, & Philemon [Pleman] Squires, b. Nov. 1910); Albert Lush (1898–1980) & Florence White (sawmill & medical boat; Ivy Lush, bapt. Nov. 7, 1921, & Daisy Evelyn Lush, 1922–2007, m. Rubert Rideout).", synthesis: "Locks in exact primary birth records for Generation 4 & 3—William Squires born March 2, 1867 at Stocking Harbour and son Pleman enumerated under his formal biblical spelling Philemon Squires (born Nov. 1910) in the 1921 census—alongside cousin William Silas Squires's 1913 Sudbury, Ontario foothold and Albert & Florence Lush's Smiths Harbour sawmill and medical boat.", immunity: "Verified across PANL Vol. 91 Methodist baptisms, Archives of Ontario marriages, three Newfoundland censuses (1921–1945), and Smiths Harbour gravestones." },
       { id: "ev-1922", date: "1919 – 1933", iso: "1922/1933", sort: 1925, gen: "Gen 4", epoch: "E5", house: "V3", region: "YORUBA", gpsGroup: "DIRECT", gpsLabel: "Direct Proof (St. Paul's & CMS Bookshops Records)", title: "Prime Minister (Olisa) Alliance, St. Paul's School (1919) & Kolade Brothers Enter C.M.S. Bookshops (1922 & 1933)", shelves: ["s39"], loci: ["kolade-compound", "benin-ondo", "ijebu-owo", "ondo-ado-ibadan"], diplomatic: "[Oke Memorial 1996 p. 10, J.A. Kolade p. 15 & J.O. Kolade 1989] Serra-Ann Marian Kolade (c. 1891–1996) m. Chief Benjamin Oke Apata, The Olisa [Prime Minister] of Emure-Ekiti | 1919: St. Paul's C.M.S. School founded | Chief John Aderibigbe Kolade (b. May 13, 1905; fostered by Chief Adefemi, The Sasere; CMS Bookshops Benin City 1922; Adeoyo Hospital nursing, Ibadan) | Pa Joseph Owolabi Kolade ('Baba Bookseller', b. Oct. 27, 1907; St. Paul's Emure & St. Patrick's Owo; joined CMS Bookshops Benin City 1933).", synthesis: "Shows Generation 3 turning merchant capital into educational and civic leadership across colonial Nigeria: eldest sister Serra-Ann Marian married Emure's Prime Minister (The Olisa), elder half-brother John Aderibigbe joined C.M.S. Bookshops in Benin City in 1922 and trained as a nurse in Ibadan, and Pa Joseph Owolabi Kolade ('Baba Bookseller') launched his 25-year C.M.S. Bookshops career in 1933.", immunity: "Cross-verified across three independent St. Paul's Emure funeral biographies and colonial mission school milestones." },
       { id: "ev-1968", date: "1960 – 1968", iso: "1968", sort: 1968, gen: "Gen 4", epoch: "E6", house: "V3", region: "YORUBA", gpsGroup: "DIRECT", gpsLabel: "Direct Proof (Chieftaincy & Judicial Biography)", title: "Emure Customary Court Presidency (1960–63) & Installation of Chief John A. Kolade as The Osukoti (1968)", shelves: ["s34", "s39"], loci: ["osunkoti", "kolade-compound"], diplomatic: "[J. A. Kolade Memorial, p. 15 & INEC 13/06/07/003] Chief John Aderibigbe Kolade (b. May 13, 1905): President of Emure-Ekiti Customary Court (1960–1963) at Nigerian Independence; formally installed in 1968 in the hereditary Idamudu chieftaincy title of The Osukoti of Emure-Ekiti previously held by his father Chief Daniel Ogunlusi Kolade.", synthesis: "Marks the modern civic restoration of our paternal Idamudu chieftaincy seat: at Nigerian Independence in 1960, elder uncle Chief John Aderibigbe Kolade presided over the Emure-Ekiti Customary Court before being formally installed in 1968 as The Osukoti of Emure-Ekiti.", immunity: "Cross-checked between the post-1968 Osukoti biography and Idamudu I Ward cadastral unit 13/06/07/003 ('At Osunkoti')." },
       { id: "ev-1989", date: "November 1989 – May 28, 2010", iso: "1989-11", sort: 1989, gen: "Gen 4", epoch: "E6", house: "V3", region: "YORUBA", gpsGroup: "DIRECT", gpsLabel: "Direct Proof (Printed St. Paul's Funeral Programmes)", title: "Primate Dr. T. O. Olufosoye Preaches Pa Joseph Kolade's 1989 Funeral & Passing of Emure Matriarchs (1996 & 2010)", shelves: ["s39"], loci: ["kolade-compound", "ojomu-akeregun"], diplomatic: "[St. Paul's Anglican Church, Emure-Ekiti Memorials] Nov. 1989: Funeral of Pa Joseph Owolabi Kolade ('Baba Bookseller', Oct. 27, 1907 – Oct. 10, 1989), sermon preached by The Most Revd. Dr. Timothy Omotayo Olufosoye (Rtd.), First Archbishop & Primate of the Church of Nigeria | Feb. 3, 1996: Passing of eldest sister Madam Serra-Ann Marian Oke (c. 1891–1996) | May 28, 2010: Passing of matriarch Madam Lydia Olugbe Kolade ('Mama Dudu', c. 1918–2010).", synthesis: "Honours the closing chapter of Generation 3 in Emure-Ekiti: when 'Baba Bookseller' died at age 81 in 1989, the retired First Archbishop and Primate of All Nigeria personally traveled to St. Paul's Emure-Ekiti to preach his funeral sermon, followed by the centenarian life of Aunt Serra-Ann Oke (1996) and grandmother 'Mama Dudu' (2010).", immunity: "Documented verbatim on the printed 1989, 1996, and 2010 St. Paul's Anglican liturgical programmes." },
-      { id: "ev-1944", date: "1942 – September 6, 1944", iso: "1944-09-06", sort: 1944, gen: "Gen 3", epoch: "E6", house: "CONV", region: "NL", gpsGroup: "DIRECT", gpsLabel: "Direct Proof (Marriage & Baptism Registers)", title: "Two Wartime Weddings: Joseph Kolade & Lydia Olugbe (1942 Nigeria) and Pleman Squires & Ivy Lush (Sept. 6, 1944 NL)", shelves: ["s36", "s39"], loci: ["benin-ondo", "smiths-harbour", "ojomu-akeregun"], diplomatic: "[L. O. Kolade Memorial 2010] 1942 Benin City marriage: Pa Joseph Owolabi Kolade & Madam Lydia Olugbe Kolade ('Mama Dudu', c. 1918–May 28, 2010, dau. of Late Chief Ojomu of Odo-Emure); birth of Victor Olusoji Kolade (July 30, 1942). [Smiths Harbour Register, Sept. 6, 1944] Marriage of Pleman [Philemon] Squires (b. Nov. 1910, 1921 NL Census) & Ivy Lush (bapt. Nov. 7, 1921); birth of Merle Elizabeth Squires (Dec. 31, 1944).", synthesis: "Just two years apart during World War II, Pa Joseph Kolade and Madam Lydia Olugbe united the Osukoti and Ojomu houses in Benin City (welcoming Victor Olusoji Kolade in 1942), while Pleman Squires and Ivy Lush united the Squires–Akerman and Lush–Lawrence–Goulding–Dwyer lines in Smiths Harbour (welcoming Merle Elizabeth Squires in December 1944).", immunity: "Verified directly from Newfoundland United Church and civil records alongside Nigerian Anglican memorials." },
+      { id: "ev-1944", date: "1942 – September 6, 1944", iso: "1944-09-06", sort: 1944, gen: "Gen 3", epoch: "E6", house: "CONV", region: "NL", gpsGroup: "DIRECT", gpsLabel: "Direct Proof (Marriage Registers & Sept. 1944 Eyewitness Oral History)", title: "Two Wartime Weddings: Joseph Kolade & Lydia Olugbe (1942 Nigeria) and Pleman Squires & Ivy Lush (Sept. 6, 1944 NL)", shelves: ["s36", "s39"], loci: ["benin-ondo", "smiths-harbour", "ojomu-akeregun"], diplomatic: "[L. O. Kolade Memorial 2010] 1942 Benin City marriage: Pa Joseph Owolabi Kolade & Madam Lydia Olugbe Kolade ('Mama Dudu', c. 1918–May 28, 2010, dau. of Late Chief Ojomu of Odo-Emure); birth of Victor Olusoji Kolade (July 30, 1943). [Smiths Harbour Register, Sept. 6, 1944] Marriage of Pleman [Philemon] Squires (b. Nov. 1910) & Ivy Lush (bapt. Nov. 7, 1921); birth of Merle Elizabeth Squires (Dec. 31, 1944). [Eyewitness Smiths Harbour Portrait, Sept. 1944 — Mary (Burry) Eveleigh interview, Aug. 28, 2004, Greenspond Letter Vol. 11, No. 4, pp. 20–24 & Lewisporte Pilot, Feb. 16, 1968, p. 9, MUN DAI lewispilot/id/4652] Describes Smiths Harbour that exact month as 'a little cove, pure rocks' with 17 pupils in a one-room United Church/schoolhouse, boarding with Fred Squires's extended household and walking the two-mile overland track to Burlington with 17-year-old Pamela Squires.", synthesis: "Just two years apart during World War II, Pa Joseph Kolade and Madam Lydia Olugbe united the Osukoti and Ojomu houses in Benin City (1942), while Pleman Squires and Ivy Lush united the Squires–Akerman and Lush–Dwyer lines in Smiths Harbour on September 6, 1944—the exact month vividly captured in schoolteacher Mary (Burry) Eveleigh's eyewitness portrait of the rocky 17-pupil outport.", immunity: "Verified from Newfoundland United Church and civil records, Mary (Burry) Eveleigh's 2004 oral history of September 1944 Smiths Harbour, Lewisporte Pilot (1968), and Nigerian Anglican memorials." },
       { id: "ev-1947", date: "October 1947 – 1958", iso: "1947-10", sort: 1947, gen: "Gen 4", epoch: "E6", house: "V3", region: "YORUBA", gpsGroup: "DIRECT", gpsLabel: "Direct Proof (St. Stephen's Ondo PR & Biographies)", title: "Ondo & Ado-Ekiti Years: Canon Awosika's 1947 Baptism, \"Mama Dudu's\" Wholesale Bakery & CMS Conferences", shelves: ["s39"], loci: ["ondo-ado-ibadan", "kolade-compound"], diplomatic: "[St. Stephen's Oke-Aluko, Ondo PR, Oct. 1947 & E.B. Kolade p. 14] Canon S. O. Awosika baptizes Eric [Edward] Christian Jones Bamidele Kolade (son of Pa Joseph & senior wife Victoria Wuraola; Ibadan Grammar School, Headmaster & Ibadan YMCA co-founder). [J.O. & L.O. Kolade Memorials] Ondo (1946–54) & Ado-Ekiti (1954–58) CMS Bookshops reorganization; Mama Dudu supplies ẹ̀kọ to Ondo Teacher Training College & runs Ado–Emure wholesale bread/cake network while raising Victor Olusoji, Theophilus Olaniran & Henry Olatunji Kolade.", synthesis: "Chronicles a vibrant decade of entrepreneurship and education across Ondo, Ado-Ekiti, and Ibadan: while 'Baba Bookseller' reorganized C.M.S. Bookshops branches and addressed conferences in Lagos and Ibadan, 'Mama Dudu' built an independent catering and wholesale baking distribution network between Ado-Ekiti and Emure-Ekiti.", immunity: "Anchored by the October 1947 St. Stephen's Ondo baptism entry and three independent family memorial biographies." },
-      { id: "ev-1969", date: "December 1966 – c. 1970", iso: "1966-12", sort: 1969, gen: "Gen 2", epoch: "E6", house: "CONV", region: "ONTARIO", gpsGroup: "DIRECT", gpsLabel: "Direct Proof (Canadian Immigration, Military & Family Records)", title: "Victor Olusoji Kolade Arrives in Canada (Dec. 1966), Serves in the Canadian Armed Forces & Settles in Toronto", shelves: ["s40"], loci: ["victoria-bc", "cfb-shilo-mb", "toronto-on", "smiths-harbour", "kolade-compound"], diplomatic: "[Canadian Service & Family Biographical Archive] Dec. 1966: Victor Olusoji Kolade (b. July 30, 1942, eldest son of Pa Joseph & Madam Lydia Kolade) immigrates to Victoria, B.C.; 1967: enlists in the Canadian Armed Forces (stationed at CFB Shilo, Manitoba), meeting Merle Elizabeth Squires of Smiths Harbour, NL via a newspaper pen-pals column; c. 1969–1970: moves to Toronto, Ontario following his honourable discharge to further his education.", synthesis: "Traces the remarkable transatlantic journey that brought our Nigerian and Newfoundland worlds together: arriving in Victoria, B.C. in December 1966 and serving in the Canadian Armed Forces out of CFB Shilo, Manitoba, Victor Olusoji Kolade first connected with Merle Elizabeth Squires in Newfoundland as pen pals before moving to Toronto around 1969–1970 after his honourable discharge.", immunity: "Preserved directly in Victor Olusoji Kolade's family eulogy and Canadian civil/service records." },
-      { id: "ev-1973", date: "1973", iso: "1973", sort: 1973, gen: "Gen 2", epoch: "E6", house: "CONV", region: "ONTARIO", gpsGroup: "DIRECT", gpsLabel: "Direct Proof (Marriage, Civil & Family Archive)", title: "1973 Marriage of Victor Olusoji Kolade & Merle Elizabeth Squires — Uniting Nigeria & Newfoundland in Toronto", shelves: ["s40"], loci: ["toronto-on", "smiths-harbour", "kolade-compound"], diplomatic: "[Canadian Civil & Family Records, 1973] Marriage of Victor Olusoji Kolade (July 30, 1942 – Aug. 31, 2017; brothers Theophilus Olaniran, Henry Olatunji & half-brother Eric Bamidele Kolade) and Merle Elizabeth Squires (Dec. 31, 1944 – Aug. 17, 2025; first cousins Palma Squires, Paul Knight, and Jerry, Shirley, Bernice & Dereck Rideout), building their 36-year working life and musical home in Toronto, Ontario.", synthesis: "Dedicated Generation 2 milestone: in 1973, Victor Olusoji Kolade and Merle Elizabeth Squires married—uniting 15 generations of Dorset, Somerset, Irish, and Newfoundland outport pioneers with 5 generations of Emure-Ekiti and Owo chieftaincy and C.M.S. leaders, and establishing our modern family home in Toronto, Ontario.", immunity: "Anchored by Canadian marriage and death certificates, Nigerian memorial programmes, and the Pine Hills Cemetery family monument." },
-      { id: "ev-2026", date: "August 2017 – 2026", iso: "2026", sort: 2026, gen: "Gen 1", epoch: "E6", house: "CONV", region: "ONTARIO", gpsGroup: "DIRECT", gpsLabel: "Direct Proof (Civil Records & Granite Monument)", title: "Scarborough Charcoal Granite Monument (Pine Hills Lot 2436H) & Living Generation 1 Synthesis in Toronto", shelves: ["s40"], loci: ["pine-hills", "toronto-on"], diplomatic: "[Pine Hills Cemetery, Scarborough, Section A, Lot 2436H, 2026 Charcoal Granite Monument] KOLADE — Victor Olusoji of Emure-Ekiti, Nigeria (1942–2017) & Merle Elizabeth (née Squires) of Smith's Harbour, NL (1944–2025). [Toronto, ON] Victor Olutayo Kolade & Abigail Salole [Living — Generation 1].", synthesis: "Inscribes our transatlantic convergence in permanent stone at Pine Hills Cemetery in Scarborough—explicitly naming both Emure-Ekiti, Nigeria and Smith's Harbour, Newfoundland—while Victor Olutayo Kolade and Abigail Salole carry 694 years of verified family history forward in Toronto.", immunity: "Living birth dates and neighbourhood details are kept private in this public-safe edition." }
+      { id: "ev-1969", date: "December 1966 – c. 1970", iso: "1966-12", sort: 1969, gen: "Gen 2", epoch: "E6", house: "CONV", region: "ONTARIO", gpsGroup: "DIRECT", gpsLabel: "Direct Proof (Canadian Immigration, Military & Family Records)", title: "Victor Olusoji Kolade Arrives in Canada (Dec. 1966), Serves in the Canadian Armed Forces & Settles in Toronto", shelves: ["s40"], loci: ["victoria-bc", "cfb-shilo-mb", "toronto-on", "smiths-harbour", "kolade-compound"], diplomatic: "[Canadian Service & Family Biographical Archive] Dec. 1966: Victor Olusoji Kolade (b. July 30, 1943, eldest son of Pa Joseph & Madam Lydia Kolade) immigrates to Victoria, B.C.; 1967: enlists in the Canadian Armed Forces (stationed at CFB Shilo, Manitoba), meeting Merle Elizabeth Squires of Smiths Harbour, NL via a newspaper pen-pals column; c. 1969–1970: moves to Toronto, Ontario following his honourable discharge to further his education.", synthesis: "Traces the remarkable transatlantic journey that brought our Nigerian and Newfoundland worlds together: arriving in Victoria, B.C. in December 1966 and serving in the Canadian Armed Forces out of CFB Shilo, Manitoba, Victor Olusoji Kolade first connected with Merle Elizabeth Squires in Newfoundland as pen pals before moving to Toronto around 1969–1970 after his honourable discharge.", immunity: "Preserved directly in Victor Olusoji Kolade's family eulogy and Canadian civil/service records." },
+      { id: "ev-1973", date: "1973", iso: "1973", sort: 1973, gen: "Gen 2", epoch: "E6", house: "CONV", region: "ONTARIO", gpsGroup: "DIRECT", gpsLabel: "Direct Proof (Marriage, Civil & Family Archive)", title: "1973 Marriage of Victor Olusoji Kolade & Merle Elizabeth Squires — Uniting Nigeria & Newfoundland in Toronto", shelves: ["s40"], loci: ["toronto-on", "smiths-harbour", "kolade-compound"], diplomatic: "[Canadian Civil & Family Records, 1973] Marriage of Victor Olusoji Kolade (July 30, 1943 – Aug. 31, 2017; brothers Theophilus Olaniran, Henry Olatunji & half-brother Eric Bamidele Kolade) and Merle Elizabeth Squires (Dec. 31, 1944 – Aug. 17, 2025; first cousins Palma Squires, Paul Knight, and Jerry, Shirley, Bernice & Dereck Rideout), building their 36-year working life and musical home in Toronto, Ontario.", synthesis: "Dedicated Generation 2 milestone: in 1973, Victor Olusoji Kolade and Merle Elizabeth Squires married—uniting 15 generations of Dorset, Somerset, Irish, and Newfoundland outport pioneers with 5 generations of Emure-Ekiti and Owo chieftaincy and C.M.S. leaders, and establishing our modern family home in Toronto, Ontario.", immunity: "Anchored by Canadian marriage and death certificates, Nigerian memorial programmes, and the Pine Hills Cemetery family monument." },
+      { id: "ev-2026", date: "August 2017 – 2026", iso: "2026", sort: 2026, gen: "Gen 1", epoch: "E6", house: "CONV", region: "ONTARIO", gpsGroup: "DIRECT", gpsLabel: "Direct Proof (Civil Records & Granite Monument)", title: "Scarborough Charcoal Granite Monument (Pine Hills Lot 2436H) & Living Generation 1 Synthesis in Toronto", shelves: ["s40"], loci: ["pine-hills", "toronto-on"], diplomatic: "[Pine Hills Cemetery, Scarborough, Section A, Lot 2436H, 2026 Charcoal Granite Monument] KOLADE — Victor Olusoji of Emure-Ekiti, Nigeria (1943–2017) & Merle Elizabeth (née Squires) of Smith's Harbour, NL (1944–2025). [Toronto, ON] Victor Olutayo Kolade & Abigail Salole [Living — Generation 1].", synthesis: "Inscribes our transatlantic convergence in permanent stone at Pine Hills Cemetery in Scarborough—explicitly naming both Emure-Ekiti, Nigeria and Smith's Harbour, Newfoundland—while Victor Olutayo Kolade and Abigail Salole carry 694 years of verified family history forward in Toronto.", immunity: "Living birth dates and neighbourhood details are kept private in this public-safe edition." }
     ];
 
     // 4. 21-GENERATION SIDE-BY-SIDE FAMILY CHART
     const MATRIX_ROWS = [
       { gen: "Gen 18–21", era: "1332 – 1427 (Pre-Black Death & Henry V)", anchorEvent: "ev-1332", v1: "<em>Medieval Glastonbury Abbey halmote tenantry at Buckland Newton / Bookham</em>", v2: "<strong>694-Year Shaftesbury Abbey Horizon:</strong> <strong>John le Lusshe</strong> (Sept. 1332 Tisbury/Oakley subsidy, <em>12d.</em>, 2 lines below <em>Alexander de Ocle</em>) &amp; grazier <strong>John Lussh of Upton</strong> (fl. 1420–25; d. 1425–26; Donhead St Mary &amp; Salisbury butcher pleas; 1427 executors <em>Whitehorn</em> &amp; <em>Pakyn</em>)", v3: "Early Ekiti &amp; Owo kingdoms (ironworking &amp; royal foundations)", gps: "1332 Subsidy (<em>E 179/196/8</em>, WRS 45:44) &amp; <em>CP 40/636, 656, 664</em>; <strong>Verified Pre-Tudor Estate Continuity</strong>" },
-      { gen: "Gen 17–18", era: "1442–1494 (Pre-Tudor)", anchorEvent: "ev-1442", v1: "<strong>1494 Pulham / Buckland Newton Horizon:</strong> <strong>John Armiger alias Squire of Pulham, husbandman</strong> &amp; allied <strong>John Dunnyng</strong> (Hilary 1494, <em>TNA KB 27/930 rot. 14d</em>, 2 mi NE of Bookham; Glastonbury Abbey halmote horizon)", v2: "<strong>Plantagenet <em>Luſſhe</em> Cluster:</strong> <strong>John Lusshe</strong> (1442 £40 Stour Provost chest &amp; 1450 Hinton St Mary executor) &amp; Shaftesbury Abbey tenants <strong>John Lusshe</strong> (1442 Tisbury; 1480 Oakley) and <strong>William Lusshe</strong> (1455 Tisbury, 10 marks)", v3: "Early Ekiti &amp; Owo kingdoms (pre-colonial ironworking &amp; royal foundations)", gps: "5 original Latin <em>TNA CP 40</em> membranes (1442–1480) &amp; Hilary 1494 King's Bench roll (<em>TNA KB 27/930</em>); <strong>Verified Pre-Tudor Estate Cluster</strong>" },
+      { gen: "Gen 17–18", era: "1442–1480 (Pre-Tudor)", anchorEvent: "ev-1442", v1: "<em>Pre-1524 Glastonbury Abbey halmote tenantry at Buckland Newton / Bookham (1494 Pulham KB 27/930 roll audited &amp; retired as Norfolk homonym)</em>", v2: "<strong>Plantagenet <em>Luſſhe</em> Cluster:</strong> <strong>John Lusshe</strong> (1442 £40 Stour Provost chest &amp; 1450 Hinton St Mary executor) &amp; Shaftesbury Abbey tenants <strong>John Lusshe</strong> (1442 Tisbury; 1480 Oakley) and <strong>William Lusshe</strong> (1455 Tisbury, 10 marks)", v3: "Early Ekiti &amp; Owo kingdoms (pre-colonial ironworking &amp; royal foundations)", gps: "7 original Latin <em>TNA CP 40</em> membranes (1420–1480); <strong>Verified Pre-Tudor Estate Cluster</strong>" },
       { gen: "Gen 16", era: "c. 1475–1545", anchorEvent: "ev-1475", v1: "<strong>William Squyer</strong> (b. c. 1475–95; taxed 1524–25, <em>G 5</em>), Knoll / Bookham, Buckland Newton <em>(Rob. Squyer in Alton Pancras; Rob. Akerman G 10 in Shipton Gorge, 1525)</em>", v2: "<strong>Edmond Lusshe / Lushe</strong> (b. c. 1475–80; active 1523–45, £40 [richest 1.7% of Dorset] / <em>G 20</em> / <em>G 13</em>; steel plate armour; Shaftesbury Abbey to Sept. 1544 Arundell Manor Grant), Melbury Abbas", v3: "Early Ekiti &amp; Owo city-state era (ironworking &amp; oral history)", gps: "King Henry VIII tax &amp; muster rolls, 1535 Abbey survey &amp; Sept. 1544 Royal Charter; <strong>Direct Proof</strong>" },
-      { gen: "Gen 15", era: "c. 1500–1580", anchorEvent: "ev-1539", v1: "<strong>Thomas Squier of Bookham</strong> (c. 1500/08–1579/80; <em>G 1</em> 1524, billhook 1539, <em>G 1½</em> 1544) &amp; <strong>Juliana</strong> (bur. 1575/76) <em>(John [d. 1565] &amp; Rob. Squire [d. 1576] wills &amp; 1573 John Squyer plea CP 40/1317b in Alton)</em>", v2: "<strong>John Lusshe</strong> (c. 1523/26–Apr. 1572; 1542 muster, <em>G 1</em> 1545, £20 will) &amp; <strong>Alice</strong>, Melbury Abbas <em>(Thomas Lawrens Sr., 1569 Merriott armour roll)</em>", v3: "Sovereign Ekiti &amp; Owo kingdoms (<em>Elemure</em> &amp; <em>Olowo</em> councils)", gps: "1539–42 muster rolls, 1572 will &amp; early church books; <strong>Direct Proof</strong>" },
+      { gen: "Gen 15", era: "c. 1500–1580", anchorEvent: "ev-1539", v1: "<strong>Thomas Squier of Bookham</strong> (c. 1500/08–1579/80; <em>G 1</em> 1524, billhook 1539, <em>G 1½</em> 1544) &amp; <strong>Juliana</strong> (bur. 1575/76) <em>(John [d. 1565] &amp; Rob. Squire [d. 1576] wills &amp; 1573 John Squyer trespass plea CP 40/1318 in Alton Australis)</em>", v2: "<strong>John Lusshe</strong> (c. 1523/26–Apr. 1572; 1542 muster, <em>G 1</em> 1545, £20 will) &amp; <strong>Alice</strong>, Melbury Abbas <em>(Thomas Lawrens Sr., 1569 Merriott armour roll)</em>", v3: "Sovereign Ekiti &amp; Owo kingdoms (<em>Elemure</em> &amp; <em>Olowo</em> councils)", gps: "1539–42 muster rolls, 1572 will &amp; early church books; <strong>Direct Proof</strong>" },
       { gen: "Gen 14", era: "c. 1530–1603", anchorEvent: "ev-1594", v1: "<strong>Churchwarden Johannes Squier of Bookham</strong> (b. c. 1530–35; 1581/82 Warden; bur. Feb. 4, 1584/85) <em>(Kinsman: Rogerus Squier)</em>", v2: "<strong>William Lusshe</strong> (b. c. 1560s; active 1572–94+, <em>G 3</em>, <em>4-load farm</em>) &amp; <strong>Ellen Lushe</strong>, Melbury Abbas &amp; Fontmell Magna", v3: "Pre-colonial Ekiti &amp; Owo kingdoms", gps: "1598 parish register copy, 1594 tax roll &amp; London court case; <strong>Land &amp; Direct Proof</strong>" },
       { gen: "Gen 13", era: "1574–1642", anchorEvent: "ev-1621", v1: "<strong>Churchwarden Thomas Squire of Bookham</strong> (bapt. Aug. 30, 1574; copyhold 1598; 1621 handwritten signature) &amp; <strong>Maria</strong> (bur. 1613)", v2: "<strong>John Lush Sr.</strong> (signed 1641/42 Fontmell Loyalty Oath) <em>(Thomas Lawrence Jr., d. 1637, Merriott)</em>", v3: "Pre-colonial Ekiti &amp; Owo kingdoms", gps: "1621 handwritten signature, copyhold tax roll &amp; 1642 Loyalty Oaths; <strong>Direct &amp; Land Proof</strong>" },
       { gen: "Gen 12", era: "1600–1707", anchorEvent: "ev-1676", v1: "<strong>Thomas Squire senior of Bookham</strong> (bapt. Mar. 7, 1600/01; 1641/42 Oath; bur. Feb. 21, 1677/78) <em>(Neighbours: Locke, Roberts, Farwell, Holland)</em>", v2: "<strong>Nicholas Lush</strong> (bur. Feb. 7, 1706/07; <strong>Consistory Court Will 1706, No. 12</strong>, <em>BRS Vol. 53</em>) &amp; <strong>Mary</strong>, Compton Abbas <em>(Uncle: John Lush, 1673 £50 will; John Lawrence &amp; Joane Langdon, m. 1656)</em>", v3: "Pre-colonial Ekiti &amp; Owo kingdoms (settlement at <em>Igbo-Owa</em>)", gps: "Church registers, 1664 Hearth Tax, 1673 will &amp; 1667 manor roll; <strong>Direct &amp; Family Proof</strong>" },
@@ -1928,12 +2229,846 @@ window.__WORLD_TOPO_50M = {"type":"Topology","objects":{"countries":{"type":"Geo
       { gen: "Gen 8", era: "1729–1822 (K6)", anchorEvent: "ev-1802", v1: "<strong>John Squire</strong> (c. 1729/30–1802+, aged 72 at cottage <em>\"Lushes\"</em>, Chideock) &amp; <strong>Elizabeth</strong>; <strong>Abraham Akerman Sr.</strong> (1745–1822, Bonavista Lay Minister) &amp; <strong>Mary</strong>", v2: "<strong>John Lush of Motcombe</strong> (active 1775–1795; two-candidate fork: 1757 Melbury Abbas baptism or older Newman-linked kinsman) <em>(David Goulding, bapt. Jan. 17, 1773, Wimborne Minster)</em>", v3: "<strong>K6: Founder of Ilé Ọ̀ṣùnkọ́tì</strong> (Idamudu); <strong>High Chief Ojomu Arintokun</strong> (Odo-Emure / <em>Ojomu-Odo</em>; <em>Ogboile</em> festival); Allied <strong>Ojomo Agunloye I</strong> (d. c. 1880, Owo)", gps: "1802 Chideock manor survey, missionary letters, c. 1880 Owo carved effigy &amp; ward maps; <strong>Direct &amp; Land Proof</strong>" },
       { gen: "Gen 7", era: "1769–1885 (K5)", anchorEvent: "ev-1798", v1: "<strong>Simon Squires Sr.</strong> (bapt. Apr. 2, 1769, Chideock – 1832) &amp; <strong>Jane Akerman</strong> (c. 1773–1851; m. Aug. 18, 1798, Bonavista by her father <em>\"A Ackerman\"</em>)", v2: "<strong>John Lush</strong> (bapt. Apr. 30, 1775, Motcombe – 1827) &amp; <strong>Elizabeth Jane Wood</strong> (1777–1847), Greenspond, NL <em>(Allied Dwyer: 1753 Trinity Bay Census, FHSNL Dwyer Pedigree Chart p. 93 &amp; Waterford corridor)</em>", v3: "<strong>K5: Patriarch Kọ́ládé / [Ògún]kọ́ládé</strong> of Idamudu &amp; River Ose; <strong>High Chief Ojomu Ogedu</strong> (son of Ojomu Arintokun) &amp; <strong>Olajenboye</strong> (Owo–Emure alliance)", gps: "Newfoundland church books, MUN Mannion Collection &amp; Yorùbá patronymic/royal records; <strong>Direct &amp; Name Proof</strong>" },
       { gen: "Gen 6", era: "1812–1920s (K4)", anchorEvent: "ev-1840", v1: "<strong>Simon Squires Jr.</strong> (b. c. 1814/15) &amp; <strong>Julia</strong>, Bonavista to Herring Neck (1836 NL Census)", v2: "<strong>Thomas Lush</strong> (c. 1812–1887) &amp; <strong>Mary Goulding</strong> (1821–1869; m. 1840, Greenspond); <strong>Capt. John Alexander Dwyer</strong> (c. 1830–1907) &amp; <strong>Caroline B. Thorne</strong>", v3: "<strong>K4: Chief Daniel Ogunlusi Kolade</strong> (<em>The Osukoti</em>, 1886 Christian pioneer; <strong>Omotoye 2015, p. 20</strong>), <strong>Alice Awawu</strong> &amp; <strong>Sarah Fafunbo</strong>; <strong>Late Chief Ojomu</strong>", gps: "1836 NL Census, Greenspond/Twillingate PRs, Emure memorials &amp; Omotoye (2015, p. 20); <strong>Direct Proof</strong>" },
-      { gen: "Gen 5", era: "1841–1922", anchorEvent: "ev-1888", v1: "<strong>Silas Squires</strong> (b. Herring Neck, d. Jan. 15, 1903, age 61) &amp; <strong>Sarah Jane Noble</strong> (d. May 2, 1901, age 56; m. Sept. 2, 1862, Nipper's Hbr)", v2: "<strong>William Lush</strong> (1845–1922; 1st m. Jane Amelia, d. Jan. 4, 1882) &amp; 2nd m. <strong>Mary Ann \"Polly\" Dwyer</strong> (1863–1905; Tilt Cove, Lushes Bight &amp; Burlington)", v3: "<em>(Same era as K4 post-1886 Emure-Ekiti merchant banking &amp; 1919 St. Paul's mission school)</em>", gps: "Outport church registers, 1895 <em>Twillingate Sun</em> &amp; mining records; <strong>Direct Proof</strong>" },
+      { gen: "Gen 5", era: "1841–1922", anchorEvent: "ev-1888", v1: "<strong>Silas Squires</strong> (b. Herring Neck, d. Jan. 15, 1903, age 61) &amp; <strong>Sarah Jane Noble</strong> (d. May 2, 1901, age 56; m. Sept. 2, 1862, Nipper's Hbr)", v2: "<strong>William Lush</strong> (1845–1922; 1st m. Jane Amelia, d. Jan. 4, 1882 — issue Mary Elizabeth [b. 1875] &amp; John Thomas [m. Cornelia Squires 1899]) &amp; 2nd m. Apr. 10, 1883 <strong>Mary Ann \"Polly\" Dwyer</strong> (1863–1927; Tilt Cove, Lushes Bight &amp; Burlington)", v3: "<em>(Same era as K4 post-1886 Emure-Ekiti merchant banking &amp; 1919 St. Paul's mission school)</em>", gps: "Outport church registers, 1895 <em>Twillingate Sun</em> &amp; mining records; <strong>Direct Proof</strong>" },
       { gen: "Gen 4", era: "1867–2010 (K3)", anchorEvent: "ev-1913", v1: "<strong>William Squires</strong> (b. Mar. 2, 1867, Stocking Harbour; bapt. 1874) &amp; <strong>Mary-Jane Budgell</strong> (b. 1879), Smiths Harbour, NL <em>(nephew Wm. Silas Squires m. 1913 in Sudbury, ON)</em>", v2: "<strong>Albert Lush</strong> (1898–1980) &amp; <strong>Florence White</strong>, Smiths Harbour sawmill &amp; medical boat <em>(brother Rev. Philip H. Lush in Maine)</em>", v3: "<strong>K3: Pa Joseph Owolabi Kolade</strong> (\"Baba Bookseller\", 1907–1989) &amp; <strong>Madam Lydia Olugbe Kolade</strong> (c. 1918–2010; m. 1942) <em>(plus Chief John A. Kolade, 1968 Osukoti)</em>", gps: "1913 ON marriage, 1921–45 NL censuses, gravestones &amp; St. Paul's biographies; <strong>Direct Proof</strong>" },
       { gen: "Gen 3", era: "1910–1968", anchorEvent: "ev-1944", v1: "<strong>Pleman [Philemon] Squires</strong> (b. Nov. 1910) — married <strong>Ivy Lush</strong> on <strong>September 6, 1944</strong>, uniting Squires &amp; Lush in Smiths Harbour", v2: "<strong>Ivy Lush</strong> (bapt. Nov. 7, 1921) — married <strong>Pleman Squires</strong> on <strong>September 6, 1944</strong> <em>(sister Daisy Evelyn Lush m. Rubert Rideout)</em>", v3: "<em>(1942 Benin City wedding; 1946–58 Ondo &amp; Ado-Ekiti CMS Bookshops, 1947 Ondo baptism &amp; Mama Dudu's wholesale bakery network)</em>", gps: "Newfoundland &amp; Nigerian marriage and baptism registers; <strong>Direct Proof</strong>" },
-      { gen: "Gen 2", era: "1942–2025 (K2)", anchorEvent: "ev-1973", v1: "<strong>Merle Elizabeth Squires</strong> (Dec. 31, 1944 – Aug. 17, 2025) — married <strong>Victor Olusoji Kolade</strong> in <strong>1973</strong>; settled in Toronto, ON", v2: "<em>(United in Merle Elizabeth Squires, carrying Lush, Lawrence, Goulding, Dwyer &amp; Thorne heritage)</em>", v3: "<strong>K2: Victor Olusoji Kolade</strong> (July 30, 1942 – Aug. 31, 2017) — arrived Canada <strong>Dec. 1966</strong> (CAF), moved to Toronto <strong>c. 1969–70</strong>, m. <strong>1973</strong>", gps: "Canadian service/civil records &amp; Pine Hills Cemetery granite monument (Scarborough); <strong>Direct Proof</strong>" },
+      { gen: "Gen 2", era: "1943–2025 (K2)", anchorEvent: "ev-1973", v1: "<strong>Merle Elizabeth Squires</strong> (Dec. 31, 1944 – Aug. 17, 2025) — married <strong>Victor Olusoji Kolade</strong> in <strong>1973</strong>; settled in Toronto, ON", v2: "<em>(United in Merle Elizabeth Squires, carrying Lush, Lawrence, Goulding, Dwyer &amp; Thorne heritage)</em>", v3: "<strong>K2: Victor Olusoji Kolade</strong> (July 30, 1943 – Aug. 31, 2017) — arrived Canada <strong>Dec. 1966</strong> (CAF), moved to Toronto <strong>c. 1969–70</strong>, m. <strong>1973</strong>", gps: "Canadian service/civil records &amp; Pine Hills Cemetery granite monument (Scarborough); <strong>Direct Proof</strong>" },
       { gen: "Gen 1", era: "Present (K1)", anchorEvent: "ev-2026", v1: "<strong>Victor Olutayo Kolade</strong> &amp; <strong>Abigail Salole</strong> <em>[Living]</em>, Toronto, Ontario", v2: "<strong>Victor Olutayo Kolade</strong> &amp; <strong>Abigail Salole</strong> <em>[Living]</em>, Toronto, Ontario", v3: "<strong>K1: Victor Olutayo Kolade &amp; Abigail Salole</strong>, Toronto, Ontario, Canada", gps: "Modern civil &amp; family archive; <strong>Living Generation</strong>" }
     ];
+
+
+    // 4B. CENTRALIZED ARCHIVAL MEDIA REGISTRY (Batch A Open-Access Ready + Batches B–D Drop-in Slots)
+    // Drop renamed files into your local media/ folder (matching `src` below); missing files auto-hide cleanly.
+    const MEDIA = [
+      // === BATCH A: VERIFIED OPEN-ACCESS HISTORICAL VIEWS & PARISH CHURCHES (10 PLATES) ===
+      {
+        id: "m-a01-herring-neck",
+        batch: "A",
+        kind: "Historical Photograph",
+        src: "media/batchA_herring_neck_pre1901.jpg",
+        title: "Herring Neck, Notre Dame Bay (Pre-1901)",
+        date: "Pre-1901",
+        events: ["ev-1862"],
+        loci: ["herring-twillingate"],
+        caption: "Original archival view of the Herring Neck coastline photographed by Methodist schoolmaster Robert Edwards Holloway (1850–1904) — showing the cove-carved harbour where Simon Squires Jr. settled by 1836 and where Silas Squires (c. 1841–1903) was born.",
+        credit: "Robert Edwards Holloway, MUN Archives & Special Collections (Ref: 13.11.001) • Public Domain",
+        sourceUrl: "https://collections.mun.ca/digital/collection/arch_geog/id/3403/"
+      },
+      {
+        id: "m-a02-greenspond-1846",
+        batch: "A",
+        kind: "Historical View",
+        src: "media/batchA_greenspond_1846.jpg",
+        title: "Greenspond Island, Bonavista Bay (1846)",
+        date: "1846",
+        events: ["ev-1840"],
+        loci: ["greenspond"],
+        caption: "Contemporary 1846 view of granite-bound Greenspond Island — drawn just six years after Thomas Lush and Mary Goulding married here on May 26, 1840, and within living memory of David Goulding's 1809 fishery letters.",
+        credit: "B. Smith (1846), Peter Winkworth Collection, Library and Archives Canada e000756744 • CC BY 2.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Greenspond,_Newfoundland.jpg"
+      },
+      {
+        id: "m-a03-chideock-stgiles",
+        batch: "A",
+        kind: "Ancestral Parish Church",
+        src: "media/batchA_chideock_st_giles.jpg",
+        title: "Parish Church of St. Giles, Chideock, Dorset",
+        date: "Parish Church (15th c. / 2011 photo)",
+        events: ["ev-1769", "ev-1802"],
+        loci: ["chideock"],
+        caption: "St. Giles Church in Chideock, where pioneer Simon Squire was baptized on April 2, 1769, and immediately beside whose churchyard 72-year-old John Squire leased the cottage tenement 'Lushes' in 1802.",
+        credit: "N Chadwick / Geograph 2856491 (Dec. 30, 2011) • CC BY-SA 2.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Parish_Church_of_St_Giles_-_geograph.org.uk_-_2856491.jpg"
+      },
+      {
+        id: "m-a04-tilt-cove",
+        batch: "A",
+        kind: "Ancestral Landscape",
+        src: "media/batchA_tilt_cove_2014.jpg",
+        title: "Tilt Cove Copper-Mining Valley, Notre Dame Bay",
+        date: "2014 view",
+        events: ["ev-1888", "ev-1871-dwyer"],
+        loci: ["tilt-cove"],
+        caption: "Cliffside valley of Tilt Cove, where William Lush and Mary 'Polly' Dwyer lived during the copper-mining boom (birthplace of Rev. Philip Henry Lush in 1888, 1891 wedding of Mary Elizabeth Lush, and 1895 mine tragedy of Albert Edward Dwyer).",
+        credit: "Scio c (Sept. 4, 2014), Wikimedia Commons • CC BY-SA 4.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Tilt_Cove_in_summer_2014.jpg"
+      },
+      {
+        id: "m-a05-buckland-newton",
+        batch: "A",
+        kind: "Ancestral Parish Church",
+        src: "media/batchA_buckland_newton_holy_rood.jpg",
+        title: "Church of the Holy Rood, Buckland Newton, Dorset",
+        date: "Medieval Parish Church (2001 photo)",
+        events: ["ev-1574", "ev-1621", "ev-1678"],
+        loci: ["bookham-knoll"],
+        caption: "Grade I listed medieval parish church of Bookham Farm ('Bewcombe'), where Johannes Squier (1581/82) and Thomas Squire (1621 autograph signature) served as Parish Churchwardens across three Tudor and Stuart generations.",
+        credit: "Chris Downer / Geograph 502839 (2001) • CC BY-SA 2.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Buckland_Newton,_parish_church_of_the_Holy_Rood_-_geograph.org.uk_-_502839.jpg"
+      },
+      {
+        id: "m-a06-alton-pancras",
+        batch: "A",
+        kind: "Ancestral Parish Church",
+        src: "media/batchA_alton_pancras_st_pancras.jpg",
+        title: "Parish Church of St. Pancras, Alton Pancras, Dorset",
+        date: "15th c. Tower (2008 photo)",
+        events: ["ev-1558", "ev-1678", "ev-1709"],
+        loci: ["alton-pancras"],
+        caption: "Cerne Valley parish church 1.5 miles south of Bookham, anchoring the 1558–1576 Tudor Squire wills, John Squire Senior's Spring 1678 arrival, and the signature 'John–Philip–Eleanor' baptisms (1709).",
+        credit: "Mike Searle / Geograph 887132 (July 16, 2008) • CC BY-SA 2.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Parish_Church_of_St_Pancras_-_Alton_Pancras_-_geograph.org.uk_-_887132.jpg"
+      },
+      {
+        id: "m-a07-melbury-abbas",
+        batch: "A",
+        kind: "Ancestral Parish Church",
+        src: "media/batchA_melbury_abbas_st_thomas.jpg",
+        title: "St. Thomas's Church, Melbury Abbas, Dorset",
+        date: "Parish Church (2003 photo)",
+        events: ["ev-1523", "ev-1572", "ev-1676"],
+        loci: ["melbury-abbas"],
+        caption: "Parish church of Melbury Abbas in the Blackmore Vale — ancestral homeland of Gen 16 Edmond Lushe (£40 taxpayer, 1523), Gen 15 John Lusshe (1572 £20 will), and Gen 12 John Lush (1673 £50 will).",
+        credit: "ChurchCrawler / Geograph 70165 (Apr. 4, 2003) • CC BY-SA 2.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Melbury_Abbas_(Dorset)_St_Thomas%27s_Church_-_geograph.org.uk_-_70165.jpg"
+      },
+      {
+        id: "m-a08-shaftesbury-abbey",
+        batch: "A",
+        kind: "Historic Monastic Site",
+        src: "media/batchA_shaftesbury_abbey_ruins.jpg",
+        title: "Ruins of Shaftesbury Abbey, Dorset",
+        date: "Founded 888 / Closed 1539 (2013 photo)",
+        events: ["ev-1544", "ev-1707"],
+        loci: ["shaftesbury"],
+        caption: "Excavated ruins of England's wealthiest Benedictine nunnery, institutional landlord of Tisbury, Melbury Abbas, Compton Abbas, and Fontmell Magna from before 1332 until its March 1539 dissolution and Sept. 1544 transfer to Sir Thomas Arundell.",
+        credit: "Mike Smith / Geograph 3605829 (Aug. 10, 2013) • CC BY-SA 2.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Ruins_of_Shaftesbury_Abbey_-_geograph.org.uk_-_3605829.jpg"
+      },
+      {
+        id: "m-a09-bonavista",
+        batch: "A",
+        kind: "Ancestral Landmark",
+        src: "media/batchA_bonavista_lighthouse.jpg",
+        title: "Cape Bonavista Headland & Lighthouse, Newfoundland",
+        date: "2012 view",
+        events: ["ev-1798", "ev-1822"],
+        loci: ["bonavista"],
+        caption: "Historic Bonavista headland guarding the bay where lay minister Abraham Akerman Sr. officiated his daughter Jane's August 18, 1798 wedding to Simon Squires Sr.",
+        credit: "Robthepiper (Aug. 25, 2012), Wikimedia Commons • CC BY-SA 3.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Cape_Bonavista_Lighthouse.JPG"
+      },
+      {
+        id: "m-a10-waterford-quay",
+        batch: "A",
+        kind: "Historical Photochrom",
+        src: "media/batchA_waterford_quay_c1900.jpg",
+        title: "Reginald's Tower & Waterford Quay, Ireland (c. 1890–1900)",
+        date: "c. 1890–1900",
+        events: ["ev-1846"],
+        loci: ["waterford"],
+        caption: "Late-19th-century colour photochrom of Waterford's quayside — the historic southeastern Irish embarkation port connecting County Waterford and South Tipperary to West Country vessels bound for Twillingate, Newfoundland.",
+        credit: "Library of Congress Photochrom Collection (LCCN 2002717443) • Public Domain",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Reginald_Tower_and_Quay,_Waterford._County_Waterford,_Ireland-LCCN2002717443.jpg"
+      },
+
+      // === BATCH B: VERIFIED MEDIEVAL & TUDOR PLEA ROLLS (7 PLATES — AALT & GLYPH MACHINA) ===
+      {
+        id: "m-b00a-1420-cp40",
+        batch: "B",
+        kind: "Archival Parchment",
+        fit: "contain",
+        src: "media/batchB_1420_cp40_636_rot1802d.jpg",
+        title: "TNA CP 40/636, dorse IMG_1802 — John Lussh of Upton v. Donhead St Mary (1420)",
+        date: "Hilary Term 1420 (7 Henry V)",
+        events: ["ev-1420"],
+        loci: ["upton-donhead"],
+        caption: "Agincourt-era Latin Court of Common Pleas sheepskin membrane (IMG_1802d) recording both of John Lussh of Upton's Wiltshire suits: trespass against John Bode of Upton juxta Berwyk and debt against Donhead St Mary husbandmen including Gylbert Brytt, John Whete, John Vanner, and Salisbury butcher John Cokkys.",
+        credit: "The National Archives (Kew), CP 40/636 dorse IMG_1802 • via AALT (Robert C. Palmer) & Glyph Machina"
+      },
+      {
+        id: "m-b00b-1425-cp40",
+        batch: "B",
+        kind: "Archival Parchment",
+        fit: "contain",
+        src: "media/batchB_1425_cp40_656_rot135f.jpg",
+        title: "TNA CP 40/656, front IMG_0135 — John Lussh v. Salisbury Butchers (1425)",
+        date: "Hilary Term 1425 (3 Henry VI)",
+        events: ["ev-1425"],
+        loci: ["upton-donhead"],
+        caption: "Original Latin Court of Common Pleas membrane (IMG_0135f) recording elder grazier John Lussh suing butchers Ralph Dynton of Old Sarum and Robert Scotte of Salisbury for livestock credit—shortly before his 1425–26 death proved by his testamentary executors in 1427.",
+        credit: "The National Archives (Kew), CP 40/656 front IMG_0135 • via AALT (Robert C. Palmer) & Glyph Machina"
+      },
+      {
+        id: "m-b01-1442-cp40",
+        batch: "B",
+        kind: "Archival Parchment",
+        fit: "contain",
+        src: "media/batchB_1442_cp40_724_rot388f.jpg",
+        title: "TNA CP 40/724, rot. 388f — £40 Stour Provost Chest Suit (1442)",
+        date: "Hilary Term 1442",
+        events: ["ev-1442"],
+        loci: ["stour-provost"],
+        caption: "Original Latin Court of Common Pleas sheepskin membrane (IMG_0388, Entry 4) recording plaintiff John Lusshe's action against Thomas Fraunceys of Stour Provost for a chest holding £40.",
+        credit: "The National Archives (Kew), CP 40/724 rot. 388f • via AALT (Robert C. Palmer) & Glyph Machina"
+      },
+      {
+        id: "m-b02-1450-cp40",
+        batch: "B",
+        kind: "Archival Parchment",
+        fit: "contain",
+        src: "media/batchB_1450_cp40_758_rot1195d.jpg",
+        title: "TNA CP 40/758, rot. 1195d — Hinton St Mary Executor Suit (1450)",
+        date: "Trinity Term 1450",
+        events: ["ev-1450"],
+        loci: ["hinton-st-mary"],
+        caption: "Original Latin membrane (IMG_1195, Entry 3) proving living plaintiff 'Johannes Lusshe executor' suing John Gervays of Hinton St Mary for 8 marks, 6s. 4d.",
+        credit: "The National Archives (Kew), CP 40/758 rot. 1195d • via AALT (Robert C. Palmer) & Glyph Machina"
+      },
+      {
+        id: "m-b03-1455-cp40",
+        batch: "B",
+        kind: "Archival Parchment",
+        fit: "contain",
+        src: "media/batchB_1455_cp40_776_rot183f.jpg",
+        title: "TNA CP 40/776, rot. 183f — William Lusshe of Tisbury (1455)",
+        date: "Hilary Term 1455",
+        events: ["ev-1455"],
+        loci: ["tisbury-manor"],
+        caption: "Original Latin membrane (IMG_0183, Entry 5) recording active Tisbury husbandman William Lusshe on the eve of the Wars of the Roses.",
+        credit: "The National Archives (Kew), CP 40/776 rot. 183f • via AALT (Robert C. Palmer) & Glyph Machina"
+      },
+      {
+        id: "m-b04-1480-cp40",
+        batch: "B",
+        kind: "Archival Parchment",
+        fit: "contain",
+        src: "media/batchB_1480_cp40_871_rot1041d.jpg",
+        title: "TNA CP 40/871, rot. 1041d — John Lusshe of Oakley in Tisbury (1480)",
+        date: "Hilary Term 1480",
+        events: ["ev-1480"],
+        loci: ["oakley-tisbury"],
+        caption: "Original Latin membrane (IMG_1041, Entry 3) recording John Lusshe of Oakley in Tisbury inside Gen 16 founder Edmond Lusshe's birth window.",
+        credit: "The National Archives (Kew), CP 40/871 rot. 1041d • via AALT (Robert C. Palmer) & Glyph Machina"
+      },
+      {
+        id: "m-b06-1573-cp40",
+        batch: "B",
+        kind: "Archival Parchment",
+        fit: "contain",
+        src: "media/batchB_1573_cp40_1318_img0065d.jpg",
+        title: "TNA CP 40/1318, dorse IMG_0065 — John Squyer of Alton Pancras (1573)",
+        date: "Trinity Term 1573",
+        events: ["ev-1558"],
+        loci: ["alton-pancras"],
+        caption: "Elizabethan Court of Common Pleas membrane (IMG_0065, Entry 1 at top) naming 'Johannem Squyer nuper de Alton Pancras, husbandman' in John Stickland's £20 livestock-grazing trespass suit at 'Alton Pancras alias Alton Australis'—eight years after the 1565 Alton Pancras Squire will.",
+        credit: "The National Archives (Kew), CP 40/1318 dorse IMG_0065 • via AALT (Robert C. Palmer) & Glyph Machina"
+      },
+
+      // === BATCH C: PRE-WIRED CROWN-JEWEL REGISTERS, LETTERS & PRESS (DROP-IN READY) ===
+      {
+        id: "m-c01-1621-sig",
+        batch: "C",
+        kind: "Handwritten Signature",
+        fit: "contain",
+        src: "media/batchC_1621_thomas_squire_sig.jpg",
+        title: "Autograph Signature of Churchwarden Thomas Squire (Sept. 2, 1621)",
+        date: "September 2, 1621",
+        events: ["ev-1621"],
+        loci: ["bookham-knoll"],
+        caption: "Gen 13 Thomas Squire's own confident signature in the Buckland Newton parish register (Frame 123r), introducing the modern '-ire' spelling while co-warden Robert Witt signed with an 'X'.",
+        credit: "Dorset History Centre, DHC PE/BCN/RE 1/1, Frame 123r"
+      },
+      {
+        id: "m-c02-1677-anniver",
+        batch: "C",
+        kind: "Parish Register Entry",
+        fit: "contain",
+        src: "media/batchC_1677_anniver_roberts_entry.jpg",
+        title: "1677 Anniver Roberts Wedding & 1677/78 Thomas Squire Senr. Burial",
+        date: "Dec. 1677 – Feb. 1678",
+        events: ["ev-1678"],
+        loci: ["bookham-knoll"],
+        caption: "Original Buckland Newton register page (Frame 157r) verifying the spelling 'Anniver Roberts' and recording the burial of elder Thomas Squire de Bookham Senr. just weeks before the family's move to Alton Pancras.",
+        credit: "Dorset History Centre, DHC PE/BCN/RE 1/1, Frame 157r"
+      },
+      {
+        id: "m-c03-1809-goulding",
+        batch: "C",
+        kind: "Original Autograph Letter",
+        fit: "contain",
+        src: "media/batchC_1809_david_goulding_letter.jpg",
+        title: "David Goulding's Autograph Greenspond Letter to Wimborne (July 17, 1809)",
+        date: "July 17, 1809",
+        events: ["ev-1840"],
+        loci: ["greenspond"],
+        caption: "Handwritten autograph letter (signed 'David Goulden') from Greenspond pioneer David Goulding (1773–1826) to Wimborne merchants John & William Fryer reporting an extraordinary summer cod fishery ('370 Quintles fish on Shour for a Boat').",
+        credit: "Priest's House Museum, Wimborne • Facsimile via The Greenspond Letter (Vol. 1, No. 3, Oct. 1994, p. 29)"
+      },
+      {
+        id: "m-c04-1889-albert",
+        batch: "C",
+        kind: "Historical Newspaper",
+        fit: "contain",
+        src: "media/batchC_1889_twillingate_sun_albert.jpg",
+        title: "Twillingate Sun (Sept. 28, 1889) — Capt. Wm. Dwyer's Schooner 'Albert'",
+        date: "September 28, 1889",
+        events: ["ev-1871-dwyer"],
+        loci: ["lushes-burlington"],
+        caption: "Page 2 marine arrival column reporting Capt. William Dwyer bringing 140 quintals of fish into North West Arm aboard his 33-ton schooner Albert (insured for $1,278 in the Sept. 21, 1889 Terra Nova Mutual Insurance Club roll, No. 91).",
+        credit: "The Twillingate Sun (Sept. 28, 1889, p. 2) • Memorial University DAI"
+      },
+      {
+        id: "m-c05-1903-silas",
+        batch: "C",
+        kind: "Vital Register Entry",
+        fit: "contain",
+        src: "media/batchC_1903_silas_squires_death.jpg",
+        title: "Silas Squires Death Entry (Jan. 15, 1903) — Birthplace: Herring Neck",
+        date: "January 15, 1903",
+        events: ["ev-1862"],
+        loci: ["smiths-harbour", "herring-twillingate"],
+        caption: "Twillingate Death Book 4 civil ledger sealing the generational bridge from Herring Neck to Smiths Harbour (paleographic note: the copying clerk shifted the right-hand Age/Birthplace/Burial columns up by one row, placing '61 | Herring Neck | N West Arm' on Row 32 directly above Silas Squires on Row 33).",
+        credit: "Provincial Archives of Newfoundland and Labrador (PANL), Twillingate Death Book 4"
+      },
+      {
+        id: "m-c06-1903-silas-stone",
+        batch: "C",
+        kind: "Monumental Epigraphy",
+        src: "media/batchC_1903_silas_squires_headstone.jpg",
+        title: "Marble Headstone of Silas Squires (d. Jan. 15, 1903, Aged 61)",
+        date: "January 15, 1903",
+        events: ["ev-1862"],
+        loci: ["lushes-burlington", "smiths-harbour"],
+        caption: "Sculpted marble headstone at Riverside Cemetery, Burlington / North West Arm ('SACRED TO THE MEMORY OF SILAS SQUIRES WHO DIED JAN. 15, 1903 Aged 61 Years', Psalm 23:4 epitaph), independently corroborating Death Book 4; wife Sarah Jane's 1901 stone stands immediately at left.",
+        credit: "Photo by Judy Thomas (Aug. 6, 2020), Find a Grave • Riverside Cemetery, Burlington / North West Arm, NL"
+      },
+      {
+        id: "m-c07-1918-lush-bros-1",
+        batch: "C",
+        kind: "Family Business Letterhead",
+        fit: "contain",
+        src: "media/batchC_1918_lush_brothers_letter_1.jpg",
+        title: "Lush Brothers, Burlington — 1918 WWI Militia Letter (Letter 1)",
+        date: "October 1918",
+        events: ["ev-1888"],
+        loci: ["lushes-burlington"],
+        caption: "1918 correspondence on printed 'Lush Brothers — General Merchants, Burlington, Nfld.' stationery (lumber, ship's lumber, medicinal oil, Scotch-cure herring & fishery supplies) addressed to the Dept. of Militia, St. John's regarding Allotment #6228 for Pte. Stanley Lush (#5557).",
+        credit: "Lush Family Archive / The Rooms WWI Service File (Regt. #5557)"
+      },
+      {
+        id: "m-c08-1918-lush-bros-2",
+        batch: "C",
+        kind: "Family Business Letterhead",
+        fit: "contain",
+        src: "media/batchC_1918_lush_brothers_letter_2.jpg",
+        title: "Lush Brothers, Burlington — 1918 Signed Militia Letter (Letter 2)",
+        date: "October 1918",
+        events: ["ev-1888"],
+        loci: ["lushes-burlington"],
+        caption: "Second 1918 correspondence on 'Lush Brothers — General Merchants, Burlington, Nfld.' letterhead signed 'Mary Ann Lush' confirming Pte. Stanley Lush (#5557) departed Burlington May 26, 1918 and enlisted June 6, 1918—authenticating her living authorship nine years before her verified June 13, 1927 Burlington death (Twillingate Death Book 10, Reg. #289888).",
+        credit: "Lush Family Archive / The Rooms WWI Service File (Regt. #5557)"
+      },
+
+      // === BATCH D: PRE-WIRED FAMILY, LITURGICAL & MONUMENTAL PLATES (PUBLIC-SAFE) ===
+      {
+        id: "m-d01-1989-kolade",
+        batch: "D",
+        kind: "Liturgical Memorial",
+        fit: "contain",
+        src: "media/batchD_1989_pa_joseph_kolade_programme.jpg",
+        title: "1989 Funeral Programme of Pa Joseph Owolabi Kolade ('Baba Bookseller')",
+        date: "November 1989",
+        events: ["ev-1989", "ev-1922"],
+        loci: ["kolade-compound"],
+        caption: "Printed St. Paul's Anglican Church, Emure-Ekiti funeral service programme recording the sermon preached by Primate Dr. Timothy Omotayo Olufosoye.",
+        credit: "Kolade Family Archive • St. Paul's Anglican Church, Emure-Ekiti"
+      },
+      {
+        id: "m-d02-2010-mamadudu",
+        batch: "D",
+        kind: "Liturgical Memorial",
+        fit: "contain",
+        src: "media/batchD_2010_mama_dudu_programme.jpg",
+        title: "2010 Funeral Programme of Madam Lydia Olugbe Kolade ('Mama Dudu')",
+        date: "2010",
+        events: ["ev-1989", "ev-1947"],
+        loci: ["ojomu-akeregun", "kolade-compound"],
+        caption: "Printed St. Paul's Anglican Church, Emure-Ekiti liturgical memorial documenting Mama Dudu's Ojomu heritage, 1942 Benin City marriage, and Ondo/Ado-Ekiti commerce.",
+        credit: "Kolade Family Archive • St. Paul's Anglican Church, Emure-Ekiti"
+      },
+      {
+        id: "m-d03-albert-lush",
+        batch: "D",
+        kind: "Family Portrait",
+        src: "media/batchD_albert_lush_smiths_harbour.jpg",
+        title: "Albert Lush (1898–1980) of Smiths Harbour, Newfoundland",
+        date: "Mid-20th Century",
+        events: ["ev-1913"],
+        loci: ["smiths-harbour"],
+        caption: "Mid-century Green Bay kitchen gathering (c. late 1950s–early 1960s) featuring Smiths Harbour sawmill and medical-boat pioneer Albert Lush (1898–1980, second from left), confirmed by cousin Paul Knight; seated family companions remain under photographic review.",
+        credit: "Burlington, NL History Community Archive • Confirmed by Paul Knight"
+      },
+      {
+        id: "m-d05-1973-wedding",
+        batch: "D",
+        kind: "Wedding Photograph",
+        src: "media/batchD_1973_kolade_squires_wedding.jpg",
+        title: "Wedding of Victor Olusoji Kolade & Merle Elizabeth Squires (1973)",
+        date: "1973",
+        events: ["ev-1973"],
+        loci: ["toronto-on"],
+        caption: "Original 1973 wedding photograph of Victor Olusoji Kolade (1943–2017, of Emure-Ekiti, Nigeria) and Merle Elizabeth Squires (1944–2025, of Smiths Harbour, Newfoundland), smiling in their wedding car with confetti in their hair—marking the union of all three ancestral lines in Toronto, Ontario.",
+        credit: "Kolade Family Archive • Toronto, Ontario (1973)"
+      },
+      {
+        id: "m-d04-pine-hills",
+        batch: "D",
+        kind: "Monumental Epigraphy",
+        src: "media/batchD_2026_pine_hills_monument.jpg",
+        title: "Pine Hills Cemetery Monument (Section A, Lot 2436H), Scarborough",
+        date: "2026",
+        events: ["ev-2026"],
+        loci: ["pine-hills"],
+        caption: "Custom charcoal granite monument inscribing the transatlantic convergence of Victor Olusoji Kolade (Emure-Ekiti, Nigeria, 1943–2017) and Merle Elizabeth Kolade, née Squires (Smith's Harbour, NL, 1944–2025).",
+        credit: "Kolade Family Archive • Pine Hills Cemetery, Toronto"
+      }
+    ];
+
+    const MEDIA_STATUS = {};
+    const LIGHTBOX_STATE = {
+      items: [], index: 0,
+      natW: 0, natH: 0,
+      fitScale: 1, minScale: 1, maxScale: 1.65,
+      scale: 1, tx: 0, ty: 0,
+      dragging: false, dragMoved: false,
+      startX: 0, startY: 0, startTx: 0, startTy: 0,
+      pointers: new Map(), pinchStartDist: 0, pinchStartScale: 1, pinchMidX: 0, pinchMidY: 0
+    };
+
+    function resolveMediaSrc(item) {
+      if (!item) return "";
+      const cache = window.__INLINED_MEDIA || {};
+      if (cache[item.src]) return cache[item.src];
+      const base = item.src.split("/").pop().toLowerCase();
+      for (const k in cache) {
+        if (k.split("/").pop().toLowerCase() === base) return cache[k];
+      }
+      return item.src;
+    }
+
+    function getEventMedia(evId, loadedOnly) {
+      return MEDIA.filter(m => (m.events || []).includes(evId) && (!loadedOnly || MEDIA_STATUS[m.id] === "ok"));
+    }
+
+    function getLocusMedia(locId, loadedOnly) {
+      return MEDIA.filter(m => (m.loci || []).includes(locId) && (!loadedOnly || MEDIA_STATUS[m.id] === "ok"));
+    }
+
+    function getLoadedMediaCount() {
+      return MEDIA.filter(m => MEDIA_STATUS[m.id] === "ok").length;
+    }
+
+    function probeMediaAvailability(onUpdate) {
+      let pending = MEDIA.length;
+      let loadedAny = false;
+      if (!pending) return;
+      MEDIA.forEach(item => {
+        const src = resolveMediaSrc(item);
+        if (src.startsWith("data:")) {
+          MEDIA_STATUS[item.id] = "ok";
+          loadedAny = true;
+          pending--;
+          if (pending === 0 && loadedAny && onUpdate) onUpdate();
+          return;
+        }
+        const img = new Image();
+        img.onload = () => {
+          if (img.naturalWidth > 0) {
+            MEDIA_STATUS[item.id] = "ok";
+            loadedAny = true;
+          } else {
+            MEDIA_STATUS[item.id] = "missing";
+          }
+          pending--;
+          if (pending === 0 && loadedAny && onUpdate) onUpdate();
+        };
+        img.onerror = () => {
+          MEDIA_STATUS[item.id] = "missing";
+          pending--;
+          if (pending === 0 && loadedAny && onUpdate) onUpdate();
+        };
+        img.src = src;
+      });
+    }
+
+    function buildMediaStripHtml(items, headingText) {
+      const ready = items.filter(m => MEDIA_STATUS[m.id] === "ok");
+      if (!ready.length) return "";
+      const cards = ready.map((m, idx) => {
+        const fitCls = m.fit === "contain" ? "fit-contain" : "";
+        return `
+          <button type="button" data-open-lb-idx="${idx}" class="archival-plate-card group">
+            <div class="archival-plate-frame ${fitCls}">
+              <img src="${escHtml(resolveMediaSrc(m))}" alt="${escHtml(m.title)}" loading="lazy" onerror="this.closest('.archival-plate-card')?.remove()" />
+              <span class="archival-plate-badge">${escHtml(m.kind)}</span>
+              <span class="archival-plate-zoomhint">&#128269; Inspect</span>
+            </div>
+            <div class="p-2.5">
+              <div class="font-serif text-xs font-bold leading-snug text-white group-hover:text-amber-200 transition">${escHtml(m.title)}</div>
+              <div class="mt-0.5 text-[10px] leading-snug text-slate-400 line-clamp-2">${escHtml(m.credit)}</div>
+            </div>
+          </button>`;
+      }).join("");
+      return `
+        <div class="mt-4 archival-media-section">
+          <div class="mb-2 flex items-center justify-between gap-2">
+            <div class="text-[11px] font-semibold uppercase tracking-wider text-[#d4af37]">${escHtml(headingText)} (${ready.length})</div>
+            <span class="text-[10px] text-slate-400">Tap any plate to zoom</span>
+          </div>
+          <div class="archival-media-grid">${cards}</div>
+        </div>`;
+    }
+
+    function lbClampTransform() {
+      const stage = document.getElementById("lb-stage");
+      if (!stage || !LIGHTBOX_STATE.natW || !LIGHTBOX_STATE.natH) return;
+      const stW = stage.clientWidth, stH = stage.clientHeight;
+      const dispW = LIGHTBOX_STATE.natW * LIGHTBOX_STATE.scale;
+      const dispH = LIGHTBOX_STATE.natH * LIGHTBOX_STATE.scale;
+      if (dispW <= stW) {
+        LIGHTBOX_STATE.tx = (stW - dispW) / 2;
+      } else {
+        LIGHTBOX_STATE.tx = Math.min(0, Math.max(stW - dispW, LIGHTBOX_STATE.tx));
+      }
+      if (dispH <= stH) {
+        LIGHTBOX_STATE.ty = (stH - dispH) / 2;
+      } else {
+        LIGHTBOX_STATE.ty = Math.min(0, Math.max(stH - dispH, LIGHTBOX_STATE.ty));
+      }
+    }
+
+    function lbApplyTransform(smooth) {
+      const stage = document.getElementById("lb-stage");
+      const img = document.getElementById("lb-img");
+      const readout = document.getElementById("lb-zoom-readout");
+      const resHud = document.getElementById("lb-hud-res");
+      const hintHud = document.getElementById("lb-hud-hint");
+      const outBtn = document.getElementById("lb-zoom-out");
+      const inBtn = document.getElementById("lb-zoom-in");
+      const nativeBtn = document.getElementById("lb-zoom-native");
+      const fitBtn = document.getElementById("lb-zoom-fit");
+      if (!stage || !img || !LIGHTBOX_STATE.natW) return;
+
+      lbClampTransform();
+      img.classList.toggle("lb-smooth", Boolean(smooth));
+      img.style.transform = `translate3d(${LIGHTBOX_STATE.tx.toFixed(1)}px, ${LIGHTBOX_STATE.ty.toFixed(1)}px, 0) scale(${LIGHTBOX_STATE.scale.toFixed(4)})`;
+
+      const stW = stage.clientWidth, stH = stage.clientHeight;
+      const dispW = LIGHTBOX_STATE.natW * LIGHTBOX_STATE.scale;
+      const dispH = LIGHTBOX_STATE.natH * LIGHTBOX_STATE.scale;
+      const canPan = dispW > stW + 2 || dispH > stH + 2;
+      const isFit = Math.abs(LIGHTBOX_STATE.scale - LIGHTBOX_STATE.fitScale) < 0.015;
+      const pct = Math.round(LIGHTBOX_STATE.scale * 100);
+      const upscaled = LIGHTBOX_STATE.scale > 1.04;
+
+      stage.classList.toggle("lb-can-pan", canPan);
+      if (readout) readout.textContent = isFit && LIGHTBOX_STATE.fitScale < 0.99 ? "Fit" : pct + "%";
+      if (outBtn) outBtn.disabled = LIGHTBOX_STATE.scale <= LIGHTBOX_STATE.minScale + 0.005;
+      if (inBtn) inBtn.disabled = LIGHTBOX_STATE.scale >= LIGHTBOX_STATE.maxScale - 0.005;
+      if (nativeBtn) {
+        const atNative = Math.abs(LIGHTBOX_STATE.scale - 1) < 0.015;
+        nativeBtn.disabled = atNative;
+        nativeBtn.title = LIGHTBOX_STATE.fitScale >= 0.99
+          ? "Image is already at 100% native resolution"
+          : "Jump to crisp 1:1 native pixels (Key: 1)";
+      }
+      if (fitBtn) fitBtn.disabled = isFit;
+      if (resHud) {
+        const dims = `${LIGHTBOX_STATE.natW} × ${LIGHTBOX_STATE.natH} px`;
+        if (upscaled) {
+          resHud.textContent = `${dims} • ${pct}% (Beyond 100% native)`;
+          resHud.classList.add("lb-upscaled");
+        } else if (Math.abs(LIGHTBOX_STATE.scale - 1) < 0.015) {
+          resHud.textContent = `${dims} • 100% Native (Crisp)`;
+          resHud.classList.remove("lb-upscaled");
+        } else {
+          resHud.textContent = `${dims} • ${pct}% of Native`;
+          resHud.classList.remove("lb-upscaled");
+        }
+      }
+      if (hintHud) {
+        hintHud.textContent = canPan
+          ? "Drag to pan • Scroll or click to zoom • Double-click to Fit"
+          : "Click any spot to zoom in • Scroll wheel to fine-tune";
+      }
+    }
+
+    function lbInitViewport(resetToFit) {
+      const stage = document.getElementById("lb-stage");
+      const img = document.getElementById("lb-img");
+      if (!stage || !img || !img.naturalWidth || !img.naturalHeight) return;
+      const stW = stage.clientWidth || 800;
+      const stH = stage.clientHeight || 500;
+      LIGHTBOX_STATE.natW = img.naturalWidth;
+      LIGHTBOX_STATE.natH = img.naturalHeight;
+      // Cap Fit scale at 1.0 so smaller archival photos stay crisp and never upscale blurry on open
+      const fit = Math.min((stW - 16) / LIGHTBOX_STATE.natW, (stH - 16) / LIGHTBOX_STATE.natH, 1.0);
+      LIGHTBOX_STATE.fitScale = Math.max(0.05, fit);
+      LIGHTBOX_STATE.minScale = LIGHTBOX_STATE.fitScale;
+      // High-res scans (fit < 0.75) allow up to 200% native; smaller web photos cap at 165% native to prevent heavy pixelation
+      LIGHTBOX_STATE.maxScale = LIGHTBOX_STATE.fitScale < 0.75 ? 2.0 : 1.65;
+      if (resetToFit || !LIGHTBOX_STATE.scale) {
+        LIGHTBOX_STATE.scale = LIGHTBOX_STATE.fitScale;
+        LIGHTBOX_STATE.tx = (stW - LIGHTBOX_STATE.natW * LIGHTBOX_STATE.scale) / 2;
+        LIGHTBOX_STATE.ty = (stH - LIGHTBOX_STATE.natH * LIGHTBOX_STATE.scale) / 2;
+      } else {
+        LIGHTBOX_STATE.scale = Math.max(LIGHTBOX_STATE.minScale, Math.min(LIGHTBOX_STATE.maxScale, LIGHTBOX_STATE.scale));
+      }
+      lbApplyTransform(false);
+    }
+
+    function lbZoomAtPoint(targetScale, cx, cy, smooth) {
+      const stage = document.getElementById("lb-stage");
+      if (!stage || !LIGHTBOX_STATE.natW) return;
+      const stW = stage.clientWidth, stH = stage.clientHeight;
+      const px = typeof cx === "number" ? cx : stW / 2;
+      const py = typeof cy === "number" ? cy : stH / 2;
+      const clamped = Math.max(LIGHTBOX_STATE.minScale, Math.min(LIGHTBOX_STATE.maxScale, targetScale));
+      const imgX = (px - LIGHTBOX_STATE.tx) / LIGHTBOX_STATE.scale;
+      const imgY = (py - LIGHTBOX_STATE.ty) / LIGHTBOX_STATE.scale;
+      LIGHTBOX_STATE.scale = clamped;
+      LIGHTBOX_STATE.tx = px - imgX * clamped;
+      LIGHTBOX_STATE.ty = py - imgY * clamped;
+      lbApplyTransform(smooth);
+    }
+
+    function lbStepZoom(factor, smooth) {
+      lbZoomAtPoint(LIGHTBOX_STATE.scale * factor, null, null, smooth);
+    }
+
+    function lbResetFit(smooth) {
+      const stage = document.getElementById("lb-stage");
+      if (!stage || !LIGHTBOX_STATE.natW) return;
+      LIGHTBOX_STATE.scale = LIGHTBOX_STATE.fitScale;
+      LIGHTBOX_STATE.tx = (stage.clientWidth - LIGHTBOX_STATE.natW * LIGHTBOX_STATE.scale) / 2;
+      LIGHTBOX_STATE.ty = (stage.clientHeight - LIGHTBOX_STATE.natH * LIGHTBOX_STATE.scale) / 2;
+      lbApplyTransform(smooth);
+    }
+
+    function renderLightboxFrame() {
+      const item = LIGHTBOX_STATE.items[LIGHTBOX_STATE.index];
+      if (!item) return;
+      const modal = document.getElementById("archival-lightbox");
+      const img = document.getElementById("lb-img");
+      const title = document.getElementById("lb-title");
+      const badge = document.getElementById("lb-badge");
+      const counter = document.getElementById("lb-counter");
+      const caption = document.getElementById("lb-caption");
+      const credit = document.getElementById("lb-credit");
+      const srcLink = document.getElementById("lb-source-link");
+      const prevBtn = document.getElementById("lb-prev");
+      const nextBtn = document.getElementById("lb-next");
+
+      title.textContent = item.title;
+      badge.textContent = item.kind + (item.date ? " • " + item.date : "") + " • Batch " + item.batch;
+      counter.textContent = (LIGHTBOX_STATE.index + 1) + " / " + LIGHTBOX_STATE.items.length;
+      caption.textContent = item.caption || "";
+      credit.textContent = "Source & License: " + (item.credit || "");
+
+      if (item.sourceUrl) {
+        srcLink.href = item.sourceUrl;
+        srcLink.classList.remove("hidden");
+      } else {
+        srcLink.classList.add("hidden");
+      }
+
+      const multi = LIGHTBOX_STATE.items.length > 1;
+      prevBtn.classList.toggle("hidden", !multi);
+      nextBtn.classList.toggle("hidden", !multi);
+      prevBtn.disabled = LIGHTBOX_STATE.index <= 0;
+      nextBtn.disabled = LIGHTBOX_STATE.index >= LIGHTBOX_STATE.items.length - 1;
+
+      LIGHTBOX_STATE.natW = 0;
+      LIGHTBOX_STATE.natH = 0;
+      LIGHTBOX_STATE.pointers.clear();
+      LIGHTBOX_STATE.dragging = false;
+
+      // Show modal BEFORE measuring stage width/height
+      modal.classList.remove("hidden");
+
+      const resolved = resolveMediaSrc(item);
+      img.onload = () => lbInitViewport(true);
+      if (img.getAttribute("src") === resolved && img.complete && img.naturalWidth > 0) {
+        lbInitViewport(true);
+      } else {
+        img.src = resolved;
+        img.alt = item.title;
+        if (img.complete && img.naturalWidth > 0) lbInitViewport(true);
+      }
+    }
+
+    function openLightbox(items, startIndex) {
+      if (!items || !items.length) return;
+      LIGHTBOX_STATE.items = items;
+      LIGHTBOX_STATE.index = Math.max(0, Math.min(startIndex || 0, items.length - 1));
+      renderLightboxFrame();
+    }
+
+    function closeLightbox() {
+      document.getElementById("archival-lightbox")?.classList.add("hidden");
+      LIGHTBOX_STATE.dragging = false;
+      LIGHTBOX_STATE.pointers.clear();
+    }
+
+    function stepLightbox(delta) {
+      const next = LIGHTBOX_STATE.index + delta;
+      if (next < 0 || next >= LIGHTBOX_STATE.items.length) return;
+      LIGHTBOX_STATE.index = next;
+      renderLightboxFrame();
+    }
+
+    function wireLightboxInteractions() {
+      const stage = document.getElementById("lb-stage");
+      if (!stage) return;
+
+      document.getElementById("lb-close")?.addEventListener("click", closeLightbox);
+      document.getElementById("lb-backdrop")?.addEventListener("click", closeLightbox);
+      document.getElementById("lb-prev")?.addEventListener("click", () => stepLightbox(-1));
+      document.getElementById("lb-next")?.addEventListener("click", () => stepLightbox(1));
+      document.getElementById("lb-zoom-in")?.addEventListener("click", () => lbStepZoom(1.3, true));
+      document.getElementById("lb-zoom-out")?.addEventListener("click", () => lbStepZoom(1 / 1.3, true));
+      document.getElementById("lb-zoom-native")?.addEventListener("click", () => lbZoomAtPoint(1.0, null, null, true));
+      document.getElementById("lb-zoom-fit")?.addEventListener("click", () => lbResetFit(true));
+
+      // Mouse wheel zoom directly centered on cursor
+      stage.addEventListener("wheel", e => {
+        if (!LIGHTBOX_STATE.natW) return;
+        e.preventDefault();
+        const rect = stage.getBoundingClientRect();
+        const cx = e.clientX - rect.left;
+        const cy = e.clientY - rect.top;
+        const factor = e.deltaY < 0 ? 1.18 : 1 / 1.18;
+        lbZoomAtPoint(LIGHTBOX_STATE.scale * factor, cx, cy, false);
+      }, { passive: false });
+
+      // Pointer drag-to-pan + pinch-to-zoom + click-to-zoom-at-cursor
+      stage.addEventListener("pointerdown", e => {
+        if (e.button !== 0 && e.pointerType === "mouse") return;
+        stage.setPointerCapture(e.pointerId);
+        LIGHTBOX_STATE.pointers.set(e.pointerId, { x: e.clientX, y: e.clientY });
+
+        if (LIGHTBOX_STATE.pointers.size === 1) {
+          LIGHTBOX_STATE.dragging = true;
+          LIGHTBOX_STATE.dragMoved = false;
+          LIGHTBOX_STATE.startX = e.clientX;
+          LIGHTBOX_STATE.startY = e.clientY;
+          LIGHTBOX_STATE.startTx = LIGHTBOX_STATE.tx;
+          LIGHTBOX_STATE.startTy = LIGHTBOX_STATE.ty;
+          stage.classList.add("lb-dragging");
+        } else if (LIGHTBOX_STATE.pointers.size === 2) {
+          LIGHTBOX_STATE.dragging = false;
+          LIGHTBOX_STATE.dragMoved = true;
+          const pts = Array.from(LIGHTBOX_STATE.pointers.values());
+          const rect = stage.getBoundingClientRect();
+          LIGHTBOX_STATE.pinchStartDist = Math.hypot(pts[1].x - pts[0].x, pts[1].y - pts[0].y) || 1;
+          LIGHTBOX_STATE.pinchStartScale = LIGHTBOX_STATE.scale;
+          LIGHTBOX_STATE.pinchMidX = (pts[0].x + pts[1].x) / 2 - rect.left;
+          LIGHTBOX_STATE.pinchMidY = (pts[0].y + pts[1].y) / 2 - rect.top;
+        }
+      });
+
+      stage.addEventListener("pointermove", e => {
+        if (!LIGHTBOX_STATE.pointers.has(e.pointerId)) return;
+        LIGHTBOX_STATE.pointers.set(e.pointerId, { x: e.clientX, y: e.clientY });
+
+        if (LIGHTBOX_STATE.pointers.size === 2) {
+          const pts = Array.from(LIGHTBOX_STATE.pointers.values());
+          const dist = Math.hypot(pts[1].x - pts[0].x, pts[1].y - pts[0].y) || 1;
+          const rect = stage.getBoundingClientRect();
+          const midX = (pts[0].x + pts[1].x) / 2 - rect.left;
+          const midY = (pts[0].y + pts[1].y) / 2 - rect.top;
+          const nextScale = LIGHTBOX_STATE.pinchStartScale * (dist / LIGHTBOX_STATE.pinchStartDist);
+          lbZoomAtPoint(nextScale, midX, midY, false);
+          return;
+        }
+
+        if (!LIGHTBOX_STATE.dragging) return;
+        const dx = e.clientX - LIGHTBOX_STATE.startX;
+        const dy = e.clientY - LIGHTBOX_STATE.startY;
+        if (Math.hypot(dx, dy) > 5) LIGHTBOX_STATE.dragMoved = true;
+        if (LIGHTBOX_STATE.dragMoved) {
+          LIGHTBOX_STATE.tx = LIGHTBOX_STATE.startTx + dx;
+          LIGHTBOX_STATE.ty = LIGHTBOX_STATE.startTy + dy;
+          lbApplyTransform(false);
+        }
+      });
+
+      const endPointer = e => {
+        const wasSingleClick = LIGHTBOX_STATE.dragging && !LIGHTBOX_STATE.dragMoved && LIGHTBOX_STATE.pointers.size === 1;
+        LIGHTBOX_STATE.pointers.delete(e.pointerId);
+        if (LIGHTBOX_STATE.pointers.size === 0) {
+          LIGHTBOX_STATE.dragging = false;
+          stage.classList.remove("lb-dragging");
+        }
+        if (wasSingleClick && LIGHTBOX_STATE.natW) {
+          const rect = stage.getBoundingClientRect();
+          const cx = e.clientX - rect.left;
+          const cy = e.clientY - rect.top;
+          if (LIGHTBOX_STATE.scale >= LIGHTBOX_STATE.maxScale - 0.03) {
+            lbResetFit(true);
+          } else if (LIGHTBOX_STATE.scale <= LIGHTBOX_STATE.fitScale + 0.02) {
+            const firstTarget = LIGHTBOX_STATE.fitScale < 0.75
+              ? Math.min(1.0, Math.max(LIGHTBOX_STATE.fitScale * 2.4, 0.65))
+              : Math.min(LIGHTBOX_STATE.maxScale, Math.max(1.35, LIGHTBOX_STATE.fitScale * 1.45));
+            lbZoomAtPoint(firstTarget, cx, cy, true);
+          } else {
+            const nextStep = Math.min(LIGHTBOX_STATE.maxScale, LIGHTBOX_STATE.scale * 1.38);
+            lbZoomAtPoint(nextStep, cx, cy, true);
+          }
+        }
+      };
+
+      stage.addEventListener("pointerup", endPointer);
+      stage.addEventListener("pointercancel", endPointer);
+
+      stage.addEventListener("dblclick", e => {
+        if (!LIGHTBOX_STATE.natW) return;
+        e.preventDefault();
+        if (LIGHTBOX_STATE.scale > LIGHTBOX_STATE.fitScale + 0.02) {
+          lbResetFit(true);
+        } else {
+          const rect = stage.getBoundingClientRect();
+          const target = LIGHTBOX_STATE.fitScale < 0.75 ? 1.0 : LIGHTBOX_STATE.maxScale;
+          lbZoomAtPoint(target, e.clientX - rect.left, e.clientY - rect.top, true);
+        }
+      });
+    }
+
+    function fileToDataUrl(fileOrBlob) {
+      return new Promise((resolve, reject) => {
+        const reader = new FileReader();
+        reader.onload = () => resolve(String(reader.result || ""));
+        reader.onerror = () => reject(new Error("read failed"));
+        reader.readAsDataURL(fileOrBlob);
+      });
+    }
+
+    function imageToDataUrlViaCanvas(src) {
+      return new Promise(resolve => {
+        const img = new Image();
+        img.onload = () => {
+          try {
+            const c = document.createElement("canvas");
+            c.width = img.naturalWidth; c.height = img.naturalHeight;
+            c.getContext("2d").drawImage(img, 0, 0);
+            resolve(c.toDataURL("image/jpeg", 0.88));
+          } catch (e) { resolve(null); }
+        };
+        img.onerror = () => resolve(null);
+        img.src = src;
+      });
+    }
 
     // 5. STATE & HELPERS
     const SHELF_MAP = Object.fromEntries(SHELFMARKS.map(s => [s.id, s]));
@@ -2261,7 +3396,7 @@ window.__WORLD_TOPO_50M = {"type":"Topology","objects":{"countries":{"type":"Geo
       const panel = document.getElementById("inspector-panel");
       if (!panel) return;
       if (!ev) {
-        panel.innerHTML = `<div class="py-12 text-center text-sm text-slate-400">No events match your current search or filter. Tap <strong>Show All</strong> above to see all 54 family milestones.</div>`;
+        panel.innerHTML = `<div class="py-12 text-center text-sm text-slate-400">No events match your current search or filter. Tap <strong>Show All</strong> above to see all 53 family milestones.</div>`;
         return;
       }
       const list = filteredList || getFilteredEvents();
@@ -2307,6 +3442,7 @@ window.__WORLD_TOPO_50M = {"type":"Topology","objects":{"countries":{"type":"Geo
           <div class="mb-1 text-[11px] font-semibold uppercase tracking-wider text-[#2dd4bf]">What Happened &amp; Why It Matters</div>
           <p class="inspector-story">${highlightText(ev.synthesis, STATE.search)}</p>
         </div>
+        ${buildMediaStripHtml(getEventMedia(ev.id, true), "Archival Visual Evidence & Historical Views")}
         <div class="mt-4">
           <div class="mb-1 text-[11px] font-semibold uppercase tracking-wider text-[#d4af37]">Original Record Wording (Exact Quote)</div>
           <div class="inspector-quote rounded-xl border border-[#262c38] p-3.5 font-mono">${highlightText(ev.diplomatic, STATE.search)}</div>
@@ -2341,6 +3477,10 @@ window.__WORLD_TOPO_50M = {"type":"Topology","objects":{"countries":{"type":"Geo
       panel.querySelector("#btn-share-ev")?.addEventListener("click", () => copyToClipboard(buildShareUrl(ev.id), "Copied direct link to " + ev.date));
       panel.querySelector("#btn-print-ev")?.addEventListener("click", printCurrentRecord);
       panel.querySelector("#btn-copy-node-xml")?.addEventListener("click", () => copyToClipboard(xmlSnippet, "Copied XML for " + ev.date));
+      const evMediaReady = getEventMedia(ev.id, true);
+      panel.querySelectorAll("[data-open-lb-idx]").forEach(btn => btn.addEventListener("click", () => {
+        openLightbox(evMediaReady, Number(btn.getAttribute("data-open-lb-idx")) || 0);
+      }));
       panel.querySelectorAll("[data-jump-locus]").forEach(btn => btn.addEventListener("click", () => {
         const lid = btn.getAttribute("data-jump-locus");
         closeMobileSheet();
@@ -2405,10 +3545,32 @@ window.__WORLD_TOPO_50M = {"type":"Topology","objects":{"countries":{"type":"Geo
                   <span class="rounded border border-[#262c38] bg-[#0d0f12] px-2 py-0.5 text-[11px] text-slate-300">${escHtml(ev.gen)}</span>
                 </div>
               </div>
-              <h3 class="mt-1.5 font-serif text-lg font-bold leading-snug text-white">${highlightText(ev.title, STATE.search)}</h3>
-              <p class="card-summary mt-1 line-clamp-2">${highlightText(ev.synthesis, STATE.search)}</p>
-              <div class="mt-2 flex items-center justify-between text-[11px] text-slate-400">
-                <span>${escHtml(ev.gpsLabel)}</span><span class="font-medium text-[#d4af37]">Tap to read full story &rarr;</span>
+              ${(() => {
+                const evPlates = getEventMedia(ev.id, true);
+                if (!evPlates.length) {
+                  return `<h3 class="mt-1.5 font-serif text-lg font-bold leading-snug text-white">${highlightText(ev.title, STATE.search)}</h3>
+                  <p class="card-summary mt-1 line-clamp-2">${highlightText(ev.synthesis, STATE.search)}</p>`;
+                }
+                const first = evPlates[0];
+                return `<div class="mt-1.5 flex items-start gap-3">
+                  <div class="min-w-0 flex-1">
+                    <h3 class="font-serif text-lg font-bold leading-snug text-white">${highlightText(ev.title, STATE.search)}</h3>
+                    <p class="card-summary mt-1 line-clamp-2">${highlightText(ev.synthesis, STATE.search)}</p>
+                  </div>
+                  <div class="archival-card-thumb" title="${escHtml(first.title)}">
+                    <img src="${escHtml(resolveMediaSrc(first))}" alt="${escHtml(first.title)}" loading="lazy" />
+                  </div>
+                </div>`;
+              })()}
+              <div class="mt-2 flex flex-wrap items-center justify-between gap-2 text-[11px] text-slate-400">
+                <div class="flex flex-wrap items-center gap-2">
+                  <span>${escHtml(ev.gpsLabel)}</span>
+                  ${(() => {
+                    const cnt = getEventMedia(ev.id, true).length;
+                    return cnt > 0 ? `<span class="rounded border border-[#d4af37]/50 bg-[#d4af37]/15 px-1.5 py-0.5 text-[10px] font-semibold text-amber-200">&#128444; ${cnt} ${cnt === 1 ? "Plate" : "Plates"}</span>` : "";
+                  })()}
+                </div>
+                <span class="font-medium text-[#d4af37]">Tap to read full story &rarr;</span>
               </div>
             </article>
           </div>`;
@@ -2512,7 +3674,7 @@ window.__WORLD_TOPO_50M = {"type":"Topology","objects":{"countries":{"type":"Geo
       else { chip.classList.add("hidden"); chip.classList.remove("inline-flex"); }
     }
 
-    // 9. TAB 3: INTERACTIVE WORLD MAP (45 PLACES)
+    // 9. TAB 3: INTERACTIVE WORLD MAP (44 PLACES)
     function populateMapPlaceDropdown() {
       const sel = document.getElementById("map-place-select");
       if (!sel) return;
@@ -2560,12 +3722,17 @@ window.__WORLD_TOPO_50M = {"type":"Topology","objects":{"countries":{"type":"Geo
           <div class="mt-1 font-mono text-[11px] text-slate-400">GPS Coordinates: ${loc.lat.toFixed(4)}&deg;, ${loc.lng.toFixed(4)}&deg;</div>
         </div>
         <p class="inspector-story mt-3">${escHtml(loc.desc)}</p>
+        ${buildMediaStripHtml(getLocusMedia(loc.id, true), "Historical Views & Archival Plates at This Place")}
         <div class="mt-4">
           <div class="mb-2 text-[11px] font-semibold uppercase tracking-wider text-[#d4af37]">Family Events at This Place (${linkedEvents.length})</div>
           <div class="max-h-[300px] space-y-2 overflow-y-auto pr-1">${evHtml}</div>
         </div>`;
 
       box.querySelector("#btn-share-locus")?.addEventListener("click", () => copyToClipboard(buildShareUrl("map/" + loc.id), "Copied direct map link for " + loc.name));
+      const locMediaReady = getLocusMedia(loc.id, true);
+      box.querySelectorAll("[data-open-lb-idx]").forEach(btn => btn.addEventListener("click", () => {
+        openLightbox(locMediaReady, Number(btn.getAttribute("data-open-lb-idx")) || 0);
+      }));
       box.querySelectorAll("[data-locus-ev]").forEach(btn => btn.addEventListener("click", () => {
         const targetEvId = btn.getAttribute("data-locus-ev");
         STATE.selectedEventId = targetEvId;
@@ -2661,7 +3828,7 @@ window.__WORLD_TOPO_50M = {"type":"Topology","objects":{"countries":{"type":"Geo
       corridorLayerGroup.clearLayers();
       if (!document.getElementById("chk-corridors")?.checked) return;
       const lines = [
-        { pts: [[50.8586, -2.3889], [50.8362, -2.4184], [50.8143, -2.4262], [50.8012, -2.4083], [50.7311, -2.8184], [48.6492, -53.1124], [49.6481, -54.7642], [49.7406, -55.9554], [46.4917, -80.9930], [43.6532, -79.3832]], color: "#2dd4bf" },
+        { pts: [[50.8362, -2.4184], [50.8143, -2.4262], [50.8012, -2.4083], [50.7311, -2.8184], [48.6492, -53.1124], [49.6481, -54.7642], [49.7406, -55.9554], [46.4917, -80.9930], [43.6532, -79.3832]], color: "#2dd4bf" },
         { pts: [[50.9792, -2.1643], [50.9554, -2.1868], [50.9681, -2.1814], [51.0056, -2.1981], [51.0283, -2.2304], [49.0684, -53.5702], [49.8861, -55.6283], [49.7406, -55.9554], [43.6591, -70.2568]], color: "#f59e0b" },
         { pts: [[52.2593, -7.1101], [48.3664, -53.3644], [48.0558, -53.8950], [49.6481, -54.7642]], color: "#fbbf24" },
         { pts: [[7.2021, 5.5934], [7.4352, 5.4604], [6.3350, 5.6275], [7.0932, 4.8353], [48.4284, -123.3656], [49.8108, -99.6367], [43.6532, -79.3832], [43.7261, -79.2684]], color: "#f43f5e" }
@@ -2680,7 +3847,9 @@ window.__WORLD_TOPO_50M = {"type":"Topology","objects":{"countries":{"type":"Geo
           radius: isSelected ? 9 : 6.5, color: isSelected ? "#ffffff" : "#0d0f12",
           weight: isSelected ? 2.5 : 1.5, fillColor: hm.color, fillOpacity: 0.95
         });
-        marker.bindPopup(`<div class="font-sans"><div class="text-[11px] font-semibold text-[#d4af37]">${escHtml(loc.era)}</div><div class="font-serif text-base font-bold text-white">${escHtml(loc.name)}</div><div class="mt-0.5 text-[11px] text-[#2dd4bf]">${escHtml(loc.grid)}</div></div>`);
+        const locPlates = getLocusMedia(loc.id, true);
+        const popupThumb = locPlates.length ? `<img src="${escHtml(resolveMediaSrc(locPlates[0]))}" alt="${escHtml(locPlates[0].title)}" class="map-popup-thumb" onclick="openLightbox(getLocusMedia('${escHtml(loc.id)}', true), 0)" />` : "";
+        marker.bindPopup(`<div class="font-sans"><div class="text-[11px] font-semibold text-[#d4af37]">${escHtml(loc.era)}</div><div class="font-serif text-base font-bold text-white">${escHtml(loc.name)}</div><div class="mt-0.5 text-[11px] text-[#2dd4bf]">${escHtml(loc.grid)}</div>${popupThumb}</div>`);
         marker.on("click", () => {
           STATE.selectedLocusId = loc.id; renderLocusInspector(loc); updateMapMarkers(); syncUrlHash();
           if (window.innerWidth < 1024) document.getElementById("place-details-anchor")?.scrollIntoView({ behavior: "smooth", block: "nearest" });
@@ -2756,6 +3925,8 @@ window.__WORLD_TOPO_50M = {"type":"Topology","objects":{"countries":{"type":"Geo
         `        <idno type="DOI">10.5281/zenodo.24173583</idno>`,
         `        <idno type="URI">https://archive.org/details/kolade-squires-lush-archive-1475-2026</idno>`,
         `        <idno type="URI">https://github.com/vickolade/kolade-squires-lush-archive</idno>`,
+        `        <idno type="URI">https://vickolade.github.io/kolade-squires-lush-archive/</idno>`,
+        `        <idno type="URI">https://kolade-squires-lush.netlify.app/</idno>`,
         `        <idno type="SWHID">swh:1:dir:c9d765081a630afc6ad548d867e56eff95d81e62;origin=https://github.com/vickolade/kolade-squires-lush-archive;visit=swh:1:snp:87d83d4021470a7254af363c92507c73387c5d12;anchor=swh:1:rev:6ced81115bad70158507905c989ef53864b52910</idno>`,
         `        <availability status="free"><p>Public open-standard digital archive edition (verified written records 1332–2026; CC BY 4.0).</p></availability>`,
         `      </publicationStmt>`,
@@ -2791,7 +3962,26 @@ window.__WORLD_TOPO_50M = {"type":"Topology","objects":{"countries":{"type":"Geo
       downloadBlob(lines.join("\n"), "Family_History_Timeline_1332_2026.csv", "text/csv;charset=utf-8");
     }
 
-    function downloadStandaloneHtml() {
+    async function downloadStandaloneHtml(extraInlinedMap) {
+      showToast("Packing self-contained offline time capsule...");
+      const packedMedia = Object.assign({}, window.__INLINED_MEDIA || {}, extraInlinedMap || {});
+      for (const item of MEDIA) {
+        if (packedMedia[item.src]) continue;
+        if (MEDIA_STATUS[item.id] !== "ok") continue;
+        try {
+          if (window.location.protocol !== "file:") {
+            const resp = await fetch(item.src);
+            if (resp.ok) {
+              const blob = await resp.blob();
+              packedMedia[item.src] = await fileToDataUrl(blob);
+              continue;
+            }
+          }
+          const dataUri = await imageToDataUrlViaCanvas(item.src);
+          if (dataUri) packedMedia[item.src] = dataUri;
+        } catch (e) {}
+      }
+
       const clone = document.documentElement.cloneNode(true);
       clone.classList.remove("text-large");
       clone.removeAttribute("style");
@@ -2807,6 +3997,7 @@ window.__WORLD_TOPO_50M = {"type":"Topology","objects":{"countries":{"type":"Geo
       });
       clone.querySelector("#toast-box")?.classList.add("hidden");
       clone.querySelector("#guide-modal")?.classList.add("hidden");
+      clone.querySelector("#archival-lightbox")?.classList.add("hidden");
       clone.querySelector("#onpage-guide-body")?.classList.add("hidden");
       clone.querySelector("#record-viewer-anchor")?.classList.remove("mobile-sheet-open");
       clone.querySelector("#collapsible-filters")?.classList.add("mobile-filters-collapsed");
@@ -2816,7 +4007,59 @@ window.__WORLD_TOPO_50M = {"type":"Topology","objects":{"countries":{"type":"Geo
       const cloneChevron = clone.querySelector("#mobile-filter-chevron");
       if (cloneChevron) cloneChevron.innerHTML = "Show &#9660;";
       clone.querySelectorAll('script[src*="/.netlify/"]').forEach(s => s.remove());
+
+      const cacheScript = clone.querySelector("#inlined-media-cache");
+      const embeddedCount = Object.keys(packedMedia).length;
+      if (cacheScript) {
+        const safeJson = JSON.stringify(packedMedia).replace(/<\//g, "<\\/");
+        cacheScript.textContent = "window.__INLINED_MEDIA = " + safeJson + ";";
+      }
+
       downloadBlob("<!DOCTYPE html>\n" + clone.outerHTML, "Family_History_Atlas_Offline_TimeCapsule.html", "text/html;charset=utf-8");
+      if (embeddedCount > 0) {
+        showToast("Saved standalone offline .html with " + embeddedCount + " embedded archival " + (embeddedCount === 1 ? "plate!" : "plates!"));
+      } else if (window.location.protocol === "file:" && getLoadedMediaCount() > 0) {
+        showToast("Saved offline .html (tip: use 'Pack Local media/' in Tab 4 when offline on file:// to embed local images).");
+      } else {
+        showToast("Saved standalone offline time capsule (.html) — ready for offline viewing!");
+      }
+    }
+
+    async function packLocalMediaFiles(fileList) {
+      if (!fileList || !fileList.length) return;
+      const byBase = {};
+      MEDIA.forEach(m => {
+        const base = m.src.split("/").pop().toLowerCase();
+        const stem = base.replace(/\.[^.]+$/, "");
+        byBase[base] = m;
+        byBase[stem] = m;
+      });
+      const newlyPacked = {};
+      let matched = 0;
+      for (const file of Array.from(fileList)) {
+        const fname = (file.name || "").toLowerCase();
+        const stem = fname.replace(/\.[^.]+$/, "");
+        const target = byBase[fname] || byBase[stem];
+        if (!target) continue;
+        try {
+          const dataUri = await fileToDataUrl(file);
+          newlyPacked[target.src] = dataUri;
+          window.__INLINED_MEDIA = window.__INLINED_MEDIA || {};
+          window.__INLINED_MEDIA[target.src] = dataUri;
+          MEDIA_STATUS[target.id] = "ok";
+          matched++;
+        } catch (e) {}
+      }
+      if (!matched) {
+        showToast("No selected filenames matched registered media/ slots (check Batch A filenames).");
+        return;
+      }
+      refreshAll();
+      if (mapInstance) {
+        updateMapMarkers();
+        renderLocusInspector(LOCUS_MAP[STATE.selectedLocusId] || LOCI[0]);
+      }
+      await downloadStandaloneHtml(newlyPacked);
     }
 
     // 11. NAVIGATION, TOURS & INITIALIZATION
@@ -2854,12 +4097,12 @@ window.__WORLD_TOPO_50M = {"type":"Topology","objects":{"countries":{"type":"Geo
     function runGuidedTour(tourKey) {
       closeGuideModal();
       Object.assign(STATE, { epoch: "ALL", region: "ALL", shelf: "ALL", gps: "ALL", gen: "ALL", search: "" });
-      if (tourKey === "SQUIRES") { STATE.house = "V1"; STATE.selectedEventId = "ev-1494"; syncFilterControls(); switchTab("stream"); refreshAll(); if (window.innerWidth < 1024) document.getElementById("timeline-list-top")?.scrollIntoView({ behavior: "smooth", block: "start" }); showToast("Tour: Squires Line (1494 Dorset to Newfoundland)"); }
+      if (tourKey === "SQUIRES") { STATE.house = "V1"; STATE.selectedEventId = "ev-1525"; syncFilterControls(); switchTab("stream"); refreshAll(); if (window.innerWidth < 1024) document.getElementById("timeline-list-top")?.scrollIntoView({ behavior: "smooth", block: "start" }); showToast("Tour: Squires Line (1524 Dorset to Newfoundland)"); }
       else if (tourKey === "LUSH") { STATE.house = "V2"; STATE.selectedEventId = "ev-1332"; syncFilterControls(); switchTab("stream"); refreshAll(); if (window.innerWidth < 1024) document.getElementById("timeline-list-top")?.scrollIntoView({ behavior: "smooth", block: "start" }); showToast("Tour: Lush Line (1332 Tisbury & Melbury Abbas to NL)"); }
       else if (tourKey === "KOLADE") { STATE.house = "V3"; STATE.selectedEventId = "ev-1780"; syncFilterControls(); switchTab("stream"); refreshAll(); if (window.innerWidth < 1024) document.getElementById("timeline-list-top")?.scrollIntoView({ behavior: "smooth", block: "start" }); showToast("Tour: Kolade & Ojomu Line (c. 1780 Emure-Ekiti & Owo to Canada)"); }
       else if (tourKey === "CONVERGENCE") { STATE.house = "CONV"; STATE.selectedEventId = "ev-1944"; syncFilterControls(); switchTab("stream"); refreshAll(); if (window.innerWidth < 1024) document.getElementById("timeline-list-top")?.scrollIntoView({ behavior: "smooth", block: "start" }); showToast("Tour: Where Our Lines Unite (1942–2026)"); }
       else if (tourKey === "MATRIX") { STATE.house = "ALL"; syncFilterControls(); switchTab("matrix"); refreshAll(); if (window.innerWidth < 1024) document.getElementById("control-bar")?.scrollIntoView({ behavior: "smooth", block: "start" }); showToast("Opened 21-Generation Side-by-Side Family Chart"); }
-      else if (tourKey === "MAP") { STATE.house = "ALL"; syncFilterControls(); refreshAll(); switchTab("map"); flyToRegionPreset("ALL"); if (window.innerWidth < 1024) document.getElementById("control-bar")?.scrollIntoView({ behavior: "smooth", block: "start" }); showToast("Opened Interactive World Map (45 Ancestral Places)"); }
+      else if (tourKey === "MAP") { STATE.house = "ALL"; syncFilterControls(); refreshAll(); switchTab("map"); flyToRegionPreset("ALL"); if (window.innerWidth < 1024) document.getElementById("control-bar")?.scrollIntoView({ behavior: "smooth", block: "start" }); showToast("Opened Interactive World Map (44 Ancestral Places)"); }
     }
 
     function setMobileFiltersOpen(isOpen) {
@@ -2975,7 +4218,7 @@ window.__WORLD_TOPO_50M = {"type":"Topology","objects":{"countries":{"type":"Geo
 
       const resetAllFilters = () => {
         Object.assign(STATE, { house: "ALL", epoch: "ALL", region: "ALL", shelf: "ALL", gps: "ALL", gen: "ALL", search: "", selectedEventId: "ev-1332" });
-        syncFilterControls(); refreshAll(); syncUrlHash(); showToast("Showing all 54 family events.");
+        syncFilterControls(); refreshAll(); syncUrlHash(); showToast("Showing all 53 family events.");
       };
       document.getElementById("btn-clear-gen").addEventListener("click", () => { STATE.gen = "ALL"; syncFilterControls(); refreshAll(); });
       document.getElementById("btn-reset").addEventListener("click", resetAllFilters);
@@ -2997,10 +4240,23 @@ window.__WORLD_TOPO_50M = {"type":"Topology","objects":{"countries":{"type":"Geo
       });
       document.querySelectorAll("[data-tour]").forEach(btn => btn.addEventListener("click", () => runGuidedTour(btn.getAttribute("data-tour"))));
 
+      wireLightboxInteractions();
+
       document.addEventListener("keydown", e => {
+        const lbOpen = !document.getElementById("archival-lightbox")?.classList.contains("hidden");
         if (e.key === "Escape") {
+          if (lbOpen) { closeLightbox(); return; }
           closeGuideModal();
           if (STATE.mobileSheetOpen) closeMobileSheet();
+          return;
+        }
+        if (lbOpen) {
+          if (e.key === "ArrowLeft") { e.preventDefault(); stepLightbox(-1); }
+          else if (e.key === "ArrowRight") { e.preventDefault(); stepLightbox(1); }
+          else if (e.key === "+" || e.key === "=") { e.preventDefault(); lbStepZoom(1.3, true); }
+          else if (e.key === "-" || e.key === "_") { e.preventDefault(); lbStepZoom(1 / 1.3, true); }
+          else if (e.key === "0") { e.preventDefault(); lbResetFit(true); }
+          else if (e.key === "1") { e.preventDefault(); lbZoomAtPoint(1.0, null, null, true); }
           return;
         }
         const tag = (e.target && e.target.tagName) ? e.target.tagName.toUpperCase() : "";
@@ -3031,12 +4287,17 @@ window.__WORLD_TOPO_50M = {"type":"Topology","objects":{"countries":{"type":"Geo
       document.getElementById("btn-copy-tei").addEventListener("click", () => copyToClipboard(buildFullTeiXml(getFilteredEvents()), "Copied XML backup to clipboard."));
       document.getElementById("btn-export-xml").addEventListener("click", () => downloadBlob(buildFullTeiXml(getFilteredEvents()), "Family_History_Archive_1332_2026.xml", "application/xml;charset=utf-8"));
       document.getElementById("btn-export-json").addEventListener("click", () => {
-        const payload = { title: "Nearly 700 Years of Our Family History: Squires, Akerman, Lush, Lawrence, Goulding, Dwyer, Thorne, Kolade & Ojomu Ancestral Archive (c. 1332–2026)", identifiers: { zenodoConceptDoi: "https://doi.org/10.5281/zenodo.24173583", internetArchive: "https://archive.org/details/kolade-squires-lush-archive-1475-2026", githubOrigin: "https://github.com/vickolade/kolade-squires-lush-archive", swhid: "swh:1:dir:c9d765081a630afc6ad548d867e56eff95d81e62;origin=https://github.com/vickolade/kolade-squires-lush-archive;visit=swh:1:snp:87d83d4021470a7254af363c92507c73387c5d12;anchor=swh:1:rev:6ced81115bad70158507905c989ef53864b52910", liveMirror: "https://kolade-squires-lush.netlify.app/" }, count: getFilteredEvents().length, sources: SHELFMARKS, places: LOCI, events: getFilteredEvents(), generations: MATRIX_ROWS };
+        const payload = { title: "Nearly 700 Years of Our Family History: Squires, Akerman, Lush, Lawrence, Goulding, Dwyer, Thorne, Kolade & Ojomu Ancestral Archive (c. 1332–2026)", identifiers: { zenodoConceptDoi: "https://doi.org/10.5281/zenodo.24173583", internetArchive: "https://archive.org/details/kolade-squires-lush-archive-1475-2026", githubOrigin: "https://github.com/vickolade/kolade-squires-lush-archive", swhid: "swh:1:dir:c9d765081a630afc6ad548d867e56eff95d81e62;origin=https://github.com/vickolade/kolade-squires-lush-archive;visit=swh:1:snp:87d83d4021470a7254af363c92507c73387c5d12;anchor=swh:1:rev:6ced81115bad70158507905c989ef53864b52910", liveMirrors: ["https://vickolade.github.io/kolade-squires-lush-archive/", "https://kolade-squires-lush.netlify.app/"] }, count: getFilteredEvents().length, edition: "Nov. 27, 2026 Media-Ready Synchronized Edition (30 Plates)", sources: SHELFMARKS, places: LOCI, events: getFilteredEvents(), generations: MATRIX_ROWS, media: MEDIA };
         downloadBlob(JSON.stringify(payload, null, 2), "Family_History_Data_1332_2026.json", "application/json;charset=utf-8");
       });
       document.getElementById("btn-export-csv").addEventListener("click", () => exportCsv(getFilteredEvents()));
-      document.getElementById("btn-dl-standalone").addEventListener("click", downloadStandaloneHtml);
-      document.getElementById("btn-header-dl").addEventListener("click", downloadStandaloneHtml);
+      document.getElementById("btn-dl-standalone").addEventListener("click", () => downloadStandaloneHtml());
+      document.getElementById("btn-header-dl").addEventListener("click", () => downloadStandaloneHtml());
+      document.getElementById("btn-pack-local-media")?.addEventListener("click", () => document.getElementById("pack-media-input")?.click());
+      document.getElementById("pack-media-input")?.addEventListener("change", e => {
+        packLocalMediaFiles(e.target.files);
+        e.target.value = "";
+      });
       document.getElementById("btn-copy-swhid")?.addEventListener("click", e => {
         const btn = e.currentTarget;
         const txt = document.getElementById("ksl-swhid-text")?.textContent || "";
@@ -3049,6 +4310,7 @@ window.__WORLD_TOPO_50M = {"type":"Topology","objects":{"countries":{"type":"Geo
         if (window.innerWidth >= 1024 && STATE.mobileSheetOpen) closeMobileSheet();
         updateStickyOffset();
         if (mapInstance && STATE.activeTab === "map") mapInstance.invalidateSize();
+        if (!document.getElementById("archival-lightbox")?.classList.contains("hidden")) lbInitViewport(false);
       });
 
       syncFilterControls();
@@ -3056,6 +4318,13 @@ window.__WORLD_TOPO_50M = {"type":"Topology","objects":{"countries":{"type":"Geo
       applyHashFromUrl(true);
       STATE.initialized = true;
       updateStickyOffset();
+      probeMediaAvailability(() => {
+        refreshAll();
+        if (mapInstance) {
+          updateMapMarkers();
+          renderLocusInspector(LOCUS_MAP[STATE.selectedLocusId] || LOCI[0]);
+        }
+      });
     };
   </script>
 </body>
