@@ -2610,6 +2610,19 @@ window.__WORLD_TOPO_50M = {"type":"Topology","objects":{"countries":{"type":"Geo
         credit: "Burlington, NL History Community Archive • Confirmed by Paul Knight"
       },
       {
+        id: "m-d06-1967-rcss-signals",
+        batch: "D",
+        kind: "Military Service Plate",
+        fit: "contain",
+        src: "media/batchD_1967_victor_kolade_rcss.jpg",
+        title: "Royal Canadian School of Signals — Recruit Troop K-212 (Mar.–June 1967)",
+        date: "March 6 – June 6, 1967",
+        events: ["ev-1969"],
+        loci: ["cfb-shilo-mb"],
+        caption: "Annotated archival plate of Royal Canadian School of Signals Recruit Troop K-212 (March 6 – June 6, 1967), highlighting Signalman Victor Olusoji Kolade ('Sig Kolade, VO', Third Row) during his early Canadian Armed Forces service shortly after arriving in Canada in December 1966.",
+        credit: "Kolade Family Archive • Royal Canadian School of Signals (Recruit Troop K-212, 1967)"
+      },
+      {
         id: "m-d05-1973-wedding",
         batch: "D",
         kind: "Wedding Photograph",
@@ -4287,7 +4300,7 @@ window.__WORLD_TOPO_50M = {"type":"Topology","objects":{"countries":{"type":"Geo
       document.getElementById("btn-copy-tei").addEventListener("click", () => copyToClipboard(buildFullTeiXml(getFilteredEvents()), "Copied XML backup to clipboard."));
       document.getElementById("btn-export-xml").addEventListener("click", () => downloadBlob(buildFullTeiXml(getFilteredEvents()), "Family_History_Archive_1332_2026.xml", "application/xml;charset=utf-8"));
       document.getElementById("btn-export-json").addEventListener("click", () => {
-        const payload = { title: "Nearly 700 Years of Our Family History: Squires, Akerman, Lush, Lawrence, Goulding, Dwyer, Thorne, Kolade & Ojomu Ancestral Archive (c. 1332–2026)", identifiers: { zenodoConceptDoi: "https://doi.org/10.5281/zenodo.24173583", internetArchive: "https://archive.org/details/kolade-squires-lush-archive-1475-2026", githubOrigin: "https://github.com/vickolade/kolade-squires-lush-archive", swhid: "swh:1:dir:c9d765081a630afc6ad548d867e56eff95d81e62;origin=https://github.com/vickolade/kolade-squires-lush-archive;visit=swh:1:snp:87d83d4021470a7254af363c92507c73387c5d12;anchor=swh:1:rev:6ced81115bad70158507905c989ef53864b52910", liveMirrors: ["https://vickolade.github.io/kolade-squires-lush-archive/", "https://kolade-squires-lush.netlify.app/"] }, count: getFilteredEvents().length, edition: "Nov. 27, 2026 Media-Ready Synchronized Edition (30 Plates)", sources: SHELFMARKS, places: LOCI, events: getFilteredEvents(), generations: MATRIX_ROWS, media: MEDIA };
+        const payload = { title: "Nearly 700 Years of Our Family History: Squires, Akerman, Lush, Lawrence, Goulding, Dwyer, Thorne, Kolade & Ojomu Ancestral Archive (c. 1332–2026)", identifiers: { zenodoConceptDoi: "https://doi.org/10.5281/zenodo.24173583", internetArchive: "https://archive.org/details/kolade-squires-lush-archive-1475-2026", githubOrigin: "https://github.com/vickolade/kolade-squires-lush-archive", swhid: "swh:1:dir:c9d765081a630afc6ad548d867e56eff95d81e62;origin=https://github.com/vickolade/kolade-squires-lush-archive;visit=swh:1:snp:87d83d4021470a7254af363c92507c73387c5d12;anchor=swh:1:rev:6ced81115bad70158507905c989ef53864b52910", liveMirrors: ["https://vickolade.github.io/kolade-squires-lush-archive/", "https://kolade-squires-lush.netlify.app/"] }, count: getFilteredEvents().length, edition: "Nov. 27, 2026 Media-Ready Synchronized Edition (31 Plates)", sources: SHELFMARKS, places: LOCI, events: getFilteredEvents(), generations: MATRIX_ROWS, media: MEDIA };
         downloadBlob(JSON.stringify(payload, null, 2), "Family_History_Data_1332_2026.json", "application/json;charset=utf-8");
       });
       document.getElementById("btn-export-csv").addEventListener("click", () => exportCsv(getFilteredEvents()));
